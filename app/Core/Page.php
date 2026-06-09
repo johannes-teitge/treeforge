@@ -37,4 +37,16 @@ class Page
     {
         return $this->data;
     }
+
+    public function nodes(): array
+    {
+        $nodes = [];
+
+        foreach ($this->data['children'] ?? [] as $nodeData) {
+            $nodes[] = NodeFactory::create($nodeData);
+        }
+
+        return $nodes;
+    }
+
 }
