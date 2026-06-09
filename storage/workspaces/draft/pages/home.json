@@ -21,6 +21,11 @@
       "label": "TreeForge starten",
       "url": "#",
       "variant": "primary"
-    }
+    },
+    {
+  "id": "node_new",
+  "type": "css",
+  "content": "Hallo Mario 🙂"
+}
   ]
 }

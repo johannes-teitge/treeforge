@@ -18,5 +18,13 @@
     "patch-007-workspace-layer.php": {
         "executed_at": "2026-06-09T20:32:00+00:00",
         "status": "ok"
+    },
+    "patch-009-explorer-foundation.php": {
+        "executed_at": "2026-06-09T21:42:18+00:00",
+        "status": "ok"
+    },
+    "patch-010-inspector-pro.php": {
+        "executed_at": "2026-06-09T22:58:28+00:00",
+        "status": "ok"
     }
 }
