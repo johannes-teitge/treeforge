@@ -10,5 +10,9 @@
     "patch-005-enhanced-patch-history.php": {
         "executed_at": "2026-06-09T17:47:58+00:00",
         "status": "ok"
+    },
+    "patch-006-node-registry.php": {
+        "executed_at": "2026-06-09T19:55:37+00:00",
+        "status": "ok"
     }
 }

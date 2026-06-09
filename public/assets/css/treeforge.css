@@ -1,5 +1,6 @@
 :root{
-  --tf-green:#173F35;
+  --tf-green:#1E3D1C;
+  --tf-leaf:#4F8F46;
   --tf-gold:#D88A22;
   --tf-dark:#121A17;
   --tf-light:#F5F3EA;
@@ -7,7 +8,7 @@
 
 body{
   margin:0;
-  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-family:var(--tf-font-ui, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
   background:var(--tf-light);
   color:var(--tf-dark);
 }
@@ -22,26 +23,21 @@ body{
   padding:2rem;
 }
 
-.tf-logo{
-  font-size:4rem;
-  margin-bottom:1rem;
-}
-
-h1{
-  margin:0;
-  font-size:clamp(2.5rem,6vw,5rem);
-  color:var(--tf-green);
-  letter-spacing:.06em;
-}
-
-p{
-  font-size:1.4rem;
-  color:var(--tf-gold);
+.tf-brand-logo{
+  width:min(520px, 90vw);
+  height:auto;
+  margin-bottom:1.5rem;
 }
 
 .tf-content{
   margin-top:2rem;
   max-width:760px;
+  width:100%;
+}
+
+p{
+  font-size:1.4rem;
+  color:var(--tf-gold);
 }
 
 .tf-node{
@@ -54,6 +50,49 @@ p{
 
 .tf-node-text{
   font-size:1.1rem;
+}
+
+.tf-node-image img{
+  max-width:180px;
+  height:auto;
+  display:block;
+  margin:0 auto;
+}
+
+.tf-node-image figcaption{
+  margin-top:.75rem;
+  font-size:.95rem;
+  color:#5f6b65;
+}
+
+.tf-node-button{
+  background:transparent;
+  border:0;
+}
+
+.tf-button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:.8rem 1.25rem;
+  border-radius:.8rem;
+  text-decoration:none;
+  font-weight:700;
+}
+
+.tf-button-primary{
+  background:var(--tf-green);
+  color:#fff;
+}
+
+.tf-node-columns{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:1rem;
+}
+
+.tf-column .tf-node{
+  margin:0;
 }
 
 .tf-node-unknown{

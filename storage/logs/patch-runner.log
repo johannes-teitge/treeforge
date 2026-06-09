@@ -32,3 +32,30 @@
 [2026-06-09 17:47:58] Patch 005 Enhanced Patch History fertig
 [2026-06-09 17:47:58] Fertig: patch-005-enhanced-patch-history.php
 [2026-06-09 17:47:58] Patch Runner beendet
+[2026-06-09 19:55:37] Patch Runner gestartet
+[2026-06-09 19:55:37] Übersprungen: patch-003-image-node.php
+[2026-06-09 19:55:37] Übersprungen: patch-004-brand-assets.php
+[2026-06-09 19:55:37] Übersprungen: patch-005-enhanced-patch-history.php
+[2026-06-09 19:55:37] Starte: patch-006-node-registry.php
+[2026-06-09 19:55:37] Patch 006 Node Registry gestartet
+[2026-06-09 19:55:37] Datei geschrieben: C:\laragon_new\www\treeforge/app/Core/NodeRegistry.php
+[2026-06-09 19:55:37] Datei geschrieben: C:\laragon_new\www\treeforge/app/Nodes/TextNode.php
+[2026-06-09 19:55:37] Datei geschrieben: C:\laragon_new\www\treeforge/app/Nodes/ImageNode.php
+[2026-06-09 19:55:37] Datei geschrieben: C:\laragon_new\www\treeforge/app/Nodes/ButtonNode.php
+[2026-06-09 19:55:37] Datei geschrieben: C:\laragon_new\www\treeforge/app/Nodes/ColumnsNode.php
+[2026-06-09 19:55:37] Backup erstellt: C:\laragon_new\www\treeforge/app/Core/NodeFactory.php
+[2026-06-09 19:55:37] Datei geschrieben: C:\laragon_new\www\treeforge/app/Core/NodeFactory.php
+[2026-06-09 19:55:37] Backup erstellt: C:\laragon_new\www\treeforge/app/Core/bootstrap.php
+[2026-06-09 19:55:37] Datei geschrieben: C:\laragon_new\www\treeforge/app/Core/bootstrap.php
+[2026-06-09 19:55:37] Backup erstellt: C:\laragon_new\www\treeforge/public/index.php
+[2026-06-09 19:55:37] Datei geschrieben: C:\laragon_new\www\treeforge/public/index.php
+[2026-06-09 19:55:37] Backup erstellt: C:\laragon_new\www\treeforge/app/Renderer/HtmlRenderer.php
+[2026-06-09 19:55:37] Datei geschrieben: C:\laragon_new\www\treeforge/app/Renderer/HtmlRenderer.php
+[2026-06-09 19:55:37] Backup erstellt: C:\laragon_new\www\treeforge/storage/pages/home.json
+[2026-06-09 19:55:37] Datei geschrieben: C:\laragon_new\www\treeforge/storage/pages/home.json
+[2026-06-09 19:55:37] Backup erstellt: C:\laragon_new\www\treeforge/public/assets/css/treeforge.css
+[2026-06-09 19:55:37] Datei geschrieben: C:\laragon_new\www\treeforge/public/assets/css/treeforge.css
+[2026-06-09 19:55:37] Datei geschrieben: C:\laragon_new\www\treeforge/docs/node-registry.md
+[2026-06-09 19:55:37] Patch 006 Node Registry fertig
+[2026-06-09 19:55:37] Fertig: patch-006-node-registry.php (21 ms)
+[2026-06-09 19:55:37] Patch Runner beendet

@@ -9,13 +9,13 @@ class NodeFactory
 {
     public static function create(array $data): Node
     {
-        return match ($data['type'] ?? '') {
-            'text'  => new TextNode($data),
-            'image' => new ImageNode($data),
+        $type = (string)($data['type'] ?? 'unknown');
+        $class = NodeRegistry::resolve($type);
 
-            default => throw new RuntimeException(
-                'Unknown node type: ' . ($data['type'] ?? 'undefined')
-            ),
-        };
+        if (!$class) {
+            throw new RuntimeException("Unknown node type: {$type}");
+        }
+
+        return new $class($data);
     }
 }

@@ -1,2 +1,12 @@
 /vendor/
 composer.phar
+
+# Affinity
+*.afdesign~lock~
+
+# Patch Backups
+*.bak-*
+
+# Windows
+Thumbs.db
+desktop.ini

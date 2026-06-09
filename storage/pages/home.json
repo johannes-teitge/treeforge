@@ -14,6 +14,13 @@
       "src": "/assets/img/treeforge-demo.svg",
       "alt": "TreeForge Demo Icon",
       "caption": "ImageNode rendered from JSON."
+    },
+    {
+      "id": "node_button_demo",
+      "type": "button",
+      "label": "TreeForge starten",
+      "url": "#",
+      "variant": "primary"
     }
   ]
 }
