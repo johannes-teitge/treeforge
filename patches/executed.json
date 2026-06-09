@@ -14,5 +14,9 @@
     "patch-006-node-registry.php": {
         "executed_at": "2026-06-09T19:55:37+00:00",
         "status": "ok"
+    },
+    "patch-007-workspace-layer.php": {
+        "executed_at": "2026-06-09T20:32:00+00:00",
+        "status": "ok"
     }
 }

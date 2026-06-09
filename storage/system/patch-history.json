@@ -85,5 +85,60 @@
                 "message": "Patch 006 Node Registry fertig"
             }
         ]
+    },
+    "patch-007-workspace-layer.php": {
+        "executed_at": "2026-06-09T20:32:00+00:00",
+        "status": "ok",
+        "duration_ms": 12,
+        "messages": [
+            {
+                "time": "2026-06-09T20:32:00+00:00",
+                "message": "Patch 007 Workspace Layer gestartet"
+            },
+            {
+                "time": "2026-06-09T20:32:00+00:00",
+                "message": "Ordner erstellt: C:\\laragon_new\\www\\treeforge/storage/workspaces/published/pages"
+            },
+            {
+                "time": "2026-06-09T20:32:00+00:00",
+                "message": "Ordner erstellt: C:\\laragon_new\\www\\treeforge/storage/workspaces/draft/pages"
+            },
+            {
+                "time": "2026-06-09T20:32:00+00:00",
+                "message": "Ordner erstellt: C:\\laragon_new\\www\\treeforge/storage/workspaces/review/pages"
+            },
+            {
+                "time": "2026-06-09T20:32:00+00:00",
+                "message": "Ordner erstellt: C:\\laragon_new\\www\\treeforge/storage/workspaces/archive"
+            },
+            {
+                "time": "2026-06-09T20:32:00+00:00",
+                "message": "Datei kopiert: C:\\laragon_new\\www\\treeforge/storage/pages/home.json -> C:\\laragon_new\\www\\treeforge/storage/workspaces/published/pages/home.json"
+            },
+            {
+                "time": "2026-06-09T20:32:00+00:00",
+                "message": "Datei kopiert: C:\\laragon_new\\www\\treeforge/storage/pages/home.json -> C:\\laragon_new\\www\\treeforge/storage/workspaces/draft/pages/home.json"
+            },
+            {
+                "time": "2026-06-09T20:32:00+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/Workspace.php"
+            },
+            {
+                "time": "2026-06-09T20:32:00+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/index.php"
+            },
+            {
+                "time": "2026-06-09T20:32:00+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/index.php"
+            },
+            {
+                "time": "2026-06-09T20:32:00+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/workflow-system.md"
+            },
+            {
+                "time": "2026-06-09T20:32:00+00:00",
+                "message": "Patch 007 Workspace Layer fertig"
+            }
+        ]
     }
 }

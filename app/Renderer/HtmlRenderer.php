@@ -17,7 +17,7 @@ class HtmlRenderer
     {
         $title = htmlspecialchars($page->title(), ENT_QUOTES, 'UTF-8');
         $appName = htmlspecialchars((string)$config->get('name', 'TreeForge CMS'), ENT_QUOTES, 'UTF-8');
-        $tagline = htmlspecialchars((string)$config->get('tagline', 'Structure first. Content grows.'), ENT_QUOTES, 'UTF-8');
+        $tagline = htmlspecialchars((string)$config->get('tagline', 'Structure first. Content grows in Layers.'), ENT_QUOTES, 'UTF-8');
 
         $content = '';
 
@@ -26,7 +26,7 @@ class HtmlRenderer
         }
 
         return <<<HTML
-<!doctype html>
+<!doctype html>F
 <html lang="de">
 <head>
   <meta charset="utf-8">

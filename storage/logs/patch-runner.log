@@ -59,3 +59,23 @@
 [2026-06-09 19:55:37] Patch 006 Node Registry fertig
 [2026-06-09 19:55:37] Fertig: patch-006-node-registry.php (21 ms)
 [2026-06-09 19:55:37] Patch Runner beendet
+[2026-06-09 20:32:00] Patch Runner gestartet
+[2026-06-09 20:32:00] Übersprungen: patch-003-image-node.php
+[2026-06-09 20:32:00] Übersprungen: patch-004-brand-assets.php
+[2026-06-09 20:32:00] Übersprungen: patch-005-enhanced-patch-history.php
+[2026-06-09 20:32:00] Übersprungen: patch-006-node-registry.php
+[2026-06-09 20:32:00] Starte: patch-007-workspace-layer.php
+[2026-06-09 20:32:00] Patch 007 Workspace Layer gestartet
+[2026-06-09 20:32:00] Ordner erstellt: C:\laragon_new\www\treeforge/storage/workspaces/published/pages
+[2026-06-09 20:32:00] Ordner erstellt: C:\laragon_new\www\treeforge/storage/workspaces/draft/pages
+[2026-06-09 20:32:00] Ordner erstellt: C:\laragon_new\www\treeforge/storage/workspaces/review/pages
+[2026-06-09 20:32:00] Ordner erstellt: C:\laragon_new\www\treeforge/storage/workspaces/archive
+[2026-06-09 20:32:00] Datei kopiert: C:\laragon_new\www\treeforge/storage/pages/home.json -> C:\laragon_new\www\treeforge/storage/workspaces/published/pages/home.json
+[2026-06-09 20:32:00] Datei kopiert: C:\laragon_new\www\treeforge/storage/pages/home.json -> C:\laragon_new\www\treeforge/storage/workspaces/draft/pages/home.json
+[2026-06-09 20:32:00] Datei geschrieben: C:\laragon_new\www\treeforge/app/Core/Workspace.php
+[2026-06-09 20:32:00] Backup erstellt: C:\laragon_new\www\treeforge/public/index.php
+[2026-06-09 20:32:00] Datei geschrieben: C:\laragon_new\www\treeforge/public/index.php
+[2026-06-09 20:32:00] Datei geschrieben: C:\laragon_new\www\treeforge/docs/workflow-system.md
+[2026-06-09 20:32:00] Patch 007 Workspace Layer fertig
+[2026-06-09 20:32:00] Fertig: patch-007-workspace-layer.php (12 ms)
+[2026-06-09 20:32:00] Patch Runner beendet
