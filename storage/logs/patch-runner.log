@@ -10,3 +10,25 @@
 [2026-06-09 09:00:31] Patch 003 ImageNode fertig
 [2026-06-09 09:00:31] Fertig: patch-003-image-node.php
 [2026-06-09 09:00:31] Patch Runner beendet
+[2026-06-09 17:27:03] Patch Runner gestartet
+[2026-06-09 17:27:03] Übersprungen: patch-003-image-node.php
+[2026-06-09 17:27:03] Starte: patch-004-brand-assets.php
+[2026-06-09 17:27:03] Patch 004 Brand Assets gestartet
+[2026-06-09 17:27:03] Datei geschrieben: C:\laragon_new\www\treeforge/public/assets/brand/treeforge-logo.svg
+[2026-06-09 17:27:03] Datei geschrieben: C:\laragon_new\www\treeforge/public/assets/brand/treeforge-icon.svg
+[2026-06-09 17:27:03] Datei geschrieben: C:\laragon_new\www\treeforge/docs/design-system.md
+[2026-06-09 17:27:03] Datei geschrieben: C:\laragon_new\www\treeforge/public/assets/css/brand.css
+[2026-06-09 17:27:03] Patch 004 Brand Assets fertig
+[2026-06-09 17:27:03] Fertig: patch-004-brand-assets.php
+[2026-06-09 17:27:03] Patch Runner beendet
+[2026-06-09 17:47:58] Patch Runner gestartet
+[2026-06-09 17:47:58] Übersprungen: patch-003-image-node.php
+[2026-06-09 17:47:58] Übersprungen: patch-004-brand-assets.php
+[2026-06-09 17:47:58] Starte: patch-005-enhanced-patch-history.php
+[2026-06-09 17:47:58] Patch 005 Enhanced Patch History gestartet
+[2026-06-09 17:47:58] Backup erstellt: C:\laragon_new\www\treeforge/patches/run.php
+[2026-06-09 17:47:58] Datei geschrieben: C:\laragon_new\www\treeforge/patches/run.php
+[2026-06-09 17:47:58] Datei geschrieben: C:\laragon_new\www\treeforge/docs/patch-system.md
+[2026-06-09 17:47:58] Patch 005 Enhanced Patch History fertig
+[2026-06-09 17:47:58] Fertig: patch-005-enhanced-patch-history.php
+[2026-06-09 17:47:58] Patch Runner beendet

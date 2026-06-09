@@ -1,0 +1,26 @@
+:root {
+  --tf-green: #1E3D1C;
+  --tf-gold:  #D88A22;
+  --tf-dark:  #121A17;
+  --tf-light: #F5F3EA;
+  --tf-cream: #FFFAF0;
+
+  --tf-font-logo: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --tf-font-ui: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --tf-font-code: "JetBrains Mono", Consolas, monospace;
+}
+
+.tf-logo-text {
+  font-family: var(--tf-font-logo);
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.tf-logo-tree {
+  color: var(--tf-green);
+}
+
+.tf-logo-forge {
+  color: var(--tf-gold);
+}

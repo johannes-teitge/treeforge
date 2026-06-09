@@ -2,5 +2,13 @@
     "patch-003-image-node.php": {
         "executed_at": "2026-06-09T09:00:31+00:00",
         "status": "ok"
+    },
+    "patch-004-brand-assets.php": {
+        "executed_at": "2026-06-09T17:27:03+00:00",
+        "status": "ok"
+    },
+    "patch-005-enhanced-patch-history.php": {
+        "executed_at": "2026-06-09T17:47:58+00:00",
+        "status": "ok"
     }
 }
