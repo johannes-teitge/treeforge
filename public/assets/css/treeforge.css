@@ -38,3 +38,24 @@ p{
   font-size:1.4rem;
   color:var(--tf-gold);
 }
+
+.tf-content{
+  margin-top:2rem;
+  max-width:760px;
+}
+
+.tf-node{
+  background:#fffaf0;
+  border:1px solid rgba(23,63,53,.15);
+  border-radius:1rem;
+  padding:1rem 1.25rem;
+  margin:.75rem 0;
+}
+
+.tf-node-text{
+  font-size:1.1rem;
+}
+
+.tf-node-unknown{
+  color:#9b1c1c;
+}
