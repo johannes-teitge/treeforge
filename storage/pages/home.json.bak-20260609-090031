@@ -1,0 +1,12 @@
+{
+  "id": "home",
+  "type": "page",
+  "title": "Startseite",
+  "children": [
+    {
+      "id": "node_hero",
+      "type": "text",
+      "content": "Welcome to TreeForge CMS"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+[2026-06-09 09:00:31] Patch Runner gestartet
+[2026-06-09 09:00:31] Starte: patch-003-image-node.php
+[2026-06-09 09:00:31] Patch 003 ImageNode gestartet
+[2026-06-09 09:00:31] Datei geschrieben: C:\laragon_new\www\treeforge/app/Core/ImageNode.php
+[2026-06-09 09:00:31] Backup erstellt: C:\laragon_new\www\treeforge/app/Core/NodeFactory.php
+[2026-06-09 09:00:31] Datei geschrieben: C:\laragon_new\www\treeforge/app/Core/NodeFactory.php
+[2026-06-09 09:00:31] Backup erstellt: C:\laragon_new\www\treeforge/storage/pages/home.json
+[2026-06-09 09:00:31] Datei geschrieben: C:\laragon_new\www\treeforge/storage/pages/home.json
+[2026-06-09 09:00:31] Datei geschrieben: C:\laragon_new\www\treeforge/public/assets/img/treeforge-demo.svg
+[2026-06-09 09:00:31] Patch 003 ImageNode fertig
+[2026-06-09 09:00:31] Fertig: patch-003-image-node.php
+[2026-06-09 09:00:31] Patch Runner beendet

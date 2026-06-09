@@ -10,11 +10,12 @@ class NodeFactory
     public static function create(array $data): Node
     {
         return match ($data['type'] ?? '') {
-            'text'  => new TextNode($data),
-            'image' => new ImageNode($data),
+
+            'text' => new TextNode($data),
 
             default => throw new RuntimeException(
-                'Unknown node type: ' . ($data['type'] ?? 'undefined')
+                'Unknown node type: ' .
+                ($data['type'] ?? 'undefined')
             ),
         };
     }

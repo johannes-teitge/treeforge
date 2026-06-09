@@ -7,6 +7,13 @@
       "id": "node_hero",
       "type": "text",
       "content": "Welcome to TreeForge CMS"
+    },
+    {
+      "id": "node_image_demo",
+      "type": "image",
+      "src": "/assets/img/treeforge-demo.svg",
+      "alt": "TreeForge Demo Icon",
+      "caption": "ImageNode rendered from JSON."
     }
   ]
 }
