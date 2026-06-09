@@ -246,5 +246,76 @@
                 "message": "Patch 010 Inspector Pro fertig"
             }
         ]
+    },
+    "patch-011-code-markdown-inspector.php": {
+        "executed_at": "2026-06-09T23:15:02+00:00",
+        "status": "ok",
+        "duration_ms": 20,
+        "messages": [
+            {
+                "time": "2026-06-09T23:15:02+00:00",
+                "message": "Patch 011 Code + Markdown Inspector gestartet"
+            },
+            {
+                "time": "2026-06-09T23:15:02+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Nodes/CssNode.php"
+            },
+            {
+                "time": "2026-06-09T23:15:02+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Nodes/MarkdownNode.php"
+            },
+            {
+                "time": "2026-06-09T23:15:02+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/bootstrap.php"
+            },
+            {
+                "time": "2026-06-09T23:15:02+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/bootstrap.php"
+            },
+            {
+                "time": "2026-06-09T23:15:02+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/InspectorPreviewRenderer.php"
+            },
+            {
+                "time": "2026-06-09T23:15:02+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/NodeInspector.php"
+            },
+            {
+                "time": "2026-06-09T23:15:02+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/NodeInspector.php"
+            },
+            {
+                "time": "2026-06-09T23:15:02+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-09T23:15:02+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-09T23:15:02+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer.js"
+            },
+            {
+                "time": "2026-06-09T23:15:02+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer.js"
+            },
+            {
+                "time": "2026-06-09T23:15:02+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/storage/workspaces/draft/pages/home.json"
+            },
+            {
+                "time": "2026-06-09T23:15:02+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/storage/workspaces/draft/pages/home.json"
+            },
+            {
+                "time": "2026-06-09T23:15:02+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/code-markdown-inspector.md"
+            },
+            {
+                "time": "2026-06-09T23:15:02+00:00",
+                "message": "Patch 011 Code + Markdown Inspector fertig"
+            }
+        ]
     }
 }

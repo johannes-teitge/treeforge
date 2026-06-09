@@ -51,6 +51,8 @@ class ExplorerRenderer
   <link rel="icon" type="image/svg+xml" href="/assets/brand/treeforge-icon.svg">
   <link rel="stylesheet" href="/assets/css/brand.css">
   <link rel="stylesheet" href="/assets/css/explorer.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1/themes/prism-tomorrow.min.css">
 </head>
 <body>
   <header class="tf-explorer-header">
@@ -113,6 +115,11 @@ class ExplorerRenderer
           </dl>
         </section>
 
+        <section class="tf-inspector-section" id="tfPreviewSection" hidden>
+          <h3>Preview</h3>
+          <pre class="tf-code-preview"><code id="tfPreviewCode"></code></pre>
+        </section>
+
         <section class="tf-inspector-section">
           <h3>Properties</h3>
           <div id="tfInspectorProperties" class="tf-properties"></div>
@@ -131,6 +138,9 @@ class ExplorerRenderer
     </section>
   </main>
 
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-css.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-markdown.min.js"></script>
   <script src="/assets/js/explorer.js"></script>
 </body>
 </html>

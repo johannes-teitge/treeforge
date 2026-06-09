@@ -121,3 +121,30 @@
 [2026-06-09 22:58:28] Patch 010 Inspector Pro fertig
 [2026-06-09 22:58:28] Fertig: patch-010-inspector-pro.php (18 ms)
 [2026-06-09 22:58:28] Patch Runner beendet
+[2026-06-09 23:15:02] Patch Runner gestartet
+[2026-06-09 23:15:02] Übersprungen: patch-003-image-node.php
+[2026-06-09 23:15:02] Übersprungen: patch-004-brand-assets.php
+[2026-06-09 23:15:02] Übersprungen: patch-005-enhanced-patch-history.php
+[2026-06-09 23:15:02] Übersprungen: patch-006-node-registry.php
+[2026-06-09 23:15:02] Übersprungen: patch-007-workspace-layer.php
+[2026-06-09 23:15:02] Übersprungen: patch-009-explorer-foundation.php
+[2026-06-09 23:15:02] Übersprungen: patch-010-inspector-pro.php
+[2026-06-09 23:15:02] Starte: patch-011-code-markdown-inspector.php
+[2026-06-09 23:15:02] Patch 011 Code + Markdown Inspector gestartet
+[2026-06-09 23:15:02] Datei geschrieben: C:\laragon_new\www\treeforge/app/Nodes/CssNode.php
+[2026-06-09 23:15:02] Datei geschrieben: C:\laragon_new\www\treeforge/app/Nodes/MarkdownNode.php
+[2026-06-09 23:15:02] Backup erstellt: C:\laragon_new\www\treeforge/app/Core/bootstrap.php
+[2026-06-09 23:15:02] Datei geschrieben: C:\laragon_new\www\treeforge/app/Core/bootstrap.php
+[2026-06-09 23:15:02] Datei geschrieben: C:\laragon_new\www\treeforge/app/Core/InspectorPreviewRenderer.php
+[2026-06-09 23:15:02] Backup erstellt: C:\laragon_new\www\treeforge/app/Core/NodeInspector.php
+[2026-06-09 23:15:02] Datei geschrieben: C:\laragon_new\www\treeforge/app/Core/NodeInspector.php
+[2026-06-09 23:15:02] Backup erstellt: C:\laragon_new\www\treeforge/app/Modules/Explorer/ExplorerRenderer.php
+[2026-06-09 23:15:02] Datei geschrieben: C:\laragon_new\www\treeforge/app/Modules/Explorer/ExplorerRenderer.php
+[2026-06-09 23:15:02] Backup erstellt: C:\laragon_new\www\treeforge/public/assets/js/explorer.js
+[2026-06-09 23:15:02] Datei geschrieben: C:\laragon_new\www\treeforge/public/assets/js/explorer.js
+[2026-06-09 23:15:02] Backup erstellt: C:\laragon_new\www\treeforge/storage/workspaces/draft/pages/home.json
+[2026-06-09 23:15:02] Datei geschrieben: C:\laragon_new\www\treeforge/storage/workspaces/draft/pages/home.json
+[2026-06-09 23:15:02] Datei geschrieben: C:\laragon_new\www\treeforge/docs/code-markdown-inspector.md
+[2026-06-09 23:15:02] Patch 011 Code + Markdown Inspector fertig
+[2026-06-09 23:15:02] Fertig: patch-011-code-markdown-inspector.php (20 ms)
+[2026-06-09 23:15:02] Patch Runner beendet

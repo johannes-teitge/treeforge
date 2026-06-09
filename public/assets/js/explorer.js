@@ -7,6 +7,8 @@
   const childrenTarget = document.getElementById('tfInspectorChildren');
   const jsonTarget = document.getElementById('tfInspectorJson');
   const propertiesTarget = document.getElementById('tfInspectorProperties');
+  const previewSection = document.getElementById('tfPreviewSection');
+  const previewCode = document.getElementById('tfPreviewCode');
 
   function valueToString(value) {
     if (value === null) return 'null';
@@ -44,6 +46,24 @@
     });
   }
 
+  function renderPreview(preview) {
+    if (!preview || preview.kind !== 'code') {
+      previewSection.hidden = true;
+      previewCode.textContent = '';
+      previewCode.className = '';
+      return;
+    }
+
+    const lang = preview.language || 'markup';
+    previewCode.textContent = preview.content || '';
+    previewCode.className = 'language-' + lang;
+    previewSection.hidden = false;
+
+    if (window.Prism) {
+      Prism.highlightElement(previewCode);
+    }
+  }
+
   buttons.forEach((button) => {
     button.addEventListener('click', () => {
       buttons.forEach((item) => item.classList.remove('active'));
@@ -55,13 +75,14 @@
       try {
         data = JSON.parse(raw);
       } catch (error) {
-        data = { id: '–', type: 'unknown', properties: {}, children_count: 0, raw: raw };
+        data = { id: '–', type: 'unknown', properties: {}, preview: {}, children_count: 0, raw: raw };
       }
 
       idTarget.textContent = data.id || '–';
       typeTarget.textContent = data.type || 'unknown';
       childrenTarget.textContent = data.children_count ?? 0;
 
+      renderPreview(data.preview || {});
       renderProperties(data.properties || {});
       jsonTarget.textContent = JSON.stringify(data.raw || data, null, 2);
 

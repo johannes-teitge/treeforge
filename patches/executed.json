@@ -26,5 +26,9 @@
     "patch-010-inspector-pro.php": {
         "executed_at": "2026-06-09T22:58:28+00:00",
         "status": "ok"
+    },
+    "patch-011-code-markdown-inspector.php": {
+        "executed_at": "2026-06-09T23:15:02+00:00",
+        "status": "ok"
     }
 }

@@ -21,6 +21,7 @@ class NodeInspector
             'id' => (string)($node['id'] ?? ''),
             'type' => (string)($node['type'] ?? 'unknown'),
             'properties' => $properties,
+            'preview' => InspectorPreviewRenderer::render($node),
             'has_children' => isset($node['children']) && is_array($node['children']) && $node['children'] !== [],
             'children_count' => isset($node['children']) && is_array($node['children']) ? count($node['children']) : 0,
             'raw' => $node,
@@ -50,6 +51,8 @@ class NodeInspector
             'image' => 'Image',
             'button' => 'Button',
             'columns' => 'Columns',
+            'css' => 'CSS',
+            'markdown' => 'Markdown',
             default => ucfirst($type),
         };
     }
@@ -62,6 +65,7 @@ class NodeInspector
             'button' => '🔘',
             'columns' => '📑',
             'css' => '🎨',
+            'markdown' => '⬇️',
             default => '📦',
         };
     }
