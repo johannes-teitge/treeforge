@@ -26,7 +26,8 @@ class ExplorerController
         return (new ExplorerRenderer())->render(
             $page->all(),
             $workspace->name(),
-            $this->workspaceStats()
+            $this->workspaceStats(),
+            $workspace->lastEnsureMessage()
         );
     }
 

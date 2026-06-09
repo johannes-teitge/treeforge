@@ -14,6 +14,7 @@ class Workspace
 
     protected string $root;
     protected string $name;
+    protected ?string $lastEnsureMessage = null;
 
     public function __construct(string $root, string $name)
     {
@@ -67,8 +68,74 @@ class Workspace
         return file_exists($this->pagePath($pageId));
     }
 
+    public function lastEnsureMessage(): ?string
+    {
+        return $this->lastEnsureMessage;
+    }
+
+    public function ensurePage(string $pageId): void
+    {
+        $target = $this->pagePath($pageId);
+
+        if (file_exists($target)) {
+            $this->lastEnsureMessage = null;
+            return;
+        }
+
+        if (!is_dir(dirname($target))) {
+            mkdir(dirname($target), 0775, true);
+        }
+
+        $source = $this->findFallbackPage($pageId);
+
+        if ($source !== null) {
+            copy($source['file'], $target);
+            $this->lastEnsureMessage = "Page '{$pageId}' wurde im Workspace '{$this->name}' aus '{$source['workspace']}' erzeugt.";
+            return;
+        }
+
+        $emptyPage = [
+            'id' => $pageId,
+            'type' => 'page',
+            'title' => ucfirst($pageId),
+            'children' => [],
+        ];
+
+        file_put_contents(
+            $target,
+            json_encode($emptyPage, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE)
+        );
+
+        $this->lastEnsureMessage = "Leere Page '{$pageId}' wurde im Workspace '{$this->name}' erzeugt.";
+    }
+
+    protected function findFallbackPage(string $pageId): ?array
+    {
+        $preferred = match ($this->name) {
+            self::REVIEW => [self::DRAFT, self::PUBLISHED],
+            self::DRAFT => [self::PUBLISHED],
+            self::PUBLISHED => [self::DRAFT],
+            default => [self::DRAFT, self::PUBLISHED],
+        };
+
+        foreach ($preferred as $workspaceName) {
+            $file = $this->root . '/storage/workspaces/' . $workspaceName . '/pages/' . $pageId . '.json';
+
+            if (file_exists($file)) {
+                return [
+                    'workspace' => $workspaceName,
+                    'file' => $file,
+                ];
+            }
+        }
+
+        return null;
+    }
+
     public function loadPage(string $pageId): Page
     {
+        $this->ensurePage($pageId);
+
         $file = $this->pagePath($pageId);
 
         if (!file_exists($file)) {

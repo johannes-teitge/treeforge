@@ -7,10 +7,16 @@ use TreeForge\Core\NodeInspector;
 
 class ExplorerRenderer
 {
-    public function render(array $pageData, string $workspace, array $workspaceStats): string
+    public function render(array $pageData, string $workspace, array $workspaceStats, ?string $notice = null): string
     {
         $tree = (new ExplorerTree())->renderPageTree($pageData);
         $workspace = htmlspecialchars($workspace, ENT_QUOTES, 'UTF-8');
+
+        $noticeHtml = '';
+
+        if ($notice !== null && $notice !== '') {
+            $noticeHtml = '<div class="tf-notice">' . htmlspecialchars($notice, ENT_QUOTES, 'UTF-8') . '</div>';
+        }
 
         $workspaces = [
             'published' => 'Published',
@@ -64,6 +70,8 @@ class ExplorerRenderer
       <p>Structure first. Content grows in Layers.</p>
     </div>
   </header>
+
+  {$noticeHtml}
 
   <main class="tf-explorer-shell">
     <aside class="tf-panel tf-workspaces">
