@@ -1,0 +1,40 @@
+:root{
+  --tf-green:#173F35;
+  --tf-gold:#D88A22;
+  --tf-dark:#121A17;
+  --tf-light:#F5F3EA;
+}
+
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:var(--tf-light);
+  color:var(--tf-dark);
+}
+
+.tf-start{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:2rem;
+}
+
+.tf-logo{
+  font-size:4rem;
+  margin-bottom:1rem;
+}
+
+h1{
+  margin:0;
+  font-size:clamp(2.5rem,6vw,5rem);
+  color:var(--tf-green);
+  letter-spacing:.06em;
+}
+
+p{
+  font-size:1.4rem;
+  color:var(--tf-gold);
+}
