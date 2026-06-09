@@ -9,6 +9,13 @@
   const propertiesTarget = document.getElementById('tfInspectorProperties');
   const previewSection = document.getElementById('tfPreviewSection');
   const previewCode = document.getElementById('tfPreviewCode');
+  const textEditorSection = document.getElementById('tfTextEditorSection');
+  const textEditor = document.getElementById('tfTextEditor');
+  const saveButton = document.getElementById('tfSaveTextNode');
+  const saveStatus = document.getElementById('tfSaveStatus');
+  const inspectorMode = document.getElementById('tfInspectorMode');
+
+  let selectedNode = null;
 
   function valueToString(value) {
     if (value === null) return 'null';
@@ -64,6 +71,30 @@
     }
   }
 
+  function renderTextEditor(data) {
+    const isText = data && data.type === 'text';
+    const workspace = (window.TreeForgeExplorer && window.TreeForgeExplorer.workspace) || 'published';
+
+    if (!isText) {
+      textEditorSection.hidden = true;
+      inspectorMode.textContent = 'readonly';
+      return;
+    }
+
+    textEditor.value = (data.properties && data.properties.content) ? data.properties.content : '';
+    textEditorSection.hidden = false;
+
+    if (workspace === 'draft') {
+      saveButton.disabled = false;
+      inspectorMode.textContent = 'editable';
+      saveStatus.textContent = '';
+    } else {
+      saveButton.disabled = true;
+      inspectorMode.textContent = 'readonly';
+      saveStatus.textContent = 'Zum Bearbeiten Draft Workspace öffnen.';
+    }
+  }
+
   buttons.forEach((button) => {
     button.addEventListener('click', () => {
       buttons.forEach((item) => item.classList.remove('active'));
@@ -78,10 +109,13 @@
         data = { id: '–', type: 'unknown', properties: {}, preview: {}, children_count: 0, raw: raw };
       }
 
+      selectedNode = data;
+
       idTarget.textContent = data.id || '–';
       typeTarget.textContent = data.type || 'unknown';
       childrenTarget.textContent = data.children_count ?? 0;
 
+      renderTextEditor(data);
       renderPreview(data.preview || {});
       renderProperties(data.properties || {});
       jsonTarget.textContent = JSON.stringify(data.raw || data, null, 2);
@@ -90,4 +124,43 @@
       content.hidden = false;
     });
   });
+
+  if (saveButton) {
+    saveButton.addEventListener('click', async () => {
+      if (!selectedNode || selectedNode.type !== 'text') {
+        return;
+      }
+
+      saveStatus.textContent = 'Speichere ...';
+
+      try {
+        const response = await fetch('/api/node/save-text.php', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            page: (window.TreeForgeExplorer && window.TreeForgeExplorer.page) || 'home',
+            node: selectedNode.id,
+            content: textEditor.value
+          })
+        });
+
+        const result = await response.json();
+
+        if (!result.ok) {
+          throw new Error(result.error || 'Fehler beim Speichern');
+        }
+
+        saveStatus.textContent = 'Gespeichert. Seite wird neu geladen ...';
+
+        setTimeout(() => {
+          window.location.href = '/explorer?workspace=draft';
+        }, 650);
+
+      } catch (error) {
+        saveStatus.textContent = error.message;
+      }
+    });
+  }
 })();

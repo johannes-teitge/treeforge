@@ -57,7 +57,6 @@ class ExplorerRenderer
   <link rel="icon" type="image/svg+xml" href="/assets/brand/treeforge-icon.svg">
   <link rel="stylesheet" href="/assets/css/brand.css">
   <link rel="stylesheet" href="/assets/css/explorer.css">
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1/themes/prism-tomorrow.min.css">
 </head>
 <body>
@@ -80,7 +79,7 @@ class ExplorerRenderer
 
       <div class="tf-workspace-note">
         <strong>Live:</strong> published<br>
-        <strong>Preview:</strong> draft / review
+        <strong>Editing:</strong> draft only
       </div>
     </aside>
 
@@ -101,7 +100,7 @@ class ExplorerRenderer
     <section class="tf-panel tf-inspector">
       <div class="tf-panel-head">
         <h2>Inspector</h2>
-        <span class="tf-badge">readonly</span>
+        <span class="tf-badge" id="tfInspectorMode">readonly</span>
       </div>
 
       <div class="tf-inspector-empty" id="tfInspectorEmpty">
@@ -121,6 +120,16 @@ class ExplorerRenderer
             <dt>Children</dt>
             <dd id="tfInspectorChildren">0</dd>
           </dl>
+        </section>
+
+        <section class="tf-inspector-section tf-editor-section" id="tfTextEditorSection" hidden>
+          <h3>TextNode Editor</h3>
+          <p class="tf-editor-hint">Speichert immer in den Draft Workspace.</p>
+          <textarea id="tfTextEditor" class="tf-textarea" rows="8"></textarea>
+          <div class="tf-editor-actions">
+            <button type="button" id="tfSaveTextNode" class="tf-action-button">In Draft speichern</button>
+            <span id="tfSaveStatus" class="tf-save-status"></span>
+          </div>
         </section>
 
         <section class="tf-inspector-section" id="tfPreviewSection" hidden>
@@ -146,6 +155,12 @@ class ExplorerRenderer
     </section>
   </main>
 
+  <script>
+    window.TreeForgeExplorer = {
+      workspace: "{$workspace}",
+      page: "home"
+    };
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-css.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-markdown.min.js"></script>
