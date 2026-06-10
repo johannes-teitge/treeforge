@@ -209,17 +209,7 @@ class Workspace
         $review = self::review($this->root);
         $review->ensurePage($pageId);
 
-        $publishedFile = self::published($this->root)->pagePath($pageId);
-
-        if (file_exists($publishedFile)) {
-            $archiveDir = $this->root . '/storage/workspaces/archive/' . date('Y-m-d-His');
-
-            if (!is_dir($archiveDir)) {
-                mkdir($archiveDir, 0775, true);
-            }
-
-            copy($publishedFile, $archiveDir . '/' . $pageId . '.json');
-        }
+        (new ArchiveManager($this->root))->archiveCurrentPublished($pageId);
 
         $data = $review->loadPageArray($pageId);
         $data['_workflow'] = [
@@ -232,33 +222,21 @@ class Workspace
         self::published($this->root)->savePage($pageId, $data);
     }
 
-    /**
-     * Backward compatible helper.
-     * Veröffentlicht aktuell aus Draft, bleibt vorerst erhalten.
-     */
     public function publish(string $pageId): void
     {
-        $draftFile = self::draft($this->root)->pagePath($pageId);
-        $publishedFile = self::published($this->root)->pagePath($pageId);
+        $draft = self::draft($this->root);
+        $draft->ensurePage($pageId);
 
-        if (!file_exists($draftFile)) {
-            throw new RuntimeException("Draft page not found: {$pageId}");
-        }
+        (new ArchiveManager($this->root))->archiveCurrentPublished($pageId);
 
-        if (file_exists($publishedFile)) {
-            $archiveDir = $this->root . '/storage/workspaces/archive/' . date('Y-m-d-His');
+        $data = $draft->loadPageArray($pageId);
+        $data['_workflow'] = [
+            'status' => 'published_from_draft',
+            'from' => self::DRAFT,
+            'to' => self::PUBLISHED,
+            'created_at' => date('c'),
+        ];
 
-            if (!is_dir($archiveDir)) {
-                mkdir($archiveDir, 0775, true);
-            }
-
-            copy($publishedFile, $archiveDir . '/' . $pageId . '.json');
-        }
-
-        if (!is_dir(dirname($publishedFile))) {
-            mkdir(dirname($publishedFile), 0775, true);
-        }
-
-        copy($draftFile, $publishedFile);
+        self::published($this->root)->savePage($pageId, $data);
     }
 }

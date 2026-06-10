@@ -32,5 +32,11 @@
             "type": "markdown",
             "content": "# TreeForge Markdown\n\nDas ist **Markdown** als eigener Node-Typ.\n\n- Struktur\\n- Content\n- Layers"
         }
-    ]
+    ],
+    "_workflow": {
+        "status": "returned_to_draft",
+        "from": "review",
+        "to": "draft",
+        "created_at": "2026-06-10T00:17:19+00:00"
+    }
 }

@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace TreeForge\Modules\Explorer;
 
+use TreeForge\Core\ArchiveManager;
 use TreeForge\Core\NodeInspector;
 use TreeForge\Core\Workspace;
 use Throwable;
@@ -19,15 +20,34 @@ class ExplorerController
     public function handle(): string
     {
         $workspaceName = (string)($_GET['workspace'] ?? Workspace::PUBLISHED);
+        $pageId = (string)($_GET['page'] ?? 'home');
+
+        $archiveVersion = (string)($_GET['archive'] ?? '');
+
+        if ($archiveVersion !== '') {
+            $archive = new ArchiveManager($this->root);
+            $pageData = $archive->loadVersion($pageId, $archiveVersion);
+
+            return (new ExplorerRenderer())->render(
+                $pageData,
+                'archive',
+                $this->workspaceStats(),
+                null,
+                $archive->getVersions($pageId),
+                $archiveVersion
+            );
+        }
 
         $workspace = new Workspace($this->root, $workspaceName);
-        $page = $workspace->loadPage('home');
+        $page = $workspace->loadPage($pageId);
 
         return (new ExplorerRenderer())->render(
             $page->all(),
             $workspace->name(),
             $this->workspaceStats(),
-            $workspace->lastEnsureMessage()
+            $workspace->lastEnsureMessage(),
+            (new ArchiveManager($this->root))->getVersions($pageId),
+            null
         );
     }
 

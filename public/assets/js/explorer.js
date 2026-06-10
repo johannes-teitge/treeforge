@@ -74,8 +74,9 @@
   function renderTextEditor(data) {
     const isText = data && data.type === 'text';
     const workspace = (window.TreeForgeExplorer && window.TreeForgeExplorer.workspace) || 'published';
+    const archive = (window.TreeForgeExplorer && window.TreeForgeExplorer.archive) || '';
 
-    if (!isText) {
+    if (!isText || archive !== '') {
       textEditorSection.hidden = true;
       inspectorMode.textContent = 'readonly';
       return;
@@ -127,9 +128,7 @@
 
   if (saveButton) {
     saveButton.addEventListener('click', async () => {
-      if (!selectedNode || selectedNode.type !== 'text') {
-        return;
-      }
+      if (!selectedNode || selectedNode.type !== 'text') return;
 
       saveStatus.textContent = 'Speichere ...';
 
@@ -146,9 +145,7 @@
 
         const result = await response.json();
 
-        if (!result.ok) {
-          throw new Error(result.error || 'Fehler beim Speichern');
-        }
+        if (!result.ok) throw new Error(result.error || 'Fehler beim Speichern');
 
         saveStatus.textContent = 'Gespeichert. Seite wird neu geladen ...';
 
@@ -165,10 +162,7 @@
   document.querySelectorAll('[data-workflow-action]').forEach((button) => {
     button.addEventListener('click', async () => {
       const action = button.getAttribute('data-workflow-action');
-
-      if (!action) {
-        return;
-      }
+      if (!action) return;
 
       button.disabled = true;
       const oldText = button.textContent;
@@ -186,11 +180,46 @@
 
         const result = await response.json();
 
-        if (!result.ok) {
-          throw new Error(result.error || 'Workflow Fehler');
-        }
+        if (!result.ok) throw new Error(result.error || 'Workflow Fehler');
 
         window.location.href = '/explorer?workspace=' + encodeURIComponent(result.target);
+
+      } catch (error) {
+        button.disabled = false;
+        button.textContent = oldText;
+        alert(error.message);
+      }
+    });
+  });
+
+  document.querySelectorAll('[data-archive-restore]').forEach((button) => {
+    button.addEventListener('click', async () => {
+      const version = button.getAttribute('data-archive-restore');
+      if (!version) return;
+
+      if (!confirm('Diese Archivversion wirklich nach Published wiederherstellen? Die aktuelle Published-Version wird vorher archiviert.')) {
+        return;
+      }
+
+      button.disabled = true;
+      const oldText = button.textContent;
+      button.textContent = 'Wiederherstellen ...';
+
+      try {
+        const response = await fetch('/api/archive/restore.php', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({
+            page: (window.TreeForgeExplorer && window.TreeForgeExplorer.page) || 'home',
+            version: version
+          })
+        });
+
+        const result = await response.json();
+
+        if (!result.ok) throw new Error(result.error || 'Restore Fehler');
+
+        window.location.href = '/explorer?workspace=published';
 
       } catch (error) {
         button.disabled = false;

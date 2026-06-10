@@ -474,5 +474,72 @@
                 "message": "Patch 014 Review Workflow fertig"
             }
         ]
+    },
+    "patch-015-archive-rollback.php": {
+        "executed_at": "2026-06-10T00:35:01+00:00",
+        "status": "ok",
+        "duration_ms": 21,
+        "messages": [
+            {
+                "time": "2026-06-10T00:35:01+00:00",
+                "message": "Patch 015 Archive Explorer + Rollback gestartet"
+            },
+            {
+                "time": "2026-06-10T00:35:01+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/ArchiveManager.php"
+            },
+            {
+                "time": "2026-06-10T00:35:01+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/Workspace.php"
+            },
+            {
+                "time": "2026-06-10T00:35:01+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/Workspace.php"
+            },
+            {
+                "time": "2026-06-10T00:35:01+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/api/archive/restore.php"
+            },
+            {
+                "time": "2026-06-10T00:35:01+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerController.php"
+            },
+            {
+                "time": "2026-06-10T00:35:01+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerController.php"
+            },
+            {
+                "time": "2026-06-10T00:35:01+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-10T00:35:01+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-10T00:35:01+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer.js"
+            },
+            {
+                "time": "2026-06-10T00:35:01+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer.js"
+            },
+            {
+                "time": "2026-06-10T00:35:01+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer.css"
+            },
+            {
+                "time": "2026-06-10T00:35:01+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer.css"
+            },
+            {
+                "time": "2026-06-10T00:35:01+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/archive-rollback.md"
+            },
+            {
+                "time": "2026-06-10T00:35:01+00:00",
+                "message": "Patch 015 Archive Explorer + Rollback fertig"
+            }
+        ]
     }
 }
