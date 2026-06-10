@@ -161,8 +161,19 @@ class ExplorerRenderer
           </div>
         </section>
 
+        <section class="tf-inspector-section tf-editor-section" id="tfMarkdownEditorSection" hidden>
+          <h3>Markdown Editor</h3>
+          <p class="tf-editor-hint">Speichert immer in den Draft Workspace.</p>
+          <textarea id="tfMarkdownEditor" class="tf-textarea" rows="10"></textarea>
+          <div class="tf-editor-actions">
+            <button type="button" id="tfSaveMarkdownNode" class="tf-action-button">Markdown in Draft speichern</button>
+            <span id="tfMarkdownSaveStatus" class="tf-save-status"></span>
+          </div>
+        </section>
+
         <section class="tf-inspector-section" id="tfPreviewSection" hidden>
           <h3>Preview</h3>
+          <div id="tfMarkdownPreview" class="tf-markdown-preview" hidden></div>
           <pre class="tf-code-preview"><code id="tfPreviewCode"></code></pre>
         </section>
 
@@ -194,7 +205,7 @@ class ExplorerRenderer
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-css.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-markdown.min.js"></script>
-  <script src="/assets/js/explorer.js?v=023"></script>
+  <script src="/assets/js/explorer.js?v=026"></script>
 </body>
 </html>
 HTML;

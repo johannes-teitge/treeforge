@@ -523,3 +523,32 @@ pre {
 .tf-tree-page.is-closed > .tf-tree-row {
   opacity: .95;
 }
+.tf-markdown-preview {
+  background: #fff;
+  border: 1px solid rgba(23, 63, 53, .1);
+  border-radius: 1rem;
+  padding: 1rem;
+  line-height: 1.6;
+}
+
+.tf-markdown-preview h1,
+.tf-markdown-preview h2,
+.tf-markdown-preview h3 {
+  color: var(--tf-green);
+  margin-top: 0;
+}
+
+.tf-markdown-preview strong {
+  color: var(--tf-green);
+}
+
+.tf-markdown-preview ul,
+.tf-markdown-preview ol {
+  padding-left: 1.35rem;
+}
+
+.tf-markdown-preview p:last-child,
+.tf-markdown-preview ul:last-child,
+.tf-markdown-preview ol:last-child {
+  margin-bottom: 0;
+}

@@ -893,5 +893,80 @@
                 "message": "Patch 025 CommonMark Markdown Rendering fertig"
             }
         ]
+    },
+    "patch-026-markdown-backend-editor.php": {
+        "executed_at": "2026-06-10T13:58:45+00:00",
+        "status": "ok",
+        "duration_ms": 21,
+        "messages": [
+            {
+                "time": "2026-06-10T13:58:45+00:00",
+                "message": "Patch 026 Markdown Inspector Preview + Editor gestartet"
+            },
+            {
+                "time": "2026-06-10T13:58:45+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/PageEditor.php"
+            },
+            {
+                "time": "2026-06-10T13:58:45+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/PageEditor.php"
+            },
+            {
+                "time": "2026-06-10T13:58:45+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/MarkdownRenderer.php"
+            },
+            {
+                "time": "2026-06-10T13:58:45+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/InspectorPreviewRenderer.php"
+            },
+            {
+                "time": "2026-06-10T13:58:45+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/InspectorPreviewRenderer.php"
+            },
+            {
+                "time": "2026-06-10T13:58:45+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/api/node/save-markdown.php"
+            },
+            {
+                "time": "2026-06-10T13:58:45+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Renderer/HtmlRenderer.php"
+            },
+            {
+                "time": "2026-06-10T13:58:45+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Renderer/HtmlRenderer.php"
+            },
+            {
+                "time": "2026-06-10T13:58:45+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-10T13:58:45+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-10T13:58:45+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer.js"
+            },
+            {
+                "time": "2026-06-10T13:58:45+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer.js"
+            },
+            {
+                "time": "2026-06-10T13:58:45+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer.css"
+            },
+            {
+                "time": "2026-06-10T13:58:45+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer.css"
+            },
+            {
+                "time": "2026-06-10T13:58:45+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/markdown-backend-editor.md"
+            },
+            {
+                "time": "2026-06-10T13:58:45+00:00",
+                "message": "Patch 026 Markdown Inspector Preview + Editor fertig"
+            }
+        ]
     }
 }

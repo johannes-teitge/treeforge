@@ -11,11 +11,12 @@ class InspectorPreviewRenderer
 
         return match ($type) {
             'css' => self::codePreview($node, 'css'),
-            'markdown' => self::codePreview($node, 'markdown'),
+            'markdown' => self::markdownPreview($node),
             default => [
                 'kind' => 'none',
                 'language' => '',
                 'content' => '',
+                'html' => '',
             ],
         };
     }
@@ -26,6 +27,19 @@ class InspectorPreviewRenderer
             'kind' => 'code',
             'language' => $language,
             'content' => (string)($node['content'] ?? ''),
+            'html' => '',
+        ];
+    }
+
+    protected static function markdownPreview(array $node): array
+    {
+        $content = (string)($node['content'] ?? '');
+
+        return [
+            'kind' => 'markdown',
+            'language' => 'markdown',
+            'content' => $content,
+            'html' => MarkdownRenderer::toHtml($content),
         ];
     }
 }

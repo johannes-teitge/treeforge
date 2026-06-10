@@ -9,6 +9,11 @@
   const propertiesTarget = document.getElementById('tfInspectorProperties');
   const previewSection = document.getElementById('tfPreviewSection');
   const previewCode = document.getElementById('tfPreviewCode');
+  const markdownPreview = document.getElementById('tfMarkdownPreview');
+  const markdownEditorSection = document.getElementById('tfMarkdownEditorSection');
+  const markdownEditor = document.getElementById('tfMarkdownEditor');
+  const saveMarkdownButton = document.getElementById('tfSaveMarkdownNode');
+  const markdownSaveStatus = document.getElementById('tfMarkdownSaveStatus');
   const textEditorSection = document.getElementById('tfTextEditorSection');
   const textEditor = document.getElementById('tfTextEditor');
   const saveButton = document.getElementById('tfSaveTextNode');
@@ -81,20 +86,40 @@
   }
 
   function renderPreview(preview) {
-    if (!preview || preview.kind !== 'code') {
-      previewSection.hidden = true;
-      previewCode.textContent = '';
-      previewCode.className = '';
+    if (markdownPreview) {
+      markdownPreview.hidden = true;
+      markdownPreview.innerHTML = '';
+    }
+
+    previewCode.textContent = '';
+    previewCode.className = '';
+    previewCode.parentElement.hidden = true;
+    previewSection.hidden = true;
+
+    if (!preview || !preview.kind || preview.kind === 'none') {
       return;
     }
 
-    const lang = preview.language || 'markup';
-    previewCode.textContent = preview.content || '';
-    previewCode.className = 'language-' + lang;
-    previewSection.hidden = false;
+    if (preview.kind === 'markdown') {
+      if (markdownPreview) {
+        markdownPreview.innerHTML = preview.html || '';
+        markdownPreview.hidden = false;
+      }
 
-    if (window.Prism) {
-      Prism.highlightElement(previewCode);
+      previewSection.hidden = false;
+      return;
+    }
+
+    if (preview.kind === 'code') {
+      const lang = preview.language || 'markup';
+      previewCode.textContent = preview.content || '';
+      previewCode.className = 'language-' + lang;
+      previewCode.parentElement.hidden = false;
+      previewSection.hidden = false;
+
+      if (window.Prism) {
+        Prism.highlightElement(previewCode);
+      }
     }
   }
 
@@ -123,6 +148,32 @@
     }
   }
 
+  function renderMarkdownEditor(data) {
+    const isMarkdown = data && data.type === 'markdown';
+    const workspace = (window.TreeForgeExplorer && window.TreeForgeExplorer.workspace) || 'published';
+    const archive = (window.TreeForgeExplorer && window.TreeForgeExplorer.archive) || '';
+
+    if (!markdownEditorSection || !markdownEditor || !saveMarkdownButton) {
+      return;
+    }
+
+    if (!isMarkdown || archive !== '') {
+      markdownEditorSection.hidden = true;
+      return;
+    }
+
+    markdownEditor.value = (data.properties && data.properties.content) ? data.properties.content : '';
+    markdownEditorSection.hidden = false;
+
+    if (workspace === 'draft') {
+      saveMarkdownButton.disabled = false;
+      inspectorMode.textContent = 'editable';
+      markdownSaveStatus.textContent = '';
+    } else {
+      saveMarkdownButton.disabled = true;
+      markdownSaveStatus.textContent = 'Zum Bearbeiten Draft Workspace öffnen.';
+    }
+  }
   function renderInspector(data, keepTextFocus) {
     selectedNode = data;
 
@@ -130,6 +181,7 @@
     typeTarget.textContent = data.type || 'unknown';
     childrenTarget.textContent = data.children_count ?? 0;
 
+    renderMarkdownEditor(data);
     renderPreview(data.preview || {});
     renderProperties(data.properties || {});
     jsonTarget.textContent = JSON.stringify(data.raw || data, null, 2);
@@ -227,6 +279,62 @@
       } finally {
         saveButton.disabled = false;
         saveButton.textContent = oldText;
+      }
+    });
+  }
+
+
+  if (saveMarkdownButton) {
+    saveMarkdownButton.addEventListener('click', async () => {
+      if (!selectedNode || selectedNode.type !== 'markdown') {
+        return;
+      }
+
+      const oldText = saveMarkdownButton.textContent;
+      saveMarkdownButton.disabled = true;
+      saveMarkdownButton.textContent = 'Speichere ...';
+      markdownSaveStatus.textContent = 'Speichere im Draft ...';
+
+      try {
+        const response = await fetch('/api/node/save-markdown.php', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({
+            page: (window.TreeForgeExplorer && window.TreeForgeExplorer.page) || 'home',
+            node: selectedNode.id,
+            content: markdownEditor.value
+          })
+        });
+
+        const raw = await response.text();
+        let result;
+
+        try {
+          result = JSON.parse(raw);
+        } catch (parseError) {
+          throw new Error('API liefert kein JSON: ' + raw.substring(0, 180));
+        }
+
+        if (!response.ok || !result.ok) {
+          throw new Error(result.error || 'Fehler beim Speichern');
+        }
+
+        if (result.inspector) {
+          selectedNode = result.inspector;
+          updateSelectedButtonData(result.inspector);
+          renderInspector(result.inspector, true);
+        }
+
+        markdownSaveStatus.textContent = 'Gespeichert.';
+        showNotice('success', result.message || 'Gespeichert.');
+        markdownEditor.focus();
+
+      } catch (error) {
+        markdownSaveStatus.textContent = error.message;
+        showNotice('error', error.message);
+      } finally {
+        saveMarkdownButton.disabled = false;
+        saveMarkdownButton.textContent = oldText;
       }
     });
   }

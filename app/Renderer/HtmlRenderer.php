@@ -5,6 +5,7 @@ namespace TreeForge\Renderer;
 
 use League\CommonMark\CommonMarkConverter;
 use TreeForge\Core\Config;
+use TreeForge\Core\MarkdownRenderer;
 use TreeForge\Core\Node;
 use TreeForge\Core\Page;
 use TreeForge\Nodes\ButtonNode;
@@ -187,7 +188,7 @@ HTML;
 
     protected function renderMarkdown(MarkdownNode $node): string
     {
-        $html = $this->markdown()->convert($node->content())->getContent();
+        $html = MarkdownRenderer::toHtml($node->content());
 
         return <<<HTML
 <div class="tf-node tf-node-markdown">
