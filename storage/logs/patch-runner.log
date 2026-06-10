@@ -195,3 +195,29 @@
 [2026-06-09 23:47:42] Patch 013 TextNode Editing fertig
 [2026-06-09 23:47:42] Fertig: patch-013-text-node-editing.php (13 ms)
 [2026-06-09 23:47:42] Patch Runner beendet
+[2026-06-10 00:04:44] Patch Runner gestartet
+[2026-06-10 00:04:44] Übersprungen: patch-003-image-node.php
+[2026-06-10 00:04:44] Übersprungen: patch-004-brand-assets.php
+[2026-06-10 00:04:44] Übersprungen: patch-005-enhanced-patch-history.php
+[2026-06-10 00:04:44] Übersprungen: patch-006-node-registry.php
+[2026-06-10 00:04:44] Übersprungen: patch-007-workspace-layer.php
+[2026-06-10 00:04:44] Übersprungen: patch-009-explorer-foundation.php
+[2026-06-10 00:04:44] Übersprungen: patch-010-inspector-pro.php
+[2026-06-10 00:04:44] Übersprungen: patch-011-code-markdown-inspector.php
+[2026-06-10 00:04:44] Übersprungen: patch-012-workspace-auto-create-page (1).php
+[2026-06-10 00:04:44] Übersprungen: patch-013-text-node-editing.php
+[2026-06-10 00:04:44] Starte: patch-014-review-workflow.php
+[2026-06-10 00:04:44] Patch 014 Review Workflow gestartet
+[2026-06-10 00:04:44] Backup erstellt: C:\laragon_new\www\treeforge/app/Core/Workspace.php
+[2026-06-10 00:04:44] Datei geschrieben: C:\laragon_new\www\treeforge/app/Core/Workspace.php
+[2026-06-10 00:04:44] Datei geschrieben: C:\laragon_new\www\treeforge/public/api/workflow/action.php
+[2026-06-10 00:04:44] Backup erstellt: C:\laragon_new\www\treeforge/app/Modules/Explorer/ExplorerRenderer.php
+[2026-06-10 00:04:44] Datei geschrieben: C:\laragon_new\www\treeforge/app/Modules/Explorer/ExplorerRenderer.php
+[2026-06-10 00:04:44] Backup erstellt: C:\laragon_new\www\treeforge/public/assets/js/explorer.js
+[2026-06-10 00:04:44] Datei geschrieben: C:\laragon_new\www\treeforge/public/assets/js/explorer.js
+[2026-06-10 00:04:44] Backup erstellt: C:\laragon_new\www\treeforge/public/assets/css/explorer.css
+[2026-06-10 00:04:44] Datei geschrieben: C:\laragon_new\www\treeforge/public/assets/css/explorer.css
+[2026-06-10 00:04:44] Datei geschrieben: C:\laragon_new\www\treeforge/docs/review-workflow.md
+[2026-06-10 00:04:44] Patch 014 Review Workflow fertig
+[2026-06-10 00:04:44] Fertig: patch-014-review-workflow.php (18 ms)
+[2026-06-10 00:04:44] Patch Runner beendet

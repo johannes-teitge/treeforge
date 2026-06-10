@@ -145,6 +145,19 @@ class Workspace
         return new Page($file);
     }
 
+    public function loadPageArray(string $pageId): array
+    {
+        $this->ensurePage($pageId);
+
+        $data = json_decode((string)file_get_contents($this->pagePath($pageId)), true);
+
+        if (!is_array($data)) {
+            throw new RuntimeException("Invalid page JSON: {$pageId}");
+        }
+
+        return $data;
+    }
+
     public function savePage(string $pageId, array $data): void
     {
         $file = $this->pagePath($pageId);
@@ -159,6 +172,70 @@ class Workspace
         );
     }
 
+    public function sendDraftToReview(string $pageId): void
+    {
+        $draft = self::draft($this->root);
+        $draft->ensurePage($pageId);
+
+        $data = $draft->loadPageArray($pageId);
+        $data['_workflow'] = [
+            'status' => 'pending_review',
+            'from' => self::DRAFT,
+            'to' => self::REVIEW,
+            'created_at' => date('c'),
+        ];
+
+        self::review($this->root)->savePage($pageId, $data);
+    }
+
+    public function returnReviewToDraft(string $pageId): void
+    {
+        $review = self::review($this->root);
+        $review->ensurePage($pageId);
+
+        $data = $review->loadPageArray($pageId);
+        $data['_workflow'] = [
+            'status' => 'returned_to_draft',
+            'from' => self::REVIEW,
+            'to' => self::DRAFT,
+            'created_at' => date('c'),
+        ];
+
+        self::draft($this->root)->savePage($pageId, $data);
+    }
+
+    public function publishFromReview(string $pageId): void
+    {
+        $review = self::review($this->root);
+        $review->ensurePage($pageId);
+
+        $publishedFile = self::published($this->root)->pagePath($pageId);
+
+        if (file_exists($publishedFile)) {
+            $archiveDir = $this->root . '/storage/workspaces/archive/' . date('Y-m-d-His');
+
+            if (!is_dir($archiveDir)) {
+                mkdir($archiveDir, 0775, true);
+            }
+
+            copy($publishedFile, $archiveDir . '/' . $pageId . '.json');
+        }
+
+        $data = $review->loadPageArray($pageId);
+        $data['_workflow'] = [
+            'status' => 'published',
+            'from' => self::REVIEW,
+            'to' => self::PUBLISHED,
+            'created_at' => date('c'),
+        ];
+
+        self::published($this->root)->savePage($pageId, $data);
+    }
+
+    /**
+     * Backward compatible helper.
+     * Veröffentlicht aktuell aus Draft, bleibt vorerst erhalten.
+     */
     public function publish(string $pageId): void
     {
         $draftFile = self::draft($this->root)->pagePath($pageId);

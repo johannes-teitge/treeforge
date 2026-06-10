@@ -136,14 +136,55 @@ body {
   font-size: .8rem;
 }
 
-.tf-workspace-note {
-  margin-top: 1.25rem;
+.tf-workspace-note,
+.tf-workflow-box {
+  margin-top: 1rem;
   padding: .9rem;
   border-radius: .85rem;
   background: #fff;
   color: #5f6b65;
   font-size: .9rem;
   line-height: 1.6;
+}
+
+.tf-workflow-box {
+  margin: 0 0 1rem;
+  border: 1px solid rgba(30, 61, 28, .1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.tf-workflow-actions {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.tf-workflow-button,
+.tf-workflow-link {
+  border: 0;
+  border-radius: .75rem;
+  background: var(--tf-green);
+  color: #fff;
+  font-weight: 800;
+  padding: .65rem .85rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.tf-workflow-button.secondary {
+  background: #fff;
+  color: var(--tf-green);
+  border: 1px solid rgba(30, 61, 28, .18);
+}
+
+.tf-workflow-button:disabled {
+  opacity: .55;
+  cursor: not-allowed;
 }
 
 .tf-explorer-tree,

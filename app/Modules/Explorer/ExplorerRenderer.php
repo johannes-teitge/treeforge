@@ -37,6 +37,8 @@ class ExplorerRenderer
             $workspaceLinks .= '</a>';
         }
 
+        $workflowActions = $this->workflowActions($workspace);
+
         $pageJson = htmlspecialchars(
             json_encode($pageData, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?: '{}',
             ENT_QUOTES,
@@ -45,6 +47,7 @@ class ExplorerRenderer
 
         $nodeCount = NodeInspector::countNodes($pageData);
         $pageTitle = htmlspecialchars((string)($pageData['title'] ?? 'Page'), ENT_QUOTES, 'UTF-8');
+        $workflowStatus = htmlspecialchars((string)($pageData['_workflow']['status'] ?? $workspace), ENT_QUOTES, 'UTF-8');
 
         return <<<HTML
 <!doctype html>
@@ -87,6 +90,16 @@ class ExplorerRenderer
       <div class="tf-panel-head">
         <h2>Tree</h2>
         <span class="tf-badge">{$workspace}</span>
+      </div>
+
+      <div class="tf-workflow-box">
+        <div>
+          <strong>Workflow Status</strong><br>
+          <span>{$workflowStatus}</span>
+        </div>
+        <div class="tf-workflow-actions">
+          {$workflowActions}
+        </div>
       </div>
 
       {$tree}
@@ -168,5 +181,14 @@ class ExplorerRenderer
 </body>
 </html>
 HTML;
+    }
+
+    protected function workflowActions(string $workspace): string
+    {
+        return match ($workspace) {
+            'draft' => '<button type="button" class="tf-workflow-button" data-workflow-action="send_to_review">In Review senden</button>',
+            'review' => '<button type="button" class="tf-workflow-button" data-workflow-action="publish_review">Freigeben & veröffentlichen</button><button type="button" class="tf-workflow-button secondary" data-workflow-action="return_to_draft">Zurück an Draft</button>',
+            default => '<a class="tf-workflow-link" href="/explorer?workspace=draft">Draft bearbeiten</a>',
+        };
     }
 }

@@ -136,9 +136,7 @@
       try {
         const response = await fetch('/api/node/save-text.php', {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
+          headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({
             page: (window.TreeForgeExplorer && window.TreeForgeExplorer.page) || 'home',
             node: selectedNode.id,
@@ -163,4 +161,42 @@
       }
     });
   }
+
+  document.querySelectorAll('[data-workflow-action]').forEach((button) => {
+    button.addEventListener('click', async () => {
+      const action = button.getAttribute('data-workflow-action');
+
+      if (!action) {
+        return;
+      }
+
+      button.disabled = true;
+      const oldText = button.textContent;
+      button.textContent = 'Bitte warten ...';
+
+      try {
+        const response = await fetch('/api/workflow/action.php', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({
+            action: action,
+            page: (window.TreeForgeExplorer && window.TreeForgeExplorer.page) || 'home'
+          })
+        });
+
+        const result = await response.json();
+
+        if (!result.ok) {
+          throw new Error(result.error || 'Workflow Fehler');
+        }
+
+        window.location.href = '/explorer?workspace=' + encodeURIComponent(result.target);
+
+      } catch (error) {
+        button.disabled = false;
+        button.textContent = oldText;
+        alert(error.message);
+      }
+    });
+  });
 })();
