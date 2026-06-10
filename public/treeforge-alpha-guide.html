@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TreeForge Git & Alpha Workflow Guide</title>
+  <meta name="description" content="Bootstrap 5 HTML5 Git Übersicht, Patch-System und TreeForge Alpha Workflow.">
+  <meta name="robots" content="noindex,follow">
+  <meta name="theme-color" content="#173F35">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root{--tf-green:#173F35;--tf-leaf:#4F8F46;--tf-gold:#D88A22;--tf-dark:#121A17;--tf-light:#F5F3EA;--tf-cream:#fffaf0;}
+    body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--tf-light);color:var(--tf-dark);}
+    .navbar{background:rgba(245,243,234,.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(23,63,53,.15);}
+    .brand{font-weight:800;letter-spacing:.06em;color:var(--tf-green);}.text-gold{color:var(--tf-gold);}.text-green{color:var(--tf-green);}
+    .hero{padding:5.5rem 0 4rem;background:radial-gradient(circle at 85% 20%,rgba(216,138,34,.16),transparent 30%),radial-gradient(circle at 10% 10%,rgba(79,143,70,.18),transparent 28%),linear-gradient(135deg,#fffaf0,#f5f3ea);border-bottom:1px solid rgba(23,63,53,.12);}
+    .section-pad{padding:4rem 0}.card-soft{background:var(--tf-cream);border:1px solid rgba(23,63,53,.14);border-radius:1.25rem;box-shadow:0 1rem 2.5rem rgba(18,26,23,.05);}
+    .cmd{background:#0d1411;color:#edf7ef;border-radius:1rem;padding:1rem 1.25rem;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.95rem;overflow:auto;white-space:pre-wrap;}
+    .timeline{border-left:3px solid rgba(23,63,53,.2);padding-left:1.5rem}.timeline-item{position:relative;margin-bottom:1.5rem}.timeline-item:before{content:"";position:absolute;left:-1.9rem;top:.35rem;width:.8rem;height:.8rem;border-radius:50%;background:var(--tf-gold);border:3px solid var(--tf-light);}
+    .table code{color:var(--tf-green);font-weight:700}.alert-tree{background:#edf6ef;border:1px solid rgba(79,143,70,.28);color:#173F35;border-radius:1rem}.footer{background:#0d1411;color:#d8e3dc}.sticky-toc{position:sticky;top:90px}.toc a{color:var(--tf-dark);text-decoration:none}.toc a:hover{color:var(--tf-green);text-decoration:underline;}
+    .badge-tf{background:rgba(30,61,28,.12);color:var(--tf-green);border:1px solid rgba(30,61,28,.18);font-weight:700}
+    .flow{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center}.flow span{background:#fff;border:1px solid rgba(23,63,53,.16);border-radius:999px;padding:.55rem .85rem;font-weight:700}.flow i{color:var(--tf-gold)}
+    .tree-demo{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:#fff;border:1px solid rgba(23,63,53,.14);border-radius:1rem;padding:1rem;white-space:pre-wrap;color:#173F35}
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand brand" href="#"><i class="bi bi-diagram-3-fill"></i> TREE<span class="text-gold">FORGE</span> Alpha Guide</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#alpha">Alpha</a></li>
+        <li class="nav-item"><a class="nav-link" href="#demo">Demo</a></li>
+        <li class="nav-item"><a class="nav-link" href="#workflow">Workflow</a></li>
+        <li class="nav-item"><a class="nav-link" href="#git">Git</a></li>
+        <li class="nav-item"><a class="nav-link" href="#patches">Patches</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-8">
+        <div class="text-uppercase fw-bold text-green small mb-2">TreeForge Entwicklernotizen</div>
+        <h1 class="display-4 fw-bold mb-3">Git, Patch-System & Alpha Workflow</h1>
+        <p class="lead fs-3 mb-3">TreeForge ist kein Page Builder. TreeForge ist ein strukturierter Content Explorer.</p>
+        <p class="fs-5 text-secondary">Diese Seite erklärt Git, den Patch-Runner und den aktuellen TreeForge-Alpha-Stand mit Workspaces, Review, Publish, Archiv, Rollback und verschachtelten Content-Nodes.</p>
+      </div>
+      <div class="col-lg-4">
+        <div class="card-soft p-4">
+          <h2 class="h5 fw-bold mb-3"><i class="bi bi-check2-circle text-green"></i> Alpha-Stand</h2>
+          <ul class="mb-3">
+            <li><strong>Explorer</strong> mit Tree-Ansicht</li>
+            <li><strong>Draft / Review / Published</strong></li>
+            <li><strong>Text Editing</strong> per API</li>
+            <li><strong>Archive & Rollback</strong></li>
+            <li><strong>Columns Tree</strong> mit Child-Nodes</li>
+            <li><strong>CSS Nodes</strong> als Style im Head</li>
+          </ul>
+          <div class="cmd">git log --oneline --decorate</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="section-pad">
+  <div class="container">
+    <div class="row g-4">
+      <aside class="col-lg-3">
+        <div class="card-soft p-4 sticky-toc toc">
+          <h2 class="h6 fw-bold text-uppercase text-green">Inhalt</h2>
+          <ol class="mb-0">
+            <li><a href="#grundidee">Grundidee</a></li>
+            <li><a href="#alpha">Aktueller Alpha-Stand</a></li>
+            <li><a href="#tree">Warum Tree?</a></li>
+            <li><a href="#demo">Demo</a></li>
+            <li><a href="#workflow">Content Workflow</a></li>
+            <li><a href="#git">Git Workflow</a></li>
+            <li><a href="#patches">Patch-Runner</a></li>
+            <li><a href="#tags">Tags & Versionen</a></li>
+            <li><a href="#probleme">Probleme lösen</a></li>
+          </ol>
+        </div>
+      </aside>
+
+      <div class="col-lg-9">
+
+<section id="grundidee" class="mb-5">
+  <div class="card-soft p-4 p-lg-5">
+    <h2 class="fw-bold mb-3">1. Grundidee</h2>
+    <p>TreeForge verwaltet Inhalte nicht als lose Blöcke auf einer Seite, sondern als strukturierte <strong>Nodes</strong> in einem <strong>Content Tree</strong>.</p>
+    <div class="row g-3 mt-3">
+      <div class="col-md-4"><div class="p-3 rounded-4 bg-white h-100"><h3 class="h6 fw-bold">Node</h3><p class="mb-0 text-secondary">Ein einzelnes Content-Objekt, z. B. Text, Bild, Button, CSS, Markdown oder Columns.</p></div></div>
+      <div class="col-md-4"><div class="p-3 rounded-4 bg-white h-100"><h3 class="h6 fw-bold">Tree</h3><p class="mb-0 text-secondary">Nodes können Kinder enthalten. Dadurch entstehen saubere Seitenstrukturen.</p></div></div>
+      <div class="col-md-4"><div class="p-3 rounded-4 bg-white h-100"><h3 class="h6 fw-bold">Workspace</h3><p class="mb-0 text-secondary">Draft, Review und Published trennen Bearbeitung, Freigabe und Live-Seite.</p></div></div>
+    </div>
+    <div class="alert alert-tree mt-4 mb-0"><strong>Merksatz:</strong> Structure first. Content grows in Layers.</div>
+  </div>
+</section>
+
+<section id="alpha" class="mb-5">
+  <div class="card-soft p-4 p-lg-5">
+    <h2 class="fw-bold mb-4">2. Aktueller Alpha-Stand</h2>
+    <div class="row g-3">
+      <div class="col-md-6"><div class="p-3 bg-white rounded-4 h-100"><span class="badge badge-tf mb-2">Core</span><h3 class="h5 fw-bold">Node-System</h3><p class="text-secondary mb-0">Text, Image, Button, CSS, Markdown, Columns und Column als Node-Typen.</p></div></div>
+      <div class="col-md-6"><div class="p-3 bg-white rounded-4 h-100"><span class="badge badge-tf mb-2">Backend</span><h3 class="h5 fw-bold">Explorer</h3><p class="text-secondary mb-0">Workspace-Spalte, Tree-Spalte, Inspector, Properties, JSON und Preview-Buttons.</p></div></div>
+      <div class="col-md-6"><div class="p-3 bg-white rounded-4 h-100"><span class="badge badge-tf mb-2">Workflow</span><h3 class="h5 fw-bold">Draft → Review → Published</h3><p class="text-secondary mb-0">Änderungen werden nicht direkt live geschaltet, sondern zuerst geprüft.</p></div></div>
+      <div class="col-md-6"><div class="p-3 bg-white rounded-4 h-100"><span class="badge badge-tf mb-2">Safety</span><h3 class="h5 fw-bold">Archive & Rollback</h3><p class="text-secondary mb-0">Published-Versionen werden archiviert und können wiederhergestellt werden.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="tree" class="mb-5">
+  <div class="card-soft p-4 p-lg-5">
+    <h2 class="fw-bold mb-3">3. Warum der Tree wichtig ist</h2>
+    <p>Bei einer flachen Blockliste sieht TreeForge noch aus wie ein normaler Editor. Der Vorteil wird sichtbar, sobald Nodes verschachtelt werden.</p>
+    <div class="tree-demo">🌳 Startseite
+├─ Text
+├─ Image
+├─ Button
+└─ Columns
+   ├─ Column
+   │  ├─ Text
+   │  └─ Image
+   └─ Column
+      ├─ Text
+      └─ Button</div>
+    <p class="mt-3 mb-0">Dadurch wird klar: TreeForge ist kein klassischer Page Builder, sondern ein strukturierter Content Explorer.</p>
+  </div>
+</section>
+
+<section id="demo" class="mb-5">
+  <div class="card-soft p-4 p-lg-5">
+    <h2 class="fw-bold mb-4">4. Demo in 2 Minuten</h2>
+    <div class="timeline">
+      <div class="timeline-item"><h3 class="h5 fw-bold">1. Draft öffnen</h3><div class="cmd">/explorer?workspace=draft</div></div>
+      <div class="timeline-item"><h3 class="h5 fw-bold">2. TextNode ändern</h3><p class="text-secondary">TextNode anklicken, Text bearbeiten und per API in Draft speichern.</p></div>
+      <div class="timeline-item"><h3 class="h5 fw-bold">3. Draft Preview ansehen</h3><div class="cmd">/?workspace=draft</div></div>
+      <div class="timeline-item"><h3 class="h5 fw-bold">4. In Review senden</h3><p class="text-secondary">Draft wird nach Review kopiert.</p></div>
+      <div class="timeline-item"><h3 class="h5 fw-bold">5. Freigeben & veröffentlichen</h3><p class="text-secondary">Review wird Published. Die alte Published-Version wird archiviert.</p></div>
+      <div class="timeline-item"><h3 class="h5 fw-bold">6. Rollback zeigen</h3><p class="text-secondary">Archivversion öffnen und nach Published wiederherstellen.</p></div>
+    </div>
+    <div class="flow mt-4">
+      <span>Draft</span><i class="bi bi-arrow-right"></i><span>Review</span><i class="bi bi-arrow-right"></i><span>Published</span><i class="bi bi-arrow-right"></i><span>Archive</span><i class="bi bi-arrow-counterclockwise"></i><span>Rollback</span>
+    </div>
+  </div>
+</section>
+
+<section id="workflow" class="mb-5">
+  <div class="card-soft p-4 p-lg-5">
+    <h2 class="fw-bold mb-3">5. Content Workflow</h2>
+    <p>Die Live-Seite bleibt stabil. Änderungen entstehen zuerst im Draft, werden im Review geprüft und danach veröffentlicht.</p>
+    <div class="cmd">storage/workspaces/
+├─ draft/pages/home.json
+├─ review/pages/home.json
+├─ published/pages/home.json
+└─ archive/pages/home/
+   ├─ 2026-06-10-001744.json
+   └─ ...</div>
+    <h3 class="h5 fw-bold mt-4">Preview URLs</h3>
+    <div class="cmd">/                  = Published
+/?workspace=draft  = Draft Preview
+/?workspace=review = Review Preview</div>
+  </div>
+</section>
+
+<section id="git" class="mb-5">
+  <div class="card-soft p-4 p-lg-5">
+    <h2 class="fw-bold mb-4">6. Git Workflow</h2>
+    <p>Git ist die technische Zeitmaschine für den Code. Jeder stabile Stand wird committed und bei Meilensteinen getaggt.</p>
+    <div class="table-responsive">
+      <table class="table align-middle">
+        <thead><tr><th>Befehl</th><th>Bedeutung</th><th>Wann nutzen?</th></tr></thead>
+        <tbody>
+          <tr><td><code>git status</code></td><td>Zeigt den aktuellen Zustand.</td><td>Vor und nach jedem Patch.</td></tr>
+          <tr><td><code>php patches/run.php</code></td><td>Führt neue Patches aus.</td><td>Zum Aktualisieren des Projekts.</td></tr>
+          <tr><td><code>git diff</code></td><td>Zeigt Änderungen.</td><td>Vor dem Commit prüfen.</td></tr>
+          <tr><td><code>git add .</code></td><td>Änderungen vormerken.</td><td>Wenn getestet.</td></tr>
+          <tr><td><code>git commit -m "..."</code></td><td>Stand speichern.</td><td>Nach fertiger Etappe.</td></tr>
+          <tr><td><code>git tag v0.1.x-alpha</code></td><td>Version markieren.</td><td>Bei Meilensteinen.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3 class="h5 fw-bold mt-4">Typische Reihenfolge</h3>
+    <div class="cmd">git status
+php patches/run.php
+git status
+git add .
+git commit -m "Add columns tree alpha"
+git tag v0.1.21-alpha
+git log --oneline --decorate</div>
+  </div>
+</section>
+
+<section id="patches" class="mb-5">
+  <div class="card-soft p-4 p-lg-5">
+    <h2 class="fw-bold mb-3">7. Patch-Runner</h2>
+    <p>Der Patch-Runner ist unser kleines Update-System. Er führt neue Patch-Dateien aus und merkt sich, welche bereits gelaufen sind.</p>
+    <div class="cmd">treeforge/
+├─ patches/
+│  ├─ run.php
+│  ├─ executed.json
+│  ├─ patch-013-text-node-editing.php
+│  ├─ patch-014-review-workflow.php
+│  ├─ patch-015-archive-rollback.php
+│  ├─ patch-021-columns-tree-alpha.php
+│  └─ patch-024-css-nodes-as-style.php
+└─ storage/
+   ├─ logs/patch-runner.log
+   └─ system/patch-history.json</div>
+    <h3 class="h5 fw-bold mt-4">Regel</h3>
+    <p class="mb-0">Patch ausführen, Browser testen, dann committen. Wenn etwas kaputtgeht, ist der vorherige Git-Stand der sichere Rücksprungpunkt.</p>
+  </div>
+</section>
+
+<section id="tags" class="mb-5">
+  <div class="card-soft p-4 p-lg-5">
+    <h2 class="fw-bold mb-3">8. Tags & Versionen</h2>
+    <p>Ein Tag markiert einen Meilenstein.</p>
+    <div class="cmd">git tag v0.1.24-alpha
+git tag
+git log --oneline --decorate</div>
+    <div class="alert alert-tree mt-4 mb-0"><strong>TreeForge-Regel:</strong> Jeder größere Alpha-Fortschritt bekommt einen Tag.</div>
+  </div>
+</section>
+
+<section id="probleme" class="mb-5">
+  <div class="card-soft p-4 p-lg-5">
+    <h2 class="fw-bold mb-4">9. Häufige Probleme</h2>
+    <div class="accordion" id="faq">
+      <div class="accordion-item">
+        <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#p1">JavaScript scheint alt zu sein</button></h3>
+        <div id="p1" class="accordion-collapse collapse show" data-bs-parent="#faq"><div class="accordion-body">Hart neu laden: <code>Strg + F5</code>. Prüfen, ob im Quellcode z. B. <code>/assets/js/explorer.js?v=023</code> steht.</div></div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#p2">Text wird im Inspector geändert, aber nicht gespeichert</button></h3>
+        <div id="p2" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">F12 → Netzwerk → <code>/api/node/save-text.php</code> prüfen. Die Antwort muss <code>ok: true</code>, <code>saved_file</code> und <code>verified_content</code> enthalten.</div></div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#p3">Git zeigt viele Änderungen</button></h3>
+        <div id="p3" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body"><div class="cmd">git status
+git diff</div>Erst prüfen, dann committen.</div></div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#p4">vendor/ nicht committen</button></h3>
+        <div id="p4" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body"><div class="cmd">/vendor/
+composer.phar</div><p class="mt-2 mb-0">In <code>.gitignore</code> eintragen.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mb-5">
+  <div class="p-4 p-lg-5 rounded-5" style="background:var(--tf-green);color:#fff;">
+    <h2 class="fw-bold mb-3">Alpha-Merksatz</h2>
+    <p class="lead mb-0">TreeForge bearbeitet nicht live. TreeForge arbeitet in Drafts, prüft in Reviews, veröffentlicht nach Freigabe und kann zurückrollen.</p>
+  </div>
+</section>
+
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+    <div><strong>TREE<span class="text-gold">FORGE</span></strong> Alpha Guide</div>
+    <div class="small">Bootstrap 5 · HTML5 · Lokale Projektdokumentation</div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

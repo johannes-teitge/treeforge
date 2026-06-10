@@ -1,3 +1,166 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * TreeForge CMS - Patch 017
+ * Fix Async Text Save + Cache Bust
+ *
+ * Problem:
+ * - Browser lädt eventuell noch altes explorer.js
+ * - alter JS-Code macht Reload nach Save
+ * - API/PageEditor werden nochmals robust gesetzt
+ *
+ * Ergebnis:
+ * - Save per fetch()
+ * - kein Reload
+ * - Fokus bleibt im Textfeld
+ * - sichtbare Toast-Meldungen
+ * - cache-busted explorer.js?v=017
+ */
+
+return function (string $root, callable $log): void {
+
+    $write = function (string $file, string $content) use ($log): void {
+        if (!is_dir(dirname($file))) {
+            mkdir(dirname($file), 0775, true);
+        }
+
+        if (file_exists($file)) {
+            copy($file, $file . '.bak-' . date('Ymd-His'));
+            $log("Backup erstellt: {$file}");
+        }
+
+        file_put_contents($file, $content);
+        $log("Datei geschrieben: {$file}");
+    };
+
+    $log('Patch 017 Fix Async Text Save gestartet');
+
+    $write($root . '/app/Core/PageEditor.php', <<<'PHP'
+<?php
+declare(strict_types=1);
+
+namespace TreeForge\Core;
+
+use RuntimeException;
+
+class PageEditor
+{
+    public static function updateTextNodeContent(array &$pageData, string $nodeId, string $content): array
+    {
+        foreach ($pageData['children'] ?? [] as &$node) {
+            if (!is_array($node)) {
+                continue;
+            }
+
+            $updatedNode = self::updateTextNodeRecursive($node, $nodeId, $content);
+
+            if ($updatedNode !== null) {
+                return $updatedNode;
+            }
+        }
+
+        throw new RuntimeException("Node not found: {$nodeId}");
+    }
+
+    protected static function updateTextNodeRecursive(array &$node, string $nodeId, string $content): ?array
+    {
+        if (($node['id'] ?? '') === $nodeId) {
+            if (($node['type'] ?? '') !== 'text') {
+                throw new RuntimeException("Node is not editable as text: {$nodeId}");
+            }
+
+            $node['content'] = $content;
+            $node['updated_at'] = date('c');
+
+            return $node;
+        }
+
+        foreach ($node['children'] ?? [] as &$child) {
+            if (!is_array($child)) {
+                continue;
+            }
+
+            $updatedNode = self::updateTextNodeRecursive($child, $nodeId, $content);
+
+            if ($updatedNode !== null) {
+                return $updatedNode;
+            }
+        }
+
+        return null;
+    }
+}
+PHP);
+
+    $write($root . '/public/api/node/save-text.php', <<<'PHP'
+<?php
+declare(strict_types=1);
+
+require_once __DIR__ . '/../../../vendor/autoload.php';
+require_once __DIR__ . '/../../../app/Core/bootstrap.php';
+
+use TreeForge\Core\NodeInspector;
+use TreeForge\Core\PageEditor;
+use TreeForge\Core\Workspace;
+
+header('Content-Type: application/json; charset=utf-8');
+
+try {
+    if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+        throw new RuntimeException('Only POST allowed');
+    }
+
+    $root = dirname(__DIR__, 3);
+
+    $payload = json_decode((string)file_get_contents('php://input'), true);
+
+    if (!is_array($payload)) {
+        throw new RuntimeException('Invalid JSON payload');
+    }
+
+    $pageId = (string)($payload['page'] ?? 'home');
+    $nodeId = (string)($payload['node'] ?? '');
+    $content = (string)($payload['content'] ?? '');
+
+    if ($nodeId === '') {
+        throw new RuntimeException('Missing node id');
+    }
+
+    $workspace = Workspace::draft($root);
+    $workspace->ensurePage($pageId);
+
+    $file = $workspace->pagePath($pageId);
+    $pageData = json_decode((string)file_get_contents($file), true);
+
+    if (!is_array($pageData)) {
+        throw new RuntimeException('Invalid page JSON');
+    }
+
+    $updatedNode = PageEditor::updateTextNodeContent($pageData, $nodeId, $content);
+
+    $workspace->savePage($pageId, $pageData);
+
+    echo json_encode([
+        'ok' => true,
+        'message' => 'TextNode im Draft gespeichert.',
+        'workspace' => 'draft',
+        'page' => $pageId,
+        'node' => $nodeId,
+        'inspector' => NodeInspector::inspectArray($updatedNode),
+    ], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+} catch (Throwable $e) {
+    http_response_code(400);
+
+    echo json_encode([
+        'ok' => false,
+        'error' => $e->getMessage(),
+    ], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+}
+PHP);
+
+    $write($root . '/public/assets/js/explorer.js', <<<'JS'
 (function () {
   const buttons = document.querySelectorAll('.tf-tree-node-button');
   const empty = document.getElementById('tfInspectorEmpty');
@@ -306,103 +469,119 @@
       }
     });
   });
-
-  function initCollapsibleTree() {
-    const storageKey = 'treeforge.explorer.collapsed';
-    const initializedKey = 'treeforge.explorer.collapseInitialized';
-    let collapsed = [];
-    const hasStoredState = localStorage.getItem(initializedKey) === '1';
-
-    try {
-      collapsed = JSON.parse(localStorage.getItem(storageKey) || '[]');
-    } catch (error) {
-      collapsed = [];
-    }
-
-    if (!hasStoredState) {
-      collapsed = [];
-
-      document.querySelectorAll('.tf-tree-node.has-children').forEach((li) => {
-        const id = li.getAttribute('data-tree-node-id');
-
-        if (id) {
-          collapsed.push(id);
-        }
-      });
-
-      localStorage.setItem(initializedKey, '1');
-      localStorage.setItem(storageKey, JSON.stringify(collapsed));
-    }
-
-    function saveState() {
-      localStorage.setItem(initializedKey, '1');
-      localStorage.setItem(storageKey, JSON.stringify(collapsed));
-    }
-
-    function setOpen(li, open) {
-      if (!li) return;
-
-      const id = li.getAttribute('data-tree-node-id') || 'page-root';
-      const toggle = li.querySelector(':scope > .tf-tree-row > .tf-tree-toggle, :scope > .tf-tree-toggle');
-
-      li.classList.toggle('is-open', open);
-      li.classList.toggle('is-closed', !open);
-
-      if (toggle) {
-        toggle.textContent = open ? '▾' : '▸';
-      }
-
-      if (open) {
-        collapsed = collapsed.filter((item) => item !== id);
-      } else if (!collapsed.includes(id)) {
-        collapsed.push(id);
-      }
-
-      saveState();
-    }
-
-    document.querySelectorAll('.tf-tree-page, .tf-tree-node.has-children').forEach((li) => {
-      const id = li.getAttribute('data-tree-node-id') || 'page-root';
-
-      if (id === 'page-root') {
-        setOpen(li, true);
-        return;
-      }
-
-      setOpen(li, !collapsed.includes(id));
-    });
-
-    document.querySelectorAll('.tf-tree-toggle').forEach((toggle) => {
-      toggle.addEventListener('click', (event) => {
-        event.preventDefault();
-        event.stopPropagation();
-
-        const li = toggle.closest('.tf-tree-page, .tf-tree-node.has-children');
-        const isOpen = li && li.classList.contains('is-open');
-
-        setOpen(li, !isOpen);
-      });
-    });
-
-    const expandAll = document.getElementById('tfExpandAll');
-    const collapseAll = document.getElementById('tfCollapseAll');
-
-    if (expandAll) {
-      expandAll.addEventListener('click', () => {
-        collapsed = [];
-        document.querySelectorAll('.tf-tree-page, .tf-tree-node.has-children').forEach((li) => setOpen(li, true));
-        saveState();
-      });
-    }
-
-    if (collapseAll) {
-      collapseAll.addEventListener('click', () => {
-        collapsed = [];
-        document.querySelectorAll('.tf-tree-node.has-children').forEach((li) => setOpen(li, false));
-        saveState();
-      });
-    }
-  }
-
-  initCollapsibleTree();
 })();
+JS);
+
+    $rendererFile = $root . '/app/Modules/Explorer/ExplorerRenderer.php';
+
+    if (file_exists($rendererFile)) {
+        $renderer = file_get_contents($rendererFile);
+
+        $renderer = str_replace(
+            '<script src="/assets/js/explorer.js"></script>',
+            '<script src="/assets/js/explorer.js?v=017"></script>',
+            $renderer
+        );
+
+        $renderer = str_replace(
+            '<script src="/assets/js/explorer.js?v=016"></script>',
+            '<script src="/assets/js/explorer.js?v=017"></script>',
+            $renderer
+        );
+
+        $write($rendererFile, $renderer);
+    }
+
+    $cssFile = $root . '/public/assets/css/explorer.css';
+
+    if (file_exists($cssFile)) {
+        $css = file_get_contents($cssFile);
+
+        if (!str_contains($css, '.tf-notice-root')) {
+            $css .= <<<'CSS_APPEND'
+
+.tf-notice-root {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 9999;
+  display: grid;
+  gap: .6rem;
+  max-width: min(420px, calc(100vw - 2rem));
+}
+
+.tf-toast {
+  padding: .85rem 1rem;
+  border-radius: .9rem;
+  color: #fff;
+  font-weight: 800;
+  box-shadow: 0 .7rem 2rem rgba(0, 0, 0, .18);
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity .25s ease, transform .25s ease;
+}
+
+.tf-toast.hide {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.tf-toast-success {
+  background: var(--tf-green);
+}
+
+.tf-toast-error {
+  background: #9b1c1c;
+}
+CSS_APPEND;
+
+            $write($cssFile, $css);
+        }
+    }
+
+    $write($root . '/docs/fix-async-text-save.md', <<<'MD'
+# Fix Async Text Save
+
+Patch 017 behebt den alten Reload beim Speichern.
+
+## Wichtig
+
+Wenn nach dem Patch weiterhin die Meldung
+
+```text
+Gespeichert. Seite wird neu geladen ...
+```
+
+erscheint, lädt der Browser noch ein altes JavaScript.
+
+Dann hart neu laden:
+
+```text
+Strg + F5
+```
+
+oder prüfen, ob im Quellcode steht:
+
+```html
+/assets/js/explorer.js?v=017
+```
+
+## Test
+
+```text
+/explorer?workspace=draft
+```
+
+TextNode wählen, Text ändern, speichern.
+
+Erwartung:
+
+- kein Reload
+- Toast "TextNode im Draft gespeichert."
+- Fokus bleibt im Textfeld
+- `storage/workspaces/draft/pages/home.json` enthält den neuen Text
+
+MD);
+
+    $log('Patch 017 Fix Async Text Save fertig');
+};

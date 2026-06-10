@@ -1,9 +1,40 @@
 <?php
 declare(strict_types=1);
 
+/**
+ * TreeForge CMS - Patch 024
+ * Render CSS Nodes as Styles
+ *
+ * - CssNode wird nicht mehr als sichtbarer Content-Block gerendert
+ * - CSS Nodes werden rekursiv gesammelt
+ * - CSS wird im <head> als <style> ausgegeben
+ * - Explorer/Inspector bleiben unverändert
+ */
+
+return function (string $root, callable $log): void {
+
+    $write = function (string $file, string $content) use ($log): void {
+        if (!is_dir(dirname($file))) {
+            mkdir(dirname($file), 0775, true);
+        }
+
+        if (file_exists($file)) {
+            copy($file, $file . '.bak-' . date('Ymd-His'));
+            $log("Backup erstellt: {$file}");
+        }
+
+        file_put_contents($file, $content);
+        $log("Datei geschrieben: {$file}");
+    };
+
+    $log('Patch 024 Render CSS Nodes as Styles gestartet');
+
+    $write($root . '/app/Renderer/HtmlRenderer.php', <<<'PHP'
+<?php
+declare(strict_types=1);
+
 namespace TreeForge\Renderer;
 
-use League\CommonMark\CommonMarkConverter;
 use TreeForge\Core\Config;
 use TreeForge\Core\Node;
 use TreeForge\Core\Page;
@@ -18,8 +49,6 @@ use TreeForge\Nodes\TextNode;
 class HtmlRenderer
 {
     protected string $inlineCss = '';
-
-    protected ?CommonMarkConverter $markdownConverter = null;
 
     public function render(Page $page, Config $config): string
     {
@@ -182,29 +211,63 @@ HTML;
             return;
         }
 
-        $this->inlineCss .= "\n/* CSS Node: " . $node->get('id', 'unknown') . " */\n" . $css . "\n";
+        $this->inlineCss .= "\n/* CSS Node: " . $node->id() . " */\n" . $css . "\n";
     }
 
     protected function renderMarkdown(MarkdownNode $node): string
     {
-        $html = $this->markdown()->convert($node->content())->getContent();
+        $content = nl2br(htmlspecialchars($node->content(), ENT_QUOTES, 'UTF-8'));
 
         return <<<HTML
 <div class="tf-node tf-node-markdown">
-  {$html}
+  {$content}
 </div>
 HTML;
     }
-
-    protected function markdown(): CommonMarkConverter
-    {
-        if ($this->markdownConverter === null) {
-            $this->markdownConverter = new CommonMarkConverter([
-                'html_input' => 'strip',
-                'allow_unsafe_links' => false,
-            ]);
-        }
-
-        return $this->markdownConverter;
-    }
 }
+PHP);
+
+    $write($root . '/docs/css-nodes-as-style.md', <<<'MD'
+# CSS Nodes as Style
+
+Patch 024 ändert das Rendering von CSS Nodes.
+
+## Vorher
+
+CSS Nodes wurden sichtbar als Codeblock ausgegeben.
+
+```html
+<pre>.demo { color: red; }</pre>
+```
+
+## Jetzt
+
+CSS Nodes werden gesammelt und im `<head>` als `<style>` eingebunden.
+
+```html
+<style>
+/* CSS Node: node_css_demo */
+.demo { color: red; }
+</style>
+```
+
+## Wichtig
+
+Der Explorer zeigt CSS Nodes weiterhin im Tree und Inspector.
+
+Auf der gerenderten Seite sind CSS Nodes nicht mehr als sichtbarer Content-Block vorhanden.
+
+## Später
+
+Mögliche Erweiterungen:
+
+- CSS Scope pro Teilbaum
+- CSS Validierung
+- CSS Editor mit CodeMirror
+- CSS Bundling
+- CSS-Minifizierung
+
+MD);
+
+    $log('Patch 024 Render CSS Nodes as Styles fertig');
+};

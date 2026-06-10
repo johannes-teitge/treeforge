@@ -426,3 +426,100 @@ pre {
   .tf-explorer-shell { grid-template-columns: 1fr; }
   .tf-panel { min-height: auto; }
 }
+.tf-notice-root {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 9999;
+  display: grid;
+  gap: .6rem;
+  max-width: min(420px, calc(100vw - 2rem));
+}
+
+.tf-toast {
+  padding: .85rem 1rem;
+  border-radius: .9rem;
+  color: #fff;
+  font-weight: 800;
+  box-shadow: 0 .7rem 2rem rgba(0, 0, 0, .18);
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity .25s ease, transform .25s ease;
+}
+
+.tf-toast.hide {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.tf-toast-success {
+  background: var(--tf-green);
+}
+
+.tf-toast-error {
+  background: #9b1c1c;
+}
+.tf-workflow-link.preview {
+  background: var(--tf-gold);
+  color: #fff;
+}
+
+.tf-workflow-link.preview:hover {
+  filter: brightness(.95);
+}
+.tf-tree-toolbar {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  margin: 0 0 .85rem;
+}
+
+.tf-tree-tool {
+  border: 1px solid rgba(30, 61, 28, .18);
+  background: #fff;
+  color: var(--tf-green);
+  border-radius: .7rem;
+  padding: .45rem .7rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.tf-tree-row {
+  display: flex;
+  align-items: stretch;
+  gap: .35rem;
+  width: 100%;
+}
+
+.tf-tree-toggle {
+  flex: 0 0 2rem;
+  border: 1px solid rgba(30, 61, 28, .12);
+  background: #fff;
+  color: var(--tf-green);
+  border-radius: .65rem;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.tf-tree-page > .tf-tree-row {
+  align-items: center;
+  margin-bottom: .65rem;
+}
+
+.tf-tree-page > .tf-tree-row .tf-tree-label {
+  margin-bottom: 0;
+}
+
+.tf-tree-node.has-children > .tf-tree-row > .tf-tree-node-button {
+  flex: 1 1 auto;
+}
+
+.tf-tree-node.is-closed > .tf-tree-children,
+.tf-tree-page.is-closed > .tf-tree-children {
+  display: none;
+}
+
+.tf-tree-node.is-closed > .tf-tree-row > .tf-tree-node-button,
+.tf-tree-page.is-closed > .tf-tree-row {
+  opacity: .95;
+}

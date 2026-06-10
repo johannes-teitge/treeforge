@@ -6,16 +6,11 @@ namespace TreeForge\Nodes;
 use TreeForge\Core\Node;
 use TreeForge\Core\NodeFactory;
 
-class ColumnsNode extends Node
+class ColumnNode extends Node
 {
-    public function count(): int
+    public function width(): string
     {
-        return (int)($this->data['settings']['columns'] ?? count($this->data['children'] ?? []));
-    }
-
-    public function gap(): string
-    {
-        return (string)($this->data['settings']['gap'] ?? '1rem');
+        return (string)($this->data['width'] ?? 'auto');
     }
 
     public function children(): array

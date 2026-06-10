@@ -116,6 +116,8 @@ class ExplorerRenderer
         </div>
       </div>
 
+      <div class="tf-tree-toolbar"><button type="button" class="tf-tree-tool" id="tfExpandAll">Alle aufklappen</button><button type="button" class="tf-tree-tool" id="tfCollapseAll">Alle zuklappen</button></div>
+
       {$tree}
 
       <footer class="tf-panel-footer">
@@ -192,7 +194,7 @@ class ExplorerRenderer
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-css.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-markdown.min.js"></script>
-  <script src="/assets/js/explorer.js"></script>
+  <script src="/assets/js/explorer.js?v=023"></script>
 </body>
 </html>
 HTML;
@@ -226,12 +228,26 @@ HTML;
         if ($selectedArchiveVersion !== null && $selectedArchiveVersion !== '') {
             $version = htmlspecialchars($selectedArchiveVersion, ENT_QUOTES, 'UTF-8');
 
-            return '<button type="button" class="tf-workflow-button danger" data-archive-restore="' . $version . '">Archivversion wiederherstellen</button><a class="tf-workflow-link secondary" href="/explorer?workspace=published">Zurück zu Published</a>';
+            return ''
+                . '<a class="tf-workflow-link preview" href="/explorer?archive=' . $version . '&page=home" target="_blank" rel="noopener">Archiv ansehen</a>'
+                . '<button type="button" class="tf-workflow-button danger" data-archive-restore="' . $version . '">Archivversion wiederherstellen</button>'
+                . '<a class="tf-workflow-link secondary" href="/explorer?workspace=published">Zurück zu Published</a>';
         }
 
         return match ($workspace) {
-            'draft' => '<button type="button" class="tf-workflow-button" data-workflow-action="send_to_review">In Review senden</button>',
-            'review' => '<button type="button" class="tf-workflow-button" data-workflow-action="publish_review">Freigeben & veröffentlichen</button><button type="button" class="tf-workflow-button secondary" data-workflow-action="return_to_draft">Zurück an Draft</button>',
+            'published' => ''
+                . '<a class="tf-workflow-link preview" href="/" target="_blank" rel="noopener">Live ansehen</a>'
+                . '<a class="tf-workflow-link secondary" href="/explorer?workspace=draft">Draft bearbeiten</a>',
+
+            'draft' => ''
+                . '<a class="tf-workflow-link preview" href="/?workspace=draft" target="_blank" rel="noopener">Draft Preview</a>'
+                . '<button type="button" class="tf-workflow-button" data-workflow-action="send_to_review">In Review senden</button>',
+
+            'review' => ''
+                . '<a class="tf-workflow-link preview" href="/?workspace=review" target="_blank" rel="noopener">Review Preview</a>'
+                . '<button type="button" class="tf-workflow-button" data-workflow-action="publish_review">Freigeben & veröffentlichen</button>'
+                . '<button type="button" class="tf-workflow-button secondary" data-workflow-action="return_to_draft">Zurück an Draft</button>',
+
             default => '<a class="tf-workflow-link" href="/explorer?workspace=draft">Draft bearbeiten</a>',
         };
     }

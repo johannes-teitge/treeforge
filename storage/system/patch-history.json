@@ -541,5 +541,357 @@
                 "message": "Patch 015 Archive Explorer + Rollback fertig"
             }
         ]
+    },
+    "patch-017-fix-async-text-save.php": {
+        "executed_at": "2026-06-10T00:52:42+00:00",
+        "status": "ok",
+        "duration_ms": 18,
+        "messages": [
+            {
+                "time": "2026-06-10T00:52:42+00:00",
+                "message": "Patch 017 Fix Async Text Save gestartet"
+            },
+            {
+                "time": "2026-06-10T00:52:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/PageEditor.php"
+            },
+            {
+                "time": "2026-06-10T00:52:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/PageEditor.php"
+            },
+            {
+                "time": "2026-06-10T00:52:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/api/node/save-text.php"
+            },
+            {
+                "time": "2026-06-10T00:52:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/api/node/save-text.php"
+            },
+            {
+                "time": "2026-06-10T00:52:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer.js"
+            },
+            {
+                "time": "2026-06-10T00:52:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer.js"
+            },
+            {
+                "time": "2026-06-10T00:52:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-10T00:52:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-10T00:52:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer.css"
+            },
+            {
+                "time": "2026-06-10T00:52:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer.css"
+            },
+            {
+                "time": "2026-06-10T00:52:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/fix-async-text-save.md"
+            },
+            {
+                "time": "2026-06-10T00:52:42+00:00",
+                "message": "Patch 017 Fix Async Text Save fertig"
+            }
+        ]
+    },
+    "patch-019-robust-text-save-debug.php": {
+        "executed_at": "2026-06-10T01:09:14+00:00",
+        "status": "ok",
+        "duration_ms": 13,
+        "messages": [
+            {
+                "time": "2026-06-10T01:09:14+00:00",
+                "message": "Patch 019 Robust Text Save Debug gestartet"
+            },
+            {
+                "time": "2026-06-10T01:09:14+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/PageEditor.php"
+            },
+            {
+                "time": "2026-06-10T01:09:14+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/PageEditor.php"
+            },
+            {
+                "time": "2026-06-10T01:09:14+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/api/node/save-text.php"
+            },
+            {
+                "time": "2026-06-10T01:09:14+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/api/node/save-text.php"
+            },
+            {
+                "time": "2026-06-10T01:09:14+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-10T01:09:14+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-10T01:09:14+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/robust-text-save-debug.md"
+            },
+            {
+                "time": "2026-06-10T01:09:14+00:00",
+                "message": "Patch 019 Robust Text Save Debug fertig"
+            }
+        ]
+    },
+    "patch-020-preview-buttons.php": {
+        "executed_at": "2026-06-10T01:16:59+00:00",
+        "status": "ok",
+        "duration_ms": 10,
+        "messages": [
+            {
+                "time": "2026-06-10T01:16:59+00:00",
+                "message": "Patch 020 Preview Buttons gestartet"
+            },
+            {
+                "time": "2026-06-10T01:16:59+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-10T01:16:59+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-10T01:16:59+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer.css"
+            },
+            {
+                "time": "2026-06-10T01:16:59+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer.css"
+            },
+            {
+                "time": "2026-06-10T01:16:59+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/preview-buttons.md"
+            },
+            {
+                "time": "2026-06-10T01:16:59+00:00",
+                "message": "Patch 020 Preview Buttons fertig"
+            }
+        ]
+    },
+    "patch-021-columns-tree-alpha.php": {
+        "executed_at": "2026-06-10T01:29:01+00:00",
+        "status": "ok",
+        "duration_ms": 19,
+        "messages": [
+            {
+                "time": "2026-06-10T01:29:01+00:00",
+                "message": "Patch 021 Columns Tree Alpha gestartet"
+            },
+            {
+                "time": "2026-06-10T01:29:01+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Nodes/ColumnNode.php"
+            },
+            {
+                "time": "2026-06-10T01:29:01+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Nodes/ColumnsNode.php"
+            },
+            {
+                "time": "2026-06-10T01:29:01+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Nodes/ColumnsNode.php"
+            },
+            {
+                "time": "2026-06-10T01:29:01+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/bootstrap.php"
+            },
+            {
+                "time": "2026-06-10T01:29:01+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/bootstrap.php"
+            },
+            {
+                "time": "2026-06-10T01:29:01+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/NodeInspector.php"
+            },
+            {
+                "time": "2026-06-10T01:29:01+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/NodeInspector.php"
+            },
+            {
+                "time": "2026-06-10T01:29:01+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Renderer/HtmlRenderer.php"
+            },
+            {
+                "time": "2026-06-10T01:29:01+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Renderer/HtmlRenderer.php"
+            },
+            {
+                "time": "2026-06-10T01:29:01+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/treeforge.css"
+            },
+            {
+                "time": "2026-06-10T01:29:01+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/treeforge.css"
+            },
+            {
+                "time": "2026-06-10T01:29:01+00:00",
+                "message": "Columns Demo in Draft ergänzt: C:\\laragon_new\\www\\treeforge/storage/workspaces/draft/pages/home.json"
+            },
+            {
+                "time": "2026-06-10T01:29:01+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/columns-tree-alpha.md"
+            },
+            {
+                "time": "2026-06-10T01:29:01+00:00",
+                "message": "Patch 021 Columns Tree Alpha fertig"
+            }
+        ]
+    },
+    "patch-022-collapsible-tree.php": {
+        "executed_at": "2026-06-10T01:35:25+00:00",
+        "status": "ok",
+        "duration_ms": 16,
+        "messages": [
+            {
+                "time": "2026-06-10T01:35:25+00:00",
+                "message": "Patch 022 Collapsible Tree gestartet"
+            },
+            {
+                "time": "2026-06-10T01:35:25+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerTree.php"
+            },
+            {
+                "time": "2026-06-10T01:35:25+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerTree.php"
+            },
+            {
+                "time": "2026-06-10T01:35:25+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-10T01:35:25+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-10T01:35:25+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer.js"
+            },
+            {
+                "time": "2026-06-10T01:35:25+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer.js"
+            },
+            {
+                "time": "2026-06-10T01:35:25+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer.css"
+            },
+            {
+                "time": "2026-06-10T01:35:25+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer.css"
+            },
+            {
+                "time": "2026-06-10T01:35:25+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/collapsible-tree.md"
+            },
+            {
+                "time": "2026-06-10T01:35:25+00:00",
+                "message": "Patch 022 Collapsible Tree fertig"
+            }
+        ]
+    },
+    "patch-023-tree-default-collapse.php": {
+        "executed_at": "2026-06-10T01:40:54+00:00",
+        "status": "ok",
+        "duration_ms": 10,
+        "messages": [
+            {
+                "time": "2026-06-10T01:40:54+00:00",
+                "message": "Patch 023 Tree Default Collapse gestartet"
+            },
+            {
+                "time": "2026-06-10T01:40:54+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer.js"
+            },
+            {
+                "time": "2026-06-10T01:40:54+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer.js"
+            },
+            {
+                "time": "2026-06-10T01:40:54+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-10T01:40:54+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-10T01:40:54+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/tree-default-collapse.md"
+            },
+            {
+                "time": "2026-06-10T01:40:54+00:00",
+                "message": "Patch 023 Tree Default Collapse fertig"
+            }
+        ]
+    },
+    "patch-024-css-nodes-as-style.php": {
+        "executed_at": "2026-06-10T01:51:35+00:00",
+        "status": "ok",
+        "duration_ms": 6,
+        "messages": [
+            {
+                "time": "2026-06-10T01:51:35+00:00",
+                "message": "Patch 024 Render CSS Nodes as Styles gestartet"
+            },
+            {
+                "time": "2026-06-10T01:51:35+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Renderer/HtmlRenderer.php"
+            },
+            {
+                "time": "2026-06-10T01:51:35+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Renderer/HtmlRenderer.php"
+            },
+            {
+                "time": "2026-06-10T01:51:35+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/css-nodes-as-style.md"
+            },
+            {
+                "time": "2026-06-10T01:51:35+00:00",
+                "message": "Patch 024 Render CSS Nodes as Styles fertig"
+            }
+        ]
+    },
+    "patch-025-commonmark-rendering.php": {
+        "executed_at": "2026-06-10T13:46:43+00:00",
+        "status": "ok",
+        "duration_ms": 9,
+        "messages": [
+            {
+                "time": "2026-06-10T13:46:43+00:00",
+                "message": "Patch 025 CommonMark Markdown Rendering gestartet"
+            },
+            {
+                "time": "2026-06-10T13:46:43+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Renderer/HtmlRenderer.php"
+            },
+            {
+                "time": "2026-06-10T13:46:43+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Renderer/HtmlRenderer.php"
+            },
+            {
+                "time": "2026-06-10T13:46:43+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/treeforge.css"
+            },
+            {
+                "time": "2026-06-10T13:46:43+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/treeforge.css"
+            },
+            {
+                "time": "2026-06-10T13:46:43+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/commonmark-rendering.md"
+            },
+            {
+                "time": "2026-06-10T13:46:43+00:00",
+                "message": "Patch 025 CommonMark Markdown Rendering fertig"
+            }
+        ]
     }
 }

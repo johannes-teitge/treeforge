@@ -7,40 +7,56 @@ use RuntimeException;
 
 class PageEditor
 {
-    public static function updateTextNodeContent(array &$pageData, string $nodeId, string $content): bool
+    public static function updateTextNodeContent(array &$pageData, string $nodeId, string $content): array
     {
-        foreach ($pageData['children'] ?? [] as &$node) {
+        if (!isset($pageData['children']) || !is_array($pageData['children'])) {
+            throw new RuntimeException('Page has no children array');
+        }
+
+        foreach ($pageData['children'] as $index => $node) {
             if (!is_array($node)) {
                 continue;
             }
 
-            if (self::updateTextNodeRecursive($node, $nodeId, $content)) {
-                return true;
+            $updatedNode = self::updateTextNodeRecursive($pageData['children'][$index], $nodeId, $content);
+
+            if ($updatedNode !== null) {
+                return $updatedNode;
             }
         }
 
-        return false;
+        throw new RuntimeException("Node not found: {$nodeId}");
     }
 
-    protected static function updateTextNodeRecursive(array &$node, string $nodeId, string $content): bool
+    protected static function updateTextNodeRecursive(array &$node, string $nodeId, string $content): ?array
     {
-        if (($node['id'] ?? '') === $nodeId) {
-            if (($node['type'] ?? '') !== 'text') {
+        if ((string)($node['id'] ?? '') === $nodeId) {
+            if ((string)($node['type'] ?? '') !== 'text') {
                 throw new RuntimeException("Node is not editable as text: {$nodeId}");
             }
 
             $node['content'] = $content;
             $node['updated_at'] = date('c');
 
-            return true;
+            return $node;
         }
 
-        foreach ($node['children'] ?? [] as &$child) {
-            if (is_array($child) && self::updateTextNodeRecursive($child, $nodeId, $content)) {
-                return true;
+        if (!isset($node['children']) || !is_array($node['children'])) {
+            return null;
+        }
+
+        foreach ($node['children'] as $index => $child) {
+            if (!is_array($child)) {
+                continue;
+            }
+
+            $updatedNode = self::updateTextNodeRecursive($node['children'][$index], $nodeId, $content);
+
+            if ($updatedNode !== null) {
+                return $updatedNode;
             }
         }
 
-        return false;
+        return null;
     }
 }

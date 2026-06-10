@@ -14,7 +14,17 @@ abstract class Node
 
     public function type(): string
     {
-        return $this->data['type'] ?? 'unknown';
+        return (string)($this->data['type'] ?? 'unknown');
+    }
+
+    public function id(): string
+    {
+        return (string)($this->data['id'] ?? '');
+    }
+
+    public function get(string $key, mixed $default = null): mixed
+    {
+        return $this->data[$key] ?? $default;
     }
 
     public function data(): array
