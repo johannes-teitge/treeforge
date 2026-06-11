@@ -1,12 +1,24 @@
 /vendor/
 composer.phar
 
-# Affinity
-*.afdesign~lock~
+# Runtime / Logs
+/storage/logs/
+/storage/cache/
+
+# Local exports
+*.zip
 
 # Patch Backups
 *.bak-*
 
-# Windows
+# Affinity
+*.afdesign~lock~
+
+# Windows / macOS
 Thumbs.db
 desktop.ini
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
