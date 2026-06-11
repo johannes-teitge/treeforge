@@ -1,0 +1,26 @@
+{
+    "id": "home",
+    "type": "page",
+    "title": "Startseite",
+    "children": [
+        {
+            "id": "node_hero",
+            "type": "text",
+            "content": "Welcome to TreeForge CMS"
+        },
+        {
+            "id": "node_image_demo",
+            "type": "image",
+            "src": "/assets/img/treeforge-demo.svg",
+            "alt": "TreeForge Demo Icon",
+            "caption": "ImageNode rendered from JSON."
+        },
+        {
+            "id": "node_button_demo",
+            "type": "button",
+            "label": "TreeForge starten",
+            "url": "#",
+            "variant": "primary"
+        }
+    ]
+}

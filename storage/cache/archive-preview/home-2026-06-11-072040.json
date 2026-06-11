@@ -1,0 +1,42 @@
+{
+    "id": "home",
+    "type": "page",
+    "title": "Startseite",
+    "children": [
+        {
+            "id": "node_hero",
+            "type": "text",
+            "content": "Welcome to TreeForge CMS"
+        },
+        {
+            "id": "node_image_demo",
+            "type": "image",
+            "src": "/assets/img/treeforge-demo.svg",
+            "alt": "TreeForge Demo Icon",
+            "caption": "ImageNode rendered from JSON."
+        },
+        {
+            "id": "node_button_demo",
+            "type": "button",
+            "label": "TreeForge starten",
+            "url": "#",
+            "variant": "primary"
+        },
+        {
+            "id": "node_css_demo",
+            "type": "css",
+            "content": ".tf-demo {\n  color: #1E3D1C;\n  border-left: 4px solid #D88A22;\n  padding: 1rem;\n}"
+        },
+        {
+            "id": "node_markdown_demo",
+            "type": "markdown",
+            "content": "# TreeForge Markdown\n\nDas ist **Markdown** als eigener Node-Typ.\n\n- Struktur\\n- Content\n- Layers"
+        }
+    ],
+    "_workflow": {
+        "status": "published",
+        "from": "review",
+        "to": "published",
+        "created_at": "2026-06-11T07:20:25+00:00"
+    }
+}

@@ -968,5 +968,263 @@
                 "message": "Patch 026 Markdown Inspector Preview + Editor fertig"
             }
         ]
+    },
+    "patch-027-node-creation-wizard.php": {
+        "executed_at": "2026-06-10T14:25:57+00:00",
+        "status": "ok",
+        "duration_ms": 17,
+        "messages": [
+            {
+                "time": "2026-06-10T14:25:57+00:00",
+                "message": "Patch 027 Node Creation Wizard gestartet"
+            },
+            {
+                "time": "2026-06-10T14:25:57+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/NodeCreator.php"
+            },
+            {
+                "time": "2026-06-10T14:25:57+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/api/node/create.php"
+            },
+            {
+                "time": "2026-06-10T14:25:57+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-10T14:25:57+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-10T14:25:57+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer.js"
+            },
+            {
+                "time": "2026-06-10T14:25:57+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer.js"
+            },
+            {
+                "time": "2026-06-10T14:25:57+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer.css"
+            },
+            {
+                "time": "2026-06-10T14:25:57+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer.css"
+            },
+            {
+                "time": "2026-06-10T14:25:57+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/node-creation-wizard.md"
+            },
+            {
+                "time": "2026-06-10T14:25:57+00:00",
+                "message": "Patch 027 Node Creation Wizard fertig"
+            }
+        ]
+    },
+    "patch-028-fix-node-wizard-injection.php": {
+        "executed_at": "2026-06-10T14:36:44+00:00",
+        "status": "ok",
+        "duration_ms": 7,
+        "messages": [
+            {
+                "time": "2026-06-10T14:36:44+00:00",
+                "message": "Patch 028 Fix Node Wizard Injection gestartet"
+            },
+            {
+                "time": "2026-06-10T14:36:44+00:00",
+                "message": "+ Node Button bereits vorhanden."
+            },
+            {
+                "time": "2026-06-10T14:36:44+00:00",
+                "message": "Node Wizard Modal bereits vorhanden."
+            },
+            {
+                "time": "2026-06-10T14:36:44+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-10T14:36:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-10T14:36:44+00:00",
+                "message": "Node Wizard JS bereits vorhanden."
+            },
+            {
+                "time": "2026-06-10T14:36:44+00:00",
+                "message": "Node Wizard CSS bereits vorhanden."
+            },
+            {
+                "time": "2026-06-10T14:36:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/fix-node-wizard-injection.md"
+            },
+            {
+                "time": "2026-06-10T14:36:44+00:00",
+                "message": "Patch 028 Fix Node Wizard Injection fertig"
+            }
+        ]
+    },
+    "patch-029-fix-node-wizard-init-timing.php": {
+        "executed_at": "2026-06-10T14:52:33+00:00",
+        "status": "ok",
+        "duration_ms": 9,
+        "messages": [
+            {
+                "time": "2026-06-10T14:52:33+00:00",
+                "message": "Patch 029 Fix Node Wizard Init Timing gestartet"
+            },
+            {
+                "time": "2026-06-10T14:52:33+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer.js"
+            },
+            {
+                "time": "2026-06-10T14:52:33+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer.js"
+            },
+            {
+                "time": "2026-06-10T14:52:33+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-10T14:52:33+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-10T14:52:33+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/fix-node-wizard-init-timing.md"
+            },
+            {
+                "time": "2026-06-10T14:52:33+00:00",
+                "message": "Patch 029 Fix Node Wizard Init Timing fertig"
+            }
+        ]
+    },
+    "patch-030-fix-wizard-hidden-columns-options.php": {
+        "executed_at": "2026-06-10T15:24:25+00:00",
+        "status": "ok",
+        "duration_ms": 11,
+        "messages": [
+            {
+                "time": "2026-06-10T15:24:25+00:00",
+                "message": "Patch 030 Fix Wizard Hidden Columns Options gestartet"
+            },
+            {
+                "time": "2026-06-10T15:24:25+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer.css"
+            },
+            {
+                "time": "2026-06-10T15:24:25+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer.css"
+            },
+            {
+                "time": "2026-06-10T15:24:25+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer.js"
+            },
+            {
+                "time": "2026-06-10T15:24:25+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer.js"
+            },
+            {
+                "time": "2026-06-10T15:24:25+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-10T15:24:25+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-10T15:24:25+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/fix-wizard-hidden-columns-options.md"
+            },
+            {
+                "time": "2026-06-10T15:24:25+00:00",
+                "message": "Patch 030 Fix Wizard Hidden Columns Options fertig"
+            }
+        ]
+    },
+    "patch-031-treeforge-core-foundation.php": {
+        "executed_at": "2026-06-10T23:16:25+00:00",
+        "status": "ok",
+        "duration_ms": 14,
+        "messages": [
+            {
+                "time": "2026-06-10T23:16:25+00:00",
+                "message": "Patch 031 TreeForge Core Foundation gestartet"
+            },
+            {
+                "time": "2026-06-10T23:16:25+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/TreeForge/AbstractTreeForgeNode.php"
+            },
+            {
+                "time": "2026-06-10T23:16:25+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/TreeForge/NodeCapabilities.php"
+            },
+            {
+                "time": "2026-06-10T23:16:25+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/TreeForge/NodeManifest.php"
+            },
+            {
+                "time": "2026-06-10T23:16:25+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/TreeForge/NodeRegistry.php"
+            },
+            {
+                "time": "2026-06-10T23:16:25+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/TreeForge/NodeValidator.php"
+            },
+            {
+                "time": "2026-06-10T23:16:25+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/TreeForge/AssetCollector.php"
+            },
+            {
+                "time": "2026-06-10T23:16:25+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/TreeForge/EditorSchemaBuilder.php"
+            },
+            {
+                "time": "2026-06-10T23:16:25+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/TreeForge/Nodes/DemoNode.php"
+            },
+            {
+                "time": "2026-06-10T23:16:25+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/12-core-foundation.md"
+            },
+            {
+                "time": "2026-06-10T23:16:25+00:00",
+                "message": "Patch 031 TreeForge Core Foundation fertig"
+            }
+        ]
+    },
+    "patch-032-fix-archive-frontend-preview.php": {
+        "executed_at": "2026-06-11T07:31:47+00:00",
+        "status": "ok",
+        "duration_ms": 7,
+        "messages": [
+            {
+                "time": "2026-06-11T07:31:47+00:00",
+                "message": "Patch 032 Fix Archive Frontend Preview gestartet"
+            },
+            {
+                "time": "2026-06-11T07:31:47+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/index.php"
+            },
+            {
+                "time": "2026-06-11T07:31:47+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/index.php"
+            },
+            {
+                "time": "2026-06-11T07:31:47+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-11T07:31:47+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-11T07:31:47+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/archive-frontend-preview.md"
+            },
+            {
+                "time": "2026-06-11T07:31:47+00:00",
+                "message": "Patch 032 Fix Archive Frontend Preview fertig"
+            }
+        ]
     }
 }

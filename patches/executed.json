@@ -82,5 +82,29 @@
     "patch-026-markdown-backend-editor.php": {
         "executed_at": "2026-06-10T13:58:45+00:00",
         "status": "ok"
+    },
+    "patch-027-node-creation-wizard.php": {
+        "executed_at": "2026-06-10T14:25:57+00:00",
+        "status": "ok"
+    },
+    "patch-028-fix-node-wizard-injection.php": {
+        "executed_at": "2026-06-10T14:36:44+00:00",
+        "status": "ok"
+    },
+    "patch-029-fix-node-wizard-init-timing.php": {
+        "executed_at": "2026-06-10T14:52:33+00:00",
+        "status": "ok"
+    },
+    "patch-030-fix-wizard-hidden-columns-options.php": {
+        "executed_at": "2026-06-10T15:24:25+00:00",
+        "status": "ok"
+    },
+    "patch-031-treeforge-core-foundation.php": {
+        "executed_at": "2026-06-10T23:16:25+00:00",
+        "status": "ok"
+    },
+    "patch-032-fix-archive-frontend-preview.php": {
+        "executed_at": "2026-06-11T07:31:47+00:00",
+        "status": "ok"
     }
 }

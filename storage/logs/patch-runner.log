@@ -551,3 +551,250 @@
 [2026-06-10 13:58:45] Patch 026 Markdown Inspector Preview + Editor fertig
 [2026-06-10 13:58:45] Fertig: patch-026-markdown-backend-editor.php (21 ms)
 [2026-06-10 13:58:45] Patch Runner beendet
+[2026-06-10 14:25:57] Patch Runner gestartet
+[2026-06-10 14:25:57] Übersprungen: patch-003-image-node.php
+[2026-06-10 14:25:57] Übersprungen: patch-004-brand-assets.php
+[2026-06-10 14:25:57] Übersprungen: patch-005-enhanced-patch-history.php
+[2026-06-10 14:25:57] Übersprungen: patch-006-node-registry.php
+[2026-06-10 14:25:57] Übersprungen: patch-007-workspace-layer.php
+[2026-06-10 14:25:57] Übersprungen: patch-009-explorer-foundation.php
+[2026-06-10 14:25:57] Übersprungen: patch-010-inspector-pro.php
+[2026-06-10 14:25:57] Übersprungen: patch-011-code-markdown-inspector.php
+[2026-06-10 14:25:57] Übersprungen: patch-012-workspace-auto-create-page (1).php
+[2026-06-10 14:25:57] Übersprungen: patch-013-text-node-editing.php
+[2026-06-10 14:25:57] Übersprungen: patch-014-review-workflow.php
+[2026-06-10 14:25:57] Übersprungen: patch-015-archive-rollback.php
+[2026-06-10 14:25:57] Übersprungen: patch-017-fix-async-text-save.php
+[2026-06-10 14:25:57] Übersprungen: patch-019-robust-text-save-debug.php
+[2026-06-10 14:25:57] Übersprungen: patch-020-preview-buttons.php
+[2026-06-10 14:25:57] Übersprungen: patch-021-columns-tree-alpha.php
+[2026-06-10 14:25:57] Übersprungen: patch-022-collapsible-tree.php
+[2026-06-10 14:25:57] Übersprungen: patch-023-tree-default-collapse.php
+[2026-06-10 14:25:57] Übersprungen: patch-024-css-nodes-as-style.php
+[2026-06-10 14:25:57] Übersprungen: patch-025-commonmark-rendering.php
+[2026-06-10 14:25:57] Übersprungen: patch-026-markdown-backend-editor.php
+[2026-06-10 14:25:57] Starte: patch-027-node-creation-wizard.php
+[2026-06-10 14:25:57] Patch 027 Node Creation Wizard gestartet
+[2026-06-10 14:25:57] Datei geschrieben: C:\laragon_new\www\treeforge/app/Core/NodeCreator.php
+[2026-06-10 14:25:57] Datei geschrieben: C:\laragon_new\www\treeforge/public/api/node/create.php
+[2026-06-10 14:25:57] Backup erstellt: C:\laragon_new\www\treeforge/app/Modules/Explorer/ExplorerRenderer.php
+[2026-06-10 14:25:57] Datei geschrieben: C:\laragon_new\www\treeforge/app/Modules/Explorer/ExplorerRenderer.php
+[2026-06-10 14:25:57] Backup erstellt: C:\laragon_new\www\treeforge/public/assets/js/explorer.js
+[2026-06-10 14:25:57] Datei geschrieben: C:\laragon_new\www\treeforge/public/assets/js/explorer.js
+[2026-06-10 14:25:57] Backup erstellt: C:\laragon_new\www\treeforge/public/assets/css/explorer.css
+[2026-06-10 14:25:57] Datei geschrieben: C:\laragon_new\www\treeforge/public/assets/css/explorer.css
+[2026-06-10 14:25:57] Datei geschrieben: C:\laragon_new\www\treeforge/docs/node-creation-wizard.md
+[2026-06-10 14:25:57] Patch 027 Node Creation Wizard fertig
+[2026-06-10 14:25:57] Fertig: patch-027-node-creation-wizard.php (17 ms)
+[2026-06-10 14:25:57] Patch Runner beendet
+[2026-06-10 14:36:44] Patch Runner gestartet
+[2026-06-10 14:36:44] Übersprungen: patch-003-image-node.php
+[2026-06-10 14:36:44] Übersprungen: patch-004-brand-assets.php
+[2026-06-10 14:36:44] Übersprungen: patch-005-enhanced-patch-history.php
+[2026-06-10 14:36:44] Übersprungen: patch-006-node-registry.php
+[2026-06-10 14:36:44] Übersprungen: patch-007-workspace-layer.php
+[2026-06-10 14:36:44] Übersprungen: patch-009-explorer-foundation.php
+[2026-06-10 14:36:44] Übersprungen: patch-010-inspector-pro.php
+[2026-06-10 14:36:44] Übersprungen: patch-011-code-markdown-inspector.php
+[2026-06-10 14:36:44] Übersprungen: patch-012-workspace-auto-create-page (1).php
+[2026-06-10 14:36:44] Übersprungen: patch-013-text-node-editing.php
+[2026-06-10 14:36:44] Übersprungen: patch-014-review-workflow.php
+[2026-06-10 14:36:44] Übersprungen: patch-015-archive-rollback.php
+[2026-06-10 14:36:44] Übersprungen: patch-017-fix-async-text-save.php
+[2026-06-10 14:36:44] Übersprungen: patch-019-robust-text-save-debug.php
+[2026-06-10 14:36:44] Übersprungen: patch-020-preview-buttons.php
+[2026-06-10 14:36:44] Übersprungen: patch-021-columns-tree-alpha.php
+[2026-06-10 14:36:44] Übersprungen: patch-022-collapsible-tree.php
+[2026-06-10 14:36:44] Übersprungen: patch-023-tree-default-collapse.php
+[2026-06-10 14:36:44] Übersprungen: patch-024-css-nodes-as-style.php
+[2026-06-10 14:36:44] Übersprungen: patch-025-commonmark-rendering.php
+[2026-06-10 14:36:44] Übersprungen: patch-026-markdown-backend-editor.php
+[2026-06-10 14:36:44] Übersprungen: patch-027-node-creation-wizard.php
+[2026-06-10 14:36:44] Starte: patch-028-fix-node-wizard-injection.php
+[2026-06-10 14:36:44] Patch 028 Fix Node Wizard Injection gestartet
+[2026-06-10 14:36:44] + Node Button bereits vorhanden.
+[2026-06-10 14:36:44] Node Wizard Modal bereits vorhanden.
+[2026-06-10 14:36:44] Backup erstellt: C:\laragon_new\www\treeforge/app/Modules/Explorer/ExplorerRenderer.php
+[2026-06-10 14:36:44] Datei geschrieben: C:\laragon_new\www\treeforge/app/Modules/Explorer/ExplorerRenderer.php
+[2026-06-10 14:36:44] Node Wizard JS bereits vorhanden.
+[2026-06-10 14:36:44] Node Wizard CSS bereits vorhanden.
+[2026-06-10 14:36:44] Datei geschrieben: C:\laragon_new\www\treeforge/docs/fix-node-wizard-injection.md
+[2026-06-10 14:36:44] Patch 028 Fix Node Wizard Injection fertig
+[2026-06-10 14:36:44] Fertig: patch-028-fix-node-wizard-injection.php (7 ms)
+[2026-06-10 14:36:44] Patch Runner beendet
+[2026-06-10 14:52:33] Patch Runner gestartet
+[2026-06-10 14:52:33] Übersprungen: patch-003-image-node.php
+[2026-06-10 14:52:33] Übersprungen: patch-004-brand-assets.php
+[2026-06-10 14:52:33] Übersprungen: patch-005-enhanced-patch-history.php
+[2026-06-10 14:52:33] Übersprungen: patch-006-node-registry.php
+[2026-06-10 14:52:33] Übersprungen: patch-007-workspace-layer.php
+[2026-06-10 14:52:33] Übersprungen: patch-009-explorer-foundation.php
+[2026-06-10 14:52:33] Übersprungen: patch-010-inspector-pro.php
+[2026-06-10 14:52:33] Übersprungen: patch-011-code-markdown-inspector.php
+[2026-06-10 14:52:33] Übersprungen: patch-012-workspace-auto-create-page (1).php
+[2026-06-10 14:52:33] Übersprungen: patch-013-text-node-editing.php
+[2026-06-10 14:52:33] Übersprungen: patch-014-review-workflow.php
+[2026-06-10 14:52:33] Übersprungen: patch-015-archive-rollback.php
+[2026-06-10 14:52:33] Übersprungen: patch-017-fix-async-text-save.php
+[2026-06-10 14:52:33] Übersprungen: patch-019-robust-text-save-debug.php
+[2026-06-10 14:52:33] Übersprungen: patch-020-preview-buttons.php
+[2026-06-10 14:52:33] Übersprungen: patch-021-columns-tree-alpha.php
+[2026-06-10 14:52:33] Übersprungen: patch-022-collapsible-tree.php
+[2026-06-10 14:52:33] Übersprungen: patch-023-tree-default-collapse.php
+[2026-06-10 14:52:33] Übersprungen: patch-024-css-nodes-as-style.php
+[2026-06-10 14:52:33] Übersprungen: patch-025-commonmark-rendering.php
+[2026-06-10 14:52:33] Übersprungen: patch-026-markdown-backend-editor.php
+[2026-06-10 14:52:33] Übersprungen: patch-027-node-creation-wizard.php
+[2026-06-10 14:52:33] Übersprungen: patch-028-fix-node-wizard-injection.php
+[2026-06-10 14:52:33] Starte: patch-029-fix-node-wizard-init-timing.php
+[2026-06-10 14:52:33] Patch 029 Fix Node Wizard Init Timing gestartet
+[2026-06-10 14:52:33] Backup erstellt: C:\laragon_new\www\treeforge/public/assets/js/explorer.js
+[2026-06-10 14:52:33] Datei geschrieben: C:\laragon_new\www\treeforge/public/assets/js/explorer.js
+[2026-06-10 14:52:33] Backup erstellt: C:\laragon_new\www\treeforge/app/Modules/Explorer/ExplorerRenderer.php
+[2026-06-10 14:52:33] Datei geschrieben: C:\laragon_new\www\treeforge/app/Modules/Explorer/ExplorerRenderer.php
+[2026-06-10 14:52:33] Datei geschrieben: C:\laragon_new\www\treeforge/docs/fix-node-wizard-init-timing.md
+[2026-06-10 14:52:33] Patch 029 Fix Node Wizard Init Timing fertig
+[2026-06-10 14:52:33] Fertig: patch-029-fix-node-wizard-init-timing.php (9 ms)
+[2026-06-10 14:52:33] Patch Runner beendet
+[2026-06-10 15:24:25] Patch Runner gestartet
+[2026-06-10 15:24:25] Übersprungen: patch-003-image-node.php
+[2026-06-10 15:24:25] Übersprungen: patch-004-brand-assets.php
+[2026-06-10 15:24:25] Übersprungen: patch-005-enhanced-patch-history.php
+[2026-06-10 15:24:25] Übersprungen: patch-006-node-registry.php
+[2026-06-10 15:24:25] Übersprungen: patch-007-workspace-layer.php
+[2026-06-10 15:24:25] Übersprungen: patch-009-explorer-foundation.php
+[2026-06-10 15:24:25] Übersprungen: patch-010-inspector-pro.php
+[2026-06-10 15:24:25] Übersprungen: patch-011-code-markdown-inspector.php
+[2026-06-10 15:24:25] Übersprungen: patch-012-workspace-auto-create-page (1).php
+[2026-06-10 15:24:25] Übersprungen: patch-013-text-node-editing.php
+[2026-06-10 15:24:25] Übersprungen: patch-014-review-workflow.php
+[2026-06-10 15:24:25] Übersprungen: patch-015-archive-rollback.php
+[2026-06-10 15:24:25] Übersprungen: patch-017-fix-async-text-save.php
+[2026-06-10 15:24:25] Übersprungen: patch-019-robust-text-save-debug.php
+[2026-06-10 15:24:25] Übersprungen: patch-020-preview-buttons.php
+[2026-06-10 15:24:25] Übersprungen: patch-021-columns-tree-alpha.php
+[2026-06-10 15:24:25] Übersprungen: patch-022-collapsible-tree.php
+[2026-06-10 15:24:25] Übersprungen: patch-023-tree-default-collapse.php
+[2026-06-10 15:24:25] Übersprungen: patch-024-css-nodes-as-style.php
+[2026-06-10 15:24:25] Übersprungen: patch-025-commonmark-rendering.php
+[2026-06-10 15:24:25] Übersprungen: patch-026-markdown-backend-editor.php
+[2026-06-10 15:24:25] Übersprungen: patch-027-node-creation-wizard.php
+[2026-06-10 15:24:25] Übersprungen: patch-028-fix-node-wizard-injection.php
+[2026-06-10 15:24:25] Übersprungen: patch-029-fix-node-wizard-init-timing.php
+[2026-06-10 15:24:25] Starte: patch-030-fix-wizard-hidden-columns-options.php
+[2026-06-10 15:24:25] Patch 030 Fix Wizard Hidden Columns Options gestartet
+[2026-06-10 15:24:25] Backup erstellt: C:\laragon_new\www\treeforge/public/assets/css/explorer.css
+[2026-06-10 15:24:25] Datei geschrieben: C:\laragon_new\www\treeforge/public/assets/css/explorer.css
+[2026-06-10 15:24:25] Backup erstellt: C:\laragon_new\www\treeforge/public/assets/js/explorer.js
+[2026-06-10 15:24:25] Datei geschrieben: C:\laragon_new\www\treeforge/public/assets/js/explorer.js
+[2026-06-10 15:24:25] Backup erstellt: C:\laragon_new\www\treeforge/app/Modules/Explorer/ExplorerRenderer.php
+[2026-06-10 15:24:25] Datei geschrieben: C:\laragon_new\www\treeforge/app/Modules/Explorer/ExplorerRenderer.php
+[2026-06-10 15:24:25] Datei geschrieben: C:\laragon_new\www\treeforge/docs/fix-wizard-hidden-columns-options.md
+[2026-06-10 15:24:25] Patch 030 Fix Wizard Hidden Columns Options fertig
+[2026-06-10 15:24:25] Fertig: patch-030-fix-wizard-hidden-columns-options.php (11 ms)
+[2026-06-10 15:24:25] Patch Runner beendet
+[2026-06-10 23:16:25] Patch Runner gestartet
+[2026-06-10 23:16:25] Übersprungen: patch-003-image-node.php
+[2026-06-10 23:16:25] Übersprungen: patch-004-brand-assets.php
+[2026-06-10 23:16:25] Übersprungen: patch-005-enhanced-patch-history.php
+[2026-06-10 23:16:25] Übersprungen: patch-006-node-registry.php
+[2026-06-10 23:16:25] Übersprungen: patch-007-workspace-layer.php
+[2026-06-10 23:16:25] Übersprungen: patch-009-explorer-foundation.php
+[2026-06-10 23:16:25] Übersprungen: patch-010-inspector-pro.php
+[2026-06-10 23:16:25] Übersprungen: patch-011-code-markdown-inspector.php
+[2026-06-10 23:16:25] Übersprungen: patch-012-workspace-auto-create-page (1).php
+[2026-06-10 23:16:25] Übersprungen: patch-013-text-node-editing.php
+[2026-06-10 23:16:25] Übersprungen: patch-014-review-workflow.php
+[2026-06-10 23:16:25] Übersprungen: patch-015-archive-rollback.php
+[2026-06-10 23:16:25] Übersprungen: patch-017-fix-async-text-save.php
+[2026-06-10 23:16:25] Übersprungen: patch-019-robust-text-save-debug.php
+[2026-06-10 23:16:25] Übersprungen: patch-020-preview-buttons.php
+[2026-06-10 23:16:25] Übersprungen: patch-021-columns-tree-alpha.php
+[2026-06-10 23:16:25] Übersprungen: patch-022-collapsible-tree.php
+[2026-06-10 23:16:25] Übersprungen: patch-023-tree-default-collapse.php
+[2026-06-10 23:16:25] Übersprungen: patch-024-css-nodes-as-style.php
+[2026-06-10 23:16:25] Übersprungen: patch-025-commonmark-rendering.php
+[2026-06-10 23:16:25] Übersprungen: patch-026-markdown-backend-editor.php
+[2026-06-10 23:16:25] Übersprungen: patch-027-node-creation-wizard.php
+[2026-06-10 23:16:25] Übersprungen: patch-028-fix-node-wizard-injection.php
+[2026-06-10 23:16:25] Übersprungen: patch-029-fix-node-wizard-init-timing.php
+[2026-06-10 23:16:25] Übersprungen: patch-030-fix-wizard-hidden-columns-options.php
+[2026-06-10 23:16:25] Starte: patch-031-treeforge-core-foundation.php
+[2026-06-10 23:16:25] Patch 031 TreeForge Core Foundation gestartet
+[2026-06-10 23:16:25] Datei geschrieben: C:\laragon_new\www\treeforge/app/TreeForge/AbstractTreeForgeNode.php
+[2026-06-10 23:16:25] Datei geschrieben: C:\laragon_new\www\treeforge/app/TreeForge/NodeCapabilities.php
+[2026-06-10 23:16:25] Datei geschrieben: C:\laragon_new\www\treeforge/app/TreeForge/NodeManifest.php
+[2026-06-10 23:16:25] Datei geschrieben: C:\laragon_new\www\treeforge/app/TreeForge/NodeRegistry.php
+[2026-06-10 23:16:25] Datei geschrieben: C:\laragon_new\www\treeforge/app/TreeForge/NodeValidator.php
+[2026-06-10 23:16:25] Datei geschrieben: C:\laragon_new\www\treeforge/app/TreeForge/AssetCollector.php
+[2026-06-10 23:16:25] Datei geschrieben: C:\laragon_new\www\treeforge/app/TreeForge/EditorSchemaBuilder.php
+[2026-06-10 23:16:25] Datei geschrieben: C:\laragon_new\www\treeforge/app/TreeForge/Nodes/DemoNode.php
+[2026-06-10 23:16:25] Datei geschrieben: C:\laragon_new\www\treeforge/docs/treeforge/12-core-foundation.md
+[2026-06-10 23:16:25] Patch 031 TreeForge Core Foundation fertig
+[2026-06-10 23:16:25] Fertig: patch-031-treeforge-core-foundation.php (14 ms)
+[2026-06-10 23:16:25] Patch Runner beendet
+[2026-06-11 07:17:36] Patch Runner gestartet
+[2026-06-11 07:17:36] Übersprungen: patch-003-image-node.php
+[2026-06-11 07:17:36] Übersprungen: patch-004-brand-assets.php
+[2026-06-11 07:17:36] Übersprungen: patch-005-enhanced-patch-history.php
+[2026-06-11 07:17:36] Übersprungen: patch-006-node-registry.php
+[2026-06-11 07:17:36] Übersprungen: patch-007-workspace-layer.php
+[2026-06-11 07:17:36] Übersprungen: patch-009-explorer-foundation.php
+[2026-06-11 07:17:36] Übersprungen: patch-010-inspector-pro.php
+[2026-06-11 07:17:36] Übersprungen: patch-011-code-markdown-inspector.php
+[2026-06-11 07:17:36] Übersprungen: patch-012-workspace-auto-create-page (1).php
+[2026-06-11 07:17:36] Übersprungen: patch-013-text-node-editing.php
+[2026-06-11 07:17:36] Übersprungen: patch-014-review-workflow.php
+[2026-06-11 07:17:36] Übersprungen: patch-015-archive-rollback.php
+[2026-06-11 07:17:36] Übersprungen: patch-017-fix-async-text-save.php
+[2026-06-11 07:17:36] Übersprungen: patch-019-robust-text-save-debug.php
+[2026-06-11 07:17:36] Übersprungen: patch-020-preview-buttons.php
+[2026-06-11 07:17:36] Übersprungen: patch-021-columns-tree-alpha.php
+[2026-06-11 07:17:36] Übersprungen: patch-022-collapsible-tree.php
+[2026-06-11 07:17:36] Übersprungen: patch-023-tree-default-collapse.php
+[2026-06-11 07:17:36] Übersprungen: patch-024-css-nodes-as-style.php
+[2026-06-11 07:17:36] Übersprungen: patch-025-commonmark-rendering.php
+[2026-06-11 07:17:36] Übersprungen: patch-026-markdown-backend-editor.php
+[2026-06-11 07:17:36] Übersprungen: patch-027-node-creation-wizard.php
+[2026-06-11 07:17:36] Übersprungen: patch-028-fix-node-wizard-injection.php
+[2026-06-11 07:17:36] Übersprungen: patch-029-fix-node-wizard-init-timing.php
+[2026-06-11 07:17:36] Übersprungen: patch-030-fix-wizard-hidden-columns-options.php
+[2026-06-11 07:17:36] Übersprungen: patch-031-treeforge-core-foundation.php
+[2026-06-11 07:17:36] Patch Runner beendet
+[2026-06-11 07:31:47] Patch Runner gestartet
+[2026-06-11 07:31:47] Übersprungen: patch-003-image-node.php
+[2026-06-11 07:31:47] Übersprungen: patch-004-brand-assets.php
+[2026-06-11 07:31:47] Übersprungen: patch-005-enhanced-patch-history.php
+[2026-06-11 07:31:47] Übersprungen: patch-006-node-registry.php
+[2026-06-11 07:31:47] Übersprungen: patch-007-workspace-layer.php
+[2026-06-11 07:31:47] Übersprungen: patch-009-explorer-foundation.php
+[2026-06-11 07:31:47] Übersprungen: patch-010-inspector-pro.php
+[2026-06-11 07:31:47] Übersprungen: patch-011-code-markdown-inspector.php
+[2026-06-11 07:31:47] Übersprungen: patch-012-workspace-auto-create-page (1).php
+[2026-06-11 07:31:47] Übersprungen: patch-013-text-node-editing.php
+[2026-06-11 07:31:47] Übersprungen: patch-014-review-workflow.php
+[2026-06-11 07:31:47] Übersprungen: patch-015-archive-rollback.php
+[2026-06-11 07:31:47] Übersprungen: patch-017-fix-async-text-save.php
+[2026-06-11 07:31:47] Übersprungen: patch-019-robust-text-save-debug.php
+[2026-06-11 07:31:47] Übersprungen: patch-020-preview-buttons.php
+[2026-06-11 07:31:47] Übersprungen: patch-021-columns-tree-alpha.php
+[2026-06-11 07:31:47] Übersprungen: patch-022-collapsible-tree.php
+[2026-06-11 07:31:47] Übersprungen: patch-023-tree-default-collapse.php
+[2026-06-11 07:31:47] Übersprungen: patch-024-css-nodes-as-style.php
+[2026-06-11 07:31:47] Übersprungen: patch-025-commonmark-rendering.php
+[2026-06-11 07:31:47] Übersprungen: patch-026-markdown-backend-editor.php
+[2026-06-11 07:31:47] Übersprungen: patch-027-node-creation-wizard.php
+[2026-06-11 07:31:47] Übersprungen: patch-028-fix-node-wizard-injection.php
+[2026-06-11 07:31:47] Übersprungen: patch-029-fix-node-wizard-init-timing.php
+[2026-06-11 07:31:47] Übersprungen: patch-030-fix-wizard-hidden-columns-options.php
+[2026-06-11 07:31:47] Übersprungen: patch-031-treeforge-core-foundation.php
+[2026-06-11 07:31:47] Starte: patch-032-fix-archive-frontend-preview.php
+[2026-06-11 07:31:47] Patch 032 Fix Archive Frontend Preview gestartet
+[2026-06-11 07:31:47] Backup erstellt: C:\laragon_new\www\treeforge/public/index.php
+[2026-06-11 07:31:47] Datei geschrieben: C:\laragon_new\www\treeforge/public/index.php
+[2026-06-11 07:31:47] Backup erstellt: C:\laragon_new\www\treeforge/app/Modules/Explorer/ExplorerRenderer.php
+[2026-06-11 07:31:47] Datei geschrieben: C:\laragon_new\www\treeforge/app/Modules/Explorer/ExplorerRenderer.php
+[2026-06-11 07:31:47] Datei geschrieben: C:\laragon_new\www\treeforge/docs/archive-frontend-preview.md
+[2026-06-11 07:31:47] Patch 032 Fix Archive Frontend Preview fertig
+[2026-06-11 07:31:47] Fertig: patch-032-fix-archive-frontend-preview.php (7 ms)
+[2026-06-11 07:31:47] Patch Runner beendet

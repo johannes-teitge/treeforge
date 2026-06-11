@@ -552,3 +552,144 @@ pre {
 .tf-markdown-preview ol:last-child {
   margin-bottom: 0;
 }
+.tf-tree-tool.primary {
+  background: var(--tf-green);
+  color: #fff;
+  border-color: var(--tf-green);
+}
+
+.tf-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(18, 26, 23, .42);
+  z-index: 9998;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.tf-modal-backdrop[hidden] {
+  display: none;
+}
+
+.tf-modal {
+  width: min(560px, 100%);
+  background: var(--tf-cream);
+  border: 1px solid rgba(23, 63, 53, .16);
+  border-radius: 1.2rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, .24);
+  overflow: hidden;
+}
+
+.tf-modal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.15rem;
+  border-bottom: 1px solid var(--tf-border);
+}
+
+.tf-modal-head h2 {
+  margin: 0;
+  color: var(--tf-green);
+  font-size: 1.1rem;
+}
+
+.tf-modal-close {
+  border: 0;
+  background: #fff;
+  color: var(--tf-green);
+  border-radius: .7rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.tf-modal-body {
+  padding: 1.15rem;
+}
+
+.tf-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: .75rem;
+  padding: 1rem 1.15rem;
+  border-top: 1px solid var(--tf-border);
+}
+
+.tf-form-row {
+  display: grid;
+  gap: .45rem;
+  margin-bottom: 1rem;
+}
+
+.tf-form-row label {
+  font-weight: 800;
+  color: var(--tf-green);
+}
+
+.tf-input {
+  width: 100%;
+  border: 1px solid rgba(23, 63, 53, .22);
+  background: #fff;
+  color: var(--tf-dark);
+  border-radius: .8rem;
+  padding: .7rem .8rem;
+  font: inherit;
+}
+
+.tf-segmented {
+  display: flex;
+  gap: .45rem;
+  flex-wrap: wrap;
+}
+
+.tf-segmented input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tf-segmented span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.7rem;
+  border: 1px solid rgba(23, 63, 53, .18);
+  background: #fff;
+  color: var(--tf-green);
+  border-radius: .75rem;
+  padding: .65rem .85rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.tf-segmented input:checked + span {
+  background: var(--tf-green);
+  color: #fff;
+  border-color: var(--tf-green);
+}
+
+.tf-wizard-info {
+  background: #fff;
+  color: #5f6b65;
+  border-radius: .85rem;
+  padding: .8rem;
+  font-size: .92rem;
+}
+
+.mt-small {
+  margin-top: .65rem;
+}
+
+.tf-action-button.secondary {
+  background: #fff;
+  color: var(--tf-green);
+  border: 1px solid rgba(30, 61, 28, .18);
+}
+.tf-form-row[hidden],
+.tf-modal [hidden] {
+  display: none !important;
+}

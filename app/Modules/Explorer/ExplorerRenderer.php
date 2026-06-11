@@ -116,7 +116,7 @@ class ExplorerRenderer
         </div>
       </div>
 
-      <div class="tf-tree-toolbar"><button type="button" class="tf-tree-tool" id="tfExpandAll">Alle aufklappen</button><button type="button" class="tf-tree-tool" id="tfCollapseAll">Alle zuklappen</button></div>
+      <div class="tf-tree-toolbar"><button type="button" class="tf-tree-tool primary" id="tfAddNode">+ Node</button><button type="button" class="tf-tree-tool" id="tfExpandAll">Alle aufklappen</button><button type="button" class="tf-tree-tool" id="tfCollapseAll">Alle zuklappen</button></div>
 
       {$tree}
 
@@ -205,7 +205,53 @@ class ExplorerRenderer
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-css.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-markdown.min.js"></script>
-  <script src="/assets/js/explorer.js?v=026"></script>
+  <script src="/assets/js/explorer.js?v=030"></script>
+
+  <div class="tf-modal-backdrop" id="tfNodeWizard" hidden>
+    <div class="tf-modal" role="dialog" aria-modal="true" aria-labelledby="tfNodeWizardTitle">
+      <div class="tf-modal-head">
+        <h2 id="tfNodeWizardTitle">Node hinzufügen</h2>
+        <button type="button" class="tf-modal-close" id="tfNodeWizardClose" aria-label="Schließen">×</button>
+      </div>
+
+      <div class="tf-modal-body">
+        <div class="tf-form-row">
+          <label for="tfNodeType">Node Typ</label>
+          <select id="tfNodeType" class="tf-input">
+            <option value="text">Text</option>
+            <option value="image">Image</option>
+            <option value="button">Button</option>
+            <option value="markdown">Markdown</option>
+            <option value="css">CSS</option>
+            <option value="columns">Columns</option>
+          </select>
+        </div>
+
+        <div class="tf-form-row" id="tfColumnsOptions" hidden>
+          <label>Spaltenanzahl</label>
+          <div class="tf-segmented">
+            <label><input type="radio" name="tfColumnsCount" value="2" checked><span>2</span></label>
+            <label><input type="radio" name="tfColumnsCount" value="3"><span>3</span></label>
+            <label><input type="radio" name="tfColumnsCount" value="4"><span>4</span></label>
+            <label><input type="radio" name="tfColumnsCount" value="5"><span>5</span></label>
+            <label><input type="radio" name="tfColumnsCount" value="6"><span>6</span></label>
+          </div>
+
+          <label for="tfColumnsGap" class="mt-small">Gap</label>
+          <input id="tfColumnsGap" class="tf-input" value="1rem">
+        </div>
+
+        <div class="tf-wizard-info" id="tfNodeWizardInfo">
+          Neue Node wird am Ende der Startseite angelegt.
+        </div>
+      </div>
+
+      <div class="tf-modal-actions">
+        <button type="button" class="tf-action-button secondary" id="tfNodeWizardCancel">Abbrechen</button>
+        <button type="button" class="tf-action-button" id="tfNodeWizardCreate">Anlegen</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
 HTML;
@@ -238,9 +284,10 @@ HTML;
     {
         if ($selectedArchiveVersion !== null && $selectedArchiveVersion !== '') {
             $version = htmlspecialchars($selectedArchiveVersion, ENT_QUOTES, 'UTF-8');
+            $versionUrl = rawurlencode($selectedArchiveVersion);
 
             return ''
-                . '<a class="tf-workflow-link preview" href="/explorer?archive=' . $version . '&page=home" target="_blank" rel="noopener">Archiv ansehen</a>'
+                . '<a class="tf-workflow-link preview" href="/?archive=' . $versionUrl . '&page=home" target="_blank" rel="noopener">Archiv ansehen</a>'
                 . '<button type="button" class="tf-workflow-button danger" data-archive-restore="' . $version . '">Archivversion wiederherstellen</button>'
                 . '<a class="tf-workflow-link secondary" href="/explorer?workspace=published">Zurück zu Published</a>';
         }

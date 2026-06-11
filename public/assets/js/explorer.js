@@ -513,4 +513,127 @@
   }
 
   initCollapsibleTree();
+
+  function initNodeWizard() {
+    const addButton = document.getElementById('tfAddNode');
+    const modal = document.getElementById('tfNodeWizard');
+    const closeButton = document.getElementById('tfNodeWizardClose');
+    const cancelButton = document.getElementById('tfNodeWizardCancel');
+    const createButton = document.getElementById('tfNodeWizardCreate');
+    const typeSelect = document.getElementById('tfNodeType');
+    const columnsOptions = document.getElementById('tfColumnsOptions');
+    const columnsGap = document.getElementById('tfColumnsGap');
+    const info = document.getElementById('tfNodeWizardInfo');
+
+    if (!addButton || !modal || !createButton || !typeSelect) {
+      return;
+    }
+
+    function selectedParentId() {
+      if (!selectedNode || !selectedNode.id || selectedNode.id === '–') {
+        return '';
+      }
+
+      return selectedNode.id;
+    }
+
+    function updateInfo() {
+      const parent = selectedParentId();
+
+      if (parent) {
+        info.textContent = 'Neue Node wird als Child von "' + parent + '" angelegt.';
+      } else {
+        info.textContent = 'Neue Node wird am Ende der Startseite angelegt.';
+      }
+    }
+
+    function updateTypeUi() {
+      const isColumns = typeSelect.value === 'columns';
+      columnsOptions.hidden = !isColumns;
+      columnsOptions.style.display = isColumns ? 'grid' : 'none';
+    }
+
+    function openModal() {
+      updateInfo();
+      updateTypeUi();
+      modal.hidden = false;
+      typeSelect.focus();
+    }
+
+    function closeModal() {
+      modal.hidden = true;
+    }
+
+    addButton.addEventListener('click', openModal);
+    closeButton && closeButton.addEventListener('click', closeModal);
+    cancelButton && cancelButton.addEventListener('click', closeModal);
+
+    modal.addEventListener('click', (event) => {
+      if (event.target === modal) {
+        closeModal();
+      }
+    });
+
+    typeSelect.addEventListener('change', updateTypeUi);
+
+    createButton.addEventListener('click', async () => {
+      const type = typeSelect.value;
+      const options = {};
+
+      if (type === 'columns') {
+        const count = document.querySelector('input[name="tfColumnsCount"]:checked');
+        options.columns = count ? parseInt(count.value, 10) : 2;
+        options.gap = columnsGap ? columnsGap.value : '1rem';
+      }
+
+      const oldText = createButton.textContent;
+      createButton.disabled = true;
+      createButton.textContent = 'Lege an ...';
+
+      try {
+        const response = await fetch('/api/node/create.php', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({
+            page: (window.TreeForgeExplorer && window.TreeForgeExplorer.page) || 'home',
+            parent: selectedParentId(),
+            type: type,
+            options: options
+          })
+        });
+
+        const raw = await response.text();
+        let result;
+
+        try {
+          result = JSON.parse(raw);
+        } catch (parseError) {
+          throw new Error('API liefert kein JSON: ' + raw.substring(0, 180));
+        }
+
+        if (!response.ok || !result.ok) {
+          throw new Error(result.error || 'Node konnte nicht angelegt werden');
+        }
+
+        showNotice('success', result.message || 'Node angelegt.');
+        closeModal();
+
+        setTimeout(() => {
+          window.location.href = '/explorer?workspace=draft';
+        }, 450);
+
+      } catch (error) {
+        showNotice('error', error.message);
+      } finally {
+        createButton.disabled = false;
+        createButton.textContent = oldText;
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initNodeWizard);
+  } else {
+    initNodeWizard();
+  }
 })();
