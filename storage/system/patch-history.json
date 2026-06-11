@@ -1226,5 +1226,751 @@
                 "message": "Patch 032 Fix Archive Frontend Preview fertig"
             }
         ]
+    },
+    "patch-033-archive-center.php": {
+        "executed_at": "2026-06-11T08:47:07+00:00",
+        "status": "ok",
+        "duration_ms": 13,
+        "messages": [
+            {
+                "time": "2026-06-11T08:47:07+00:00",
+                "message": "Patch 033 Archive Center gestartet"
+            },
+            {
+                "time": "2026-06-11T08:47:07+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Archives/ArchivesController.php"
+            },
+            {
+                "time": "2026-06-11T08:47:07+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Archives/ArchivesRenderer.php"
+            },
+            {
+                "time": "2026-06-11T08:47:07+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/archives/index.php"
+            },
+            {
+                "time": "2026-06-11T08:47:07+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/archives.css"
+            },
+            {
+                "time": "2026-06-11T08:47:07+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-11T08:47:07+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-11T08:47:07+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer.css"
+            },
+            {
+                "time": "2026-06-11T08:47:07+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer.css"
+            },
+            {
+                "time": "2026-06-11T08:47:07+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/archive-center.md"
+            },
+            {
+                "time": "2026-06-11T08:47:07+00:00",
+                "message": "Patch 033 Archive Center fertig"
+            }
+        ]
+    },
+    "patch-034-archive-json-export.php": {
+        "executed_at": "2026-06-11T08:50:21+00:00",
+        "status": "ok",
+        "duration_ms": 8,
+        "messages": [
+            {
+                "time": "2026-06-11T08:50:21+00:00",
+                "message": "Patch 034 Archive JSON Export gestartet"
+            },
+            {
+                "time": "2026-06-11T08:50:21+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/api/archive/export-json.php"
+            },
+            {
+                "time": "2026-06-11T08:50:21+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/Archives/ArchivesRenderer.php"
+            },
+            {
+                "time": "2026-06-11T08:50:21+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Archives/ArchivesRenderer.php"
+            },
+            {
+                "time": "2026-06-11T08:50:21+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/archive-json-export.md"
+            },
+            {
+                "time": "2026-06-11T08:50:21+00:00",
+                "message": "Patch 034 Archive JSON Export fertig"
+            }
+        ]
+    },
+    "patch-035-treeforge-master-concept.php": {
+        "executed_at": "2026-06-11T10:29:44+00:00",
+        "status": "ok",
+        "duration_ms": 21,
+        "messages": [
+            {
+                "time": "2026-06-11T10:29:44+00:00",
+                "message": "Patch 035 TreeForge Master Concept gestartet"
+            },
+            {
+                "time": "2026-06-11T10:29:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/13-master-concept.md"
+            },
+            {
+                "time": "2026-06-11T10:29:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/14-settings-concept.md"
+            },
+            {
+                "time": "2026-06-11T10:29:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/15-storage-concept.md"
+            },
+            {
+                "time": "2026-06-11T10:29:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/16-security-analytics-concept.md"
+            },
+            {
+                "time": "2026-06-11T10:29:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/17-auth-users-concept.md"
+            },
+            {
+                "time": "2026-06-11T10:29:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/18-template-system-concept.md"
+            },
+            {
+                "time": "2026-06-11T10:29:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/19-update-system-concept.md"
+            },
+            {
+                "time": "2026-06-11T10:29:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/20-installer-concept.md"
+            },
+            {
+                "time": "2026-06-11T10:29:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/21-roadmap.md"
+            },
+            {
+                "time": "2026-06-11T10:29:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/22-routing-concept.md"
+            },
+            {
+                "time": "2026-06-11T10:29:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/23-root-node-page-settings.md"
+            },
+            {
+                "time": "2026-06-11T10:29:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/24-content-types-and-root-flags.md"
+            },
+            {
+                "time": "2026-06-11T10:29:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/25-seo-url-slug-manager.md"
+            },
+            {
+                "time": "2026-06-11T10:29:44+00:00",
+                "message": "Patch 035 TreeForge Master Concept fertig"
+            }
+        ]
+    },
+    "patch-036-frontend-docs-viewer.php": {
+        "executed_at": "2026-06-11T10:35:40+00:00",
+        "status": "ok",
+        "duration_ms": 5,
+        "messages": [
+            {
+                "time": "2026-06-11T10:35:40+00:00",
+                "message": "Patch 036 Frontend Docs Viewer gestartet"
+            },
+            {
+                "time": "2026-06-11T10:35:40+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/docs-viewer/index.php"
+            },
+            {
+                "time": "2026-06-11T10:35:40+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/docs-viewer.css"
+            },
+            {
+                "time": "2026-06-11T10:35:40+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/26-docs-viewer.md"
+            },
+            {
+                "time": "2026-06-11T10:35:40+00:00",
+                "message": "Patch 036 Frontend Docs Viewer fertig"
+            }
+        ]
+    },
+    "patch-037-settings-foundation.php": {
+        "executed_at": "2026-06-11T15:31:56+00:00",
+        "status": "ok",
+        "duration_ms": 10,
+        "messages": [
+            {
+                "time": "2026-06-11T15:31:56+00:00",
+                "message": "Patch 037 Settings Foundation gestartet"
+            },
+            {
+                "time": "2026-06-11T15:31:56+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/Settings/SettingsManager.php"
+            },
+            {
+                "time": "2026-06-11T15:31:56+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/storage/system/settings.json"
+            },
+            {
+                "time": "2026-06-11T15:31:56+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/settings/index.php"
+            },
+            {
+                "time": "2026-06-11T15:31:56+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/settings.css"
+            },
+            {
+                "time": "2026-06-11T15:31:56+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/27-settings-foundation.md"
+            },
+            {
+                "time": "2026-06-11T15:31:56+00:00",
+                "message": "Patch 037 Settings Foundation fertig"
+            }
+        ]
+    },
+    "patch-038-backend-shell.php": {
+        "executed_at": "2026-06-11T15:53:37+00:00",
+        "status": "ok",
+        "duration_ms": 12,
+        "messages": [
+            {
+                "time": "2026-06-11T15:53:37+00:00",
+                "message": "Patch 038 Backend Shell gestartet"
+            },
+            {
+                "time": "2026-06-11T15:53:37+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Admin/AdminMenu.php"
+            },
+            {
+                "time": "2026-06-11T15:53:37+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Admin/AdminLayout.php"
+            },
+            {
+                "time": "2026-06-11T15:53:37+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/admin.css"
+            },
+            {
+                "time": "2026-06-11T15:53:37+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/index.php"
+            },
+            {
+                "time": "2026-06-11T15:53:37+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/admin/settings/index.php"
+            },
+            {
+                "time": "2026-06-11T15:53:37+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/settings/index.php"
+            },
+            {
+                "time": "2026-06-11T15:53:37+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/28-backend-shell.md"
+            },
+            {
+                "time": "2026-06-11T15:53:37+00:00",
+                "message": "Patch 038 Backend Shell fertig"
+            }
+        ]
+    },
+    "patch-039-page-settings-foundation.php": {
+        "executed_at": "2026-06-11T18:16:04+00:00",
+        "status": "ok",
+        "duration_ms": 15,
+        "messages": [
+            {
+                "time": "2026-06-11T18:16:04+00:00",
+                "message": "Patch 039 Page Settings Foundation gestartet"
+            },
+            {
+                "time": "2026-06-11T18:16:04+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/PageSettings/PageSettingsManager.php"
+            },
+            {
+                "time": "2026-06-11T18:16:04+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/page-settings/index.php"
+            },
+            {
+                "time": "2026-06-11T18:16:04+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/page-settings.css"
+            },
+            {
+                "time": "2026-06-11T18:16:04+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/admin.css"
+            },
+            {
+                "time": "2026-06-11T18:16:04+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/admin.css"
+            },
+            {
+                "time": "2026-06-11T18:16:04+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Admin/AdminMenu.php"
+            },
+            {
+                "time": "2026-06-11T18:16:04+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Admin/AdminMenu.php"
+            },
+            {
+                "time": "2026-06-11T18:16:04+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/29-page-settings-foundation.md"
+            },
+            {
+                "time": "2026-06-11T18:16:04+00:00",
+                "message": "Patch 039 Page Settings Foundation fertig"
+            }
+        ]
+    },
+    "patch-040-fix-page-settings-css-loading.php": {
+        "executed_at": "2026-06-11T18:28:51+00:00",
+        "status": "ok",
+        "duration_ms": 8,
+        "messages": [
+            {
+                "time": "2026-06-11T18:28:51+00:00",
+                "message": "Patch 040 Fix Page Settings CSS Loading gestartet"
+            },
+            {
+                "time": "2026-06-11T18:28:51+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Admin/AdminLayout.php"
+            },
+            {
+                "time": "2026-06-11T18:28:51+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Admin/AdminLayout.php"
+            },
+            {
+                "time": "2026-06-11T18:28:51+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/admin.css"
+            },
+            {
+                "time": "2026-06-11T18:28:51+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/admin.css"
+            },
+            {
+                "time": "2026-06-11T18:28:51+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/30-fix-page-settings-css-loading.md"
+            },
+            {
+                "time": "2026-06-11T18:28:51+00:00",
+                "message": "Patch 040 Fix Page Settings CSS Loading fertig"
+            }
+        ]
+    },
+    "patch-041-media-foundation.php": {
+        "executed_at": "2026-06-11T18:38:23+00:00",
+        "status": "ok",
+        "duration_ms": 23,
+        "messages": [
+            {
+                "time": "2026-06-11T18:38:23+00:00",
+                "message": "Patch 041 Media Foundation gestartet"
+            },
+            {
+                "time": "2026-06-11T18:38:23+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/storage/media/originals/.gitkeep"
+            },
+            {
+                "time": "2026-06-11T18:38:23+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/storage/media/meta/.gitkeep"
+            },
+            {
+                "time": "2026-06-11T18:38:23+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/storage/media/cache/.gitkeep"
+            },
+            {
+                "time": "2026-06-11T18:38:23+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Media/MediaConfig.php"
+            },
+            {
+                "time": "2026-06-11T18:38:23+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Media/MediaMeta.php"
+            },
+            {
+                "time": "2026-06-11T18:38:23+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Media/MediaScanner.php"
+            },
+            {
+                "time": "2026-06-11T18:38:23+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Media/MediaManager.php"
+            },
+            {
+                "time": "2026-06-11T18:38:23+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/media.css"
+            },
+            {
+                "time": "2026-06-11T18:38:23+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/media/index.php"
+            },
+            {
+                "time": "2026-06-11T18:38:23+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Admin/AdminLayout.php"
+            },
+            {
+                "time": "2026-06-11T18:38:23+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Admin/AdminLayout.php"
+            },
+            {
+                "time": "2026-06-11T18:38:23+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Admin/AdminMenu.php"
+            },
+            {
+                "time": "2026-06-11T18:38:23+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Admin/AdminMenu.php"
+            },
+            {
+                "time": "2026-06-11T18:38:23+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/31-media-foundation.md"
+            },
+            {
+                "time": "2026-06-11T18:38:23+00:00",
+                "message": "Patch 041 Media Foundation fertig"
+            }
+        ]
+    },
+    "patch-042-fix-media-original-delivery.php": {
+        "executed_at": "2026-06-11T18:42:21+00:00",
+        "status": "ok",
+        "duration_ms": 9,
+        "messages": [
+            {
+                "time": "2026-06-11T18:42:21+00:00",
+                "message": "Patch 042 Fix Media Original Delivery gestartet"
+            },
+            {
+                "time": "2026-06-11T18:42:21+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/Media/MediaConfig.php"
+            },
+            {
+                "time": "2026-06-11T18:42:21+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Media/MediaConfig.php"
+            },
+            {
+                "time": "2026-06-11T18:42:21+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/api/media/file.php"
+            },
+            {
+                "time": "2026-06-11T18:42:21+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/32-fix-media-original-delivery.md"
+            },
+            {
+                "time": "2026-06-11T18:42:21+00:00",
+                "message": "Patch 042 Fix Media Original Delivery fertig"
+            }
+        ]
+    },
+    "patch-045-treeforge-classic-admin-theme.php": {
+        "executed_at": "2026-06-11T19:52:04+00:00",
+        "status": "ok",
+        "duration_ms": 9,
+        "messages": [
+            {
+                "time": "2026-06-11T19:52:04+00:00",
+                "message": "Patch 045 TreeForge Classic Admin Theme gestartet"
+            },
+            {
+                "time": "2026-06-11T19:52:04+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Admin/AdminLayout.php"
+            },
+            {
+                "time": "2026-06-11T19:52:04+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Admin/AdminLayout.php"
+            },
+            {
+                "time": "2026-06-11T19:52:04+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/admin.css"
+            },
+            {
+                "time": "2026-06-11T19:52:04+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/admin.css"
+            },
+            {
+                "time": "2026-06-11T19:52:04+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/35-treeforge-classic-admin-theme.md"
+            },
+            {
+                "time": "2026-06-11T19:52:04+00:00",
+                "message": "Patch 045 TreeForge Classic Admin Theme fertig"
+            }
+        ]
+    },
+    "patch-046-classic-dashboard-overview.php": {
+        "executed_at": "2026-06-11T20:40:04+00:00",
+        "status": "ok",
+        "duration_ms": 17,
+        "messages": [
+            {
+                "time": "2026-06-11T20:40:03+00:00",
+                "message": "Patch 046 Classic Dashboard Overview gestartet"
+            },
+            {
+                "time": "2026-06-11T20:40:03+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/Settings/SettingsManager.php"
+            },
+            {
+                "time": "2026-06-11T20:40:03+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/Settings/SettingsManager.php"
+            },
+            {
+                "time": "2026-06-11T20:40:03+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/storage/system/settings.json"
+            },
+            {
+                "time": "2026-06-11T20:40:03+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/storage/system/settings.json"
+            },
+            {
+                "time": "2026-06-11T20:40:04+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/dashboard.css"
+            },
+            {
+                "time": "2026-06-11T20:40:04+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Admin/AdminLayout.php"
+            },
+            {
+                "time": "2026-06-11T20:40:04+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Admin/AdminLayout.php"
+            },
+            {
+                "time": "2026-06-11T20:40:04+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/admin/index.php"
+            },
+            {
+                "time": "2026-06-11T20:40:04+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/index.php"
+            },
+            {
+                "time": "2026-06-11T20:40:04+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/36-classic-dashboard-overview.md"
+            },
+            {
+                "time": "2026-06-11T20:40:04+00:00",
+                "message": "Patch 046 Classic Dashboard Overview fertig"
+            }
+        ]
+    },
+    "patch-047-fix-settings-manager-syntax.php": {
+        "executed_at": "2026-06-11T20:42:57+00:00",
+        "status": "ok",
+        "duration_ms": 5,
+        "messages": [
+            {
+                "time": "2026-06-11T20:42:57+00:00",
+                "message": "Patch 047 Fix SettingsManager Syntax gestartet"
+            },
+            {
+                "time": "2026-06-11T20:42:57+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/Settings/SettingsManager.php"
+            },
+            {
+                "time": "2026-06-11T20:42:57+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/Settings/SettingsManager.php"
+            },
+            {
+                "time": "2026-06-11T20:42:57+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/37-fix-settings-manager-syntax.md"
+            },
+            {
+                "time": "2026-06-11T20:42:57+00:00",
+                "message": "Patch 047 Fix SettingsManager Syntax fertig"
+            }
+        ]
+    },
+    "patch-048-media-settings-foundation.php": {
+        "executed_at": "2026-06-11T21:30:56+00:00",
+        "status": "error",
+        "duration_ms": 3,
+        "error": "Class \"TreeForge\\Core\\Settings\\SettingsManager\" not found",
+        "messages": [
+            {
+                "time": "2026-06-11T21:30:56+00:00",
+                "message": "Patch 048 Media Settings Foundation gestartet"
+            },
+            {
+                "time": "2026-06-11T21:30:56+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/Settings/SettingsManager.php"
+            },
+            {
+                "time": "2026-06-11T21:30:56+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/Settings/SettingsManager.php"
+            }
+        ]
+    },
+    "patch-048-media-settings-foundation-fixed.php": {
+        "executed_at": "2026-06-11T21:30:56+00:00",
+        "status": "ok",
+        "duration_ms": 8,
+        "messages": [
+            {
+                "time": "2026-06-11T21:30:56+00:00",
+                "message": "Patch 048 Media Settings Foundation FIXED gestartet"
+            },
+            {
+                "time": "2026-06-11T21:30:56+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/Settings/SettingsManager.php"
+            },
+            {
+                "time": "2026-06-11T21:30:56+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/Settings/SettingsManager.php"
+            },
+            {
+                "time": "2026-06-11T21:30:56+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/storage/system/settings.json"
+            },
+            {
+                "time": "2026-06-11T21:30:56+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/storage/system/settings.json"
+            },
+            {
+                "time": "2026-06-11T21:30:56+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/38-media-settings-foundation.md"
+            },
+            {
+                "time": "2026-06-11T21:30:56+00:00",
+                "message": "Patch 048 Media Settings Foundation FIXED fertig"
+            }
+        ]
+    },
+    "patch-049-fix-settings-ui-media-sections (1).php": {
+        "executed_at": "2026-06-11T21:31:33+00:00",
+        "status": "ok",
+        "duration_ms": 8,
+        "messages": [
+            {
+                "time": "2026-06-11T21:31:33+00:00",
+                "message": "Patch 049 Fix Settings UI Media Sections gestartet"
+            },
+            {
+                "time": "2026-06-11T21:31:33+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/admin/settings/index.php"
+            },
+            {
+                "time": "2026-06-11T21:31:33+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/settings/index.php"
+            },
+            {
+                "time": "2026-06-11T21:31:33+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/admin.css"
+            },
+            {
+                "time": "2026-06-11T21:31:33+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/admin.css"
+            },
+            {
+                "time": "2026-06-11T21:31:33+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/39-fix-settings-ui-media-sections.md"
+            },
+            {
+                "time": "2026-06-11T21:31:33+00:00",
+                "message": "Patch 049 Fix Settings UI Media Sections fertig"
+            }
+        ]
+    },
+    "patch-050-version-info-foundation.php": {
+        "executed_at": "2026-06-11T21:41:38+00:00",
+        "status": "ok",
+        "duration_ms": 12,
+        "messages": [
+            {
+                "time": "2026-06-11T21:41:38+00:00",
+                "message": "Patch 050 Version Info Foundation gestartet"
+            },
+            {
+                "time": "2026-06-11T21:41:38+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/VERSION"
+            },
+            {
+                "time": "2026-06-11T21:41:38+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/BUILD"
+            },
+            {
+                "time": "2026-06-11T21:41:38+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/System/Version.php"
+            },
+            {
+                "time": "2026-06-11T21:41:38+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/admin/settings/index.php"
+            },
+            {
+                "time": "2026-06-11T21:41:38+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/settings/index.php"
+            },
+            {
+                "time": "2026-06-11T21:41:38+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/admin/index.php"
+            },
+            {
+                "time": "2026-06-11T21:41:38+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/index.php"
+            },
+            {
+                "time": "2026-06-11T21:41:38+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/40-version-info-foundation.md"
+            },
+            {
+                "time": "2026-06-11T21:41:38+00:00",
+                "message": "Patch 050 Version Info Foundation fertig"
+            }
+        ]
+    },
+    "patch-051-fix-settings-page-parse-error.php": {
+        "executed_at": "2026-06-11T21:47:51+00:00",
+        "status": "ok",
+        "duration_ms": 7,
+        "messages": [
+            {
+                "time": "2026-06-11T21:47:51+00:00",
+                "message": "Patch 051 Fix Settings Page Parse Error gestartet"
+            },
+            {
+                "time": "2026-06-11T21:47:51+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/admin/settings/index.php"
+            },
+            {
+                "time": "2026-06-11T21:47:51+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/settings/index.php"
+            },
+            {
+                "time": "2026-06-11T21:47:51+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/41-fix-settings-page-parse-error.md"
+            },
+            {
+                "time": "2026-06-11T21:47:51+00:00",
+                "message": "Patch 051 Fix Settings Page Parse Error fertig"
+            }
+        ]
+    },
+    "patch-052-fix-dashboard-parse-error.php": {
+        "executed_at": "2026-06-11T21:53:17+00:00",
+        "status": "ok",
+        "duration_ms": 6,
+        "messages": [
+            {
+                "time": "2026-06-11T21:53:17+00:00",
+                "message": "Patch 052 Fix Dashboard Parse Error gestartet"
+            },
+            {
+                "time": "2026-06-11T21:53:17+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/admin/index.php"
+            },
+            {
+                "time": "2026-06-11T21:53:17+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/index.php"
+            },
+            {
+                "time": "2026-06-11T21:53:17+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/42-fix-dashboard-parse-error.md"
+            },
+            {
+                "time": "2026-06-11T21:53:17+00:00",
+                "message": "Patch 052 Fix Dashboard Parse Error fertig"
+            }
+        ]
     }
 }

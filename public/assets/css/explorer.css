@@ -693,3 +693,18 @@ pre {
 .tf-modal [hidden] {
   display: none !important;
 }
+.tf-archive-more {
+  margin: .45rem 0;
+  padding: .55rem .75rem;
+  border-radius: .75rem;
+  background: rgba(30, 61, 28, .06);
+  color: #5f6b65;
+  font-size: .85rem;
+  font-weight: 800;
+}
+
+.tf-archive-link.all {
+  margin-top: .5rem;
+  background: rgba(216, 138, 34, .14);
+  color: #7a4b0f;
+}

@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TreeForge Classic – Farb- und UI-Test</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      /* Brand */
+      --tf-brand-primary: #173F35;
+      --tf-brand-primary-dark: #0D241F;
+      --tf-brand-secondary: #E2A900;
+      --tf-brand-secondary-dark: #A97B00;
+      --tf-brand-accent: #4F8F46;
+
+      /* Neutral / App */
+      --tf-ink: #071725;
+      --tf-paper: #F4F6F7;
+      --tf-panel: #FFFFFF;
+      --tf-muted: #64727D;
+      --tf-soft: #8A98A3;
+      --tf-line: rgba(16,40,55,.14);
+      --tf-line-strong: rgba(16,40,55,.24);
+
+      /* Surfaces */
+      --tf-topbar-bg: #071725;
+      --tf-topbar-text: #FFFFFF;
+      --tf-topbar-muted: #B7C4CE;
+      --tf-card-bg: #FFFFFF;
+      --tf-card-soft: #F9FAFB;
+      --tf-hover: #EAF1F5;
+      --tf-active: #FFF4D0;
+
+      /* States */
+      --tf-success-bg: #E6F6EA;
+      --tf-success-text: #15713A;
+      --tf-success-border: #BDE5C9;
+
+      --tf-warning-bg: #FFF3D4;
+      --tf-warning-text: #8A6400;
+      --tf-warning-border: #F0D078;
+
+      --tf-danger-bg: #FDE7E7;
+      --tf-danger-text: #C62828;
+      --tf-danger-border: #F2B6B6;
+
+      --tf-info-bg: #EAF3FF;
+      --tf-info-text: #155A9C;
+      --tf-info-border: #B9D7F2;
+
+      /* UI */
+      --tf-radius-sm: .5rem;
+      --tf-radius-md: .75rem;
+      --tf-radius-lg: 1rem;
+      --tf-shadow-sm: 0 .5rem 1.4rem rgba(7,23,37,.06);
+      --tf-shadow-md: 0 1rem 2.5rem rgba(7,23,37,.08);
+    }
+
+    body {
+      background: var(--tf-paper);
+      color: var(--tf-ink);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .tf-topbar {
+      background: var(--tf-topbar-bg);
+      color: var(--tf-topbar-text);
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      padding: 0 .75rem;
+      gap: 1.1rem;
+    }
+
+    .tf-brand {
+      font-weight: 720;
+      color: var(--tf-topbar-text);
+      text-decoration: none;
+      letter-spacing: -.025em;
+      font-size: 1rem;
+      white-space: nowrap;
+    }
+
+    .tf-nav {
+      display: flex;
+      gap: .25rem;
+      flex-wrap: wrap;
+      align-items: center;
+      flex: 1;
+    }
+
+    .tf-nav a {
+      color: var(--tf-topbar-text);
+      text-decoration: none;
+      padding: .62rem .55rem;
+      font-weight: 480;
+      font-size: .95rem;
+    }
+
+    .tf-nav a.active,
+    .tf-nav a:hover {
+      color: var(--tf-brand-secondary);
+    }
+
+    .tf-user {
+      text-align: right;
+      line-height: 1.05;
+      color: var(--tf-topbar-text);
+      font-weight: 620;
+      font-size: .88rem;
+    }
+
+    .tf-user small {
+      display: block;
+      color: var(--tf-topbar-muted);
+      font-weight: 480;
+      text-transform: uppercase;
+      font-size: .68rem;
+    }
+
+    .tf-page {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 2.25rem 1.25rem 5rem;
+    }
+
+    .tf-kicker {
+      color: var(--tf-muted);
+      text-transform: uppercase;
+      font-weight: 480;
+      letter-spacing: .02em;
+      font-size: .85rem;
+      margin-bottom: .45rem;
+    }
+
+    h1 {
+      font-size: clamp(1.9rem, 3vw, 2.65rem);
+      font-weight: 620;
+      letter-spacing: -.035em;
+      margin-bottom: .65rem;
+      color: var(--tf-ink);
+    }
+
+    .tf-lead {
+      color: var(--tf-muted);
+      font-size: 1.05rem;
+      max-width: 900px;
+    }
+
+    .tf-card {
+      background: var(--tf-card-bg);
+      border: 1px solid var(--tf-line);
+      border-radius: var(--tf-radius-md);
+      box-shadow: var(--tf-shadow-sm);
+      padding: 1.1rem;
+    }
+
+    .tf-card h2,
+    .tf-card h3 {
+      color: var(--tf-ink);
+      font-weight: 620;
+      letter-spacing: -.02em;
+    }
+
+    .tf-muted {
+      color: var(--tf-muted);
+    }
+
+    .tf-btn {
+      border: 1px solid var(--tf-ink);
+      background: var(--tf-ink);
+      color: #fff;
+      border-radius: var(--tf-radius-sm);
+      padding: .45rem .7rem;
+      font-weight: 480;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: .35rem;
+      cursor: pointer;
+    }
+
+    .tf-btn:hover {
+      background: var(--tf-brand-primary-dark);
+      color: #fff;
+    }
+
+    .tf-btn-secondary {
+      background: var(--tf-panel);
+      color: var(--tf-ink);
+      border-color: var(--tf-line-strong);
+    }
+
+    .tf-btn-secondary:hover {
+      background: var(--tf-hover);
+      color: var(--tf-ink);
+    }
+
+    .tf-btn-gold {
+      background: var(--tf-brand-secondary);
+      color: var(--tf-ink);
+      border-color: var(--tf-brand-secondary);
+    }
+
+    .tf-btn-gold:hover {
+      background: var(--tf-brand-secondary-dark);
+      color: #fff;
+    }
+
+    .tf-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: .3rem .55rem;
+      border-radius: 999px;
+      font-size: .78rem;
+      font-weight: 480;
+      text-transform: uppercase;
+      letter-spacing: .02em;
+    }
+
+    .tf-badge-success {
+      background: var(--tf-success-bg);
+      color: var(--tf-success-text);
+    }
+
+    .tf-badge-warning {
+      background: var(--tf-warning-bg);
+      color: var(--tf-warning-text);
+    }
+
+    .tf-badge-muted {
+      background: #E9EEF1;
+      color: var(--tf-muted);
+    }
+
+    .tf-badge-danger {
+      background: var(--tf-danger-bg);
+      color: var(--tf-danger-text);
+    }
+
+    .tf-alert {
+      border-radius: var(--tf-radius-md);
+      border: 1px solid;
+      padding: .9rem 1rem;
+    }
+
+    .tf-alert-info {
+      background: var(--tf-info-bg);
+      border-color: var(--tf-info-border);
+      color: var(--tf-info-text);
+      border-left: 5px solid var(--tf-info-text);
+    }
+
+    .tf-alert-warning {
+      background: var(--tf-warning-bg);
+      border-color: var(--tf-warning-border);
+      color: var(--tf-warning-text);
+      border-left: 5px solid var(--tf-brand-secondary);
+    }
+
+    .tf-table {
+      width: 100%;
+      background: var(--tf-panel);
+      border: 1px solid var(--tf-line);
+      border-radius: var(--tf-radius-md);
+      overflow: hidden;
+      box-shadow: var(--tf-shadow-sm);
+    }
+
+    .tf-table table {
+      margin: 0;
+    }
+
+    .tf-table th {
+      background: var(--tf-panel);
+      color: var(--tf-ink);
+      border-bottom: 1px solid var(--tf-line);
+      font-weight: 620;
+    }
+
+    .tf-table td {
+      vertical-align: middle;
+      border-bottom: 1px solid var(--tf-line);
+    }
+
+    .tf-table tr:hover td {
+      background: var(--tf-hover);
+    }
+
+    .tf-form label {
+      font-weight: 500;
+      margin-bottom: .35rem;
+    }
+
+    .tf-form .form-control,
+    .tf-form .form-select {
+      border-color: var(--tf-line-strong);
+      border-radius: var(--tf-radius-sm);
+      padding: .65rem .75rem;
+    }
+
+    .tf-form .form-control:focus,
+    .tf-form .form-select:focus {
+      border-color: var(--tf-brand-secondary);
+      box-shadow: 0 0 0 .2rem rgba(226,169,0,.22);
+    }
+
+    .tf-upload {
+      border: 2px dashed var(--tf-line-strong);
+      background: var(--tf-panel);
+      border-radius: var(--tf-radius-md);
+      padding: 1.1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .tf-upload-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: var(--tf-radius-md);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #EAF1F5;
+      color: var(--tf-brand-primary);
+      font-size: 1.35rem;
+      font-weight: 720;
+      flex: 0 0 auto;
+    }
+
+    .tf-media-layout {
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 1rem;
+    }
+
+    .tf-media-sidebar {
+      background: var(--tf-panel);
+      border: 1px solid var(--tf-line);
+      border-radius: var(--tf-radius-md);
+      padding: 1rem;
+      box-shadow: var(--tf-shadow-sm);
+    }
+
+    .tf-media-filter {
+      display: grid;
+      gap: .35rem;
+    }
+
+    .tf-media-filter a {
+      display: flex;
+      justify-content: space-between;
+      text-decoration: none;
+      color: var(--tf-ink);
+      padding: .65rem .75rem;
+      border-radius: var(--tf-radius-sm);
+      font-weight: 500;
+    }
+
+    .tf-media-filter a.active,
+    .tf-media-filter a:hover {
+      background: #E8F2FA;
+      outline: 1px solid #AFC7DA;
+    }
+
+    .tf-media-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+
+    .tf-media-card {
+      background: var(--tf-panel);
+      border: 1px solid var(--tf-line);
+      border-radius: var(--tf-radius-md);
+      overflow: hidden;
+      box-shadow: var(--tf-shadow-sm);
+    }
+
+    .tf-media-preview {
+      aspect-ratio: 4 / 3;
+      background:
+        linear-gradient(45deg, #fff 25%, transparent 25%),
+        linear-gradient(-45deg, #fff 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #fff 75%),
+        linear-gradient(-45deg, transparent 75%, #fff 75%),
+        #EEF1F3;
+      background-size: 20px 20px;
+      background-position: 0 0, 0 10px, 10px -10px, -10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .tf-media-preview img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .tf-media-info {
+      padding: .9rem;
+    }
+
+    .tf-code {
+      background: var(--tf-topbar-bg);
+      color: #fff;
+      border-radius: var(--tf-radius-sm);
+      padding: .75rem 1rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: .9rem;
+    }
+
+    .tf-color-swatch {
+      border: 1px solid var(--tf-line);
+      border-radius: var(--tf-radius-md);
+      overflow: hidden;
+      background: var(--tf-panel);
+    }
+
+    .tf-color {
+      height: 64px;
+    }
+
+    .tf-color-label {
+      padding: .65rem;
+      font-size: .82rem;
+      color: var(--tf-muted);
+    }
+
+    @media (max-width: 900px) {
+      .tf-media-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .tf-user {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="tf-topbar">
+    <a class="tf-brand" href="#">TreeForge CMS</a>
+    <nav class="tf-nav">
+      <a class="active" href="#">Dashboard</a>
+      <a href="#">Pages</a>
+      <a href="#">Media</a>
+      <a href="#">Navigation</a>
+      <a href="#">Users</a>
+      <a href="#">Roles</a>
+      <a href="#">Settings</a>
+      <a href="#">Security</a>
+    </nav>
+    <div class="tf-user">dscho<small>Superadministrator</small></div>
+    <button class="tf-btn tf-btn-secondary py-1">Abmelden</button>
+  </header>
+
+  <main class="tf-page">
+    <section class="mb-5">
+      <div class="tf-kicker">Design-Test</div>
+      <h1>TreeForge Classic UI</h1>
+      <p class="tf-lead">Bootstrap-Testseite für Farben, Flächen, Buttons, Tabellen, Formulare, Medienverwaltung und Statusmeldungen. Ziel: hell, klar, ruhig und aufgeräumt wie das alte teitge CMS – aber mit TreeForge-Charakter.</p>
+    </section>
+
+    <section class="mb-5">
+      <div class="row g-3">
+        <div class="col-md-2"><div class="tf-color-swatch"><div class="tf-color" style="background:var(--tf-ink)"></div><div class="tf-color-label">Ink<br>#071725</div></div></div>
+        <div class="col-md-2"><div class="tf-color-swatch"><div class="tf-color" style="background:var(--tf-paper)"></div><div class="tf-color-label">Paper<br>#F4F6F7</div></div></div>
+        <div class="col-md-2"><div class="tf-color-swatch"><div class="tf-color" style="background:var(--tf-panel)"></div><div class="tf-color-label">Panel<br>#FFFFFF</div></div></div>
+        <div class="col-md-2"><div class="tf-color-swatch"><div class="tf-color" style="background:var(--tf-brand-primary)"></div><div class="tf-color-label">Primary<br>#173F35</div></div></div>
+        <div class="col-md-2"><div class="tf-color-swatch"><div class="tf-color" style="background:var(--tf-brand-secondary)"></div><div class="tf-color-label">Gold<br>#E2A900</div></div></div>
+        <div class="col-md-2"><div class="tf-color-swatch"><div class="tf-color" style="background:var(--tf-muted)"></div><div class="tf-color-label">Muted<br>#64727D</div></div></div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="tf-alert tf-alert-info mb-3">
+        <strong>Hinweisbox:</strong> Diese Fläche entspricht später Hilfetexten, Konzept-Hinweisen und Systeminformationen.
+      </div>
+      <div class="tf-alert tf-alert-warning">
+        <strong>Warnung:</strong> Social Images bleiben bewusst 1200 × 630 JPG, weil Social-Crawler damit am zuverlässigsten arbeiten.
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="d-flex justify-content-between align-items-end mb-3">
+        <div>
+          <div class="tf-kicker">Content Management</div>
+          <h1 class="h2 mb-0">Inhaltsseiten</h1>
+        </div>
+        <a class="tf-btn" href="#">Neue Seite anlegen</a>
+      </div>
+
+      <div class="tf-table">
+        <table class="table mb-0">
+          <thead>
+            <tr>
+              <th>Titel</th>
+              <th>Slug</th>
+              <th>Typ</th>
+              <th>Status</th>
+              <th>Geändert</th>
+              <th class="text-end">Aktionen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Startseite</strong></td>
+              <td><code>home</code></td>
+              <td>Page</td>
+              <td><span class="tf-badge tf-badge-success">Published</span></td>
+              <td>11.06.2026 21:30</td>
+              <td class="text-end"><a class="tf-btn tf-btn-secondary py-1" href="#">Bearbeiten</a></td>
+            </tr>
+            <tr>
+              <td><strong>TreeForge Konzept</strong></td>
+              <td><code>treeforge-konzept</code></td>
+              <td>Landingpage</td>
+              <td><span class="tf-badge tf-badge-warning">Draft</span></td>
+              <td>11.06.2026 21:10</td>
+              <td class="text-end"><a class="tf-btn tf-btn-secondary py-1" href="#">Bearbeiten</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="row g-3">
+        <div class="col-lg-8">
+          <div class="tf-card tf-form">
+            <h2>SMTP & Mailer</h2>
+            <p class="tf-muted">Beispiel für Formularlayout mit klaren Labels und ruhigen Eingabefeldern.</p>
+            <div class="row g-3">
+              <div class="col-md-8">
+                <label>SMTP-Server</label>
+                <input class="form-control" value="mail.your-server.de">
+              </div>
+              <div class="col-md-4">
+                <label>Port</label>
+                <input class="form-control" value="587">
+              </div>
+              <div class="col-md-6">
+                <label>Verschlüsselung</label>
+                <select class="form-select"><option>STARTTLS</option><option>SSL</option></select>
+              </div>
+              <div class="col-md-6">
+                <label>Absendername</label>
+                <input class="form-control" value="TreeForge CMS">
+              </div>
+            </div>
+            <div class="mt-3">
+              <button class="tf-btn">Einstellungen speichern</button>
+              <button class="tf-btn tf-btn-secondary">Testmail senden</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="tf-card h-100">
+            <h2>Security</h2>
+            <ul class="tf-muted mb-0">
+              <li>SMTP-Passwort verschlüsselt</li>
+              <li>CSRF-Schutz vorbereitet</li>
+              <li>Mini-WAF geplant</li>
+              <li>Security-Log geplant</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="tf-kicker">Medienverwaltung</div>
+      <div class="d-flex justify-content-between align-items-end mb-3">
+        <h1 class="h2 mb-0">Medienbibliothek</h1>
+        <span class="tf-badge tf-badge-muted">2 Bilder gesamt</span>
+      </div>
+
+      <div class="tf-upload mb-4">
+        <div class="tf-upload-icon">↑</div>
+        <div class="flex-grow-1">
+          <h3 class="h5 mb-1">Bilder hochladen</h3>
+          <p class="tf-muted mb-0">Dateien hierher ziehen oder über den Button auswählen. Erlaubt: JPG, PNG, WEBP, GIF, SVG · maximal 10 MB pro Datei.</p>
+        </div>
+        <button class="tf-btn">Dateien auswählen</button>
+        <button class="tf-btn tf-btn-secondary">Auswahl hochladen</button>
+      </div>
+
+      <div class="tf-media-layout">
+        <aside class="tf-media-sidebar">
+          <h3 class="h5">Bilder anzeigen</h3>
+          <nav class="tf-media-filter">
+            <a class="active" href="#"><span>Alle Bilder</span><span class="tf-badge tf-badge-muted">2</span></a>
+            <a href="#"><span>Nicht einsortiert</span><span class="tf-badge tf-badge-muted">0</span></a>
+          </nav>
+          <hr>
+          <h3 class="h5">Kategorien</h3>
+          <nav class="tf-media-filter">
+            <a href="#"><span>Logos</span><span class="tf-badge tf-badge-muted">2</span></a>
+          </nav>
+          <div class="mt-3 tf-form">
+            <label>Neue Kategorie</label>
+            <input class="form-control mb-2" placeholder="z. B. Logos">
+            <button class="tf-btn tf-btn-secondary w-100 justify-content-center">+ Kategorie anlegen</button>
+          </div>
+        </aside>
+
+        <section>
+          <div class="d-flex justify-content-between mb-3">
+            <h2 class="h4">Alle Bilder</h2>
+            <span class="tf-muted">Bildkacheln auf eine Kategorie links ziehen, um sie zu verschieben.</span>
+          </div>
+          <div class="tf-media-grid">
+            <article class="tf-media-card">
+              <div class="tf-media-preview">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900&q=80" alt="">
+              </div>
+              <div class="tf-media-info">
+                <strong>landschaft</strong>
+                <div class="tf-muted small">landschaft.jpg</div>
+                <div class="tf-muted small">2048 × 1363 px · 4.26 MB</div>
+                <div class="mt-2">
+                  <button class="tf-btn tf-btn-secondary py-1">Bearbeiten</button>
+                  <button class="tf-btn tf-btn-secondary py-1">URL kopieren</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="tf-media-card">
+              <div class="tf-media-preview">
+                <div class="display-6 fw-bold text-secondary">TREEFORGE</div>
+              </div>
+              <div class="tf-media-info">
+                <strong>treeforge logo</strong>
+                <div class="tf-muted small">treeforge-logo.svg</div>
+                <div class="tf-muted small">SVG · Vektor · 9 KB</div>
+                <div class="mt-2">
+                  <button class="tf-btn tf-btn-secondary py-1">Bearbeiten</button>
+                  <button class="tf-btn tf-btn-secondary py-1">URL kopieren</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section>
+      <div class="tf-card">
+        <h2>Token-Auszug</h2>
+        <div class="tf-code">--tf-ink: #071725;
+--tf-paper: #F4F6F7;
+--tf-panel: #FFFFFF;
+--tf-muted: #64727D;
+--tf-brand-primary: #173F35;
+--tf-brand-secondary: #E2A900;</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

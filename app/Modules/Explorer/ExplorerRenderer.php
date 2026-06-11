@@ -260,12 +260,16 @@ HTML;
     protected function archiveLinks(array $archiveVersions, ?string $selectedArchiveVersion): string
     {
         if ($archiveVersions === []) {
-            return '<div class="tf-archive-empty">Noch keine Archivversionen.</div>';
+            return ''
+                . '<div class="tf-archive-empty">Noch keine Archivversionen.</div>'
+                . '<a class="tf-archive-link all" href="/archives?page=home"><span>📦</span><span>Archive Center öffnen</span></a>';
         }
+
+        $visibleVersions = array_slice($archiveVersions, 0, 5);
 
         $html = '<div class="tf-archive-list">';
 
-        foreach ($archiveVersions as $version) {
+        foreach ($visibleVersions as $version) {
             $id = (string)$version['version'];
             $label = (string)($version['created_at'] ?? $id);
             $active = $selectedArchiveVersion === $id ? ' active' : '';
@@ -275,11 +279,15 @@ HTML;
             $html .= '</a>';
         }
 
+        if (count($archiveVersions) > 5) {
+            $html .= '<div class="tf-archive-more">+' . (count($archiveVersions) - 5) . ' weitere Archivversion(en)</div>';
+        }
+
+        $html .= '<a class="tf-archive-link all" href="/archives?page=home"><span>📦</span><span>Alle Archive anzeigen</span></a>';
         $html .= '</div>';
 
         return $html;
     }
-
     protected function workflowActions(string $workspace, ?string $selectedArchiveVersion): string
     {
         if ($selectedArchiveVersion !== null && $selectedArchiveVersion !== '') {

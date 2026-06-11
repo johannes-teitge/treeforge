@@ -1,0 +1,164 @@
+{
+    "media": {
+        "max_file_size_mb": 10,
+        "max_files_per_upload": 20,
+        "normalize_filenames": true,
+        "unique_filenames": true,
+        "drag_drop_enabled": true,
+        "chunk_upload_enabled": false,
+        "chunk_size_mb": 5,
+        "file_types": {
+            "images": [
+                "jpg",
+                "jpeg",
+                "png",
+                "webp",
+                "gif",
+                "svg"
+            ],
+            "documents": [
+                "pdf",
+                "docx",
+                "xlsx",
+                "txt",
+                "csv",
+                "odt"
+            ],
+            "downloads": [
+                "zip"
+            ],
+            "audio": [],
+            "video": []
+        },
+        "svg": {
+            "allow_upload": true,
+            "sanitize": true,
+            "allow_as_image": true,
+            "allow_as_logo": true,
+            "allow_as_icon": true,
+            "allow_as_social_image": false,
+            "show_social_warning": true
+        },
+        "zip": {
+            "allow_upload": true,
+            "allow_as_download": true,
+            "allow_site_package": true,
+            "allow_extract": false,
+            "extract_admin_only": true,
+            "max_size_mb": 50
+        },
+        "downloads": {
+            "enabled": true,
+            "max_size_mb": 50,
+            "force_download_default": false
+        },
+        "accessibility": {
+            "require_alt_for_images": false,
+            "warn_missing_alt": true,
+            "require_title": false
+        },
+        "replace": {
+            "enabled": true,
+            "keep_media_id": true,
+            "keep_old_versions": true,
+            "max_versions": 10,
+            "invalidate_cache_on_replace": true
+        },
+        "security": {
+            "scan_upload_names": true,
+            "block_php_files": true,
+            "block_double_extensions": true,
+            "block_executable_mime": true,
+            "strip_exif": true
+        },
+        "render_cache": {
+            "enabled": true,
+            "keep_originals": true,
+            "cache_dir": "storage/media/cache",
+            "auto_generate_on_upload": false,
+            "generate_on_demand": true,
+            "clear_unused_after_days": 90
+        },
+        "upload_path": "storage/media",
+        "public_path": "/media",
+        "allowed_types": [
+            "jpg",
+            "jpeg",
+            "png",
+            "webp",
+            "svg",
+            "pdf"
+        ]
+    },
+    "general": {
+        "site_name": "TreeForge CMS",
+        "site_url": "http://localhost",
+        "admin_email": "johannes@teitge.de",
+        "timezone": "Europe/Berlin"
+    },
+    "languages": {
+        "default_language": "de",
+        "enabled_languages": [
+            "de"
+        ],
+        "multilanguage": false
+    },
+    "storage": {
+        "driver": "file",
+        "database_path": "storage/database/treeforge.sqlite"
+    },
+    "editor": {
+        "default_workspace": "draft",
+        "autosave": false,
+        "archive_limit": 50,
+        "allow_html_node": true,
+        "allow_raw_script": false
+    },
+    "security": {
+        "waf_enabled": true,
+        "rate_limit_enabled": true,
+        "max_requests_per_minute": 120,
+        "block_wordpress_probes": true,
+        "block_sqli_patterns": true,
+        "block_xss_patterns": true,
+        "login_protection": true,
+        "retention_days": 30,
+        "geo_blocking": {
+            "enabled": false,
+            "mode": "log",
+            "allow_countries": [
+                "DE",
+                "AT",
+                "CH"
+            ],
+            "block_countries": [],
+            "log_only_countries": [
+                "CN",
+                "RU",
+                "BY",
+                "KP",
+                "IR"
+            ],
+            "unknown_country_action": "log"
+        }
+    },
+    "analytics": {
+        "enabled": true,
+        "anonymize_ip": true,
+        "respect_do_not_track": true,
+        "retention_days": 30,
+        "count_bots": true
+    },
+    "updates": {
+        "channel": "alpha",
+        "update_server": "https://treeforge.de/api/updates",
+        "auto_update": false,
+        "verify_signature": true
+    },
+    "developer": {
+        "debug": true,
+        "custom_nodes_enabled": true,
+        "cache_enabled": false,
+        "maintenance_mode": false
+    }
+}
