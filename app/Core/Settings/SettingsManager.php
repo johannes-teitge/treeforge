@@ -124,7 +124,6 @@ class SettingsManager
                 'drag_drop_enabled' => true,
                 'chunk_upload_enabled' => false,
                 'chunk_size_mb' => 5,
-
                 'allowed_types' => ['jpg', 'jpeg', 'png', 'webp', 'gif', 'svg', 'pdf'],
 
                 'file_types' => [

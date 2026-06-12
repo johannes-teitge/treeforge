@@ -178,5 +178,73 @@
     "patch-052-fix-dashboard-parse-error.php": {
         "executed_at": "2026-06-11T21:53:17+00:00",
         "status": "ok"
+    },
+    "patch-048-media-settings-foundation.php": {
+        "executed_at": "2026-06-11T22:30:19+00:00",
+        "status": "ok"
+    },
+    "patch-053-media-upload-foundation.php": {
+        "executed_at": "2026-06-11T22:30:19+00:00",
+        "status": "ok"
+    },
+    "patch-054-media-edit-metadata.php": {
+        "executed_at": "2026-06-11T22:41:37+00:00",
+        "status": "ok"
+    },
+    "patch-055-fix-media-repository-recursive-metadata.php": {
+        "executed_at": "2026-06-11T22:49:16+00:00",
+        "status": "ok"
+    },
+    "patch-056-fix-media-edit-form-css.php": {
+        "executed_at": "2026-06-11T22:52:26+00:00",
+        "status": "ok"
+    },
+    "patch-057-media-replace-versioning.php": {
+        "executed_at": "2026-06-11T23:45:29+00:00",
+        "status": "ok"
+    },
+    "patch-058-fix-media-edit-replace-parse-error.php": {
+        "executed_at": "2026-06-12T00:02:59+00:00",
+        "status": "ok"
+    },
+    "patch-059-fix-media-edit-preview-url.php": {
+        "executed_at": "2026-06-12T00:04:36+00:00",
+        "status": "ok"
+    },
+    "patch-060-fix-media-edit-preview-cache-parameter.php": {
+        "executed_at": "2026-06-12T00:07:26+00:00",
+        "status": "ok"
+    },
+    "patch-061-media-replacement-engine.php": {
+        "executed_at": "2026-06-12T00:21:55+00:00",
+        "status": "ok"
+    },
+    "patch-062-media-cache-busting.php": {
+        "executed_at": "2026-06-12T00:26:54+00:00",
+        "status": "ok"
+    },
+    "patch-063-media-categories-foundation.php": {
+        "executed_at": "2026-06-12T00:33:11+00:00",
+        "status": "ok"
+    },
+    "patch-064-fix-media-edit-categories-parse-error.php": {
+        "executed_at": "2026-06-12T00:49:01+00:00",
+        "status": "ok"
+    },
+    "patch-065-media-drag-drop-categories.php": {
+        "executed_at": "2026-06-12T00:54:40+00:00",
+        "status": "ok"
+    },
+    "patch-066-media-category-management.php": {
+        "executed_at": "2026-06-12T01:17:03+00:00",
+        "status": "ok"
+    },
+    "patch-067-media-picker-modal-foundation.php": {
+        "executed_at": "2026-06-12T01:25:41+00:00",
+        "status": "ok"
+    },
+    "patch-069-fix-page-settings-media-picker-dom.php": {
+        "executed_at": "2026-06-12T01:34:28+00:00",
+        "status": "ok"
     }
 }

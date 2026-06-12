@@ -1783,22 +1783,41 @@
         ]
     },
     "patch-048-media-settings-foundation.php": {
-        "executed_at": "2026-06-11T21:30:56+00:00",
-        "status": "error",
-        "duration_ms": 3,
-        "error": "Class \"TreeForge\\Core\\Settings\\SettingsManager\" not found",
+        "executed_at": "2026-06-11T22:30:19+00:00",
+        "status": "ok",
+        "duration_ms": 8,
         "messages": [
             {
-                "time": "2026-06-11T21:30:56+00:00",
-                "message": "Patch 048 Media Settings Foundation gestartet"
+                "time": "2026-06-11T22:30:19+00:00",
+                "message": "Patch 048 Media Settings Foundation FIXED gestartet"
             },
             {
-                "time": "2026-06-11T21:30:56+00:00",
+                "time": "2026-06-11T22:30:19+00:00",
                 "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/Settings/SettingsManager.php"
             },
             {
-                "time": "2026-06-11T21:30:56+00:00",
+                "time": "2026-06-11T22:30:19+00:00",
                 "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/Settings/SettingsManager.php"
+            },
+            {
+                "time": "2026-06-11T22:30:19+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/storage/system/settings.json"
+            },
+            {
+                "time": "2026-06-11T22:30:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/storage/system/settings.json"
+            },
+            {
+                "time": "2026-06-11T22:30:19+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/docs/treeforge/38-media-settings-foundation.md"
+            },
+            {
+                "time": "2026-06-11T22:30:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/38-media-settings-foundation.md"
+            },
+            {
+                "time": "2026-06-11T22:30:19+00:00",
+                "message": "Patch 048 Media Settings Foundation FIXED fertig"
             }
         ]
     },
@@ -1970,6 +1989,594 @@
             {
                 "time": "2026-06-11T21:53:17+00:00",
                 "message": "Patch 052 Fix Dashboard Parse Error fertig"
+            }
+        ]
+    },
+    "patch-053-media-upload-foundation.php": {
+        "executed_at": "2026-06-11T22:30:19+00:00",
+        "status": "ok",
+        "duration_ms": 14,
+        "messages": [
+            {
+                "time": "2026-06-11T22:30:19+00:00",
+                "message": "Patch 053 Media Upload Foundation gestartet"
+            },
+            {
+                "time": "2026-06-11T22:30:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Media/MediaFilenameService.php"
+            },
+            {
+                "time": "2026-06-11T22:30:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Media/MediaUploadService.php"
+            },
+            {
+                "time": "2026-06-11T22:30:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/api/media/upload.php"
+            },
+            {
+                "time": "2026-06-11T22:30:19+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/admin/media/index.php"
+            },
+            {
+                "time": "2026-06-11T22:30:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/media/index.php"
+            },
+            {
+                "time": "2026-06-11T22:30:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/media-upload.js"
+            },
+            {
+                "time": "2026-06-11T22:30:19+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/media.css"
+            },
+            {
+                "time": "2026-06-11T22:30:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/media.css"
+            },
+            {
+                "time": "2026-06-11T22:30:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/43-media-upload-foundation.md"
+            },
+            {
+                "time": "2026-06-11T22:30:19+00:00",
+                "message": "Patch 053 Media Upload Foundation fertig"
+            }
+        ]
+    },
+    "patch-054-media-edit-metadata.php": {
+        "executed_at": "2026-06-11T22:41:37+00:00",
+        "status": "ok",
+        "duration_ms": 11,
+        "messages": [
+            {
+                "time": "2026-06-11T22:41:37+00:00",
+                "message": "Patch 054 Media Edit Metadata gestartet"
+            },
+            {
+                "time": "2026-06-11T22:41:37+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Media/MediaRepository.php"
+            },
+            {
+                "time": "2026-06-11T22:41:37+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/admin/media/index.php"
+            },
+            {
+                "time": "2026-06-11T22:41:37+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/media/index.php"
+            },
+            {
+                "time": "2026-06-11T22:41:37+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/media/edit.php"
+            },
+            {
+                "time": "2026-06-11T22:41:37+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/media.css"
+            },
+            {
+                "time": "2026-06-11T22:41:37+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/media.css"
+            },
+            {
+                "time": "2026-06-11T22:41:37+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/44-media-edit-metadata.md"
+            },
+            {
+                "time": "2026-06-11T22:41:37+00:00",
+                "message": "Patch 054 Media Edit Metadata fertig"
+            }
+        ]
+    },
+    "patch-055-fix-media-repository-recursive-metadata.php": {
+        "executed_at": "2026-06-11T22:49:16+00:00",
+        "status": "ok",
+        "duration_ms": 6,
+        "messages": [
+            {
+                "time": "2026-06-11T22:49:16+00:00",
+                "message": "Patch 055 Fix Media Repository Recursive Metadata gestartet"
+            },
+            {
+                "time": "2026-06-11T22:49:16+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/Media/MediaRepository.php"
+            },
+            {
+                "time": "2026-06-11T22:49:16+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Media/MediaRepository.php"
+            },
+            {
+                "time": "2026-06-11T22:49:16+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/45-fix-media-repository-recursive-metadata.md"
+            },
+            {
+                "time": "2026-06-11T22:49:16+00:00",
+                "message": "Patch 055 Fix Media Repository Recursive Metadata fertig"
+            }
+        ]
+    },
+    "patch-056-fix-media-edit-form-css.php": {
+        "executed_at": "2026-06-11T22:52:26+00:00",
+        "status": "ok",
+        "duration_ms": 6,
+        "messages": [
+            {
+                "time": "2026-06-11T22:52:26+00:00",
+                "message": "Patch 056 Fix Media Edit Form CSS gestartet"
+            },
+            {
+                "time": "2026-06-11T22:52:26+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/media.css"
+            },
+            {
+                "time": "2026-06-11T22:52:26+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/media.css"
+            },
+            {
+                "time": "2026-06-11T22:52:26+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/46-fix-media-edit-form-css.md"
+            },
+            {
+                "time": "2026-06-11T22:52:26+00:00",
+                "message": "Patch 056 Fix Media Edit Form CSS fertig"
+            }
+        ]
+    },
+    "patch-057-media-replace-versioning.php": {
+        "executed_at": "2026-06-11T23:45:29+00:00",
+        "status": "ok",
+        "duration_ms": 11,
+        "messages": [
+            {
+                "time": "2026-06-11T23:45:29+00:00",
+                "message": "Patch 057 Media Replace / Versioning gestartet"
+            },
+            {
+                "time": "2026-06-11T23:45:29+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Media/MediaReplaceService.php"
+            },
+            {
+                "time": "2026-06-11T23:45:29+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/admin/media/edit.php"
+            },
+            {
+                "time": "2026-06-11T23:45:29+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/media/edit.php"
+            },
+            {
+                "time": "2026-06-11T23:45:29+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/media.css"
+            },
+            {
+                "time": "2026-06-11T23:45:29+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/media.css"
+            },
+            {
+                "time": "2026-06-11T23:45:29+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/47-media-replace-versioning.md"
+            },
+            {
+                "time": "2026-06-11T23:45:29+00:00",
+                "message": "Patch 057 Media Replace / Versioning fertig"
+            }
+        ]
+    },
+    "patch-058-fix-media-edit-replace-parse-error.php": {
+        "executed_at": "2026-06-12T00:02:59+00:00",
+        "status": "ok",
+        "duration_ms": 6,
+        "messages": [
+            {
+                "time": "2026-06-12T00:02:59+00:00",
+                "message": "Patch 058 Fix Media Edit Replace Parse Error gestartet"
+            },
+            {
+                "time": "2026-06-12T00:02:59+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/admin/media/edit.php"
+            },
+            {
+                "time": "2026-06-12T00:02:59+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/media/edit.php"
+            },
+            {
+                "time": "2026-06-12T00:02:59+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/48-fix-media-edit-replace-parse-error.md"
+            },
+            {
+                "time": "2026-06-12T00:02:59+00:00",
+                "message": "Patch 058 Fix Media Edit Replace Parse Error fertig"
+            }
+        ]
+    },
+    "patch-059-fix-media-edit-preview-url.php": {
+        "executed_at": "2026-06-12T00:04:36+00:00",
+        "status": "ok",
+        "duration_ms": 7,
+        "messages": [
+            {
+                "time": "2026-06-12T00:04:36+00:00",
+                "message": "Patch 059 Fix Media Edit Preview URL gestartet"
+            },
+            {
+                "time": "2026-06-12T00:04:36+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/admin/media/edit.php"
+            },
+            {
+                "time": "2026-06-12T00:04:36+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/media/edit.php"
+            },
+            {
+                "time": "2026-06-12T00:04:36+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/49-fix-media-edit-preview-url.md"
+            },
+            {
+                "time": "2026-06-12T00:04:36+00:00",
+                "message": "Patch 059 Fix Media Edit Preview URL fertig"
+            }
+        ]
+    },
+    "patch-060-fix-media-edit-preview-cache-parameter.php": {
+        "executed_at": "2026-06-12T00:07:26+00:00",
+        "status": "ok",
+        "duration_ms": 7,
+        "messages": [
+            {
+                "time": "2026-06-12T00:07:26+00:00",
+                "message": "Patch 060 Fix Media Edit Preview Cache Parameter gestartet"
+            },
+            {
+                "time": "2026-06-12T00:07:26+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/admin/media/edit.php"
+            },
+            {
+                "time": "2026-06-12T00:07:26+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/media/edit.php"
+            },
+            {
+                "time": "2026-06-12T00:07:26+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/50-fix-media-edit-preview-cache-parameter.md"
+            },
+            {
+                "time": "2026-06-12T00:07:26+00:00",
+                "message": "Patch 060 Fix Media Edit Preview Cache Parameter fertig"
+            }
+        ]
+    },
+    "patch-061-media-replacement-engine.php": {
+        "executed_at": "2026-06-12T00:21:55+00:00",
+        "status": "ok",
+        "duration_ms": 6,
+        "messages": [
+            {
+                "time": "2026-06-12T00:21:55+00:00",
+                "message": "Patch 061 Media Replacement Engine gestartet"
+            },
+            {
+                "time": "2026-06-12T00:21:55+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/Media/MediaReplaceService.php"
+            },
+            {
+                "time": "2026-06-12T00:21:55+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Media/MediaReplaceService.php"
+            },
+            {
+                "time": "2026-06-12T00:21:55+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/51-media-replacement-engine.md"
+            },
+            {
+                "time": "2026-06-12T00:21:55+00:00",
+                "message": "Patch 061 Media Replacement Engine fertig"
+            }
+        ]
+    },
+    "patch-062-media-cache-busting.php": {
+        "executed_at": "2026-06-12T00:26:54+00:00",
+        "status": "ok",
+        "duration_ms": 12,
+        "messages": [
+            {
+                "time": "2026-06-12T00:26:54+00:00",
+                "message": "Patch 062 Media Cache Busting gestartet"
+            },
+            {
+                "time": "2026-06-12T00:26:54+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/Media/MediaRepository.php"
+            },
+            {
+                "time": "2026-06-12T00:26:54+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Media/MediaRepository.php"
+            },
+            {
+                "time": "2026-06-12T00:26:54+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/admin/media/index.php"
+            },
+            {
+                "time": "2026-06-12T00:26:54+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/media/index.php"
+            },
+            {
+                "time": "2026-06-12T00:26:54+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/admin/media/edit.php"
+            },
+            {
+                "time": "2026-06-12T00:26:54+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/media/edit.php"
+            },
+            {
+                "time": "2026-06-12T00:26:54+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/52-media-cache-busting.md"
+            },
+            {
+                "time": "2026-06-12T00:26:54+00:00",
+                "message": "Patch 062 Media Cache Busting fertig"
+            }
+        ]
+    },
+    "patch-063-media-categories-foundation.php": {
+        "executed_at": "2026-06-12T00:33:11+00:00",
+        "status": "ok",
+        "duration_ms": 16,
+        "messages": [
+            {
+                "time": "2026-06-12T00:33:11+00:00",
+                "message": "Patch 063 Media Categories Foundation gestartet"
+            },
+            {
+                "time": "2026-06-12T00:33:11+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/storage/media/categories.json"
+            },
+            {
+                "time": "2026-06-12T00:33:11+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Media/MediaCategoryRepository.php"
+            },
+            {
+                "time": "2026-06-12T00:33:11+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/admin/media/index.php"
+            },
+            {
+                "time": "2026-06-12T00:33:11+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/media/index.php"
+            },
+            {
+                "time": "2026-06-12T00:33:11+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/admin/media/edit.php"
+            },
+            {
+                "time": "2026-06-12T00:33:11+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/media/edit.php"
+            },
+            {
+                "time": "2026-06-12T00:33:11+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/media.css"
+            },
+            {
+                "time": "2026-06-12T00:33:11+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/media.css"
+            },
+            {
+                "time": "2026-06-12T00:33:11+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/53-media-categories-foundation.md"
+            },
+            {
+                "time": "2026-06-12T00:33:11+00:00",
+                "message": "Patch 063 Media Categories Foundation fertig"
+            }
+        ]
+    },
+    "patch-064-fix-media-edit-categories-parse-error.php": {
+        "executed_at": "2026-06-12T00:49:01+00:00",
+        "status": "ok",
+        "duration_ms": 7,
+        "messages": [
+            {
+                "time": "2026-06-12T00:49:01+00:00",
+                "message": "Patch 064 Fix Media Edit Categories Parse Error gestartet"
+            },
+            {
+                "time": "2026-06-12T00:49:01+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/admin/media/edit.php"
+            },
+            {
+                "time": "2026-06-12T00:49:01+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/media/edit.php"
+            },
+            {
+                "time": "2026-06-12T00:49:01+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/54-fix-media-edit-categories-parse-error.md"
+            },
+            {
+                "time": "2026-06-12T00:49:01+00:00",
+                "message": "Patch 064 Fix Media Edit Categories Parse Error fertig"
+            }
+        ]
+    },
+    "patch-065-media-drag-drop-categories.php": {
+        "executed_at": "2026-06-12T00:54:40+00:00",
+        "status": "ok",
+        "duration_ms": 12,
+        "messages": [
+            {
+                "time": "2026-06-12T00:54:40+00:00",
+                "message": "Patch 065 Media Drag & Drop Categories gestartet"
+            },
+            {
+                "time": "2026-06-12T00:54:40+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/api/media/set-category.php"
+            },
+            {
+                "time": "2026-06-12T00:54:40+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/admin/media/index.php"
+            },
+            {
+                "time": "2026-06-12T00:54:40+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/media/index.php"
+            },
+            {
+                "time": "2026-06-12T00:54:40+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/media-categories-dnd.js"
+            },
+            {
+                "time": "2026-06-12T00:54:40+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/media.css"
+            },
+            {
+                "time": "2026-06-12T00:54:40+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/media.css"
+            },
+            {
+                "time": "2026-06-12T00:54:40+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/55-media-drag-drop-categories.md"
+            },
+            {
+                "time": "2026-06-12T00:54:40+00:00",
+                "message": "Patch 065 Media Drag & Drop Categories fertig"
+            }
+        ]
+    },
+    "patch-066-media-category-management.php": {
+        "executed_at": "2026-06-12T01:17:03+00:00",
+        "status": "ok",
+        "duration_ms": 15,
+        "messages": [
+            {
+                "time": "2026-06-12T01:17:03+00:00",
+                "message": "Patch 066 Media Category Management gestartet"
+            },
+            {
+                "time": "2026-06-12T01:17:03+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/Media/MediaCategoryRepository.php"
+            },
+            {
+                "time": "2026-06-12T01:17:03+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Media/MediaCategoryRepository.php"
+            },
+            {
+                "time": "2026-06-12T01:17:03+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/media/category.php"
+            },
+            {
+                "time": "2026-06-12T01:17:03+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/admin/media/index.php"
+            },
+            {
+                "time": "2026-06-12T01:17:03+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/media/index.php"
+            },
+            {
+                "time": "2026-06-12T01:17:03+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/media.css"
+            },
+            {
+                "time": "2026-06-12T01:17:03+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/media.css"
+            },
+            {
+                "time": "2026-06-12T01:17:03+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/56-media-category-management.md"
+            },
+            {
+                "time": "2026-06-12T01:17:03+00:00",
+                "message": "Patch 066 Media Category Management fertig"
+            }
+        ]
+    },
+    "patch-067-media-picker-modal-foundation.php": {
+        "executed_at": "2026-06-12T01:25:41+00:00",
+        "status": "ok",
+        "duration_ms": 13,
+        "messages": [
+            {
+                "time": "2026-06-12T01:25:41+00:00",
+                "message": "Patch 067 Media Picker Modal Foundation gestartet"
+            },
+            {
+                "time": "2026-06-12T01:25:41+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/media/picker.php"
+            },
+            {
+                "time": "2026-06-12T01:25:41+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/media-picker.js"
+            },
+            {
+                "time": "2026-06-12T01:25:41+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/media.css"
+            },
+            {
+                "time": "2026-06-12T01:25:41+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/media.css"
+            },
+            {
+                "time": "2026-06-12T01:25:41+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Admin/AdminLayout.php"
+            },
+            {
+                "time": "2026-06-12T01:25:41+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Admin/AdminLayout.php"
+            },
+            {
+                "time": "2026-06-12T01:25:41+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/57-media-picker-modal-foundation.md"
+            },
+            {
+                "time": "2026-06-12T01:25:41+00:00",
+                "message": "Patch 067 Media Picker Modal Foundation fertig"
+            }
+        ]
+    },
+    "patch-069-fix-page-settings-media-picker-dom.php": {
+        "executed_at": "2026-06-12T01:34:28+00:00",
+        "status": "ok",
+        "duration_ms": 10,
+        "messages": [
+            {
+                "time": "2026-06-12T01:34:28+00:00",
+                "message": "Patch 069 Fix Page Settings Media Picker DOM Integration gestartet"
+            },
+            {
+                "time": "2026-06-12T01:34:28+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/page-settings-media-picker.js"
+            },
+            {
+                "time": "2026-06-12T01:34:28+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Admin/AdminLayout.php"
+            },
+            {
+                "time": "2026-06-12T01:34:28+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Admin/AdminLayout.php"
+            },
+            {
+                "time": "2026-06-12T01:34:28+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/page-settings.css"
+            },
+            {
+                "time": "2026-06-12T01:34:28+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/page-settings.css"
+            },
+            {
+                "time": "2026-06-12T01:34:28+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/59-fix-page-settings-media-picker-dom.md"
+            },
+            {
+                "time": "2026-06-12T01:34:28+00:00",
+                "message": "Patch 069 Fix Page Settings Media Picker DOM Integration fertig"
             }
         ]
     }

@@ -1,7 +1,65 @@
 {
     "id": "home",
-    "type": "page",
+    "type": "root",
     "title": "Startseite",
+    "slug": "",
+    "status": "published",
+    "content_type": "page",
+    "template": "default",
+    "lang": "de",
+    "seo": {
+        "meta_title": "",
+        "meta_description": "",
+        "keywords": "",
+        "canonical_url": "",
+        "robots": "index,follow"
+    },
+    "social": {
+        "og_title": "",
+        "og_description": "",
+        "og_image": "",
+        "twitter_card": "summary_large_image"
+    },
+    "overview": {
+        "teaser": "",
+        "excerpt": "",
+        "featured_image": "landschaft-jpg",
+        "featured": false
+    },
+    "routing": {
+        "path": "/",
+        "is_home": true,
+        "no_slug": true,
+        "redirect_from": [],
+        "redirect_to": ""
+    },
+    "visibility": {
+        "active": true,
+        "valid_from": null,
+        "valid_until": null,
+        "schedule_enabled": false,
+        "schedule": {
+            "days": [
+                "mon",
+                "tue",
+                "wed",
+                "thu",
+                "fri"
+            ],
+            "time_from": "",
+            "time_until": "",
+            "timezone": "Europe/Berlin"
+        },
+        "outside_schedule": "hide"
+    },
+    "advanced": {
+        "author": "",
+        "editor": "",
+        "created_at": "2026-06-12T01:34",
+        "published_at": null,
+        "archived_at": null,
+        "experiments": []
+    },
     "children": [
         {
             "id": "node_hero",
@@ -88,5 +146,6 @@
         "from": "review",
         "to": "published",
         "created_at": "2026-06-11T07:20:40+00:00"
-    }
+    },
+    "updated_at": "2026-06-12T01:35:10+00:00"
 }

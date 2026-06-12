@@ -45,7 +45,7 @@ class AdminLayout
             . $content
             . '</section>'
             . '</main>'
-            . '</body>'
+            . '<script src="/assets/js/media-picker.js"></script><script src="/assets/js/page-settings-media-picker.js"></script></body>'
             . '</html>';
     }
 
