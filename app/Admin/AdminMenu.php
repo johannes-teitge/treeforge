@@ -15,9 +15,21 @@ class AdminMenu
                 'key' => 'dashboard',
             ],
             [
-                'label' => 'Explorer',
-                'href' => '/explorer',
+                'label' => 'Pages',
+                'href' => '/admin/pages/',
+                'icon' => '📄',
+                'key' => 'pages',
+            ],
+            [
+                'label' => 'Explorer V2',
+                'href' => '/admin/explorer-v2/?page=home&workspace=draft',
                 'icon' => '🌳',
+                'key' => 'explorer-v2',
+            ],
+            [
+                'label' => 'Explorer V1',
+                'href' => '/admin/explorer/',
+                'icon' => '🌿',
                 'key' => 'explorer',
             ],
             [

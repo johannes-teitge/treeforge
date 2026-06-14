@@ -53,7 +53,7 @@ $geo = (array)($data['security']['geo_blocking'] ?? []);
 $geoEnabled = (bool)($geo['enabled'] ?? false);
 
 $tiles = [
-    ['Pages', '/admin/page-settings/', 'pages', $pageCount . ' Seiten', 'RootNode, SEO, Routing, Visibility'],
+    ['Pages', '/admin/pages/', 'pages', $pageCount . ' Seiten', 'RootNode, SEO, Routing, Visibility'],
     ['Media', '/admin/media/', 'media', $mediaCount . ' Medien', 'Originale, Meta, Cache, Presets'],
     ['Archives', '/archives', 'archive', $archiveCount . ' Archive', 'Versionen ansehen und wiederherstellen'],
     ['Templates', '#', 'templates', 'geplant', 'Themes, Presets, Site Packages'],

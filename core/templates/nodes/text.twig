@@ -1,0 +1,11 @@
+{#
+  Core Node Template: text
+
+  node.content_html wird vom Renderer aus normalem Text erzeugt:
+  - Leerzeile -> <p>
+  - einzelner Zeilenumbruch -> <br>
+  - Text ist vorher escaped
+#}
+<div id="{{ node.dom_id }}" class="{{ node.class }}">
+  {{ node.content_html|default('')|raw }}
+</div>

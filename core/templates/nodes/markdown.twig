@@ -1,0 +1,7 @@
+{#
+  Core Node Template: markdown
+  node.html wird serverseitig aus Markdown erzeugt und dort bereinigt.
+#}
+<div id="{{ node.dom_id }}" class="{{ node.class }}">
+  {{ node.html|default('')|raw }}
+</div>

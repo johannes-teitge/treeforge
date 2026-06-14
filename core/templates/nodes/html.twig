@@ -1,0 +1,7 @@
+{#
+  Core Node Template: html
+  Achtung: node.html ist bewusst Raw-HTML. Später nur für berechtigte Nutzer erlauben.
+#}
+<div id="{{ node.dom_id }}" class="{{ node.class }}">
+  {{ node.html|default('')|raw }}
+</div>

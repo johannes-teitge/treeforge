@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="{{ page.lang|default('de') }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title|default('Seite') }} · {{ site.name|default('TreeForge') }}</title>
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/assets/brand/treeforge-icon.svg">
+
+  {% for css in assets.css|default([]) %}
+    <link rel="stylesheet" href="{{ css }}">
+  {% endfor %}
+
+  {% if collected_css|default('') %}
+    <style id="tf-collected-css">
+{{ collected_css|raw }}
+    </style>
+  {% endif %}
+</head>
+<body class="tf-site tf-template-core {{ page.body_class|default('') }}{% if preview_bar.enabled|default(false) %} tf-has-preview-bar{% endif %}">
+  <a class="tf-skip-link" href="#tf-main-content">Zum Inhalt springen</a>
+
+  {% if preview_bar.enabled|default(false) %}
+    <aside class="tf-preview-bar" aria-label="TreeForge Vorschauleiste">
+      <div class="tf-preview-bar-inner">
+        <div class="tf-preview-bar-main">
+          <strong>TreeForge Preview</strong>
+          <span>Workspace: <b>{{ preview_bar.workspace }}</b></span>
+          <span>Seite: <b>{{ preview_bar.page_id }}</b></span>
+          <span>Renderer: <b>{{ preview_bar.renderer }}</b></span>
+        </div>
+        <nav class="tf-preview-bar-actions" aria-label="Preview Aktionen">
+          <a href="{{ preview_bar.edit_url }}">Bearbeiten</a>
+          <a href="{{ preview_bar.pages_url }}">Seiten</a>
+          <a href="{{ preview_bar.strict_url }}">Twig Strict</a>
+          <a href="{{ preview_bar.legacy_url }}">Legacy</a>
+          <a href="{{ preview_bar.published_url }}">Published</a>
+        </nav>
+      </div>
+    </aside>
+  {% endif %}
+
+  <header class="tf-site-header" role="banner">
+    <div class="tf-container tf-header-inner">
+      <a class="tf-brand" href="/" aria-label="{{ site.name|default('TreeForge') }} Startseite">
+        <img src="/assets/brand/treeforge-icon.svg" alt="" class="tf-brand-icon" aria-hidden="true">
+        <span class="tf-brand-text">
+          <span class="tf-brand-name">{{ site.name|default('TreeForge') }}</span>
+          {% if site.tagline|default('') %}
+            <span class="tf-brand-tagline">{{ site.tagline }}</span>
+          {% endif %}
+        </span>
+      </a>
+
+      {% if tf_has_area('header') %}
+        <div class="tf-header-area" data-area="header">
+          {{ tf_area('header')|raw }}
+        </div>
+      {% endif %}
+    </div>
+  </header>
+
+  {% block before_main %}{% endblock %}
+
+  <main id="tf-main-content" class="tf-main" role="main">
+    {% block body %}{% endblock %}
+  </main>
+
+  <footer class="tf-site-footer" role="contentinfo">
+    <div class="tf-container tf-footer-inner" data-area="footer">
+      {% if tf_has_area('footer') %}
+        {{ tf_area('footer')|raw }}
+      {% else %}
+        <p>&copy; {{ "now"|date("Y") }} {{ site.name|default('TreeForge') }}</p>
+      {% endif %}
+    </div>
+  </footer>
+
+  {% for js in assets.js|default([]) %}
+    <script src="{{ js }}" defer></script>
+  {% endfor %}
+</body>
+</html>

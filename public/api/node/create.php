@@ -6,6 +6,7 @@ require_once __DIR__ . '/../../../app/Core/bootstrap.php';
 
 use TreeForge\Core\NodeCreator;
 use TreeForge\Core\NodeInspector;
+use TreeForge\Core\NodeIdGenerator;
 use TreeForge\Core\Workspace;
 
 header('Content-Type: application/json; charset=utf-8');
@@ -35,6 +36,7 @@ try {
     $workspace->ensurePage($pageId);
 
     $pageData = $workspace->loadPageArray($pageId);
+    $options['_existing_ids'] = NodeIdGenerator::collectIds($pageData);
     $newNode = NodeCreator::createNode($type, $options);
 
     NodeCreator::appendNode($pageData, $parentId, $newNode);

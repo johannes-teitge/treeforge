@@ -708,3 +708,362 @@ pre {
   background: rgba(216, 138, 34, .14);
   color: #7a4b0f;
 }
+/* PATCH 071 EXPLORER LAYOUT */
+
+.tf-current-page-info {
+  margin-top: .15rem !important;
+  font-size: .9rem;
+  color: #5f6b65;
+}
+
+.tf-explorer-shell {
+  grid-template-columns: minmax(520px, 1.35fr) minmax(420px, .85fr);
+  grid-template-areas:
+    "workspaces workspaces"
+    "tree inspector";
+  align-items: start;
+}
+
+.tf-workspaces {
+  grid-area: workspaces;
+  min-height: auto;
+  display: grid;
+  grid-template-columns: auto repeat(3, minmax(150px, 1fr)) minmax(220px, auto) minmax(260px, 1fr);
+  gap: .65rem;
+  align-items: center;
+  padding: .75rem;
+}
+
+.tf-workspaces > h2,
+.tf-aside-subtitle {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.tf-workspace-link {
+  margin: 0;
+  min-height: 48px;
+}
+
+.tf-workspace-note {
+  margin: 0;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.tf-archive-list {
+  display: flex;
+  gap: .45rem;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.tf-archive-link {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.tf-tree-panel {
+  grid-area: tree;
+}
+
+.tf-inspector {
+  grid-area: inspector;
+}
+
+.tf-panel {
+  min-height: calc(100vh - 210px);
+}
+
+.tf-workspaces {
+  min-height: auto;
+}
+
+@media (max-width: 1300px) {
+  .tf-explorer-shell {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "workspaces"
+      "tree"
+      "inspector";
+  }
+
+  .tf-workspaces {
+    grid-template-columns: 1fr;
+  }
+
+  .tf-archive-list {
+    display: grid;
+  }
+}
+/* PATCH 073 EXPLORER CLASSIC ADMIN ALIGNMENT */
+
+:root {
+  --tf-green: var(--tf-color-primary, #071725);
+  --tf-gold: var(--tf-color-secondary, #E2A900);
+  --tf-dark: var(--tf-text-default, #071725);
+  --tf-light: var(--tf-bg-app, #F4F6F7);
+  --tf-cream: var(--tf-bg-card, #FFFFFF);
+  --tf-border: var(--tf-border-default, #D7DDE2);
+}
+
+body {
+  background: var(--tf-bg-app, #F4F6F7);
+  color: var(--tf-text-default, #071725);
+  font-size: .92rem;
+}
+
+.tf-explorer-header {
+  min-height: 58px;
+  padding: .7rem 1.25rem;
+  background: var(--tf-bg-card, #FFFFFF);
+  border-bottom: 1px solid var(--tf-border-default, #D7DDE2);
+  box-shadow: 0 1px 0 rgba(7,23,37,.03);
+}
+
+.tf-explorer-logo {
+  width: 190px;
+  max-width: 32vw;
+}
+
+.tf-explorer-header h1 {
+  color: var(--tf-text-heading, #071725);
+  font-size: 1.05rem;
+  font-weight: 680;
+}
+
+.tf-explorer-header p {
+  color: var(--tf-text-muted, #64727D);
+  font-size: .82rem;
+}
+
+.tf-current-page-info strong {
+  color: var(--tf-color-secondary, #E2A900);
+}
+
+.tf-explorer-shell {
+  padding: 1rem 1.25rem;
+  gap: 1rem;
+}
+
+.tf-panel {
+  background: var(--tf-bg-card, #FFFFFF);
+  border: 1px solid var(--tf-border-default, #D7DDE2);
+  border-radius: var(--tf-radius-lg, 1rem);
+  box-shadow: var(--tf-shadow-sm, 0 8px 24px rgba(18,26,23,.06));
+}
+
+.tf-panel h2,
+.tf-aside-subtitle,
+.tf-inspector-section h3,
+.tf-form-row label,
+.tf-page-json summary,
+.tf-tree-page > .tf-tree-label {
+  color: var(--tf-text-heading, #071725);
+}
+
+.tf-workspaces {
+  background: var(--tf-bg-card, #FFFFFF);
+}
+
+.tf-workspace-link,
+.tf-archive-link {
+  color: var(--tf-text-default, #071725);
+  border: 1px solid transparent;
+  background: transparent;
+}
+
+.tf-workspace-link:hover,
+.tf-workspace-link.active,
+.tf-archive-link:hover,
+.tf-archive-link.active {
+  background: var(--tf-bg-hover, #EAF1F5);
+  color: var(--tf-text-heading, #071725);
+  border-color: var(--tf-border-default, #D7DDE2);
+}
+
+.tf-dot {
+  background: var(--tf-color-secondary, #E2A900);
+}
+
+.tf-count,
+.tf-badge {
+  background: var(--tf-bg-hover, #EAF1F5);
+  color: var(--tf-text-muted, #64727D);
+}
+
+.tf-badge.archive {
+  background: var(--tf-state-warning-bg, #FFF3D7);
+  color: var(--tf-state-warning-text, #7A5400);
+}
+
+.tf-workspace-note,
+.tf-workflow-box,
+.tf-archive-empty,
+.tf-inspector-empty,
+.tf-panel-footer span,
+.tf-property-row,
+.tf-property-empty,
+.tf-markdown-preview,
+.tf-modal-close,
+.tf-input,
+.tf-textarea {
+  background: var(--tf-bg-card, #FFFFFF);
+  color: var(--tf-text-muted, #64727D);
+  border-color: var(--tf-border-default, #D7DDE2);
+}
+
+.tf-workflow-box {
+  border: 1px solid var(--tf-border-default, #D7DDE2);
+}
+
+.tf-workflow-button,
+.tf-workflow-link,
+.tf-action-button,
+.tf-tree-tool.primary {
+  background: var(--tf-color-primary, #071725);
+  color: #FFFFFF;
+  border: 1px solid var(--tf-color-primary, #071725);
+  border-radius: var(--tf-radius-sm, .5rem);
+  font-weight: 650;
+}
+
+.tf-workflow-link.preview {
+  background: var(--tf-color-secondary, #E2A900);
+  border-color: var(--tf-color-secondary, #E2A900);
+  color: #071725;
+}
+
+.tf-workflow-button.secondary,
+.tf-workflow-link.secondary,
+.tf-action-button.secondary,
+.tf-tree-tool {
+  background: var(--tf-bg-card, #FFFFFF);
+  color: var(--tf-text-heading, #071725);
+  border: 1px solid var(--tf-border-default, #D7DDE2);
+  border-radius: var(--tf-radius-sm, .5rem);
+  font-weight: 650;
+}
+
+.tf-workflow-button:hover,
+.tf-workflow-link:hover,
+.tf-action-button:hover,
+.tf-tree-tool:hover {
+  filter: none;
+  box-shadow: 0 0 0 .18rem var(--tf-focus-ring, rgba(226,169,0,.22));
+}
+
+.tf-tree-node-button {
+  background: var(--tf-bg-card, #FFFFFF);
+  color: var(--tf-text-default, #071725);
+  border: 1px solid var(--tf-border-soft, #E5E9EC);
+  border-radius: var(--tf-radius-md, .75rem);
+  font-weight: 560;
+}
+
+.tf-tree-node-button:hover,
+.tf-tree-node-button.active {
+  background: var(--tf-bg-hover, #EAF1F5);
+  border-color: var(--tf-border-default, #D7DDE2);
+  box-shadow: inset 3px 0 0 var(--tf-color-secondary, #E2A900);
+}
+
+.tf-node-id {
+  color: var(--tf-text-muted, #64727D);
+  font-weight: 460;
+}
+
+.tf-tree-toggle {
+  background: var(--tf-bg-card, #FFFFFF);
+  color: var(--tf-text-heading, #071725);
+  border: 1px solid var(--tf-border-default, #D7DDE2);
+}
+
+.tf-inspector dl {
+  background: var(--tf-bg-card, #FFFFFF);
+  border: 1px solid var(--tf-border-soft, #E5E9EC);
+}
+
+.tf-inspector dt {
+  color: var(--tf-text-muted, #64727D);
+}
+
+.tf-inspector dd {
+  color: var(--tf-text-default, #071725);
+}
+
+.tf-editor-section {
+  background: var(--tf-bg-subtle, #F8FAFB);
+  border: 1px solid var(--tf-border-default, #D7DDE2);
+}
+
+.tf-editor-hint,
+.tf-save-status,
+.tf-panel-footer,
+.tf-property-empty {
+  color: var(--tf-text-muted, #64727D);
+}
+
+.tf-property-name {
+  color: var(--tf-text-heading, #071725);
+}
+
+.tf-property-value {
+  background: var(--tf-bg-hover, #EAF1F5);
+  color: var(--tf-text-default, #071725);
+}
+
+pre {
+  background: var(--tf-code-bg, #071725);
+  color: var(--tf-code-text, #EAF1F5);
+  border-radius: var(--tf-radius-md, .75rem);
+}
+
+.tf-notice {
+  background: var(--tf-state-warning-bg, #FFF3D7);
+  color: var(--tf-state-warning-text, #7A5400);
+  border: 1px solid var(--tf-state-warning-border, #F1D38A);
+  border-radius: var(--tf-radius-md, .75rem);
+  font-weight: 560;
+}
+
+.tf-toast-success {
+  background: var(--tf-state-success-text, #15713A);
+}
+
+.tf-toast-error {
+  background: var(--tf-state-danger-text, #C62828);
+}
+
+.tf-modal {
+  background: var(--tf-bg-card, #FFFFFF);
+  border: 1px solid var(--tf-border-default, #D7DDE2);
+  border-radius: var(--tf-radius-lg, 1rem);
+}
+
+.tf-modal-head,
+.tf-modal-actions {
+  border-color: var(--tf-border-default, #D7DDE2);
+}
+
+.tf-modal-head h2 {
+  color: var(--tf-text-heading, #071725);
+}
+
+.tf-segmented span {
+  background: var(--tf-bg-card, #FFFFFF);
+  color: var(--tf-text-heading, #071725);
+  border: 1px solid var(--tf-border-default, #D7DDE2);
+}
+
+.tf-segmented input:checked + span {
+  background: var(--tf-color-primary, #071725);
+  color: #FFFFFF;
+  border-color: var(--tf-color-primary, #071725);
+}
+
+.tf-wizard-info {
+  background: var(--tf-bg-hover, #EAF1F5);
+  color: var(--tf-text-muted, #64727D);
+}

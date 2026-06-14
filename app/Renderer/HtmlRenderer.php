@@ -9,12 +9,17 @@ use TreeForge\Core\MarkdownRenderer;
 use TreeForge\Core\Node;
 use TreeForge\Core\Page;
 use TreeForge\Nodes\ButtonNode;
+use TreeForge\Nodes\UnknownNode;
+use TreeForge\Nodes\JavaScriptNode;
+use TreeForge\Nodes\HtmlNode;
 use TreeForge\Nodes\ColumnNode;
 use TreeForge\Nodes\ColumnsNode;
 use TreeForge\Nodes\CssNode;
 use TreeForge\Nodes\ImageNode;
 use TreeForge\Nodes\MarkdownNode;
+use TreeForge\Nodes\CodeBlockNode;
 use TreeForge\Nodes\TextNode;
+use TreeForge\Nodes\HeadingNode;
 
 class HtmlRenderer
 {
@@ -66,6 +71,22 @@ HTML;
 
     protected function renderNode(Node $node): string
     {
+        if ($node instanceof HtmlNode) {
+            return $this->renderHtml($node);
+        }
+
+        if ($node instanceof JavaScriptNode) {
+            return $this->renderJavaScript($node);
+        }
+
+        if ($node instanceof UnknownNode) {
+            return $this->renderUnknown($node);
+        }
+
+        if ($node instanceof HeadingNode) {
+            return $this->renderHeading($node);
+        }
+
         if ($node instanceof TextNode) {
             return $this->renderText($node);
         }
@@ -91,6 +112,10 @@ HTML;
             return '';
         }
 
+        if ($node instanceof CodeBlockNode) {
+            return $this->renderCodeBlock($node);
+        }
+
         if ($node instanceof MarkdownNode) {
             return $this->renderMarkdown($node);
         }
@@ -100,17 +125,104 @@ HTML;
             . '</div>';
     }
 
-    protected function renderText(TextNode $node): string
+
+    protected function renderHtml(HtmlNode $node): string
     {
-        $content = nl2br(htmlspecialchars($node->content(), ENT_QUOTES, 'UTF-8'));
+        $html = $node->html();
+        $id = htmlspecialchars($this->domId($node), ENT_QUOTES, 'UTF-8');
+
+        if (trim($html) === '') {
+            return '';
+        }
 
         return <<<HTML
-<div class="tf-node tf-node-text">
+<div id="{$id}" class="tf-node tf-node-html">
+  {$html}
+</div>
+HTML;
+    }
+
+    protected function renderJavaScript(JavaScriptNode $node): string
+    {
+        $script = trim($node->script());
+        $id = htmlspecialchars($this->domId($node), ENT_QUOTES, 'UTF-8');
+
+        if ($script === '') {
+            return '';
+        }
+
+        return <<<HTML
+<script id="{$id}" class="tf-node tf-node-javascript">
+{$script}
+</script>
+HTML;
+    }
+
+    protected function renderUnknown(UnknownNode $node): string
+    {
+        $type = htmlspecialchars($node->originalType(), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+        $id = htmlspecialchars($this->domId($node), ENT_QUOTES, 'UTF-8');
+
+        return <<<HTML
+<div id="{$id}" class="tf-node tf-node-unknown" data-node-type="{$type}">
+  <strong>Unbekannter Node-Typ:</strong> {$type}
+</div>
+HTML;
+    }
+
+    protected function renderHeading(HeadingNode $node): string
+    {
+        $level = $node->level();
+        $text = htmlspecialchars($node->text(), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+        $id = htmlspecialchars($this->domId($node), ENT_QUOTES, 'UTF-8');
+
+        return <<<HTML
+<{$level} id="{$id}" class="tf-node tf-node-heading tf-node-heading-{$level}">{$text}</{$level}>
+HTML;
+    }
+
+    protected function renderText(TextNode $node): string
+    {
+        $content = $this->renderTextContentAsParagraphs($node->content());
+        $id = htmlspecialchars($this->domId($node), ENT_QUOTES, 'UTF-8');
+
+        if ($content === '') {
+            return '';
+        }
+
+        return <<<HTML
+<div id="{$id}" class="tf-node tf-node-text">
   {$content}
 </div>
 HTML;
     }
 
+    protected function renderTextContentAsParagraphs(string $text): string
+    {
+        $text = str_replace(["\r\n", "\r"], "\n", trim($text));
+
+        if ($text === '') {
+            return '';
+        }
+
+        $blocks = preg_split("/\n{2,}/", $text) ?: [];
+        $paragraphs = [];
+
+        foreach ($blocks as $block) {
+            $block = trim($block, "\n");
+
+            if (trim($block) === '') {
+                continue;
+            }
+
+            $escaped = htmlspecialchars($block, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+            $escaped = preg_replace("/\n/", "<br>\n", $escaped) ?? $escaped;
+
+            $paragraphs[] = '<p>' . $escaped . '</p>';
+        }
+
+        return implode("\n  ", $paragraphs);
+    }
     protected function renderImage(ImageNode $node): string
     {
         $src = htmlspecialchars($node->src(), ENT_QUOTES, 'UTF-8');
@@ -186,6 +298,34 @@ HTML;
         $this->inlineCss .= "\n/* CSS Node: " . $node->get('id', 'unknown') . " */\n" . $css . "\n";
     }
 
+    protected function renderCodeBlock(CodeBlockNode $node): string
+    {
+        $code = htmlspecialchars($node->code(), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+        $language = htmlspecialchars($node->language(), ENT_QUOTES, 'UTF-8');
+        $caption = htmlspecialchars($node->caption(), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+        $id = htmlspecialchars($this->domId($node), ENT_QUOTES, 'UTF-8');
+
+        $classes = ['tf-node', 'tf-node-codeblock', 'language-' . $language];
+
+        if ($node->showLineNumbers()) {
+            $classes[] = 'has-line-numbers';
+        }
+
+        if ($node->wrap()) {
+            $classes[] = 'is-wrapped';
+        }
+
+        $class = htmlspecialchars(implode(' ', $classes), ENT_QUOTES, 'UTF-8');
+        $captionHtml = $caption !== '' ? '<figcaption>' . $caption . '</figcaption>' : '';
+
+        return <<<HTML
+<figure id="{$id}" class="{$class}">
+  {$captionHtml}
+  <pre><code class="language-{$language}">{$code}</code></pre>
+</figure>
+HTML;
+    }
+
     protected function renderMarkdown(MarkdownNode $node): string
     {
         $html = MarkdownRenderer::toHtml($node->content());
@@ -195,6 +335,30 @@ HTML;
   {$html}
 </div>
 HTML;
+    }
+
+    protected function domId(Node $node): string
+    {
+        $data = $node->data();
+        $advanced = [];
+
+        if (isset($data['properties']) && is_array($data['properties'])) {
+            $advanced = $data['properties']['advanced'] ?? [];
+            $advanced = is_array($advanced) ? $advanced : [];
+        }
+
+        $customId = trim((string)($advanced['css_id'] ?? $data['css_id'] ?? ''));
+
+        if ($customId !== '') {
+            return preg_replace('/[^A-Za-z0-9_-]/', '-', $customId) ?: 'tf-node';
+        }
+
+        $id = trim($node->id());
+        $id = $id !== '' ? $id : 'unknown';
+        $id = str_replace('_', '-', $id);
+        $id = preg_replace('/[^A-Za-z0-9_-]/', '-', $id) ?: 'unknown';
+
+        return 'tf-' . $id;
     }
 
     protected function markdown(): CommonMarkConverter

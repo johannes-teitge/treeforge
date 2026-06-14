@@ -8,6 +8,7 @@ use TreeForge\Core\ArchiveManager;
 use TreeForge\Core\Config;
 use TreeForge\Core\Workspace;
 use TreeForge\Renderer\HtmlRenderer;
+use TreeForge\Renderer\TwigPageRenderer;
 
 $root = dirname(__DIR__);
 
@@ -45,6 +46,27 @@ if ($archiveVersion !== '') {
     $page = $workspace->loadPage($pageId);
 }
 
-$renderer = new HtmlRenderer();
+$rendererMode = strtolower(trim((string)($_GET['renderer'] ?? getenv('TREEFORGE_RENDERER') ?: 'twig')));
+$twigAvailable = class_exists(TwigPageRenderer::class) && class_exists(\Twig\Environment::class);
 
-echo $renderer->render($page, $config);
+if ($rendererMode === 'legacy' || !$twigAvailable) {
+    $renderer = new HtmlRenderer();
+    echo $renderer->render($page, $config);
+    return;
+}
+
+try {
+    $renderer = new TwigPageRenderer($root, $workspaceName);
+    echo $renderer->render($page, $config);
+} catch (\Throwable $e) {
+    if ($rendererMode === 'twig-strict' || getenv('TREEFORGE_RENDERER_STRICT') === '1') {
+        throw $e;
+    }
+
+    echo "\n<!-- TreeForge Twig fallback: "
+        . htmlspecialchars($e->getMessage(), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8')
+        . " -->\n";
+
+    $renderer = new HtmlRenderer();
+    echo $renderer->render($page, $config);
+}

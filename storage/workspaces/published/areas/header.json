@@ -1,0 +1,45 @@
+{
+    "id": "header",
+    "type": "RootNode",
+    "kind": "area",
+    "title": "Header",
+    "description": "Header globaler Inhaltsbereich.",
+    "status": "draft",
+    "visibility": "hidden",
+    "system": true,
+    "created_at": "2026-06-14T01:42:03+00:00",
+    "updated_at": "2026-06-14T01:42:03+00:00",
+    "children": [
+        {
+            "id": "n_c8d2502cb8db7d40",
+            "type": "text",
+            "title": "Header Text",
+            "status": "active",
+            "visibility": "visible",
+            "editor_note": "",
+            "properties": {
+                "content": {
+                    "content": "TreeForge",
+                    "text": "TreeForge"
+                },
+                "layout": [],
+                "spacing": [],
+                "design": [],
+                "behavior": [],
+                "advanced": [],
+                "custom_css": ""
+            },
+            "children": [],
+            "content": "TreeForge"
+        }
+    ],
+    "properties": {
+        "content": [],
+        "layout": [],
+        "spacing": [],
+        "design": [],
+        "behavior": [],
+        "advanced": [],
+        "custom_css": ""
+    }
+}

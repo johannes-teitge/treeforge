@@ -1,0 +1,6 @@
+{# Core Node Template: button #}
+<div id="{{ node.dom_id }}" class="{{ node.class }}">
+  <a href="{{ node.url|default('#') }}" class="tf-button tf-button-{{ node.variant|default('primary') }}"{% if node.target|default('') %} target="{{ node.target }}"{% endif %}>
+    {{ node.label|default('Button') }}
+  </a>
+</div>

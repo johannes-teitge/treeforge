@@ -21,7 +21,7 @@ class AdminLayout
             . '<link rel="stylesheet" href="/assets/css/admin.css">'
             . '<link rel="stylesheet" href="/assets/css/page-settings.css">'
             . '<link rel="stylesheet" href="/assets/css/media.css"><link rel="stylesheet" href="/assets/css/dashboard.css">'
-            . '</head>'
+            . '<link rel="stylesheet" href="/assets/css/pages.css"></head>'
             . '<body>'
             . '<header class="tf-admin-topnav">'
             . '<a class="tf-admin-brand" href="/admin/">TreeForge CMS</a>'

@@ -47,6 +47,8 @@ class NodeInspector
     public static function typeLabel(string $type): string
     {
         return match ($type) {
+            'CodeBlockNode', 'codeblock' => 'Code / Highlighter',
+            'HeadingNode', 'heading' => 'Überschrift',
             'text' => 'Text',
             'image' => 'Image',
             'button' => 'Button',
@@ -61,6 +63,8 @@ class NodeInspector
     public static function typeIcon(string $type): string
     {
         return match ($type) {
+            'CodeBlockNode', 'codeblock' => '💻',
+            'HeadingNode', 'heading' => '🔠',
             'text' => '📝',
             'image' => '🖼',
             'button' => '🔘',

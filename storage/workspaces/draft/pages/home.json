@@ -4,38 +4,214 @@
     "title": "Startseite",
     "children": [
         {
-            "id": "node_hero",
+            "id": "n_57ff6e6992ecabb6",
             "type": "text",
-            "content": "Welcome to TreeForge CMS\n\nTesten",
-            "updated_at": "2026-06-10T01:11:03+00:00"
+            "content": "Welcome to TreeForge CMS\n\nTesten...",
+            "updated_at": "2026-06-13T22:51:10+00:00",
+            "title": "Text",
+            "status": "active",
+            "visibility": "visible",
+            "editor_note": "",
+            "properties": {
+                "content": {
+                    "text": "Welcome to TreeForge CMS\n\nTesten...",
+                    "content": "Welcome to TreeForge CMS\n\nTesten..."
+                },
+                "layout": {
+                    "display": "block",
+                    "alignment": "",
+                    "width": "20",
+                    "max_width": "320px",
+                    "min_height": "320px",
+                    "columns": ""
+                },
+                "spacing": {
+                    "margin": "",
+                    "padding": "",
+                    "gap": ""
+                },
+                "design": {
+                    "background": "",
+                    "color": "",
+                    "border": "",
+                    "border_radius": "",
+                    "box_shadow": "",
+                    "style": ""
+                },
+                "behavior": {
+                    "url": "/impressum",
+                    "target": "_blank",
+                    "zoom": ""
+                },
+                "advanced": {
+                    "css_class": "234",
+                    "css_id": "12",
+                    "custom_style": "border: 1px"
+                },
+                "custom_css": "background-color: red;"
+            }
         },
         {
-            "id": "node_image_demo",
+            "id": "n_40124e3ad4fa3de9",
             "type": "image",
             "src": "/assets/img/treeforge-demo.svg",
             "alt": "TreeForge Demo Icon",
-            "caption": "ImageNode rendered from JSON."
+            "caption": "ImageNode rendered from JSON.",
+            "title": "Image",
+            "status": "active",
+            "visibility": "visible",
+            "editor_note": "Test",
+            "properties": {
+                "content": {
+                    "media_id": "/assets/img/treeforge-demo.svg",
+                    "alt": "TreeForge Demo Icon",
+                    "caption": "ImageNode rendered from JSON.",
+                    "src": "/assets/img/treeforge-demo.svg"
+                },
+                "layout": {
+                    "display": "block",
+                    "alignment": "",
+                    "width": "",
+                    "max_width": "",
+                    "min_height": "",
+                    "columns": ""
+                },
+                "spacing": {
+                    "margin": "",
+                    "padding": "",
+                    "gap": ""
+                },
+                "design": {
+                    "background": "",
+                    "color": "",
+                    "border": "",
+                    "border_radius": "",
+                    "box_shadow": "",
+                    "style": ""
+                },
+                "behavior": {
+                    "url": "",
+                    "target": "_self",
+                    "zoom": ""
+                },
+                "advanced": {
+                    "css_class": "",
+                    "css_id": "",
+                    "custom_style": ""
+                },
+                "custom_css": ""
+            },
+            "url": "",
+            "target": "_self",
+            "updated_at": "2026-06-13T22:43:01+00:00"
         },
         {
-            "id": "node_button_demo",
+            "id": "n_b7328e2dd619969c",
             "type": "button",
             "label": "TreeForge starten",
             "url": "#",
-            "variant": "primary"
+            "variant": "primary",
+            "title": "Button",
+            "status": "active",
+            "visibility": "visible",
+            "editor_note": "Test",
+            "properties": {
+                "content": {
+                    "label": "TreeForge starten"
+                },
+                "layout": {
+                    "display": "block",
+                    "alignment": "",
+                    "width": "",
+                    "max_width": "",
+                    "min_height": "",
+                    "columns": ""
+                },
+                "spacing": {
+                    "margin": "",
+                    "padding": "",
+                    "gap": ""
+                },
+                "design": {
+                    "background": "",
+                    "color": "",
+                    "border": "",
+                    "border_radius": "",
+                    "box_shadow": "",
+                    "style": ""
+                },
+                "behavior": {
+                    "url": "#",
+                    "target": "_self",
+                    "zoom": ""
+                },
+                "advanced": {
+                    "css_class": "",
+                    "css_id": "",
+                    "custom_style": ""
+                },
+                "custom_css": ""
+            },
+            "target": "_self",
+            "updated_at": "2026-06-13T22:42:55+00:00"
         },
         {
-            "id": "node_css_demo",
+            "id": "n_2a9a1db01569ea8e",
             "type": "css",
-            "content": ".tf-demo {\n  color: #1E3D1C;\n  border-left: 4px solid #D88A22;\n  padding: 1rem;\n}"
+            "content": ".tf-demo {\n  color: #1E3D1C;\n  border-left: 4px solid #D88A22;\n  padding: 1rem;\n}",
+            "title": "css",
+            "status": "active",
+            "visibility": "visible",
+            "editor_note": "",
+            "properties": {
+                "content": {
+                    "css": ".tf-demo {\n  color: #1E3D1C;\n  border-left: 4px solid #D88A22;\n  padding: 1rem;\n}",
+                    "content": ".tf-demo {\n  color: #1E3D1C;\n  border-left: 4px solid #D88A22;\n  padding: 1rem;\n}"
+                },
+                "layout": {
+                    "display": "block",
+                    "alignment": "",
+                    "width": "",
+                    "max_width": "",
+                    "min_height": "",
+                    "columns": ""
+                },
+                "spacing": {
+                    "margin": "",
+                    "padding": "",
+                    "gap": ""
+                },
+                "design": {
+                    "background": "",
+                    "color": "",
+                    "border": "",
+                    "border_radius": "",
+                    "box_shadow": "",
+                    "style": ""
+                },
+                "behavior": {
+                    "url": "",
+                    "target": "_self",
+                    "zoom": ""
+                },
+                "advanced": {
+                    "css_class": "",
+                    "css_id": "",
+                    "custom_style": ""
+                },
+                "custom_css": ""
+            },
+            "css": ".tf-demo {\n  color: #1E3D1C;\n  border-left: 4px solid #D88A22;\n  padding: 1rem;\n}",
+            "updated_at": "2026-06-13T22:42:48+00:00"
         },
         {
-            "id": "node_markdown_demo",
+            "id": "n_0f850a1eb9b77ade",
             "type": "markdown",
             "content": "# TreeForge Markdown\n\nDas ist **Markdown** als eigener Node-Typ.\n\n- Struktur\\n- Content\n- Layers\n\n## test ##",
             "updated_at": "2026-06-10T13:59:33+00:00"
         },
         {
-            "id": "node_columns_demo",
+            "id": "n_4fa790e7ff19e865",
             "type": "columns",
             "settings": {
                 "columns": 2,
@@ -43,17 +219,17 @@
             },
             "children": [
                 {
-                    "id": "node_column_1",
+                    "id": "n_2a6e6234f35322e4",
                     "type": "column",
                     "width": "1fr",
                     "children": [
                         {
-                            "id": "node_column_1_text",
+                            "id": "n_e0e353e89282d8ea",
                             "type": "text",
                             "content": "Linke Spalte\n\nHier sieht man erstmals, dass TreeForge Inhalte als echten Baum denkt."
                         },
                         {
-                            "id": "node_column_1_image",
+                            "id": "n_0d4bf7a3e24edcb6",
                             "type": "image",
                             "src": "/assets/img/treeforge-demo.svg",
                             "alt": "TreeForge Demo",
@@ -62,17 +238,17 @@
                     ]
                 },
                 {
-                    "id": "node_column_2",
+                    "id": "n_2ed072b8e227fa02",
                     "type": "column",
                     "width": "1fr",
                     "children": [
                         {
-                            "id": "node_column_2_text",
+                            "id": "n_2d5ae4a5f7c4b502",
                             "type": "text",
                             "content": "Rechte Spalte\n\nNodes können beliebig verschachtelt werden."
                         },
                         {
-                            "id": "node_column_2_button",
+                            "id": "n_4830a6c800dc6aaf",
                             "type": "button",
                             "label": "Mehr Struktur",
                             "url": "#",
@@ -88,5 +264,6 @@
         "from": "review",
         "to": "draft",
         "created_at": "2026-06-10T00:17:19+00:00"
-    }
+    },
+    "updated_at": "2026-06-13T22:51:10+00:00"
 }

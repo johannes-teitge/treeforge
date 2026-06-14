@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace TreeForge\Core;
 
-use RuntimeException;
+use TreeForge\Nodes\UnknownNode;
 
 class NodeFactory
 {
@@ -13,7 +13,7 @@ class NodeFactory
         $class = NodeRegistry::resolve($type);
 
         if (!$class) {
-            throw new RuntimeException("Unknown node type: {$type}");
+            return new UnknownNode($data);
         }
 
         return new $class($data);

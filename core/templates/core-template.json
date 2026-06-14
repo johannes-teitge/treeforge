@@ -1,0 +1,43 @@
+{
+    "id": "core",
+    "name": "TreeForge Core Templates",
+    "type": "core",
+    "version": "0.137.0",
+    "description": "Zentrale Fallback-Templates für TreeForge-Layouts und Core-Nodes.",
+    "author": "TreeForge",
+    "layouts": {
+        "base": {
+            "label": "Basislayout",
+            "file": "layouts/base.twig"
+        },
+        "page": {
+            "label": "Normale Seite",
+            "file": "layouts/page.twig"
+        },
+        "blank": {
+            "label": "Leere Seite",
+            "file": "layouts/blank.twig"
+        }
+    },
+    "nodes": {
+        "heading": "nodes/heading.twig",
+        "text": "nodes/text.twig",
+        "image": "nodes/image.twig",
+        "button": "nodes/button.twig",
+        "markdown": "nodes/markdown.twig",
+        "html": "nodes/html.twig",
+        "css": "nodes/css.twig",
+        "codeblock": "nodes/codeblock.twig",
+        "columns": "nodes/columns.twig",
+        "column": "nodes/column.twig",
+        "unknown": "nodes/unknown.twig"
+    },
+    "assets": {
+        "css": [
+            "assets/css/core-template.css"
+        ],
+        "js": []
+    },
+    "renderer": "twig",
+    "legacy_renderer": "HtmlRenderer via ?renderer=legacy"
+}

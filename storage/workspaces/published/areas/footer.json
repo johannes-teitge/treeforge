@@ -1,0 +1,45 @@
+{
+    "id": "footer",
+    "type": "RootNode",
+    "kind": "area",
+    "title": "Footer",
+    "description": "Footer globaler Inhaltsbereich.",
+    "status": "draft",
+    "visibility": "hidden",
+    "system": true,
+    "created_at": "2026-06-14T01:42:03+00:00",
+    "updated_at": "2026-06-14T01:42:03+00:00",
+    "children": [
+        {
+            "id": "n_3e14ba3978dd0bd7",
+            "type": "text",
+            "title": "Footer Text",
+            "status": "active",
+            "visibility": "visible",
+            "editor_note": "",
+            "properties": {
+                "content": {
+                    "content": "© 2026 TreeForge",
+                    "text": "© 2026 TreeForge"
+                },
+                "layout": [],
+                "spacing": [],
+                "design": [],
+                "behavior": [],
+                "advanced": [],
+                "custom_css": ""
+            },
+            "children": [],
+            "content": "© 2026 TreeForge"
+        }
+    ],
+    "properties": {
+        "content": [],
+        "layout": [],
+        "spacing": [],
+        "design": [],
+        "behavior": [],
+        "advanced": [],
+        "custom_css": ""
+    }
+}

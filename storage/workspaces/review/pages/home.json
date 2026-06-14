@@ -6,87 +6,293 @@
         {
             "id": "node_hero",
             "type": "text",
-            "content": "Welcome to TreeForge CMS\n\nTesten",
-            "updated_at": "2026-06-10T01:11:03+00:00"
+            "updated_at": "2026-06-10T01:11:03+00:00",
+            "status": "active",
+            "visibility": "visible",
+            "editor_note": "",
+            "properties": {
+                "content": {
+                    "content": "Welcome to TreeForge CMS\n\nTesten"
+                },
+                "layout": [],
+                "spacing": [],
+                "design": [],
+                "behavior": [],
+                "advanced": [],
+                "custom_css": ""
+            },
+            "children": []
         },
         {
             "id": "node_image_demo",
             "type": "image",
-            "src": "/assets/img/treeforge-demo.svg",
-            "alt": "TreeForge Demo Icon",
-            "caption": "ImageNode rendered from JSON."
+            "status": "active",
+            "visibility": "visible",
+            "editor_note": "",
+            "properties": {
+                "content": {
+                    "src": "/assets/img/treeforge-demo.svg",
+                    "alt": "TreeForge Demo Icon",
+                    "caption": "ImageNode rendered from JSON."
+                },
+                "layout": [],
+                "spacing": [],
+                "design": [],
+                "behavior": [],
+                "advanced": [],
+                "custom_css": ""
+            },
+            "children": []
         },
         {
             "id": "node_button_demo",
             "type": "button",
-            "label": "TreeForge starten",
-            "url": "#",
-            "variant": "primary"
+            "status": "active",
+            "visibility": "visible",
+            "editor_note": "",
+            "properties": {
+                "content": {
+                    "label": "TreeForge starten"
+                },
+                "layout": [],
+                "spacing": [],
+                "design": [],
+                "behavior": {
+                    "url": "#"
+                },
+                "advanced": {
+                    "variant": "primary"
+                },
+                "custom_css": ""
+            },
+            "children": []
         },
         {
             "id": "node_css_demo",
             "type": "css",
-            "content": ".tf-demo {\n  color: #1E3D1C;\n  border-left: 4px solid #D88A22;\n  padding: 1rem;\n}"
+            "status": "active",
+            "visibility": "visible",
+            "editor_note": "",
+            "properties": {
+                "content": {
+                    "content": ".tf-demo {\n  color: #1E3D1C;\n  border-left: 4px solid #D88A22;\n  padding: 1rem;\n}"
+                },
+                "layout": [],
+                "spacing": [],
+                "design": [],
+                "behavior": [],
+                "advanced": [],
+                "custom_css": ""
+            },
+            "children": []
         },
         {
             "id": "node_markdown_demo",
             "type": "markdown",
-            "content": "# TreeForge Markdown\n\nDas ist **Markdown** als eigener Node-Typ.\n\n- Struktur\\n- Content\n- Layers\n\n## test ##",
-            "updated_at": "2026-06-10T13:59:33+00:00"
+            "updated_at": "2026-06-10T13:59:33+00:00",
+            "status": "active",
+            "visibility": "visible",
+            "editor_note": "",
+            "properties": {
+                "content": {
+                    "content": "# TreeForge Markdown\n\nDas ist **Markdown** als eigener Node-Typ.\n\n- Struktur\\n- Content\n- Layers\n\n## test ##"
+                },
+                "layout": [],
+                "spacing": [],
+                "design": [],
+                "behavior": [],
+                "advanced": [],
+                "custom_css": ""
+            },
+            "children": []
         },
         {
             "id": "node_columns_demo",
             "type": "columns",
-            "settings": {
-                "columns": 2,
-                "gap": "1rem"
-            },
             "children": [
                 {
                     "id": "node_column_1",
                     "type": "column",
-                    "width": "1fr",
                     "children": [
                         {
                             "id": "node_column_1_text",
                             "type": "text",
-                            "content": "Linke Spalte\n\nHier sieht man erstmals, dass TreeForge Inhalte als echten Baum denkt."
+                            "status": "active",
+                            "visibility": "visible",
+                            "editor_note": "",
+                            "properties": {
+                                "content": {
+                                    "content": "Linke Spalte\n\nHier sieht man erstmals, dass TreeForge Inhalte als echten Baum denkt."
+                                },
+                                "layout": [],
+                                "spacing": [],
+                                "design": [],
+                                "behavior": [],
+                                "advanced": [],
+                                "custom_css": ""
+                            },
+                            "children": []
                         },
                         {
                             "id": "node_column_1_image",
                             "type": "image",
-                            "src": "/assets/img/treeforge-demo.svg",
-                            "alt": "TreeForge Demo",
-                            "caption": "Bild innerhalb einer Column."
+                            "status": "active",
+                            "visibility": "visible",
+                            "editor_note": "",
+                            "properties": {
+                                "content": {
+                                    "src": "/assets/img/treeforge-demo.svg",
+                                    "alt": "TreeForge Demo",
+                                    "caption": "Bild innerhalb einer Column."
+                                },
+                                "layout": [],
+                                "spacing": [],
+                                "design": [],
+                                "behavior": [],
+                                "advanced": [],
+                                "custom_css": ""
+                            },
+                            "children": []
+                        },
+                        {
+                            "type": "ButtonNode",
+                            "title": "Neuer Button",
+                            "id": "node_neuer-button_20260613021200_50663a",
+                            "status": "active",
+                            "visibility": "visible",
+                            "editor_note": "",
+                            "properties": {
+                                "content": {
+                                    "label": "Mehr erfahren"
+                                },
+                                "layout": [],
+                                "spacing": [],
+                                "design": [],
+                                "behavior": {
+                                    "url": "",
+                                    "target": "_self"
+                                },
+                                "advanced": [],
+                                "custom_css": ""
+                            },
+                            "children": []
                         }
-                    ]
+                    ],
+                    "status": "active",
+                    "visibility": "visible",
+                    "editor_note": "",
+                    "properties": {
+                        "content": [],
+                        "layout": {
+                            "width": "1fr"
+                        },
+                        "spacing": [],
+                        "design": [],
+                        "behavior": [],
+                        "advanced": [],
+                        "custom_css": ""
+                    }
                 },
                 {
                     "id": "node_column_2",
                     "type": "column",
-                    "width": "1fr",
                     "children": [
                         {
                             "id": "node_column_2_text",
                             "type": "text",
-                            "content": "Rechte Spalte\n\nNodes können beliebig verschachtelt werden."
+                            "status": "active",
+                            "visibility": "visible",
+                            "editor_note": "",
+                            "properties": {
+                                "content": {
+                                    "content": "Rechte Spalte\n\nNodes können beliebig verschachtelt werden."
+                                },
+                                "layout": [],
+                                "spacing": [],
+                                "design": [],
+                                "behavior": [],
+                                "advanced": [],
+                                "custom_css": ""
+                            },
+                            "children": []
                         },
                         {
                             "id": "node_column_2_button",
                             "type": "button",
-                            "label": "Mehr Struktur",
-                            "url": "#",
-                            "variant": "primary"
+                            "status": "active",
+                            "visibility": "visible",
+                            "editor_note": "",
+                            "properties": {
+                                "content": {
+                                    "label": "Mehr Struktur"
+                                },
+                                "layout": [],
+                                "spacing": [],
+                                "design": [],
+                                "behavior": {
+                                    "url": "#"
+                                },
+                                "advanced": {
+                                    "variant": "primary"
+                                },
+                                "custom_css": ""
+                            },
+                            "children": []
                         }
-                    ]
+                    ],
+                    "status": "active",
+                    "visibility": "visible",
+                    "editor_note": "",
+                    "properties": {
+                        "content": [],
+                        "layout": {
+                            "width": "1fr"
+                        },
+                        "spacing": [],
+                        "design": [],
+                        "behavior": [],
+                        "advanced": [],
+                        "custom_css": ""
+                    }
                 }
-            ]
+            ],
+            "status": "active",
+            "visibility": "visible",
+            "editor_note": "",
+            "properties": {
+                "content": [],
+                "layout": [],
+                "spacing": [],
+                "design": [],
+                "behavior": [],
+                "advanced": {
+                    "settings": {
+                        "columns": 2,
+                        "gap": "1rem"
+                    }
+                },
+                "custom_css": ""
+            }
         }
     ],
-    "_workflow": {
-        "status": "pending_review",
-        "from": "draft",
-        "to": "review",
-        "created_at": "2026-06-11T07:20:33+00:00"
+    "updated_at": "2026-06-13T02:12:00+00:00",
+    "status": "active",
+    "visibility": "visible",
+    "editor_note": "",
+    "properties": {
+        "content": [],
+        "layout": [],
+        "spacing": [],
+        "design": [],
+        "behavior": [],
+        "advanced": {
+            "_workflow": {
+                "status": "pending_review",
+                "from": "draft",
+                "to": "review",
+                "created_at": "2026-06-11T07:20:33+00:00"
+            }
+        },
+        "custom_css": ""
     }
 }

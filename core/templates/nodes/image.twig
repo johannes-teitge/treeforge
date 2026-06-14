@@ -1,0 +1,7 @@
+{# Core Node Template: image #}
+<figure id="{{ node.dom_id }}" class="{{ node.class }}">
+  <img src="{{ node.src|default('') }}" alt="{{ node.alt|default('') }}">
+  {% if node.caption|default('') %}
+    <figcaption>{{ node.caption }}</figcaption>
+  {% endif %}
+</figure>

@@ -1,0 +1,12 @@
+{#
+  Core Node Template: heading
+
+  Erwartete node-Daten:
+  - node.level: h1 bis h6
+  - node.text: sichtbarer Text, durch Twig escaped
+  - node.dom_id
+  - node.class
+#}
+<{{ node.level|default('h2') }} id="{{ node.dom_id }}" class="{{ node.class }} tf-node-heading-{{ node.level|default('h2') }}">
+  {{ node.text|default('') }}
+</{{ node.level|default('h2') }}>

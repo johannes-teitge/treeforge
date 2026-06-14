@@ -19,6 +19,7 @@ class ExplorerController
 
     public function handle(): string
     {
+        $pageId = $this->pageId();
         $workspaceName = (string)($_GET['workspace'] ?? Workspace::PUBLISHED);
         $pageId = (string)($_GET['page'] ?? 'home');
 
@@ -71,5 +72,11 @@ class ExplorerController
         }
 
         return $stats;
+    }
+
+    protected function pageId(): string
+    {
+        $page = strtolower((string)($_GET['page'] ?? 'home'));
+        return preg_replace('/[^a-z0-9_-]/', '', $page) ?: 'home';
     }
 }

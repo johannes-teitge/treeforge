@@ -160,3 +160,31 @@ p{
 .tf-node-markdown ol:last-child{
   margin-bottom:0;
 }
+/* PATCH 126 FRONTEND NODE CSS */
+.tf-node-heading {
+  margin: 0 0 .85rem;
+  line-height: 1.2;
+}
+
+.tf-node-codeblock {
+  margin: 1rem 0;
+}
+
+.tf-node-codeblock figcaption {
+  font-size: .9rem;
+  opacity: .75;
+  margin-bottom: .4rem;
+}
+
+.tf-node-codeblock pre {
+  overflow: auto;
+  padding: 1rem;
+  border-radius: .75rem;
+  background: rgba(15, 23, 42, .06);
+}
+
+.tf-node-codeblock.is-wrapped pre,
+.tf-node-codeblock.is-wrapped code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}

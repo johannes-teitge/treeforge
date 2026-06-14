@@ -246,5 +246,257 @@
     "patch-069-fix-page-settings-media-picker-dom.php": {
         "executed_at": "2026-06-12T01:34:28+00:00",
         "status": "ok"
+    },
+    "patch-070-page-tree-manager-foundation.php": {
+        "executed_at": "2026-06-12T05:10:44+00:00",
+        "status": "ok"
+    },
+    "patch-071-explorer-page-context-layout.php": {
+        "executed_at": "2026-06-12T07:30:26+00:00",
+        "status": "ok"
+    },
+    "patch-072-fix-admin-explorer-route.php": {
+        "executed_at": "2026-06-12T07:35:53+00:00",
+        "status": "ok"
+    },
+    "patch-073-explorer-classic-admin-visual-alignment.php": {
+        "executed_at": "2026-06-12T07:44:03+00:00",
+        "status": "ok"
+    },
+    "patch-074-explorer-v2-shell-foundation.php": {
+        "executed_at": "2026-06-12T10:21:30+00:00",
+        "status": "ok"
+    },
+    "patch-075-explorer-v2-collapsible-node-tree.php": {
+        "executed_at": "2026-06-12T10:50:12+00:00",
+        "status": "ok"
+    },
+    "patch-077-explorer-v2-type-editors-foundation.php": {
+        "executed_at": "2026-06-12T11:14:36+00:00",
+        "status": "ok"
+    },
+    "patch-078-explorer-v2-type-editors-dom-fix.php": {
+        "executed_at": "2026-06-12T11:21:47+00:00",
+        "status": "ok"
+    },
+    "patch-079-explorer-v2-image-link-fields.php": {
+        "executed_at": "2026-06-12T12:28:24+00:00",
+        "status": "ok"
+    },
+    "patch-080-explorer-v2-resizable-node-tree-panel.php": {
+        "executed_at": "2026-06-12T12:38:56+00:00",
+        "status": "ok"
+    },
+    "patch-081-explorer-v2-node-toolbar-foundation (1).php": {
+        "executed_at": "2026-06-12T13:02:34+00:00",
+        "status": "ok"
+    },
+    "patch-082-explorer-v2-node-action-menu.php": {
+        "executed_at": "2026-06-12T13:32:45+00:00",
+        "status": "ok"
+    },
+    "patch-083-explorer-v2-node-menu-ux-polish.php": {
+        "executed_at": "2026-06-12T14:15:59+00:00",
+        "status": "ok"
+    },
+    "patch-084-explorer-v2-fullscreen-node-editor.php": {
+        "executed_at": "2026-06-12T14:15:59+00:00",
+        "status": "ok"
+    },
+    "patch-085-explorer-v2-clipboard-engine-foundation.php": {
+        "executed_at": "2026-06-12T14:37:47+00:00",
+        "status": "ok"
+    },
+    "patch-086-explorer-v2-ui-cleanup.php": {
+        "executed_at": "2026-06-12T15:08:14+00:00",
+        "status": "ok"
+    },
+    "patch-087-explorer-v2-node-type-registry-add-node-dialog.php": {
+        "executed_at": "2026-06-12T22:14:16+00:00",
+        "status": "ok"
+    },
+    "patch-088-explorer-v2-server-node-registry-mutation-service.php": {
+        "executed_at": "2026-06-12T22:26:28+00:00",
+        "status": "ok"
+    },
+    "patch-090-explorer-v2-base-container-node-foundation.php": {
+        "executed_at": "2026-06-12T22:53:57+00:00",
+        "status": "ok"
+    },
+    "patch-091-register-container-node-types-robust.php": {
+        "executed_at": "2026-06-12T23:04:17+00:00",
+        "status": "ok"
+    },
+    "patch-092-explorer-v2-add-node-api-integration.php": {
+        "executed_at": "2026-06-12T23:19:37+00:00",
+        "status": "ok"
+    },
+    "patch-093-explorer-v2-fix-column-child-rules.php": {
+        "executed_at": "2026-06-12T23:30:47+00:00",
+        "status": "ok"
+    },
+    "patch-094-explorer-v2-force-add-node-api-submit.php": {
+        "executed_at": "2026-06-13T00:26:42+00:00",
+        "status": "ok"
+    },
+    "patch-095-explorer-v2-toast-duration.php": {
+        "executed_at": "2026-06-13T01:28:44+00:00",
+        "status": "ok"
+    },
+    "patch-096-explorer-v2-delay-reload-after-mutation.php": {
+        "executed_at": "2026-06-13T01:38:14+00:00",
+        "status": "ok"
+    },
+    "patch-097-explorer-v2-show-added-node-after-mutation.php": {
+        "executed_at": "2026-06-13T01:45:49+00:00",
+        "status": "ok"
+    },
+    "patch-098-explorer-v2-fix-nested-add-persistence.php": {
+        "executed_at": "2026-06-13T02:11:26+00:00",
+        "status": "ok"
+    },
+    "patch-099-explorer-v2-delete-node-api-integration.php": {
+        "executed_at": "2026-06-13T03:29:46+00:00",
+        "status": "ok"
+    },
+    "patch-100-explorer-v2-duplicate-node-api-integration.php": {
+        "executed_at": "2026-06-13T03:29:46+00:00",
+        "status": "ok"
+    },
+    "patch-101-explorer-v2-robust-delete-duplicate-actions.php": {
+        "executed_at": "2026-06-13T03:39:16+00:00",
+        "status": "ok"
+    },
+    "patch-102-explorer-v2-fix-delete-duplicate-persistence.php": {
+        "executed_at": "2026-06-13T03:57:29+00:00",
+        "status": "ok"
+    },
+    "patch-103-explorer-v2-clipboard-paste-api-integration.php": {
+        "executed_at": "2026-06-13T04:42:30+00:00",
+        "status": "ok"
+    },
+    "patch-104a-node-properties-migration-foundation.php": {
+        "executed_at": "2026-06-13T11:53:01+00:00",
+        "status": "ok"
+    },
+    "patch-105-frontend-node-renderer-foundation.php": {
+        "executed_at": "2026-06-13T12:22:58+00:00",
+        "status": "ok"
+    },
+    "patch-106-frontend-renderer-page-root-alias-fix.php": {
+        "executed_at": "2026-06-13T12:32:31+00:00",
+        "status": "ok"
+    },
+    "patch-107-frontend-renderer-fix-page-type.php": {
+        "executed_at": "2026-06-13T12:56:25+00:00",
+        "status": "ok"
+    },
+    "patch-109-explorer-v2-property-editor-framework.php": {
+        "executed_at": "2026-06-13T15:49:09+00:00",
+        "status": "ok"
+    },
+    "patch-110-explorer-v2-save-node-properties.php": {
+        "executed_at": "2026-06-13T16:13:11+00:00",
+        "status": "ok"
+    },
+    "patch-108-node-properties-groups-update-api-foundation.php": {
+        "executed_at": "2026-06-13T16:24:27+00:00",
+        "status": "ok"
+    },
+    "patch-112-explorer-v2-cleanup-save-buttons.php": {
+        "executed_at": "2026-06-13T16:45:59+00:00",
+        "status": "ok"
+    },
+    "patch-113-explorer-v2-human-friendly-save-labels.php": {
+        "executed_at": "2026-06-13T16:51:33+00:00",
+        "status": "ok"
+    },
+    "patch-114-explorer-v2-remove-duplicate-property-save-button.php": {
+        "executed_at": "2026-06-13T16:55:46+00:00",
+        "status": "ok"
+    },
+    "patch-115-explorer-v2-property-editor-top-bottom-save-buttons.php": {
+        "executed_at": "2026-06-13T17:14:10+00:00",
+        "status": "ok"
+    },
+    "patch-116-explorer-v2-property-editor-stabilize-cleanup.php": {
+        "executed_at": "2026-06-13T17:17:47+00:00",
+        "status": "ok"
+    },
+    "patch-117-explorer-v3-stable-foundation.php": {
+        "executed_at": "2026-06-13T19:30:50+00:00",
+        "status": "ok"
+    },
+    "patch-111-fix-missing-update-node-mutation.php": {
+        "executed_at": "2026-06-13T19:54:40+00:00",
+        "status": "ok"
+    },
+    "patch-120-explorer-v2-stabilize-save-workflow.php": {
+        "executed_at": "2026-06-13T22:16:42+00:00",
+        "status": "superseded-by-repair-v2-save-load"
+    },
+    "patch-122-node-id-generator-and-repair-tool.php": {
+        "executed_at": "2026-06-13T23:06:38+00:00",
+        "status": "ok"
+    },
+    "patch-123-workspace-pages-overview-and-legacy-cleanup.php": {
+        "executed_at": "2026-06-13T23:30:03+00:00",
+        "status": "ok"
+    },
+    "patch-124-heading-node.php": {
+        "executed_at": "2026-06-13T23:48:43+00:00",
+        "status": "ok"
+    },
+    "patch-125-code-highlight-node.php": {
+        "executed_at": "2026-06-13T23:54:43+00:00",
+        "status": "ok"
+    },
+    "patch-126-frontend-heading-codeblock-rendering.php": {
+        "executed_at": "2026-06-14T00:19:51+00:00",
+        "status": "ok"
+    },
+    "patch-127-frontend-node-type-aliases-and-normalizer.php": {
+        "executed_at": "2026-06-14T00:38:03+00:00",
+        "status": "ok"
+    },
+    "patch-128-frontend-html-node-and-unknown-node-guard.php": {
+        "executed_at": "2026-06-14T00:42:49+00:00",
+        "status": "ok"
+    },
+    "patch-130-textnode-paragraph-rendering-repair.php": {
+        "executed_at": "2026-06-14T01:02:30+00:00",
+        "status": "ok"
+    },
+    "patch-131-core-twig-template-foundation.php": {
+        "executed_at": "2026-06-14T01:18:12+00:00",
+        "status": "ok"
+    },
+    "patch-132-workspace-areas-foundation.php": {
+        "executed_at": "2026-06-14T01:42:04+00:00",
+        "status": "ok"
+    },
+    "patch-133-twig-renderer-and-areas.php": {
+        "executed_at": "2026-06-14T01:52:20+00:00",
+        "status": "ok"
+    },
+    "patch-134-template-asset-publisher.php": {
+        "executed_at": "2026-06-14T02:01:17+00:00",
+        "status": "ok"
+    },
+    "patch-135-core-website-template.php": {
+        "executed_at": "2026-06-14T09:39:54+00:00",
+        "status": "ok"
+    },
+    "patch-136-twig-renderer-null-safe-page-content.php": {
+        "executed_at": "2026-06-14T09:46:40+00:00",
+        "status": "ok"
+    },
+    "patch-137-twig-clean-base-and-legacy-renderer-cleanup.php": {
+        "executed_at": "2026-06-14T17:34:08+00:00",
+        "status": "ok"
+    },
+    "patch-138-frontend-preview-admin-bar.php": {
+        "executed_at": "2026-06-14T17:41:45+00:00",
+        "status": "ok"
     }
 }

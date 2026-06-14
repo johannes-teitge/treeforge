@@ -1,4 +1,5 @@
 /vendor/
+/patches/
 composer.phar
 
 # Runtime / Logs
@@ -22,3 +23,11 @@ desktop.ini
 # IDE
 .idea/
 .vscode/
+
+*.zip
+*.lnk
+*.bak-*
+repair-*.php
+treeforge-v2-*.php
+storage/logs/*.log
+storage/legacy/

@@ -7,6 +7,12 @@ use TreeForge\Core\NodeInspector;
 
 class ExplorerRenderer
 {
+    protected function currentPageId(): string
+    {
+        $page = strtolower((string)($_GET['page'] ?? 'home'));
+        return preg_replace('/[^a-z0-9_-]/', '', $page) ?: 'home';
+    }
+
     public function render(
         array $pageData,
         string $workspace,
@@ -15,6 +21,8 @@ class ExplorerRenderer
         array $archiveVersions = [],
         ?string $selectedArchiveVersion = null
     ): string {
+        $pageId = $this->currentPageId();
+        $pageQuery = 'page=' . rawurlencode($pageId);
         $tree = (new ExplorerTree())->renderPageTree($pageData);
         $workspaceSafe = htmlspecialchars($workspace, ENT_QUOTES, 'UTF-8');
 
@@ -36,7 +44,7 @@ class ExplorerRenderer
             $active = $key === $workspace ? ' active' : '';
             $count = (int)($workspaceStats[$key]['nodes'] ?? 0);
 
-            $workspaceLinks .= '<a class="tf-workspace-link' . $active . '" href="/explorer?workspace=' . $key . '">';
+            $workspaceLinks .= '<a class="tf-workspace-link' . $active . '" href="/admin/explorer/?workspace=' . $key . '&' . $pageQuery . '">';
             $workspaceLinks .= '<span class="tf-dot"></span>';
             $workspaceLinks .= '<span>' . htmlspecialchars($label, ENT_QUOTES, 'UTF-8') . '</span>';
             $workspaceLinks .= '<span class="tf-count">' . $count . '</span>';
@@ -80,7 +88,7 @@ class ExplorerRenderer
     </a>
     <div>
       <h1>Explorer</h1>
-      <p>Structure first. Content grows in Layers.</p>
+      <p>Structure first. Content grows in Layers.</p><p class="tf-current-page-info">Page: <strong>{$pageId}</strong></p>
     </div>
   </header>
 
@@ -121,7 +129,7 @@ class ExplorerRenderer
       {$tree}
 
       <footer class="tf-panel-footer">
-        <span>Page: {$pageTitle}</span>
+        <span>Page: {$pageTitle}</span><span>ID: {$pageId}</span>
         <span>Nodes: {$nodeCount}</span>
       </footer>
     </section>
@@ -198,7 +206,7 @@ class ExplorerRenderer
   <script>
     window.TreeForgeExplorer = {
       workspace: "{$workspaceSafe}",
-      page: "home",
+      page: "{$pageId}",
       archive: "{$selectedArchiveVersion}"
     };
   </script>
@@ -262,7 +270,7 @@ HTML;
         if ($archiveVersions === []) {
             return ''
                 . '<div class="tf-archive-empty">Noch keine Archivversionen.</div>'
-                . '<a class="tf-archive-link all" href="/archives?page=home"><span>📦</span><span>Archive Center öffnen</span></a>';
+                . '<a class="tf-archive-link all" href="/archives?page={$pageId}"><span>📦</span><span>Archive Center öffnen</span></a>';
         }
 
         $visibleVersions = array_slice($archiveVersions, 0, 5);
@@ -274,7 +282,7 @@ HTML;
             $label = (string)($version['created_at'] ?? $id);
             $active = $selectedArchiveVersion === $id ? ' active' : '';
 
-            $html .= '<a class="tf-archive-link' . $active . '" href="/explorer?archive=' . rawurlencode($id) . '&page=home">';
+            $html .= '<a class="tf-archive-link' . $active . '" href="/admin/explorer/?archive=' . rawurlencode($id) . '&page={$pageId}">';
             $html .= '<span>🕘</span><span>' . htmlspecialchars($label, ENT_QUOTES, 'UTF-8') . '</span>';
             $html .= '</a>';
         }
@@ -283,7 +291,7 @@ HTML;
             $html .= '<div class="tf-archive-more">+' . (count($archiveVersions) - 5) . ' weitere Archivversion(en)</div>';
         }
 
-        $html .= '<a class="tf-archive-link all" href="/archives?page=home"><span>📦</span><span>Alle Archive anzeigen</span></a>';
+        $html .= '<a class="tf-archive-link all" href="/archives?page={$pageId}"><span>📦</span><span>Alle Archive anzeigen</span></a>';
         $html .= '</div>';
 
         return $html;
@@ -295,15 +303,15 @@ HTML;
             $versionUrl = rawurlencode($selectedArchiveVersion);
 
             return ''
-                . '<a class="tf-workflow-link preview" href="/?archive=' . $versionUrl . '&page=home" target="_blank" rel="noopener">Archiv ansehen</a>'
+                . '<a class="tf-workflow-link preview" href="/?archive=' . $versionUrl . '&page={$pageId}" target="_blank" rel="noopener">Archiv ansehen</a>'
                 . '<button type="button" class="tf-workflow-button danger" data-archive-restore="' . $version . '">Archivversion wiederherstellen</button>'
-                . '<a class="tf-workflow-link secondary" href="/explorer?workspace=published">Zurück zu Published</a>';
+                . '<a class="tf-workflow-link secondary" href="/admin/explorer/?workspace=published">Zurück zu Published</a>';
         }
 
         return match ($workspace) {
             'published' => ''
                 . '<a class="tf-workflow-link preview" href="/" target="_blank" rel="noopener">Live ansehen</a>'
-                . '<a class="tf-workflow-link secondary" href="/explorer?workspace=draft">Draft bearbeiten</a>',
+                . '<a class="tf-workflow-link secondary" href="/admin/explorer/?workspace=draft">Draft bearbeiten</a>',
 
             'draft' => ''
                 . '<a class="tf-workflow-link preview" href="/?workspace=draft" target="_blank" rel="noopener">Draft Preview</a>'
@@ -314,7 +322,7 @@ HTML;
                 . '<button type="button" class="tf-workflow-button" data-workflow-action="publish_review">Freigeben & veröffentlichen</button>'
                 . '<button type="button" class="tf-workflow-button secondary" data-workflow-action="return_to_draft">Zurück an Draft</button>',
 
-            default => '<a class="tf-workflow-link" href="/explorer?workspace=draft">Draft bearbeiten</a>',
+            default => '<a class="tf-workflow-link" href="/admin/explorer/?workspace=draft">Draft bearbeiten</a>',
         };
     }
 }

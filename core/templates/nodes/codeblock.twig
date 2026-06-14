@@ -1,0 +1,7 @@
+{# Core Node Template: codeblock #}
+<figure id="{{ node.dom_id }}" class="{{ node.class }}{% if node.show_line_numbers|default(false) %} has-line-numbers{% endif %}{% if node.wrap|default(false) %} is-wrapped{% endif %}">
+  {% if node.caption|default('') %}
+    <figcaption>{{ node.caption }}</figcaption>
+  {% endif %}
+  <pre><code class="language-{{ node.language|default('text') }}">{{ node.code|default('') }}</code></pre>
+</figure>

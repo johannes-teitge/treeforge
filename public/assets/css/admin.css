@@ -760,3 +760,12 @@ code {
     grid-template-columns: 1fr;
   }
 }
+/* Patch 132: Workspace Areas */
+.tf-area-tree-list .tf-page-tree-icon {
+  background: rgba(226, 169, 0, .12);
+  border-radius: .65rem;
+}
+
+#global-areas {
+  margin-top: 1rem;
+}

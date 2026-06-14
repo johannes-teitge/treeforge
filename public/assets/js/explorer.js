@@ -365,7 +365,7 @@
         showNotice('success', result.message || 'Workflow ausgeführt.');
         setTimeout(() => {
           window.location.href = '/explorer?workspace=' + encodeURIComponent(result.target);
-        }, 500);
+        }, 1500);
 
       } catch (error) {
         button.disabled = false;
@@ -620,7 +620,7 @@
 
         setTimeout(() => {
           window.location.href = '/explorer?workspace=draft';
-        }, 450);
+        }, 1450);
 
       } catch (error) {
         showNotice('error', error.message);

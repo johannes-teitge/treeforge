@@ -2579,5 +2579,2795 @@
                 "message": "Patch 069 Fix Page Settings Media Picker DOM Integration fertig"
             }
         ]
+    },
+    "patch-070-page-tree-manager-foundation.php": {
+        "executed_at": "2026-06-12T05:10:44+00:00",
+        "status": "ok",
+        "duration_ms": 20,
+        "messages": [
+            {
+                "time": "2026-06-12T05:10:44+00:00",
+                "message": "Patch 070 Page Tree Manager Foundation gestartet"
+            },
+            {
+                "time": "2026-06-12T05:10:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/storage/pages/pages.json"
+            },
+            {
+                "time": "2026-06-12T05:10:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/Pages/PageTreeManager.php"
+            },
+            {
+                "time": "2026-06-12T05:10:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/pages/index.php"
+            },
+            {
+                "time": "2026-06-12T05:10:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/pages.css"
+            },
+            {
+                "time": "2026-06-12T05:10:44+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Admin/AdminLayout.php"
+            },
+            {
+                "time": "2026-06-12T05:10:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Admin/AdminLayout.php"
+            },
+            {
+                "time": "2026-06-12T05:10:44+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Admin/AdminMenu.php"
+            },
+            {
+                "time": "2026-06-12T05:10:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Admin/AdminMenu.php"
+            },
+            {
+                "time": "2026-06-12T05:10:44+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/admin/index.php"
+            },
+            {
+                "time": "2026-06-12T05:10:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/index.php"
+            },
+            {
+                "time": "2026-06-12T05:10:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/60-page-tree-manager-foundation.md"
+            },
+            {
+                "time": "2026-06-12T05:10:44+00:00",
+                "message": "Patch 070 Page Tree Manager Foundation fertig"
+            }
+        ]
+    },
+    "patch-071-explorer-page-context-layout.php": {
+        "executed_at": "2026-06-12T07:30:26+00:00",
+        "status": "ok",
+        "duration_ms": 12,
+        "messages": [
+            {
+                "time": "2026-06-12T07:30:26+00:00",
+                "message": "Patch 071 Explorer Page Context + Layout Refresh Foundation gestartet"
+            },
+            {
+                "time": "2026-06-12T07:30:26+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-12T07:30:26+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerRenderer.php"
+            },
+            {
+                "time": "2026-06-12T07:30:26+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerController.php"
+            },
+            {
+                "time": "2026-06-12T07:30:26+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Explorer/ExplorerController.php"
+            },
+            {
+                "time": "2026-06-12T07:30:26+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer.css"
+            },
+            {
+                "time": "2026-06-12T07:30:26+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer.css"
+            },
+            {
+                "time": "2026-06-12T07:30:26+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/61-explorer-page-context-layout.md"
+            },
+            {
+                "time": "2026-06-12T07:30:26+00:00",
+                "message": "Patch 071 Explorer Page Context + Layout Refresh Foundation fertig"
+            }
+        ]
+    },
+    "patch-072-fix-admin-explorer-route.php": {
+        "executed_at": "2026-06-12T07:35:53+00:00",
+        "status": "ok",
+        "duration_ms": 10,
+        "messages": [
+            {
+                "time": "2026-06-12T07:35:53+00:00",
+                "message": "Patch 072 Fix Admin Explorer Route gestartet"
+            },
+            {
+                "time": "2026-06-12T07:35:53+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/explorer/index.php"
+            },
+            {
+                "time": "2026-06-12T07:35:53+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Admin/AdminMenu.php"
+            },
+            {
+                "time": "2026-06-12T07:35:53+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Admin/AdminMenu.php"
+            },
+            {
+                "time": "2026-06-12T07:35:53+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/admin/index.php"
+            },
+            {
+                "time": "2026-06-12T07:35:53+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/index.php"
+            },
+            {
+                "time": "2026-06-12T07:35:53+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/62-fix-admin-explorer-route.md"
+            },
+            {
+                "time": "2026-06-12T07:35:53+00:00",
+                "message": "Patch 072 Fix Admin Explorer Route fertig"
+            }
+        ]
+    },
+    "patch-073-explorer-classic-admin-visual-alignment.php": {
+        "executed_at": "2026-06-12T07:44:03+00:00",
+        "status": "ok",
+        "duration_ms": 7,
+        "messages": [
+            {
+                "time": "2026-06-12T07:44:03+00:00",
+                "message": "Patch 073 Explorer Classic Admin Visual Alignment gestartet"
+            },
+            {
+                "time": "2026-06-12T07:44:03+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer.css"
+            },
+            {
+                "time": "2026-06-12T07:44:03+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer.css"
+            },
+            {
+                "time": "2026-06-12T07:44:03+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/63-explorer-classic-admin-visual-alignment.md"
+            },
+            {
+                "time": "2026-06-12T07:44:03+00:00",
+                "message": "Patch 073 Explorer Classic Admin Visual Alignment fertig"
+            }
+        ]
+    },
+    "patch-074-explorer-v2-shell-foundation.php": {
+        "executed_at": "2026-06-12T10:21:30+00:00",
+        "status": "ok",
+        "duration_ms": 11,
+        "messages": [
+            {
+                "time": "2026-06-12T10:21:30+00:00",
+                "message": "Patch 074 Explorer V2 Shell Foundation gestartet"
+            },
+            {
+                "time": "2026-06-12T10:21:30+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Controller.php"
+            },
+            {
+                "time": "2026-06-12T10:21:30+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-12T10:21:30+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/explorer-v2/index.php"
+            },
+            {
+                "time": "2026-06-12T10:21:30+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T10:21:30+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2.js"
+            },
+            {
+                "time": "2026-06-12T10:21:30+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/64-explorer-v2-shell-foundation.md"
+            },
+            {
+                "time": "2026-06-12T10:21:30+00:00",
+                "message": "Patch 074 Explorer V2 Shell Foundation fertig"
+            }
+        ]
+    },
+    "patch-075-explorer-v2-collapsible-node-tree.php": {
+        "executed_at": "2026-06-12T10:50:12+00:00",
+        "status": "ok",
+        "duration_ms": 11,
+        "messages": [
+            {
+                "time": "2026-06-12T10:50:12+00:00",
+                "message": "Patch 075 Explorer V2 Collapsible Node Tree gestartet"
+            },
+            {
+                "time": "2026-06-12T10:50:12+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-12T10:50:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-12T10:50:12+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T10:50:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T10:50:12+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2.js"
+            },
+            {
+                "time": "2026-06-12T10:50:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2.js"
+            },
+            {
+                "time": "2026-06-12T10:50:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/65-explorer-v2-collapsible-node-tree.md"
+            },
+            {
+                "time": "2026-06-12T10:50:12+00:00",
+                "message": "Patch 075 Explorer V2 Collapsible Node Tree fertig"
+            }
+        ]
+    },
+    "patch-077-explorer-v2-type-editors-foundation.php": {
+        "executed_at": "2026-06-12T11:14:36+00:00",
+        "status": "ok",
+        "duration_ms": 17,
+        "messages": [
+            {
+                "time": "2026-06-12T11:14:36+00:00",
+                "message": "Patch 077 Explorer V2 Type Editors Foundation gestartet"
+            },
+            {
+                "time": "2026-06-12T11:14:36+00:00",
+                "message": "Editor-Placeholder nicht gefunden, Renderer nicht geändert."
+            },
+            {
+                "time": "2026-06-12T11:14:36+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T11:14:36+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T11:14:36+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T11:14:36+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T11:14:36+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2.js"
+            },
+            {
+                "time": "2026-06-12T11:14:36+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2.js"
+            },
+            {
+                "time": "2026-06-12T11:14:36+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-12T11:14:36+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-12T11:14:36+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-12T11:14:36+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-12T11:14:36+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/67-explorer-v2-type-editors-foundation.md"
+            },
+            {
+                "time": "2026-06-12T11:14:36+00:00",
+                "message": "Patch 077 Explorer V2 Type Editors Foundation fertig"
+            }
+        ]
+    },
+    "patch-078-explorer-v2-type-editors-dom-fix.php": {
+        "executed_at": "2026-06-12T11:21:47+00:00",
+        "status": "ok",
+        "duration_ms": 9,
+        "messages": [
+            {
+                "time": "2026-06-12T11:21:47+00:00",
+                "message": "Patch 078 Explorer V2 Type Editors DOM Fix gestartet"
+            },
+            {
+                "time": "2026-06-12T11:21:47+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-type-editors.js"
+            },
+            {
+                "time": "2026-06-12T11:21:47+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T11:21:47+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T11:21:47+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-12T11:21:47+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-12T11:21:47+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/68-explorer-v2-type-editors-dom-fix.md"
+            },
+            {
+                "time": "2026-06-12T11:21:47+00:00",
+                "message": "Patch 078 Explorer V2 Type Editors DOM Fix fertig"
+            }
+        ]
+    },
+    "patch-079-explorer-v2-image-link-fields.php": {
+        "executed_at": "2026-06-12T12:28:24+00:00",
+        "status": "ok",
+        "duration_ms": 5,
+        "messages": [
+            {
+                "time": "2026-06-12T12:28:24+00:00",
+                "message": "Patch 079 Explorer V2 Image Link Fields gestartet"
+            },
+            {
+                "time": "2026-06-12T12:28:24+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-type-editors.js"
+            },
+            {
+                "time": "2026-06-12T12:28:24+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-type-editors.js"
+            },
+            {
+                "time": "2026-06-12T12:28:24+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/69-explorer-v2-image-link-fields.md"
+            },
+            {
+                "time": "2026-06-12T12:28:24+00:00",
+                "message": "Patch 079 Explorer V2 Image Link Fields fertig"
+            }
+        ]
+    },
+    "patch-080-explorer-v2-resizable-node-tree-panel.php": {
+        "executed_at": "2026-06-12T12:38:56+00:00",
+        "status": "ok",
+        "duration_ms": 11,
+        "messages": [
+            {
+                "time": "2026-06-12T12:38:56+00:00",
+                "message": "Patch 080 Explorer V2 Resizable Node Tree Panel gestartet"
+            },
+            {
+                "time": "2026-06-12T12:38:56+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-12T12:38:56+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-12T12:38:56+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T12:38:56+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T12:38:56+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2.js"
+            },
+            {
+                "time": "2026-06-12T12:38:56+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2.js"
+            },
+            {
+                "time": "2026-06-12T12:38:56+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/70-explorer-v2-resizable-node-tree-panel.md"
+            },
+            {
+                "time": "2026-06-12T12:38:56+00:00",
+                "message": "Patch 080 Explorer V2 Resizable Node Tree Panel fertig"
+            }
+        ]
+    },
+    "patch-081-explorer-v2-node-toolbar-foundation (1).php": {
+        "executed_at": "2026-06-12T13:02:34+00:00",
+        "status": "ok",
+        "duration_ms": 10,
+        "messages": [
+            {
+                "time": "2026-06-12T13:02:34+00:00",
+                "message": "Patch 081 Explorer V2 Node Toolbar Foundation gestartet"
+            },
+            {
+                "time": "2026-06-12T13:02:34+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-12T13:02:34+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-12T13:02:34+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T13:02:34+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T13:02:34+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2.js"
+            },
+            {
+                "time": "2026-06-12T13:02:34+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2.js"
+            },
+            {
+                "time": "2026-06-12T13:02:34+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/71-explorer-v2-node-toolbar-foundation.md"
+            },
+            {
+                "time": "2026-06-12T13:02:34+00:00",
+                "message": "Patch 081 Explorer V2 Node Toolbar Foundation fertig"
+            }
+        ]
+    },
+    "patch-082-explorer-v2-node-action-menu.php": {
+        "executed_at": "2026-06-12T13:32:45+00:00",
+        "status": "ok",
+        "duration_ms": 8,
+        "messages": [
+            {
+                "time": "2026-06-12T13:32:45+00:00",
+                "message": "Patch 082 Explorer V2 Node Action Menu gestartet"
+            },
+            {
+                "time": "2026-06-12T13:32:45+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2.js"
+            },
+            {
+                "time": "2026-06-12T13:32:45+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2.js"
+            },
+            {
+                "time": "2026-06-12T13:32:45+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T13:32:45+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T13:32:45+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/72-explorer-v2-node-action-menu.md"
+            },
+            {
+                "time": "2026-06-12T13:32:45+00:00",
+                "message": "Patch 082 Explorer V2 Node Action Menu fertig"
+            }
+        ]
+    },
+    "patch-083-explorer-v2-node-menu-ux-polish.php": {
+        "executed_at": "2026-06-12T14:15:59+00:00",
+        "status": "ok",
+        "duration_ms": 8,
+        "messages": [
+            {
+                "time": "2026-06-12T14:15:59+00:00",
+                "message": "Patch 083 Explorer V2 Node Menu UX Polish gestartet"
+            },
+            {
+                "time": "2026-06-12T14:15:59+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2.js"
+            },
+            {
+                "time": "2026-06-12T14:15:59+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2.js"
+            },
+            {
+                "time": "2026-06-12T14:15:59+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T14:15:59+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T14:15:59+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/72b-explorer-v2-node-menu-ux-polish.md"
+            },
+            {
+                "time": "2026-06-12T14:15:59+00:00",
+                "message": "Patch 083 Explorer V2 Node Menu UX Polish fertig"
+            }
+        ]
+    },
+    "patch-084-explorer-v2-fullscreen-node-editor.php": {
+        "executed_at": "2026-06-12T14:15:59+00:00",
+        "status": "ok",
+        "duration_ms": 7,
+        "messages": [
+            {
+                "time": "2026-06-12T14:15:59+00:00",
+                "message": "Patch 084 Explorer V2 Fullscreen Node Editor gestartet"
+            },
+            {
+                "time": "2026-06-12T14:15:59+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2.js"
+            },
+            {
+                "time": "2026-06-12T14:15:59+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2.js"
+            },
+            {
+                "time": "2026-06-12T14:15:59+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T14:15:59+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T14:15:59+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/73-explorer-v2-fullscreen-node-editor.md"
+            },
+            {
+                "time": "2026-06-12T14:15:59+00:00",
+                "message": "Patch 084 Explorer V2 Fullscreen Node Editor fertig"
+            }
+        ]
+    },
+    "patch-085-explorer-v2-clipboard-engine-foundation.php": {
+        "executed_at": "2026-06-12T14:37:47+00:00",
+        "status": "ok",
+        "duration_ms": 7,
+        "messages": [
+            {
+                "time": "2026-06-12T14:37:47+00:00",
+                "message": "Patch 085 Explorer V2 Clipboard Engine Foundation gestartet"
+            },
+            {
+                "time": "2026-06-12T14:37:47+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2.js"
+            },
+            {
+                "time": "2026-06-12T14:37:47+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2.js"
+            },
+            {
+                "time": "2026-06-12T14:37:47+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T14:37:47+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T14:37:47+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/74-explorer-v2-clipboard-engine-foundation.md"
+            },
+            {
+                "time": "2026-06-12T14:37:47+00:00",
+                "message": "Patch 085 Explorer V2 Clipboard Engine Foundation fertig"
+            }
+        ]
+    },
+    "patch-086-explorer-v2-ui-cleanup.php": {
+        "executed_at": "2026-06-12T15:08:14+00:00",
+        "status": "ok",
+        "duration_ms": 8,
+        "messages": [
+            {
+                "time": "2026-06-12T15:08:14+00:00",
+                "message": "Patch 086 Explorer V2 UI Cleanup gestartet"
+            },
+            {
+                "time": "2026-06-12T15:08:14+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-12T15:08:14+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-12T15:08:14+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T15:08:14+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T15:08:14+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/75-explorer-v2-ui-cleanup.md"
+            },
+            {
+                "time": "2026-06-12T15:08:14+00:00",
+                "message": "Patch 086 Explorer V2 UI Cleanup fertig"
+            }
+        ]
+    },
+    "patch-087-explorer-v2-node-type-registry-add-node-dialog.php": {
+        "executed_at": "2026-06-12T22:14:16+00:00",
+        "status": "ok",
+        "duration_ms": 11,
+        "messages": [
+            {
+                "time": "2026-06-12T22:14:16+00:00",
+                "message": "Patch 087 Explorer V2 Node Type Registry + Add Node Dialog gestartet"
+            },
+            {
+                "time": "2026-06-12T22:14:16+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-node-types.js"
+            },
+            {
+                "time": "2026-06-12T22:14:16+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-add-node-dialog.js"
+            },
+            {
+                "time": "2026-06-12T22:14:16+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T22:14:16+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T22:14:16+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-12T22:14:16+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-12T22:14:16+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/76-explorer-v2-node-type-registry-add-node-dialog.md"
+            },
+            {
+                "time": "2026-06-12T22:14:16+00:00",
+                "message": "Patch 087 Explorer V2 Node Type Registry + Add Node Dialog fertig"
+            }
+        ]
+    },
+    "patch-088-explorer-v2-server-node-registry-mutation-service.php": {
+        "executed_at": "2026-06-12T22:26:28+00:00",
+        "status": "ok",
+        "duration_ms": 7,
+        "messages": [
+            {
+                "time": "2026-06-12T22:26:28+00:00",
+                "message": "Patch 088 Explorer V2 Server Node Registry + Mutation Service gestartet"
+            },
+            {
+                "time": "2026-06-12T22:26:28+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeTypeRegistry.php"
+            },
+            {
+                "time": "2026-06-12T22:26:28+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeMutationService.php"
+            },
+            {
+                "time": "2026-06-12T22:26:28+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/api/explorer-v2/mutate.php"
+            },
+            {
+                "time": "2026-06-12T22:26:28+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/77-explorer-v2-server-node-registry-mutation-service.md"
+            },
+            {
+                "time": "2026-06-12T22:26:28+00:00",
+                "message": "Patch 088 Explorer V2 Server Node Registry + Mutation Service fertig"
+            }
+        ]
+    },
+    "patch-090-explorer-v2-base-container-node-foundation.php": {
+        "executed_at": "2026-06-12T22:53:57+00:00",
+        "status": "ok",
+        "duration_ms": 17,
+        "messages": [
+            {
+                "time": "2026-06-12T22:53:57+00:00",
+                "message": "Patch 090 Explorer V2 BaseContainerNode Foundation gestartet"
+            },
+            {
+                "time": "2026-06-12T22:53:57+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeTypeRegistry.php"
+            },
+            {
+                "time": "2026-06-12T22:53:57+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeTypeRegistry.php"
+            },
+            {
+                "time": "2026-06-12T22:53:57+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-node-types.js"
+            },
+            {
+                "time": "2026-06-12T22:53:57+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-node-types.js"
+            },
+            {
+                "time": "2026-06-12T22:53:57+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-type-editors.js"
+            },
+            {
+                "time": "2026-06-12T22:53:57+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-type-editors.js"
+            },
+            {
+                "time": "2026-06-12T22:53:57+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T22:53:57+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T22:53:57+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/79-base-container-node-foundation.md"
+            },
+            {
+                "time": "2026-06-12T22:53:57+00:00",
+                "message": "Patch 090 Explorer V2 BaseContainerNode Foundation fertig"
+            }
+        ]
+    },
+    "patch-091-register-container-node-types-robust.php": {
+        "executed_at": "2026-06-12T23:04:17+00:00",
+        "status": "ok",
+        "duration_ms": 11,
+        "messages": [
+            {
+                "time": "2026-06-12T23:04:17+00:00",
+                "message": "Patch 091 Register Container Node Types Robust gestartet"
+            },
+            {
+                "time": "2026-06-12T23:04:17+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-node-types.js"
+            },
+            {
+                "time": "2026-06-12T23:04:17+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-node-types.js"
+            },
+            {
+                "time": "2026-06-12T23:04:17+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeTypeRegistry.php"
+            },
+            {
+                "time": "2026-06-12T23:04:17+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeTypeRegistry.php"
+            },
+            {
+                "time": "2026-06-12T23:04:17+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/80-register-container-node-types-robust.md"
+            },
+            {
+                "time": "2026-06-12T23:04:17+00:00",
+                "message": "Patch 091 Register Container Node Types Robust fertig"
+            }
+        ]
+    },
+    "patch-092-explorer-v2-add-node-api-integration.php": {
+        "executed_at": "2026-06-12T23:19:37+00:00",
+        "status": "ok",
+        "duration_ms": 13,
+        "messages": [
+            {
+                "time": "2026-06-12T23:19:37+00:00",
+                "message": "Patch 092 Explorer V2 Add Node API Integration gestartet"
+            },
+            {
+                "time": "2026-06-12T23:19:37+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-mutations.js"
+            },
+            {
+                "time": "2026-06-12T23:19:37+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-add-node-dialog.js"
+            },
+            {
+                "time": "2026-06-12T23:19:37+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-add-node-dialog.js"
+            },
+            {
+                "time": "2026-06-12T23:19:37+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-12T23:19:37+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-12T23:19:37+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T23:19:37+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-12T23:19:37+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/81-explorer-v2-add-node-api-integration.md"
+            },
+            {
+                "time": "2026-06-12T23:19:37+00:00",
+                "message": "Patch 092 Explorer V2 Add Node API Integration fertig"
+            }
+        ]
+    },
+    "patch-093-explorer-v2-fix-column-child-rules.php": {
+        "executed_at": "2026-06-12T23:30:47+00:00",
+        "status": "ok",
+        "duration_ms": 6,
+        "messages": [
+            {
+                "time": "2026-06-12T23:30:47+00:00",
+                "message": "Patch 093 Explorer V2 Fix Column Child Rules gestartet"
+            },
+            {
+                "time": "2026-06-12T23:30:47+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeMutationService.php"
+            },
+            {
+                "time": "2026-06-12T23:30:47+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeMutationService.php"
+            },
+            {
+                "time": "2026-06-12T23:30:47+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/82-fix-column-child-rules.md"
+            },
+            {
+                "time": "2026-06-12T23:30:47+00:00",
+                "message": "Patch 093 Explorer V2 Fix Column Child Rules fertig"
+            }
+        ]
+    },
+    "patch-094-explorer-v2-force-add-node-api-submit.php": {
+        "executed_at": "2026-06-13T00:26:42+00:00",
+        "status": "ok",
+        "duration_ms": 8,
+        "messages": [
+            {
+                "time": "2026-06-13T00:26:42+00:00",
+                "message": "Patch 094 Explorer V2 Force Add Node API Submit gestartet"
+            },
+            {
+                "time": "2026-06-13T00:26:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-force-add-node-submit.js"
+            },
+            {
+                "time": "2026-06-13T00:26:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-13T00:26:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-13T00:26:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/83-force-add-node-api-submit.md"
+            },
+            {
+                "time": "2026-06-13T00:26:42+00:00",
+                "message": "Patch 094 Explorer V2 Force Add Node API Submit fertig"
+            }
+        ]
+    },
+    "patch-095-explorer-v2-toast-duration.php": {
+        "executed_at": "2026-06-13T01:28:44+00:00",
+        "status": "ok",
+        "duration_ms": 13,
+        "messages": [
+            {
+                "time": "2026-06-13T01:28:43+00:00",
+                "message": "Patch 095 Explorer V2 Toast Duration gestartet"
+            },
+            {
+                "time": "2026-06-13T01:28:44+00:00",
+                "message": "Toast-Zeiten auf 4500 ms gesetzt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2.js"
+            },
+            {
+                "time": "2026-06-13T01:28:44+00:00",
+                "message": "Toast-Zeiten auf 4500 ms gesetzt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-mutations.js"
+            },
+            {
+                "time": "2026-06-13T01:28:44+00:00",
+                "message": "Keine Toast-Zeiten geändert in: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-force-add-node-submit.js"
+            },
+            {
+                "time": "2026-06-13T01:28:44+00:00",
+                "message": "Toast-Zeiten auf 4500 ms gesetzt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-add-node-dialog.js"
+            },
+            {
+                "time": "2026-06-13T01:28:44+00:00",
+                "message": "Patch 095 Explorer V2 Toast Duration fertig"
+            }
+        ]
+    },
+    "patch-096-explorer-v2-delay-reload-after-mutation.php": {
+        "executed_at": "2026-06-13T01:38:14+00:00",
+        "status": "ok",
+        "duration_ms": 8,
+        "messages": [
+            {
+                "time": "2026-06-13T01:38:14+00:00",
+                "message": "Patch 096 Explorer V2 Delay Reload After Mutation gestartet"
+            },
+            {
+                "time": "2026-06-13T01:38:14+00:00",
+                "message": "Reload nach Mutation auf 2500 ms gesetzt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-add-node-dialog.js"
+            },
+            {
+                "time": "2026-06-13T01:38:14+00:00",
+                "message": "Reload nach Mutation auf 2500 ms gesetzt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-force-add-node-submit.js"
+            },
+            {
+                "time": "2026-06-13T01:38:14+00:00",
+                "message": "Patch 096 Explorer V2 Delay Reload After Mutation fertig"
+            }
+        ]
+    },
+    "patch-097-explorer-v2-show-added-node-after-mutation.php": {
+        "executed_at": "2026-06-13T01:45:49+00:00",
+        "status": "ok",
+        "duration_ms": 12,
+        "messages": [
+            {
+                "time": "2026-06-13T01:45:49+00:00",
+                "message": "Patch 097 Explorer V2 Show Added Node After Mutation gestartet"
+            },
+            {
+                "time": "2026-06-13T01:45:49+00:00",
+                "message": "Reload nach Add sichtbar gemacht: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-force-add-node-submit.js"
+            },
+            {
+                "time": "2026-06-13T01:45:49+00:00",
+                "message": "Reload nach Add sichtbar gemacht: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-add-node-dialog.js"
+            },
+            {
+                "time": "2026-06-13T01:45:49+00:00",
+                "message": "Highlight für zuletzt eingefügte Node ergänzt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2.js"
+            },
+            {
+                "time": "2026-06-13T01:45:49+00:00",
+                "message": "Patch 097 Explorer V2 Show Added Node After Mutation fertig"
+            }
+        ]
+    },
+    "patch-098-explorer-v2-fix-nested-add-persistence.php": {
+        "executed_at": "2026-06-13T02:11:26+00:00",
+        "status": "ok",
+        "duration_ms": 5,
+        "messages": [
+            {
+                "time": "2026-06-13T02:11:26+00:00",
+                "message": "Patch 098 Explorer V2 Fix Nested Add Persistence gestartet"
+            },
+            {
+                "time": "2026-06-13T02:11:26+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeMutationService.php"
+            },
+            {
+                "time": "2026-06-13T02:11:26+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeMutationService.php"
+            },
+            {
+                "time": "2026-06-13T02:11:26+00:00",
+                "message": "Patch 098 Explorer V2 Fix Nested Add Persistence fertig"
+            }
+        ]
+    },
+    "patch-099-explorer-v2-delete-node-api-integration.php": {
+        "executed_at": "2026-06-13T03:29:46+00:00",
+        "status": "ok",
+        "duration_ms": 8,
+        "messages": [
+            {
+                "time": "2026-06-13T03:29:46+00:00",
+                "message": "Patch 099 Explorer V2 Delete Node API Integration gestartet"
+            },
+            {
+                "time": "2026-06-13T03:29:46+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-delete-node.js"
+            },
+            {
+                "time": "2026-06-13T03:29:46+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-13T03:29:46+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-13T03:29:46+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/88-explorer-v2-delete-node-api-integration.md"
+            },
+            {
+                "time": "2026-06-13T03:29:46+00:00",
+                "message": "Patch 099 Explorer V2 Delete Node API Integration fertig"
+            }
+        ]
+    },
+    "patch-100-explorer-v2-duplicate-node-api-integration.php": {
+        "executed_at": "2026-06-13T03:29:46+00:00",
+        "status": "ok",
+        "duration_ms": 6,
+        "messages": [
+            {
+                "time": "2026-06-13T03:29:46+00:00",
+                "message": "Patch 100 Explorer V2 Duplicate Node API Integration gestartet"
+            },
+            {
+                "time": "2026-06-13T03:29:46+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-duplicate-node.js"
+            },
+            {
+                "time": "2026-06-13T03:29:46+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-13T03:29:46+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-13T03:29:46+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/89-explorer-v2-duplicate-node-api-integration.md"
+            },
+            {
+                "time": "2026-06-13T03:29:46+00:00",
+                "message": "Patch 100 Explorer V2 Duplicate Node API Integration fertig"
+            }
+        ]
+    },
+    "patch-101-explorer-v2-robust-delete-duplicate-actions.php": {
+        "executed_at": "2026-06-13T03:39:16+00:00",
+        "status": "ok",
+        "duration_ms": 6,
+        "messages": [
+            {
+                "time": "2026-06-13T03:39:16+00:00",
+                "message": "Patch 101 Explorer V2 Robust Delete + Duplicate Actions gestartet"
+            },
+            {
+                "time": "2026-06-13T03:39:16+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2.js"
+            },
+            {
+                "time": "2026-06-13T03:39:16+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2.js"
+            },
+            {
+                "time": "2026-06-13T03:39:16+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/90-explorer-v2-robust-delete-duplicate-actions.md"
+            },
+            {
+                "time": "2026-06-13T03:39:16+00:00",
+                "message": "Patch 101 Explorer V2 Robust Delete + Duplicate Actions fertig"
+            }
+        ]
+    },
+    "patch-102-explorer-v2-fix-delete-duplicate-persistence.php": {
+        "executed_at": "2026-06-13T03:57:29+00:00",
+        "status": "ok",
+        "duration_ms": 4,
+        "messages": [
+            {
+                "time": "2026-06-13T03:57:29+00:00",
+                "message": "Patch 102 Explorer V2 Fix Delete Duplicate Persistence gestartet"
+            },
+            {
+                "time": "2026-06-13T03:57:29+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeMutationService.php"
+            },
+            {
+                "time": "2026-06-13T03:57:29+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeMutationService.php"
+            },
+            {
+                "time": "2026-06-13T03:57:29+00:00",
+                "message": "Patch 102 Explorer V2 Fix Delete Duplicate Persistence fertig"
+            }
+        ]
+    },
+    "patch-103-explorer-v2-clipboard-paste-api-integration.php": {
+        "executed_at": "2026-06-13T04:42:30+00:00",
+        "status": "ok",
+        "duration_ms": 5,
+        "messages": [
+            {
+                "time": "2026-06-13T04:42:30+00:00",
+                "message": "Patch 103 Explorer V2 Clipboard Paste API Integration gestartet"
+            },
+            {
+                "time": "2026-06-13T04:42:30+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2.js"
+            },
+            {
+                "time": "2026-06-13T04:42:30+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2.js"
+            },
+            {
+                "time": "2026-06-13T04:42:30+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/92-explorer-v2-clipboard-paste-api-integration.md"
+            },
+            {
+                "time": "2026-06-13T04:42:30+00:00",
+                "message": "Patch 103 Explorer V2 Clipboard Paste API Integration fertig"
+            }
+        ]
+    },
+    "patch-104a-node-properties-migration-foundation.php": {
+        "executed_at": "2026-06-13T11:53:01+00:00",
+        "status": "ok",
+        "duration_ms": 11,
+        "messages": [
+            {
+                "time": "2026-06-13T11:53:01+00:00",
+                "message": "Patch 104a Node Properties Migration Foundation gestartet"
+            },
+            {
+                "time": "2026-06-13T11:53:01+00:00",
+                "message": "Properties-Migration durchgeführt: C:\\laragon_new\\www\\treeforge/storage/workspaces/published/pages/home.json"
+            },
+            {
+                "time": "2026-06-13T11:53:01+00:00",
+                "message": "Properties-Migration durchgeführt: C:\\laragon_new\\www\\treeforge/storage/workspaces/published/pages/impressum.json"
+            },
+            {
+                "time": "2026-06-13T11:53:01+00:00",
+                "message": "Properties-Migration durchgeführt: C:\\laragon_new\\www\\treeforge/storage/workspaces/draft/pages/home.json"
+            },
+            {
+                "time": "2026-06-13T11:53:01+00:00",
+                "message": "Properties-Migration durchgeführt: C:\\laragon_new\\www\\treeforge/storage/workspaces/draft/pages/impressum.json"
+            },
+            {
+                "time": "2026-06-13T11:53:01+00:00",
+                "message": "Properties-Migration durchgeführt: C:\\laragon_new\\www\\treeforge/storage/workspaces/review/pages/home.json"
+            },
+            {
+                "time": "2026-06-13T11:53:01+00:00",
+                "message": "Patch 104a Node Properties Migration Foundation fertig"
+            }
+        ]
+    },
+    "patch-105-frontend-node-renderer-foundation.php": {
+        "executed_at": "2026-06-13T12:22:58+00:00",
+        "status": "ok",
+        "duration_ms": 10,
+        "messages": [
+            {
+                "time": "2026-06-13T12:22:58+00:00",
+                "message": "Patch 105 Frontend Node Renderer Foundation gestartet"
+            },
+            {
+                "time": "2026-06-13T12:22:58+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Frontend/NodeRenderer.php"
+            },
+            {
+                "time": "2026-06-13T12:22:58+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/Frontend/PageRenderer.php"
+            },
+            {
+                "time": "2026-06-13T12:22:58+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/page.php"
+            },
+            {
+                "time": "2026-06-13T12:22:58+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/frontend.css"
+            },
+            {
+                "time": "2026-06-13T12:22:58+00:00",
+                "message": "Patch 105 Frontend Node Renderer Foundation fertig"
+            }
+        ]
+    },
+    "patch-106-frontend-renderer-page-root-alias-fix.php": {
+        "executed_at": "2026-06-13T12:32:31+00:00",
+        "status": "ok",
+        "duration_ms": 4,
+        "messages": [
+            {
+                "time": "2026-06-13T12:32:31+00:00",
+                "message": "Patch 106 Frontend Renderer Page Root Alias Fix gestartet"
+            },
+            {
+                "time": "2026-06-13T12:32:31+00:00",
+                "message": "NodeRenderer Root-Alias page ergänzt."
+            },
+            {
+                "time": "2026-06-13T12:32:31+00:00",
+                "message": "Patch 106 Frontend Renderer Page Root Alias Fix fertig"
+            }
+        ]
+    },
+    "patch-107-frontend-renderer-fix-page-type.php": {
+        "executed_at": "2026-06-13T12:56:25+00:00",
+        "status": "ok",
+        "duration_ms": 5,
+        "messages": [
+            {
+                "time": "2026-06-13T12:56:25+00:00",
+                "message": "Patch 107 Frontend Renderer Fix Page Type gestartet"
+            },
+            {
+                "time": "2026-06-13T12:56:25+00:00",
+                "message": "NodeRenderer page/root Alias korrigiert."
+            },
+            {
+                "time": "2026-06-13T12:56:25+00:00",
+                "message": "Patch 107 Frontend Renderer Fix Page Type fertig"
+            }
+        ]
+    },
+    "patch-109-explorer-v2-property-editor-framework.php": {
+        "executed_at": "2026-06-13T15:49:09+00:00",
+        "status": "ok",
+        "duration_ms": 11,
+        "messages": [
+            {
+                "time": "2026-06-13T15:49:09+00:00",
+                "message": "Patch 109 Explorer V2 Property Editor Framework gestartet"
+            },
+            {
+                "time": "2026-06-13T15:49:09+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-property-editor.js"
+            },
+            {
+                "time": "2026-06-13T15:49:09+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-13T15:49:09+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-13T15:49:09+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-13T15:49:09+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-13T15:49:09+00:00",
+                "message": "Patch 109 Explorer V2 Property Editor Framework fertig"
+            }
+        ]
+    },
+    "patch-110-explorer-v2-save-node-properties.php": {
+        "executed_at": "2026-06-13T16:13:11+00:00",
+        "status": "ok",
+        "duration_ms": 11,
+        "messages": [
+            {
+                "time": "2026-06-13T16:13:10+00:00",
+                "message": "Patch 110 Explorer V2 Save Node Properties gestartet"
+            },
+            {
+                "time": "2026-06-13T16:13:10+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-save-node-properties.js"
+            },
+            {
+                "time": "2026-06-13T16:13:10+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-13T16:13:11+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-13T16:13:11+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-13T16:13:11+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-13T16:13:11+00:00",
+                "message": "Patch 110 Explorer V2 Save Node Properties fertig"
+            }
+        ]
+    },
+    "patch-108-node-properties-groups-update-api-foundation.php": {
+        "executed_at": "2026-06-13T16:24:27+00:00",
+        "status": "ok",
+        "duration_ms": 16,
+        "messages": [
+            {
+                "time": "2026-06-13T16:24:27+00:00",
+                "message": "Patch 108 Node Properties Groups + Update API Foundation gestartet"
+            },
+            {
+                "time": "2026-06-13T16:24:27+00:00",
+                "message": "Properties-Gruppen migriert: C:\\laragon_new\\www\\treeforge/storage/workspaces/published/pages/home.json"
+            },
+            {
+                "time": "2026-06-13T16:24:27+00:00",
+                "message": "Properties-Gruppen migriert: C:\\laragon_new\\www\\treeforge/storage/workspaces/published/pages/impressum.json"
+            },
+            {
+                "time": "2026-06-13T16:24:27+00:00",
+                "message": "Properties-Gruppen migriert: C:\\laragon_new\\www\\treeforge/storage/workspaces/draft/pages/home.json"
+            },
+            {
+                "time": "2026-06-13T16:24:27+00:00",
+                "message": "Properties-Gruppen migriert: C:\\laragon_new\\www\\treeforge/storage/workspaces/draft/pages/impressum.json"
+            },
+            {
+                "time": "2026-06-13T16:24:27+00:00",
+                "message": "Properties-Gruppen migriert: C:\\laragon_new\\www\\treeforge/storage/workspaces/review/pages/home.json"
+            },
+            {
+                "time": "2026-06-13T16:24:27+00:00",
+                "message": "NodeMutationService update-node ergänzt."
+            },
+            {
+                "time": "2026-06-13T16:24:27+00:00",
+                "message": "Patch 108 Node Properties Groups + Update API Foundation fertig"
+            }
+        ]
+    },
+    "patch-112-explorer-v2-cleanup-save-buttons.php": {
+        "executed_at": "2026-06-13T16:45:59+00:00",
+        "status": "ok",
+        "duration_ms": 11,
+        "messages": [
+            {
+                "time": "2026-06-13T16:45:59+00:00",
+                "message": "Patch 112 Explorer V2 Cleanup Save Buttons gestartet"
+            },
+            {
+                "time": "2026-06-13T16:45:59+00:00",
+                "message": "Property Editor Save-Button umbenannt."
+            },
+            {
+                "time": "2026-06-13T16:45:59+00:00",
+                "message": "Save-JS auf mehrere Node-Speichern-Buttons erweitert."
+            },
+            {
+                "time": "2026-06-13T16:45:59+00:00",
+                "message": "Save-Button Cleanup in explorer-v2.js ergänzt."
+            },
+            {
+                "time": "2026-06-13T16:45:59+00:00",
+                "message": "Save-Button CSS ergänzt."
+            },
+            {
+                "time": "2026-06-13T16:45:59+00:00",
+                "message": "Patch 112 Explorer V2 Cleanup Save Buttons fertig"
+            }
+        ]
+    },
+    "patch-113-explorer-v2-human-friendly-save-labels.php": {
+        "executed_at": "2026-06-13T16:51:33+00:00",
+        "status": "ok",
+        "duration_ms": 16,
+        "messages": [
+            {
+                "time": "2026-06-13T16:51:33+00:00",
+                "message": "Patch 113 Explorer V2 Human Friendly Save Labels gestartet"
+            },
+            {
+                "time": "2026-06-13T16:51:33+00:00",
+                "message": "Beschriftungen angepasst: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-property-editor.js"
+            },
+            {
+                "time": "2026-06-13T16:51:33+00:00",
+                "message": "Beschriftungen angepasst: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-save-node-properties.js"
+            },
+            {
+                "time": "2026-06-13T16:51:33+00:00",
+                "message": "Beschriftungen angepasst: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2.js"
+            },
+            {
+                "time": "2026-06-13T16:51:33+00:00",
+                "message": "Beschriftungen angepasst: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-13T16:51:33+00:00",
+                "message": "Human Save Labels JS ergänzt."
+            },
+            {
+                "time": "2026-06-13T16:51:33+00:00",
+                "message": "Human Save Labels CSS ergänzt."
+            },
+            {
+                "time": "2026-06-13T16:51:33+00:00",
+                "message": "Patch 113 Explorer V2 Human Friendly Save Labels fertig"
+            }
+        ]
+    },
+    "patch-114-explorer-v2-remove-duplicate-property-save-button.php": {
+        "executed_at": "2026-06-13T16:55:46+00:00",
+        "status": "ok",
+        "duration_ms": 12,
+        "messages": [
+            {
+                "time": "2026-06-13T16:55:46+00:00",
+                "message": "Patch 114 Explorer V2 Remove Duplicate Property Save Button gestartet"
+            },
+            {
+                "time": "2026-06-13T16:55:46+00:00",
+                "message": "Interner Property-Speichern-Button entfernt."
+            },
+            {
+                "time": "2026-06-13T16:55:46+00:00",
+                "message": "Single Property Save Button JS ergänzt."
+            },
+            {
+                "time": "2026-06-13T16:55:46+00:00",
+                "message": "Save-JS Fallback ergänzt."
+            },
+            {
+                "time": "2026-06-13T16:55:46+00:00",
+                "message": "Duplicate Save Button CSS ergänzt."
+            },
+            {
+                "time": "2026-06-13T16:55:46+00:00",
+                "message": "Patch 114 Explorer V2 Remove Duplicate Property Save Button fertig"
+            }
+        ]
+    },
+    "patch-115-explorer-v2-property-editor-top-bottom-save-buttons.php": {
+        "executed_at": "2026-06-13T17:14:10+00:00",
+        "status": "ok",
+        "duration_ms": 14,
+        "messages": [
+            {
+                "time": "2026-06-13T17:14:10+00:00",
+                "message": "Patch 115 Explorer V2 Property Editor Top Bottom Save Buttons gestartet"
+            },
+            {
+                "time": "2026-06-13T17:14:10+00:00",
+                "message": "Property Editor Top/Bottom Save Buttons ergänzt."
+            },
+            {
+                "time": "2026-06-13T17:14:10+00:00",
+                "message": "Save-JS für Top/Bottom Buttons angepasst."
+            },
+            {
+                "time": "2026-06-13T17:14:10+00:00",
+                "message": "Externe doppelte Save-Buttons werden ausgeblendet."
+            },
+            {
+                "time": "2026-06-13T17:14:10+00:00",
+                "message": "Top/Bottom Property Save CSS ergänzt."
+            },
+            {
+                "time": "2026-06-13T17:14:10+00:00",
+                "message": "Patch 115 Explorer V2 Property Editor Top Bottom Save Buttons fertig"
+            }
+        ]
+    },
+    "patch-116-explorer-v2-property-editor-stabilize-cleanup.php": {
+        "executed_at": "2026-06-13T17:17:47+00:00",
+        "status": "ok",
+        "duration_ms": 18,
+        "messages": [
+            {
+                "time": "2026-06-13T17:17:47+00:00",
+                "message": "Patch 116 Explorer V2 Property Editor Stabilize Cleanup gestartet"
+            },
+            {
+                "time": "2026-06-13T17:17:47+00:00",
+                "message": "Alte Save-Button-Hacks aus explorer-v2.js entfernt."
+            },
+            {
+                "time": "2026-06-13T17:17:47+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-property-editor.js"
+            },
+            {
+                "time": "2026-06-13T17:17:47+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-property-editor.js"
+            },
+            {
+                "time": "2026-06-13T17:17:47+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-save-node-properties.js"
+            },
+            {
+                "time": "2026-06-13T17:17:47+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-save-node-properties.js"
+            },
+            {
+                "time": "2026-06-13T17:17:47+00:00",
+                "message": "Renderer Script-Reihenfolge geprüft."
+            },
+            {
+                "time": "2026-06-13T17:17:47+00:00",
+                "message": "Stabile Property Editor CSS ergänzt."
+            },
+            {
+                "time": "2026-06-13T17:17:47+00:00",
+                "message": "Patch 116 Explorer V2 Property Editor Stabilize Cleanup fertig"
+            }
+        ]
+    },
+    "patch-117-explorer-v3-stable-foundation.php": {
+        "executed_at": "2026-06-13T19:30:50+00:00",
+        "status": "ok",
+        "duration_ms": 13,
+        "messages": [
+            {
+                "time": "2026-06-13T19:30:50+00:00",
+                "message": "Patch 117 Explorer V3 Stable Foundation gestartet"
+            },
+            {
+                "time": "2026-06-13T19:30:50+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV3/ExplorerV3Controller.php"
+            },
+            {
+                "time": "2026-06-13T19:30:50+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV3/ExplorerV3Renderer.php"
+            },
+            {
+                "time": "2026-06-13T19:30:50+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/explorer-v3/index.php"
+            },
+            {
+                "time": "2026-06-13T19:30:50+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v3.js"
+            },
+            {
+                "time": "2026-06-13T19:30:50+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v3.css"
+            },
+            {
+                "time": "2026-06-13T19:30:50+00:00",
+                "message": "AdminMenu Explorer V3 ergänzt."
+            },
+            {
+                "time": "2026-06-13T19:30:50+00:00",
+                "message": "Patch 117 Explorer V3 Stable Foundation fertig"
+            }
+        ]
+    },
+    "patch-111-fix-missing-update-node-mutation.php": {
+        "executed_at": "2026-06-13T19:54:40+00:00",
+        "status": "ok",
+        "duration_ms": 5,
+        "messages": [
+            {
+                "time": "2026-06-13T19:54:40+00:00",
+                "message": "Patch 111 Fix Missing update-node Mutation gestartet"
+            },
+            {
+                "time": "2026-06-13T19:54:40+00:00",
+                "message": "update-node Action ist bereits vorhanden."
+            },
+            {
+                "time": "2026-06-13T19:54:40+00:00",
+                "message": "updateNode Methoden sind bereits vorhanden."
+            },
+            {
+                "time": "2026-06-13T19:54:40+00:00",
+                "message": "Keine Änderung an NodeMutationService.php nötig."
+            },
+            {
+                "time": "2026-06-13T19:54:40+00:00",
+                "message": "Patch 111 Fix Missing update-node Mutation fertig"
+            }
+        ]
+    },
+    "patch-120-explorer-v2-stabilize-save-workflow.php": {
+        "executed_at": "2026-06-13T22:14:20+00:00",
+        "status": "error",
+        "duration_ms": 4,
+        "error": "Using $this when not in object context",
+        "messages": [
+            {
+                "time": "2026-06-13T22:14:20+00:00",
+                "message": "Patch 120 Explorer V2 Stabilize Save Workflow gestartet"
+            }
+        ]
+    },
+    "patch-122-node-id-generator-and-repair-tool.php": {
+        "executed_at": "2026-06-13T23:06:38+00:00",
+        "status": "ok",
+        "duration_ms": 994,
+        "messages": [
+            {
+                "time": "2026-06-13T23:06:37+00:00",
+                "message": "Patch 122 Node ID Generator + Repair Tool gestartet"
+            },
+            {
+                "time": "2026-06-13T23:06:37+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/NodeIdGenerator.php"
+            },
+            {
+                "time": "2026-06-13T23:06:37+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/NodeCreator.php"
+            },
+            {
+                "time": "2026-06-13T23:06:37+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/NodeCreator.php"
+            },
+            {
+                "time": "2026-06-13T23:06:37+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeMutationService.php"
+            },
+            {
+                "time": "2026-06-13T23:06:37+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeMutationService.php"
+            },
+            {
+                "time": "2026-06-13T23:06:37+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/api/node/create.php"
+            },
+            {
+                "time": "2026-06-13T23:06:37+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/api/node/create.php"
+            },
+            {
+                "time": "2026-06-13T23:06:37+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/tools/repair-node-ids.php"
+            },
+            {
+                "time": "2026-06-13T23:06:37+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/122-node-id-generator-and-repair-tool.md"
+            },
+            {
+                "time": "2026-06-13T23:06:37+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Core/NodeIdGenerator.php"
+            },
+            {
+                "time": "2026-06-13T23:06:38+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Core/NodeCreator.php"
+            },
+            {
+                "time": "2026-06-13T23:06:38+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeMutationService.php"
+            },
+            {
+                "time": "2026-06-13T23:06:38+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/public/api/node/create.php"
+            },
+            {
+                "time": "2026-06-13T23:06:38+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/tools/repair-node-ids.php"
+            },
+            {
+                "time": "2026-06-13T23:06:38+00:00",
+                "message": "Patch 122 Node ID Generator + Repair Tool fertig"
+            }
+        ]
+    },
+    "patch-123-workspace-pages-overview-and-legacy-cleanup.php": {
+        "executed_at": "2026-06-13T23:30:03+00:00",
+        "status": "ok",
+        "duration_ms": 660,
+        "messages": [
+            {
+                "time": "2026-06-13T23:30:02+00:00",
+                "message": "Patch 123 Workspace Pages Overview gestartet"
+            },
+            {
+                "time": "2026-06-13T23:30:02+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/Pages/PageTreeManager.php"
+            },
+            {
+                "time": "2026-06-13T23:30:02+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/Pages/PageTreeManager.php"
+            },
+            {
+                "time": "2026-06-13T23:30:02+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/admin/pages/index.php"
+            },
+            {
+                "time": "2026-06-13T23:30:02+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/pages/index.php"
+            },
+            {
+                "time": "2026-06-13T23:30:02+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Admin/AdminMenu.php"
+            },
+            {
+                "time": "2026-06-13T23:30:02+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Admin/AdminMenu.php"
+            },
+            {
+                "time": "2026-06-13T23:30:02+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/pages.css"
+            },
+            {
+                "time": "2026-06-13T23:30:02+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/pages.css"
+            },
+            {
+                "time": "2026-06-13T23:30:02+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/tools/archive-legacy-pages.php"
+            },
+            {
+                "time": "2026-06-13T23:30:02+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/123-workspace-pages-overview-and-legacy-cleanup.md"
+            },
+            {
+                "time": "2026-06-13T23:30:03+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Core/Pages/PageTreeManager.php"
+            },
+            {
+                "time": "2026-06-13T23:30:03+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/public/admin/pages/index.php"
+            },
+            {
+                "time": "2026-06-13T23:30:03+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Admin/AdminMenu.php"
+            },
+            {
+                "time": "2026-06-13T23:30:03+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/tools/archive-legacy-pages.php"
+            },
+            {
+                "time": "2026-06-13T23:30:03+00:00",
+                "message": "Patch 123 Workspace Pages Overview fertig"
+            }
+        ]
+    },
+    "patch-124-heading-node.php": {
+        "executed_at": "2026-06-13T23:48:43+00:00",
+        "status": "ok",
+        "duration_ms": 916,
+        "messages": [
+            {
+                "time": "2026-06-13T23:48:42+00:00",
+                "message": "Patch 124 HeadingNode gestartet"
+            },
+            {
+                "time": "2026-06-13T23:48:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeTypeRegistry.php"
+            },
+            {
+                "time": "2026-06-13T23:48:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeTypeRegistry.php"
+            },
+            {
+                "time": "2026-06-13T23:48:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeMutationService.php"
+            },
+            {
+                "time": "2026-06-13T23:48:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeMutationService.php"
+            },
+            {
+                "time": "2026-06-13T23:48:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/NodeCreator.php"
+            },
+            {
+                "time": "2026-06-13T23:48:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/NodeCreator.php"
+            },
+            {
+                "time": "2026-06-13T23:48:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/NodeInspector.php"
+            },
+            {
+                "time": "2026-06-13T23:48:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/NodeInspector.php"
+            },
+            {
+                "time": "2026-06-13T23:48:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/InspectorPreviewRenderer.php"
+            },
+            {
+                "time": "2026-06-13T23:48:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/InspectorPreviewRenderer.php"
+            },
+            {
+                "time": "2026-06-13T23:48:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-node-types.js"
+            },
+            {
+                "time": "2026-06-13T23:48:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-node-types.js"
+            },
+            {
+                "time": "2026-06-13T23:48:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-property-editor.js"
+            },
+            {
+                "time": "2026-06-13T23:48:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-property-editor.js"
+            },
+            {
+                "time": "2026-06-13T23:48:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-type-editors.js"
+            },
+            {
+                "time": "2026-06-13T23:48:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-type-editors.js"
+            },
+            {
+                "time": "2026-06-13T23:48:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-13T23:48:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-13T23:48:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/124-heading-node.md"
+            },
+            {
+                "time": "2026-06-13T23:48:42+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeTypeRegistry.php"
+            },
+            {
+                "time": "2026-06-13T23:48:43+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeMutationService.php"
+            },
+            {
+                "time": "2026-06-13T23:48:43+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Core/NodeCreator.php"
+            },
+            {
+                "time": "2026-06-13T23:48:43+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Core/NodeInspector.php"
+            },
+            {
+                "time": "2026-06-13T23:48:43+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Core/InspectorPreviewRenderer.php"
+            },
+            {
+                "time": "2026-06-13T23:48:43+00:00",
+                "message": "Patch 124 HeadingNode fertig"
+            }
+        ]
+    },
+    "patch-125-code-highlight-node.php": {
+        "executed_at": "2026-06-13T23:54:43+00:00",
+        "status": "ok",
+        "duration_ms": 889,
+        "messages": [
+            {
+                "time": "2026-06-13T23:54:42+00:00",
+                "message": "Patch 125 CodeBlockNode gestartet"
+            },
+            {
+                "time": "2026-06-13T23:54:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeTypeRegistry.php"
+            },
+            {
+                "time": "2026-06-13T23:54:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeTypeRegistry.php"
+            },
+            {
+                "time": "2026-06-13T23:54:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeMutationService.php"
+            },
+            {
+                "time": "2026-06-13T23:54:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeMutationService.php"
+            },
+            {
+                "time": "2026-06-13T23:54:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/NodeCreator.php"
+            },
+            {
+                "time": "2026-06-13T23:54:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/NodeCreator.php"
+            },
+            {
+                "time": "2026-06-13T23:54:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/NodeInspector.php"
+            },
+            {
+                "time": "2026-06-13T23:54:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/NodeInspector.php"
+            },
+            {
+                "time": "2026-06-13T23:54:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/InspectorPreviewRenderer.php"
+            },
+            {
+                "time": "2026-06-13T23:54:43+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/InspectorPreviewRenderer.php"
+            },
+            {
+                "time": "2026-06-13T23:54:43+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-node-types.js"
+            },
+            {
+                "time": "2026-06-13T23:54:43+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-node-types.js"
+            },
+            {
+                "time": "2026-06-13T23:54:43+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-property-editor.js"
+            },
+            {
+                "time": "2026-06-13T23:54:43+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-property-editor.js"
+            },
+            {
+                "time": "2026-06-13T23:54:43+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-type-editors.js"
+            },
+            {
+                "time": "2026-06-13T23:54:43+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-type-editors.js"
+            },
+            {
+                "time": "2026-06-13T23:54:43+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-13T23:54:43+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-13T23:54:43+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/125-code-highlight-node.md"
+            },
+            {
+                "time": "2026-06-13T23:54:43+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeTypeRegistry.php"
+            },
+            {
+                "time": "2026-06-13T23:54:43+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeMutationService.php"
+            },
+            {
+                "time": "2026-06-13T23:54:43+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Core/NodeCreator.php"
+            },
+            {
+                "time": "2026-06-13T23:54:43+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Core/NodeInspector.php"
+            },
+            {
+                "time": "2026-06-13T23:54:43+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Core/InspectorPreviewRenderer.php"
+            },
+            {
+                "time": "2026-06-13T23:54:43+00:00",
+                "message": "Patch 125 CodeBlockNode fertig"
+            }
+        ]
+    },
+    "patch-126-frontend-heading-codeblock-rendering.php": {
+        "executed_at": "2026-06-14T00:19:51+00:00",
+        "status": "ok",
+        "duration_ms": 641,
+        "messages": [
+            {
+                "time": "2026-06-14T00:19:51+00:00",
+                "message": "Patch 126 Frontend Heading/CodeBlock Rendering gestartet"
+            },
+            {
+                "time": "2026-06-14T00:19:51+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Nodes/HeadingNode.php"
+            },
+            {
+                "time": "2026-06-14T00:19:51+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Nodes/CodeBlockNode.php"
+            },
+            {
+                "time": "2026-06-14T00:19:51+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/bootstrap.php"
+            },
+            {
+                "time": "2026-06-14T00:19:51+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/bootstrap.php"
+            },
+            {
+                "time": "2026-06-14T00:19:51+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Renderer/HtmlRenderer.php"
+            },
+            {
+                "time": "2026-06-14T00:19:51+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Renderer/HtmlRenderer.php"
+            },
+            {
+                "time": "2026-06-14T00:19:51+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/treeforge.css"
+            },
+            {
+                "time": "2026-06-14T00:19:51+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/treeforge.css"
+            },
+            {
+                "time": "2026-06-14T00:19:51+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/126-frontend-heading-codeblock-rendering.md"
+            },
+            {
+                "time": "2026-06-14T00:19:51+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Nodes/HeadingNode.php"
+            },
+            {
+                "time": "2026-06-14T00:19:51+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Nodes/CodeBlockNode.php"
+            },
+            {
+                "time": "2026-06-14T00:19:51+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Core/bootstrap.php"
+            },
+            {
+                "time": "2026-06-14T00:19:51+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Renderer/HtmlRenderer.php"
+            },
+            {
+                "time": "2026-06-14T00:19:51+00:00",
+                "message": "Patch 126 Frontend Heading/CodeBlock Rendering fertig"
+            }
+        ]
+    },
+    "patch-127-frontend-node-type-aliases-and-normalizer.php": {
+        "executed_at": "2026-06-14T00:38:03+00:00",
+        "status": "ok",
+        "duration_ms": 475,
+        "messages": [
+            {
+                "time": "2026-06-14T00:38:03+00:00",
+                "message": "Patch 127 Frontend Node-Type Aliases + Normalizer gestartet"
+            },
+            {
+                "time": "2026-06-14T00:38:03+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/NodeRegistry.php"
+            },
+            {
+                "time": "2026-06-14T00:38:03+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/NodeRegistry.php"
+            },
+            {
+                "time": "2026-06-14T00:38:03+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/bootstrap.php"
+            },
+            {
+                "time": "2026-06-14T00:38:03+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/bootstrap.php"
+            },
+            {
+                "time": "2026-06-14T00:38:03+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/tools/normalize-node-types.php"
+            },
+            {
+                "time": "2026-06-14T00:38:03+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/127-frontend-node-type-aliases-and-normalizer.md"
+            },
+            {
+                "time": "2026-06-14T00:38:03+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Core/NodeRegistry.php"
+            },
+            {
+                "time": "2026-06-14T00:38:03+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Core/bootstrap.php"
+            },
+            {
+                "time": "2026-06-14T00:38:03+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/tools/normalize-node-types.php"
+            },
+            {
+                "time": "2026-06-14T00:38:03+00:00",
+                "message": "Patch 127 Frontend Node-Type Aliases + Normalizer fertig"
+            }
+        ]
+    },
+    "patch-128-frontend-html-node-and-unknown-node-guard.php": {
+        "executed_at": "2026-06-14T00:42:49+00:00",
+        "status": "ok",
+        "duration_ms": 1271,
+        "messages": [
+            {
+                "time": "2026-06-14T00:42:48+00:00",
+                "message": "Patch 128 Frontend HtmlNode + Unknown Node Guard gestartet"
+            },
+            {
+                "time": "2026-06-14T00:42:48+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Nodes/HtmlNode.php"
+            },
+            {
+                "time": "2026-06-14T00:42:48+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Nodes/JavaScriptNode.php"
+            },
+            {
+                "time": "2026-06-14T00:42:48+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Nodes/UnknownNode.php"
+            },
+            {
+                "time": "2026-06-14T00:42:48+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/NodeRegistry.php"
+            },
+            {
+                "time": "2026-06-14T00:42:48+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/NodeRegistry.php"
+            },
+            {
+                "time": "2026-06-14T00:42:48+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/NodeFactory.php"
+            },
+            {
+                "time": "2026-06-14T00:42:48+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/NodeFactory.php"
+            },
+            {
+                "time": "2026-06-14T00:42:48+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/bootstrap.php"
+            },
+            {
+                "time": "2026-06-14T00:42:48+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/bootstrap.php"
+            },
+            {
+                "time": "2026-06-14T00:42:48+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Renderer/HtmlRenderer.php"
+            },
+            {
+                "time": "2026-06-14T00:42:48+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Renderer/HtmlRenderer.php"
+            },
+            {
+                "time": "2026-06-14T00:42:48+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/tools/normalize-node-types.php"
+            },
+            {
+                "time": "2026-06-14T00:42:48+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/tools/normalize-node-types.php"
+            },
+            {
+                "time": "2026-06-14T00:42:48+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/128-frontend-html-node-and-unknown-node-guard.md"
+            },
+            {
+                "time": "2026-06-14T00:42:48+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Nodes/HtmlNode.php"
+            },
+            {
+                "time": "2026-06-14T00:42:48+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Nodes/JavaScriptNode.php"
+            },
+            {
+                "time": "2026-06-14T00:42:48+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Nodes/UnknownNode.php"
+            },
+            {
+                "time": "2026-06-14T00:42:48+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Core/NodeRegistry.php"
+            },
+            {
+                "time": "2026-06-14T00:42:48+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Core/NodeFactory.php"
+            },
+            {
+                "time": "2026-06-14T00:42:49+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Core/bootstrap.php"
+            },
+            {
+                "time": "2026-06-14T00:42:49+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Renderer/HtmlRenderer.php"
+            },
+            {
+                "time": "2026-06-14T00:42:49+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/tools/normalize-node-types.php"
+            },
+            {
+                "time": "2026-06-14T00:42:49+00:00",
+                "message": "Patch 128 Frontend HtmlNode + Unknown Node Guard fertig"
+            }
+        ]
+    },
+    "patch-130-textnode-paragraph-rendering-repair.php": {
+        "executed_at": "2026-06-14T01:02:30+00:00",
+        "status": "ok",
+        "duration_ms": 153,
+        "messages": [
+            {
+                "time": "2026-06-14T01:02:30+00:00",
+                "message": "Patch 130 TextNode Paragraph Rendering Repair gestartet"
+            },
+            {
+                "time": "2026-06-14T01:02:30+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Renderer/HtmlRenderer.php"
+            },
+            {
+                "time": "2026-06-14T01:02:30+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Renderer/HtmlRenderer.php"
+            },
+            {
+                "time": "2026-06-14T01:02:30+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/130-textnode-paragraph-rendering-repair.md"
+            },
+            {
+                "time": "2026-06-14T01:02:30+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Renderer/HtmlRenderer.php"
+            },
+            {
+                "time": "2026-06-14T01:02:30+00:00",
+                "message": "Patch 130 TextNode Paragraph Rendering Repair fertig"
+            }
+        ]
+    },
+    "patch-131-core-twig-template-foundation.php": {
+        "executed_at": "2026-06-14T01:18:12+00:00",
+        "status": "ok",
+        "duration_ms": 19,
+        "messages": [
+            {
+                "time": "2026-06-14T01:18:12+00:00",
+                "message": "Patch 131 Core Twig Template Foundation gestartet"
+            },
+            {
+                "time": "2026-06-14T01:18:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/core-template.json"
+            },
+            {
+                "time": "2026-06-14T01:18:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/layouts/base.twig"
+            },
+            {
+                "time": "2026-06-14T01:18:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/layouts/page.twig"
+            },
+            {
+                "time": "2026-06-14T01:18:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/layouts/blank.twig"
+            },
+            {
+                "time": "2026-06-14T01:18:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/nodes/heading.twig"
+            },
+            {
+                "time": "2026-06-14T01:18:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/nodes/text.twig"
+            },
+            {
+                "time": "2026-06-14T01:18:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/nodes/image.twig"
+            },
+            {
+                "time": "2026-06-14T01:18:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/nodes/button.twig"
+            },
+            {
+                "time": "2026-06-14T01:18:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/nodes/markdown.twig"
+            },
+            {
+                "time": "2026-06-14T01:18:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/nodes/html.twig"
+            },
+            {
+                "time": "2026-06-14T01:18:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/nodes/css.twig"
+            },
+            {
+                "time": "2026-06-14T01:18:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/nodes/codeblock.twig"
+            },
+            {
+                "time": "2026-06-14T01:18:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/nodes/columns.twig"
+            },
+            {
+                "time": "2026-06-14T01:18:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/nodes/column.twig"
+            },
+            {
+                "time": "2026-06-14T01:18:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/nodes/unknown.twig"
+            },
+            {
+                "time": "2026-06-14T01:18:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/assets/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T01:18:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/131-core-twig-template-foundation.md"
+            },
+            {
+                "time": "2026-06-14T01:18:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/twig-node-template-api.md"
+            },
+            {
+                "time": "2026-06-14T01:18:12+00:00",
+                "message": "Patch 131 Core Twig Template Foundation fertig"
+            }
+        ]
+    },
+    "patch-132-workspace-areas-foundation.php": {
+        "executed_at": "2026-06-14T01:42:04+00:00",
+        "status": "ok",
+        "duration_ms": 898,
+        "messages": [
+            {
+                "time": "2026-06-14T01:42:03+00:00",
+                "message": "Patch 132 Workspace Areas Foundation gestartet"
+            },
+            {
+                "time": "2026-06-14T01:42:03+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/Areas/AreaManager.php"
+            },
+            {
+                "time": "2026-06-14T01:42:03+00:00",
+                "message": "Datei erstellt: C:\\laragon_new\\www\\treeforge/storage/workspaces/draft/areas/footer.json"
+            },
+            {
+                "time": "2026-06-14T01:42:03+00:00",
+                "message": "Datei erstellt: C:\\laragon_new\\www\\treeforge/storage/workspaces/draft/areas/header.json"
+            },
+            {
+                "time": "2026-06-14T01:42:03+00:00",
+                "message": "Datei erstellt: C:\\laragon_new\\www\\treeforge/storage/workspaces/published/areas/footer.json"
+            },
+            {
+                "time": "2026-06-14T01:42:03+00:00",
+                "message": "Datei erstellt: C:\\laragon_new\\www\\treeforge/storage/workspaces/published/areas/header.json"
+            },
+            {
+                "time": "2026-06-14T01:42:03+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeMutationService.php"
+            },
+            {
+                "time": "2026-06-14T01:42:03+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeMutationService.php"
+            },
+            {
+                "time": "2026-06-14T01:42:03+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/api/explorer-v2/mutate.php"
+            },
+            {
+                "time": "2026-06-14T01:42:03+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/api/explorer-v2/mutate.php"
+            },
+            {
+                "time": "2026-06-14T01:42:03+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-mutations.js"
+            },
+            {
+                "time": "2026-06-14T01:42:03+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-mutations.js"
+            },
+            {
+                "time": "2026-06-14T01:42:03+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Controller.php"
+            },
+            {
+                "time": "2026-06-14T01:42:03+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Controller.php"
+            },
+            {
+                "time": "2026-06-14T01:42:03+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-14T01:42:03+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-14T01:42:03+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/admin/pages/index.php"
+            },
+            {
+                "time": "2026-06-14T01:42:03+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/admin/pages/index.php"
+            },
+            {
+                "time": "2026-06-14T01:42:03+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/admin.css"
+            },
+            {
+                "time": "2026-06-14T01:42:03+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/admin.css"
+            },
+            {
+                "time": "2026-06-14T01:42:03+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/132-workspace-areas-foundation.md"
+            },
+            {
+                "time": "2026-06-14T01:42:03+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Core/Areas/AreaManager.php"
+            },
+            {
+                "time": "2026-06-14T01:42:03+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeMutationService.php"
+            },
+            {
+                "time": "2026-06-14T01:42:03+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/public/api/explorer-v2/mutate.php"
+            },
+            {
+                "time": "2026-06-14T01:42:04+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Controller.php"
+            },
+            {
+                "time": "2026-06-14T01:42:04+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/ExplorerV2Renderer.php"
+            },
+            {
+                "time": "2026-06-14T01:42:04+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/public/admin/pages/index.php"
+            },
+            {
+                "time": "2026-06-14T01:42:04+00:00",
+                "message": "Patch 132 Workspace Areas Foundation fertig"
+            }
+        ]
+    },
+    "patch-133-twig-renderer-and-areas.php": {
+        "executed_at": "2026-06-14T01:52:20+00:00",
+        "status": "ok",
+        "duration_ms": 315,
+        "messages": [
+            {
+                "time": "2026-06-14T01:52:19+00:00",
+                "message": "Patch 133 Twig Renderer + tf_area gestartet"
+            },
+            {
+                "time": "2026-06-14T01:52:19+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/composer.json"
+            },
+            {
+                "time": "2026-06-14T01:52:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/composer.json"
+            },
+            {
+                "time": "2026-06-14T01:52:19+00:00",
+                "message": "composer.json: twig/twig ergänzt. Bitte danach composer update twig/twig ausführen."
+            },
+            {
+                "time": "2026-06-14T01:52:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T01:52:19+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/layouts/base.twig"
+            },
+            {
+                "time": "2026-06-14T01:52:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/layouts/base.twig"
+            },
+            {
+                "time": "2026-06-14T01:52:19+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/assets/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T01:52:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/assets/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T01:52:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/treeforge-core-template.css"
+            },
+            {
+                "time": "2026-06-14T01:52:19+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/index.php"
+            },
+            {
+                "time": "2026-06-14T01:52:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/index.php"
+            },
+            {
+                "time": "2026-06-14T01:52:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/133-twig-renderer-and-areas.md"
+            },
+            {
+                "time": "2026-06-14T01:52:20+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T01:52:20+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/public/index.php"
+            },
+            {
+                "time": "2026-06-14T01:52:20+00:00",
+                "message": "Patch 133 Twig Renderer + tf_area fertig"
+            }
+        ]
+    },
+    "patch-134-template-asset-publisher.php": {
+        "executed_at": "2026-06-14T02:01:17+00:00",
+        "status": "ok",
+        "duration_ms": 445,
+        "messages": [
+            {
+                "time": "2026-06-14T02:01:17+00:00",
+                "message": "Patch 134 Template Asset Publisher gestartet"
+            },
+            {
+                "time": "2026-06-14T02:01:17+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/Templates/TemplateAssetPublisher.php"
+            },
+            {
+                "time": "2026-06-14T02:01:17+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T02:01:17+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T02:01:17+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/tools/publish-template-assets.php"
+            },
+            {
+                "time": "2026-06-14T02:01:17+00:00",
+                "message": "Core Asset veröffentlicht: /assets/treeforge/core/css/core-template.css?v=806d2e1eede8"
+            },
+            {
+                "time": "2026-06-14T02:01:17+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/134-template-asset-publisher.md"
+            },
+            {
+                "time": "2026-06-14T02:01:17+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Core/Templates/TemplateAssetPublisher.php"
+            },
+            {
+                "time": "2026-06-14T02:01:17+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T02:01:17+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/tools/publish-template-assets.php"
+            },
+            {
+                "time": "2026-06-14T02:01:17+00:00",
+                "message": "Patch 134 Template Asset Publisher fertig"
+            }
+        ]
+    },
+    "patch-135-core-website-template.php": {
+        "executed_at": "2026-06-14T09:39:54+00:00",
+        "status": "ok",
+        "duration_ms": 16,
+        "messages": [
+            {
+                "time": "2026-06-14T09:39:54+00:00",
+                "message": "Patch 135 Core Website Template gestartet"
+            },
+            {
+                "time": "2026-06-14T09:39:54+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/layouts/base.twig"
+            },
+            {
+                "time": "2026-06-14T09:39:54+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/layouts/base.twig"
+            },
+            {
+                "time": "2026-06-14T09:39:54+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/layouts/page.twig"
+            },
+            {
+                "time": "2026-06-14T09:39:54+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/layouts/page.twig"
+            },
+            {
+                "time": "2026-06-14T09:39:54+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/layouts/blank.twig"
+            },
+            {
+                "time": "2026-06-14T09:39:54+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/layouts/blank.twig"
+            },
+            {
+                "time": "2026-06-14T09:39:54+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/assets/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T09:39:54+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/assets/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T09:39:54+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/135-core-website-template.md"
+            },
+            {
+                "time": "2026-06-14T09:39:54+00:00",
+                "message": "Asset veröffentlicht: C:\\laragon_new\\www\\treeforge/public/assets/treeforge/core/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T09:39:54+00:00",
+                "message": "Patch 135 Core Website Template fertig"
+            }
+        ]
+    },
+    "patch-136-twig-renderer-null-safe-page-content.php": {
+        "executed_at": "2026-06-14T09:46:40+00:00",
+        "status": "ok",
+        "duration_ms": 190,
+        "messages": [
+            {
+                "time": "2026-06-14T09:46:40+00:00",
+                "message": "Patch 136 Twig Renderer null-safe page content gestartet"
+            },
+            {
+                "time": "2026-06-14T09:46:40+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T09:46:40+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T09:46:40+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/layouts/page.twig"
+            },
+            {
+                "time": "2026-06-14T09:46:40+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/layouts/page.twig"
+            },
+            {
+                "time": "2026-06-14T09:46:40+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/layouts/blank.twig"
+            },
+            {
+                "time": "2026-06-14T09:46:40+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/layouts/blank.twig"
+            },
+            {
+                "time": "2026-06-14T09:46:40+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/136-twig-renderer-null-safe-page-content.md"
+            },
+            {
+                "time": "2026-06-14T09:46:40+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T09:46:40+00:00",
+                "message": "Patch 136 Twig Renderer null-safe page content fertig"
+            }
+        ]
+    },
+    "patch-137-twig-clean-base-and-legacy-renderer-cleanup.php": {
+        "executed_at": "2026-06-14T17:34:08+00:00",
+        "status": "ok",
+        "duration_ms": 570,
+        "messages": [
+            {
+                "time": "2026-06-14T17:34:07+00:00",
+                "message": "Patch 137 Twig Clean Base + Legacy Renderer Cleanup gestartet"
+            },
+            {
+                "time": "2026-06-14T17:34:07+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/index.php"
+            },
+            {
+                "time": "2026-06-14T17:34:07+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/index.php"
+            },
+            {
+                "time": "2026-06-14T17:34:07+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T17:34:07+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T17:34:07+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/layouts/base.twig"
+            },
+            {
+                "time": "2026-06-14T17:34:07+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/layouts/base.twig"
+            },
+            {
+                "time": "2026-06-14T17:34:07+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/layouts/page.twig"
+            },
+            {
+                "time": "2026-06-14T17:34:07+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/layouts/page.twig"
+            },
+            {
+                "time": "2026-06-14T17:34:07+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/layouts/blank.twig"
+            },
+            {
+                "time": "2026-06-14T17:34:07+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/layouts/blank.twig"
+            },
+            {
+                "time": "2026-06-14T17:34:07+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/core-template.json"
+            },
+            {
+                "time": "2026-06-14T17:34:07+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/core-template.json"
+            },
+            {
+                "time": "2026-06-14T17:34:07+00:00",
+                "message": "Legacy-Datei archiviert: C:\\laragon_new\\www\\treeforge/public/assets/css/treeforge-core-template.css -> C:\\laragon_new\\www\\treeforge/storage/legacy/template-assets/treeforge-core-template.css"
+            },
+            {
+                "time": "2026-06-14T17:34:07+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/137-twig-clean-base-and-legacy-renderer-cleanup.md"
+            },
+            {
+                "time": "2026-06-14T17:34:07+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/public/index.php"
+            },
+            {
+                "time": "2026-06-14T17:34:08+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T17:34:08+00:00",
+                "message": "Patch 137 Twig Clean Base + Legacy Renderer Cleanup fertig"
+            }
+        ]
+    },
+    "patch-138-frontend-preview-admin-bar.php": {
+        "executed_at": "2026-06-14T17:41:45+00:00",
+        "status": "ok",
+        "duration_ms": 182,
+        "messages": [
+            {
+                "time": "2026-06-14T17:41:45+00:00",
+                "message": "Patch 138 Frontend Preview/Admin Bar gestartet"
+            },
+            {
+                "time": "2026-06-14T17:41:45+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T17:41:45+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T17:41:45+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/layouts/base.twig"
+            },
+            {
+                "time": "2026-06-14T17:41:45+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/layouts/base.twig"
+            },
+            {
+                "time": "2026-06-14T17:41:45+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/assets/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T17:41:45+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/assets/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T17:41:45+00:00",
+                "message": "Core-CSS veröffentlicht: /assets/treeforge/core/css/core-template.css?v=7c5e89c3a0af"
+            },
+            {
+                "time": "2026-06-14T17:41:45+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/138-frontend-preview-admin-bar.md"
+            },
+            {
+                "time": "2026-06-14T17:41:45+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T17:41:45+00:00",
+                "message": "Patch 138 Frontend Preview/Admin Bar fertig"
+            }
+        ]
     }
 }

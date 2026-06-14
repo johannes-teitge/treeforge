@@ -8,6 +8,8 @@ use RuntimeException;
 class NodeCreator
 {
     public const ALLOWED_TYPES = [
+        'heading',
+        'codeblock',
         'text',
         'image',
         'button',
@@ -22,13 +24,58 @@ class NodeCreator
             throw new RuntimeException("Unsupported node type: {$type}");
         }
 
-        $id = self::id('node_' . $type);
+        $usedIds = [];
+        if (isset($options['_existing_ids']) && is_array($options['_existing_ids'])) {
+            $usedIds = array_values(array_map('strval', $options['_existing_ids']));
+        }
+
+        $id = NodeIdGenerator::generateFromIds($usedIds);
 
         return match ($type) {
+            'codeblock' => [
+                'id' => $id,
+                'type' => 'codeblock',
+                'title' => 'Neuer Code-Block',
+                'properties' => [
+                    'content' => [
+                        'code' => "<?php\necho 'Hallo TreeForge';\n",
+                        'language' => 'php',
+                        'caption' => '',
+                        'show_line_numbers' => '1',
+                        'wrap' => '0',
+                    ],
+                    'layout' => [],
+                    'spacing' => [],
+                    'design' => [],
+                    'behavior' => [],
+                    'advanced' => [],
+                    'custom_css' => '',
+                ],
+                'children' => [],
+            ],
+            'heading' => [
+                'id' => $id,
+                'type' => 'heading',
+                'title' => 'Neue Überschrift',
+                'properties' => [
+                    'content' => [
+                        'text' => 'Neue Überschrift',
+                        'level' => 'h2',
+                    ],
+                    'layout' => [],
+                    'spacing' => [],
+                    'design' => [],
+                    'behavior' => [],
+                    'advanced' => [],
+                    'custom_css' => '',
+                ],
+                'children' => [],
+            ],
+
             'text' => [
                 'id' => $id,
                 'type' => 'text',
-                'content' => "Neuer Text",
+                'content' => 'Neuer Text',
             ],
 
             'image' => [
@@ -59,7 +106,7 @@ class NodeCreator
                 'content' => ".tf-custom {\n  color: #1E3D1C;\n}",
             ],
 
-            'columns' => self::createColumnsNode($id, $options),
+            'columns' => self::createColumnsNode($id, $options, $usedIds),
 
             default => throw new RuntimeException("Unsupported node type: {$type}"),
         };
@@ -121,7 +168,10 @@ class NodeCreator
         return false;
     }
 
-    protected static function createColumnsNode(string $id, array $options): array
+    /**
+     * @param array<int,string> $usedIds
+     */
+    protected static function createColumnsNode(string $id, array $options, array &$usedIds): array
     {
         $columns = (int)($options['columns'] ?? 2);
         $columns = max(2, min(6, $columns));
@@ -133,8 +183,9 @@ class NodeCreator
 
         for ($i = 1; $i <= $columns; $i++) {
             $children[] = [
-                'id' => self::id('node_column_' . $i),
+                'id' => NodeIdGenerator::generateFromIds($usedIds),
                 'type' => 'column',
+                'title' => 'Spalte ' . $i,
                 'width' => '1fr',
                 'children' => [],
             ];
@@ -149,10 +200,5 @@ class NodeCreator
             ],
             'children' => $children,
         ];
-    }
-
-    protected static function id(string $prefix): string
-    {
-        return $prefix . '_' . bin2hex(random_bytes(4));
     }
 }
