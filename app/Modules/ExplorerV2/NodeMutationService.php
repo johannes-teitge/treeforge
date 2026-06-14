@@ -619,6 +619,66 @@ class NodeMutationService
                     $spacing['gap'] = $advanced['settings']['gap'];
                 }
                 break;
+
+            case 'PageMenuNode':
+                $mode = strtolower((string)($content['mode'] ?? 'manual'));
+                $content['mode'] = in_array($mode, ['manual', 'headings', 'hybrid'], true) ? $mode : 'manual';
+
+                $variant = preg_replace('/[^a-z0-9_-]/', '', strtolower((string)($content['variant'] ?? 'vertical'))) ?: 'vertical';
+                $variantAliases = [
+                    'sidebar' => 'vertical',
+                    'button' => 'buttons',
+                    'buttonbar' => 'buttons',
+                    'source' => 'sources',
+                    'references' => 'sources',
+                ];
+                $variant = $variantAliases[$variant] ?? $variant;
+                $content['variant'] = in_array($variant, ['vertical', 'horizontal', 'buttons', 'pills', 'sources', 'compact'], true) ? $variant : 'vertical';
+
+                $behaviorValue = strtolower((string)($content['behavior'] ?? ($content['sticky'] ?? 'static')));
+                if ($behaviorValue === '1' || $behaviorValue === 'true' || $behaviorValue === 'yes' || $behaviorValue === 'sticky') {
+                    $behaviorValue = 'sticky';
+                }
+                $content['behavior'] = in_array($behaviorValue, ['static', 'sticky', 'popup', 'dropdown'], true) ? $behaviorValue : 'static';
+                $content['sticky'] = $content['behavior'] === 'sticky' ? '1' : (string)($content['sticky'] ?? '0');
+
+                $content['title'] = (string)($content['title'] ?? $node['title'] ?? 'Auf dieser Seite');
+                $content['show_title'] = (string)($content['show_title'] ?? '1');
+                $content['button_label'] = (string)($content['button_label'] ?? 'Menü öffnen');
+                $content['button_icon'] = (string)($content['button_icon'] ?? '☰');
+                $content['active_mode'] = (string)($content['active_mode'] ?? 'none');
+                $content['empty_message'] = (string)($content['empty_message'] ?? 'Keine Menüpunkte.');
+
+                $node['menu_mode'] = $content['mode'];
+                $node['variant'] = $content['variant'];
+                $node['menu_behavior'] = $content['behavior'];
+                break;
+
+            case 'MenuItemNode':
+                if (array_key_exists('label', $content)) {
+                    $node['label'] = (string)$content['label'];
+                }
+                if (array_key_exists('href', $content)) {
+                    $node['href'] = (string)$content['href'];
+                    $behavior['url'] = (string)$content['href'];
+                } elseif (array_key_exists('url', $behavior)) {
+                    $node['href'] = (string)$behavior['url'];
+                    $content['href'] = (string)$behavior['url'];
+                }
+                if (array_key_exists('target', $content)) {
+                    $node['target'] = (string)$content['target'];
+                    $behavior['target'] = (string)$content['target'];
+                } elseif (array_key_exists('target', $behavior)) {
+                    $node['target'] = (string)$behavior['target'];
+                    $content['target'] = (string)$behavior['target'];
+                }
+
+                foreach (['icon', 'description', 'badge', 'rel', 'aria_label', 'item_type'] as $key) {
+                    if (array_key_exists($key, $content)) {
+                        $node[$key] = (string)$content[$key];
+                    }
+                }
+                break;
         }
     }
     protected function normalizeNodeType(string $type): string
@@ -641,6 +701,8 @@ class NodeMutationService
             'container', 'containernode' => 'ContainerNode',
             'schedule', 'schedulecontainer', 'schedulecontainernode' => 'ScheduleContainerNode',
             'reference', 'referencenode' => 'ReferenceNode',
+            'pagemenu', 'pagemenunode', 'page_menu', 'linkmenu', 'linkmenunode', 'localmenu', 'anchor_menu' => 'PageMenuNode',
+            'menuitem', 'menuitemnode', 'menu_item', 'linkitem', 'linkitemnode' => 'MenuItemNode',
             default => $type,
         };
     }

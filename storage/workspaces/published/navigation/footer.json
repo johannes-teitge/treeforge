@@ -1,0 +1,16 @@
+{
+    "id": "footer",
+    "type": "navigation",
+    "title": "Footer-Menü",
+    "items": [
+        {
+            "id": "m_footer_impressum",
+            "label": "Impressum",
+            "page": "impressum",
+            "url": "",
+            "target": "_self",
+            "status": "active",
+            "children": []
+        }
+    ]
+}

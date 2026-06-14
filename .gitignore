@@ -31,3 +31,6 @@ repair-*.php
 treeforge-v2-*.php
 storage/logs/*.log
 storage/legacy/
+
+# TreeForge ChatGPT exports
+exports/chatgpt/

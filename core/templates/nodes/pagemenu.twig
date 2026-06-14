@@ -1,0 +1,54 @@
+{# Core Node Template: pagemenu #}
+{% set variant = node.variant|default('vertical') %}
+{% set behavior = node.behavior|default('static') %}
+{% set list_tag = variant == 'sources' ? 'ol' : 'ul' %}
+{% set title = node.menu_title|default('Seitenmenü') %}
+{% set rawShowTitle = node.show_title is defined ? node.show_title : true %}
+{% set showTitle = rawShowTitle not in [false, 0, '0', 'false', 'no', 'nein', 'off', 'hidden', 'hide'] %}
+{% set label = node.button_label|default(title) %}
+{% set classes = node.class ~ ' tf-pagemenu tf-pagemenu-' ~ variant ~ ' tf-pagemenu-behavior-' ~ behavior %}
+{% if node.sticky|default(false) %}{% set classes = classes ~ ' is-sticky' %}{% endif %}
+{% if not showTitle %}{% set classes = classes ~ ' has-hidden-title' %}{% endif %}
+
+{% macro menu_list(node, list_tag) %}
+  <{{ list_tag }} class="tf-pagemenu-list">
+    {% for item in node.items|default([]) %}
+      <li class="tf-pagemenu-item tf-pagemenu-item-{{ item.type|default('manual') }} tf-pagemenu-item-kind-{{ item.item_type|default('link') }} level-{{ item.level|default(1) }}">
+        <a href="{{ item.href|default('#') }}"{% if item.target|default('_self') != '_self' %} target="{{ item.target }}"{% endif %}{% set rel = item.rel|default('') %}{% if item.target|default('_self') != '_self' and rel == '' %}{% set rel = 'noopener noreferrer' %}{% endif %}{% if rel %} rel="{{ rel }}"{% endif %}{% if item.aria_label|default('') %} aria-label="{{ item.aria_label }}"{% endif %}>
+          {% if item.icon|default('') %}<span class="tf-pagemenu-icon" aria-hidden="true">{{ tf_icon(item.icon)|raw }}</span>{% endif %}
+          <span class="tf-pagemenu-label">{{ item.label|default('Menüpunkt') }}</span>
+          {% if item.badge|default('') %}<span class="tf-pagemenu-badge">{{ item.badge }}</span>{% endif %}
+        </a>
+        {% if item.description|default('') %}
+          <small class="tf-pagemenu-description">{{ item.description }}</small>
+        {% endif %}
+      </li>
+    {% else %}
+      <li class="tf-pagemenu-item is-empty"><span>{{ node.empty_message|default('Keine Menüpunkte.') }}</span></li>
+    {% endfor %}
+  </{{ list_tag }}>
+{% endmacro %}
+
+{% import _self as pagemenu %}
+
+{% if behavior in ['popup', 'dropdown'] %}
+  <details id="{{ node.dom_id }}" class="{{ classes }} tf-pagemenu-disclosure">
+    <summary class="tf-pagemenu-trigger">
+      {% if node.button_icon|default('') %}<span class="tf-pagemenu-trigger-icon" aria-hidden="true">{{ tf_icon(node.button_icon)|raw }}</span>{% endif %}
+      <span>{{ label }}</span>
+    </summary>
+    <nav class="tf-pagemenu-panel" aria-label="{{ title }}">
+      {% if showTitle and title %}
+        <div class="tf-pagemenu-title">{{ title }}</div>
+      {% endif %}
+      {{ pagemenu.menu_list(node, list_tag) }}
+    </nav>
+  </details>
+{% else %}
+  <nav id="{{ node.dom_id }}" class="{{ classes }}" aria-label="{{ title }}">
+    {% if showTitle and title %}
+      <div class="tf-pagemenu-title">{{ title }}</div>
+    {% endif %}
+    {{ pagemenu.menu_list(node, list_tag) }}
+  </nav>
+{% endif %}

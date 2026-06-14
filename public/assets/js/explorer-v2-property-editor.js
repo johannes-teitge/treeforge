@@ -18,6 +18,8 @@
       design: p.design || {},
       behavior: p.behavior || {},
       advanced: p.advanced || {},
+      visibility: p.visibility || {},
+      responsive: p.responsive || {},
       custom_css: typeof p.custom_css === 'string' ? p.custom_css : ''
     };
   }
@@ -118,6 +120,80 @@
   function contentFields(node) {
     const type = nodeType(node);
 
+    if (type.includes('pagemenu') || type.includes('linkmenu') || type.includes('localmenu')) {
+      return `
+        ${select('content.mode', 'Quelle / Modus', propValue(node, 'content', 'mode', ['menu_mode', 'mode'], 'manual'), [
+          { value: 'manual', label: 'Manuell – MenuItem-Nodes verwenden' },
+          { value: 'headings', label: 'Automatisch aus Überschriften' },
+          { value: 'hybrid', label: 'Hybrid – Überschriften + manuelle Punkte' }
+        ])}
+        ${select('content.variant', 'Darstellung', propValue(node, 'content', 'variant', ['variant'], 'vertical'), [
+          { value: 'vertical', label: 'Vertikal / Sidebar' },
+          { value: 'horizontal', label: 'Horizontal' },
+          { value: 'buttons', label: 'Buttons' },
+          { value: 'pills', label: 'Pills / Chips' },
+          { value: 'sources', label: 'Quellen / Verweise' },
+          { value: 'compact', label: 'Kompakt' }
+        ])}
+        ${select('content.behavior', 'Verhalten', propValue(node, 'content', 'behavior', ['menu_behavior', 'behavior'], propValue(node, 'content', 'sticky', ['sticky'], '0') === '1' ? 'sticky' : 'static'), [
+          { value: 'static', label: 'Normal' },
+          { value: 'sticky', label: 'Sticky' },
+          { value: 'popup', label: 'Popup / Aufklapper' },
+          { value: 'dropdown', label: 'Dropdown / Aufklapper' }
+        ])}
+        ${input('content.title', 'Menütitel', propValue(node, 'content', 'title', ['menu_title', 'title'], 'Auf dieser Seite'), 'Auf dieser Seite')}
+        <div class="tfv2-field-grid">
+          ${select('content.show_title', 'Titel anzeigen', propValue(node, 'content', 'show_title', ['show_title'], '1'), [
+            { value: '1', label: 'Ja' },
+            { value: '0', label: 'Nein – nur Menüpunkte anzeigen' }
+          ])}
+          ${input('content.button_label', 'Popup-Button Text', propValue(node, 'content', 'button_label', ['button_label'], 'Menü öffnen'), 'Menü öffnen')}
+        </div>
+        <div class="tfv2-field-grid">
+          ${input('content.button_icon', 'Popup-Icon', propValue(node, 'content', 'button_icon', ['button_icon'], '☰'), '☰')}
+          ${select('content.active_mode', 'Aktiv-Markierung', propValue(node, 'content', 'active_mode', ['active_mode'], 'none'), [
+            { value: 'none', label: 'Keine' },
+            { value: 'current_url', label: 'Aktuelle URL' },
+            { value: 'scrollspy', label: 'Scrollspy später' }
+          ])}
+        </div>
+        ${input('content.empty_message', 'Meldung wenn leer', propValue(node, 'content', 'empty_message', ['empty_message'], 'Keine Menüpunkte.'), 'Keine Menüpunkte.')}
+        ${input('content.heading_levels', 'Heading-Level', propValue(node, 'content', 'heading_levels', ['levels'], 'h2,h3'), 'h2,h3')}
+        ${textarea('content.exclude_heading_ids', 'Heading-IDs ausschließen', propValue(node, 'content', 'exclude_heading_ids', ['exclude_heading_ids'], ''), 'n_abc123\nn_def456', 4)}
+        ${select('content.manual_position', 'Manuelle Punkte bei Hybrid', propValue(node, 'content', 'manual_position', ['manual_position'], 'after'), [
+          { value: 'after', label: 'Nach automatischen Überschriften' },
+          { value: 'before', label: 'Vor automatischen Überschriften' }
+        ])}
+        <small class="tfv2-help">Titel ausblenden blendet nur die Überschrift des Menüs aus – die MenuItems bleiben sichtbar. Popup/Dropdown funktioniert zunächst ohne JavaScript über native Details/Summary.</small>
+      `;
+    }
+
+    if (type.includes('menuitem') || type.includes('linkitem')) {
+      return `
+        ${input('content.label', 'Label', propValue(node, 'content', 'label', ['label', 'title'], 'Menüpunkt'), 'Menüpunkt')}
+        ${input('content.href', 'Href / Link / Anker', propValue(node, 'content', 'href', ['href', 'url'], '#'), '#kontakt oder /kontakt')}
+        <div class="tfv2-field-grid">
+          ${select('content.target', 'Target', propValue(node, 'content', 'target', ['target'], '_self'), [
+            { value: '_self', label: 'Gleiches Fenster' },
+            { value: '_blank', label: 'Neues Fenster' }
+          ])}
+          ${select('content.item_type', 'Art', propValue(node, 'content', 'item_type', ['item_type'], 'link'), [
+            { value: 'link', label: 'Normaler Link' },
+            { value: 'anchor', label: 'Anker' },
+            { value: 'button', label: 'Button' },
+            { value: 'download', label: 'Download' },
+            { value: 'source', label: 'Quelle' }
+          ])}
+        </div>
+        <div class="tfv2-field-grid">
+          ${input('content.icon', 'Icon', propValue(node, 'content', 'icon', ['icon'], ''), 'z. B. 🔗 oder fa-link')}
+          ${input('content.badge', 'Badge', propValue(node, 'content', 'badge', ['badge'], ''), 'optional')}
+        </div>
+        ${input('content.rel', 'Rel', propValue(node, 'content', 'rel', ['rel'], ''), 'nofollow sponsored ugc')}
+        ${input('content.aria_label', 'ARIA Label', propValue(node, 'content', 'aria_label', ['aria_label'], ''), 'optional für Screenreader')}
+        ${textarea('content.description', 'Beschreibung', propValue(node, 'content', 'description', ['description'], ''), 'optional', 3)}
+      `;
+    }
     if (type.includes('image')) {
       return `
         ${input('content.media_id', 'Media ID / Pfad', propValue(node, 'content', 'media_id', ['media_id', 'mediaId', 'image', 'src'], ''), 'uploads/bild.jpg')}
@@ -293,6 +369,78 @@
     `;
   }
 
+  function responsiveValue(node, device, group, key, fallback) {
+    const groups = propGroups(node);
+    const responsive = groups.responsive || {};
+    const deviceData = responsive[device] || {};
+    const groupData = deviceData[group] || {};
+
+    if (typeof groupData[key] !== 'undefined') {
+      return groupData[key];
+    }
+
+    return fallback ?? '';
+  }
+
+  function responsiveDeviceFields(node, device, label) {
+    return `
+      <div class="tfv2-responsive-device">
+        <h4>${esc(label)}</h4>
+        <div class="tfv2-field-grid">
+          ${select(`responsive.${device}.layout.display`, 'Display', responsiveValue(node, device, 'layout', 'display', ''), [
+            { value: '', label: 'Keine Änderung' },
+            { value: 'block', label: 'Block' },
+            { value: 'flex', label: 'Flex' },
+            { value: 'grid', label: 'Grid' },
+            { value: 'inline-block', label: 'Inline-Block' },
+            { value: 'none', label: 'Ausblenden' }
+          ])}
+          ${select(`responsive.${device}.layout.alignment`, 'Ausrichtung', responsiveValue(node, device, 'layout', 'alignment', ''), [
+            { value: '', label: 'Keine Änderung' },
+            { value: 'left', label: 'Links' },
+            { value: 'center', label: 'Zentriert' },
+            { value: 'right', label: 'Rechts' },
+            { value: 'stretch', label: 'Stretch' }
+          ])}
+          ${input(`responsive.${device}.layout.width`, 'Width', responsiveValue(node, device, 'layout', 'width', ''), '100%')}
+          ${input(`responsive.${device}.layout.max_width`, 'Max Width', responsiveValue(node, device, 'layout', 'max_width', ''), '100%')}
+          ${input(`responsive.${device}.spacing.margin`, 'Margin', responsiveValue(node, device, 'spacing', 'margin', ''), '1rem 0')}
+          ${input(`responsive.${device}.spacing.padding`, 'Padding', responsiveValue(node, device, 'spacing', 'padding', ''), '.75rem')}
+          ${input(`responsive.${device}.spacing.gap`, 'Gap', responsiveValue(node, device, 'spacing', 'gap', ''), '.75rem')}
+          ${input(`responsive.${device}.design.background`, 'Background', responsiveValue(node, device, 'design', 'background', ''), 'transparent')}
+          ${input(`responsive.${device}.design.color`, 'Text Color', responsiveValue(node, device, 'design', 'color', ''), 'inherit')}
+        </div>
+        ${textarea(`responsive.${device}.advanced.custom_style`, 'Custom Style', responsiveValue(node, device, 'advanced', 'custom_style', ''), 'Optional: property: value', 3, 'code')}
+        ${textarea(`responsive.${device}.custom_css`, 'Custom CSS Properties', (propGroups(node).responsive?.[device]?.custom_css || ''), 'property: value', 3, 'code')}
+      </div>
+    `;
+  }
+
+  function responsiveFields(node) {
+    const groups = propGroups(node);
+    const visibility = groups.visibility || {};
+
+    return `
+      <div class="tfv2-field-grid">
+        ${select('visibility.desktop', 'Desktop anzeigen', typeof visibility.desktop === 'undefined' ? '1' : String(visibility.desktop), [
+          { value: '1', label: 'Ja' },
+          { value: '0', label: 'Nein' }
+        ])}
+        ${select('visibility.tablet', 'Tablet anzeigen', typeof visibility.tablet === 'undefined' ? '1' : String(visibility.tablet), [
+          { value: '1', label: 'Ja' },
+          { value: '0', label: 'Nein' }
+        ])}
+        ${select('visibility.mobile', 'Mobile anzeigen', typeof visibility.mobile === 'undefined' ? '1' : String(visibility.mobile), [
+          { value: '1', label: 'Ja' },
+          { value: '0', label: 'Nein' }
+        ])}
+      </div>
+      <small class="tfv2-help">Basiswerte gelten für alle Ausgaben. Responsive Werte überschreiben nur das, was pro Gerät anders sein soll.</small>
+      ${responsiveDeviceFields(node, 'desktop', 'Desktop Override')}
+      ${responsiveDeviceFields(node, 'tablet', 'Tablet Override')}
+      ${responsiveDeviceFields(node, 'mobile', 'Mobile Override')}
+    `;
+  }
   function baseFields(node) {
     return `
       <div class="tfv2-prop-base">
@@ -339,6 +487,7 @@
 
         ${baseFields(node)}
         ${group('Content', contentFields(node), true)}
+        ${group('Anzeige / Responsive', responsiveFields(node), false)}
         ${group('Layout', layoutFields(node), false)}
         ${group('Spacing', spacingFields(node), false)}
         ${group('Design', designFields(node), false)}

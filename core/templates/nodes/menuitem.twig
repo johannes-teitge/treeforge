@@ -1,0 +1,11 @@
+{# Core Node Template: menuitem #}
+<div id="{{ node.dom_id }}" class="{{ node.class }} tf-menuitem-kind-{{ node.item_type|default('link') }}">
+  <a href="{{ node.href|default('#') }}"{% if node.target|default('_self') != '_self' %} target="{{ node.target }}"{% endif %}{% set rel = node.rel|default('') %}{% if node.target|default('_self') != '_self' and rel == '' %}{% set rel = 'noopener noreferrer' %}{% endif %}{% if rel %} rel="{{ rel }}"{% endif %}{% if node.aria_label|default('') %} aria-label="{{ node.aria_label }}"{% endif %}>
+    {% if node.icon|default('') %}<span class="tf-pagemenu-icon" aria-hidden="true">{{ tf_icon(node.icon)|raw }}</span>{% endif %}
+    <span class="tf-pagemenu-label">{{ node.label|default('Menüpunkt') }}</span>
+    {% if node.badge|default('') %}<span class="tf-pagemenu-badge">{{ node.badge }}</span>{% endif %}
+  </a>
+  {% if node.description|default('') %}
+    <small class="tf-pagemenu-description">{{ node.description }}</small>
+  {% endif %}
+</div>

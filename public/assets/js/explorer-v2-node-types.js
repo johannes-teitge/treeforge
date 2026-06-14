@@ -379,3 +379,90 @@
     }
   });
 })();
+
+/* PATCH 146 PAGEMENU + MENUITEM NODE TYPES */
+(function () {
+  function register(item) {
+    if (!item || !item.type) return;
+
+    if (window.TreeForgeV2NodeTypeRegistry && typeof window.TreeForgeV2NodeTypeRegistry.register === 'function') {
+      window.TreeForgeV2NodeTypeRegistry.register(item);
+      return;
+    }
+
+    window.TreeForgeV2NodeTypes = window.TreeForgeV2NodeTypes || [];
+    const index = window.TreeForgeV2NodeTypes.findIndex(existing => existing.type === item.type);
+    if (index >= 0) window.TreeForgeV2NodeTypes[index] = item;
+    else window.TreeForgeV2NodeTypes.push(item);
+  }
+
+  const commonProps = {
+    layout: { display: 'block', alignment: '', width: '', max_width: '', min_height: '', columns: '' },
+    spacing: { margin: '', padding: '', gap: '' },
+    design: { background: '', color: '', border: '', border_radius: '', box_shadow: '', style: '' },
+    behavior: { url: '', target: '_self', zoom: '' },
+    advanced: { css_class: '', css_id: '', custom_style: '' },
+    custom_css: ''
+  };
+
+  register({
+    type: 'PageMenuNode',
+    label: 'Seitenmenü / Linkliste',
+    icon: '☰',
+    group: 'Navigation',
+    description: 'Lokales Menü, Ankerliste, Sidebar-Menü oder Quellenverzeichnis direkt im Baum.',
+    defaults: {
+      type: 'PageMenuNode',
+      title: 'Seitenmenü',
+      status: 'active',
+      visibility: 'visible',
+      editor_note: '',
+      properties: Object.assign({}, commonProps, {
+        content: {
+          mode: 'manual',
+          variant: 'vertical',
+          title: 'Auf dieser Seite',
+          show_title: '1',
+          sticky: '0',
+          behavior: 'static',
+          button_label: 'Menü öffnen',
+          button_icon: '☰',
+          active_mode: 'none',
+          empty_message: 'Keine Menüpunkte.',
+          heading_levels: 'h2,h3',
+          exclude_heading_ids: '',
+          manual_position: 'after'
+        }
+      }),
+      children: [
+        {
+          type: 'MenuItemNode',
+          title: 'Menüpunkt',
+          properties: Object.assign({}, commonProps, {
+            content: { label: 'Menüpunkt', href: '#', target: '_self', description: '', icon: '', badge: '', rel: '', aria_label: '', item_type: 'link' }
+          }),
+          children: []
+        }
+      ]
+    }
+  });
+
+  register({
+    type: 'MenuItemNode',
+    label: 'Menüpunkt',
+    icon: '↳',
+    group: 'Navigation',
+    description: 'Ein einzelner Link innerhalb eines Seitenmenüs.',
+    defaults: {
+      type: 'MenuItemNode',
+      title: 'Menüpunkt',
+      status: 'active',
+      visibility: 'visible',
+      editor_note: '',
+      properties: Object.assign({}, commonProps, {
+        content: { label: 'Menüpunkt', href: '#', target: '_self', description: '', icon: '', badge: '', rel: '', aria_label: '', item_type: 'link' }
+      }),
+      children: []
+    }
+  });
+})();

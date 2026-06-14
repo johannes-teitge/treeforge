@@ -1,0 +1,26 @@
+[
+    {
+        "id": "home",
+        "title": "Home",
+        "slug": "home",
+        "parent_id": null,
+        "position": 10,
+        "status": "published",
+        "language": "de",
+        "template": "default",
+        "created_at": "2026-06-12T05:10:44+00:00",
+        "updated_at": "2026-06-12T05:10:44+00:00"
+    },
+    {
+        "id": "impressum",
+        "title": "Impressum",
+        "slug": "impressum",
+        "parent_id": null,
+        "position": 20,
+        "status": "draft",
+        "language": "de",
+        "template": "default",
+        "created_at": "2026-06-12T05:14:49+00:00",
+        "updated_at": "2026-06-12T05:14:49+00:00"
+    }
+]

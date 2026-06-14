@@ -1,0 +1,25 @@
+{
+    "id": "main",
+    "type": "navigation",
+    "title": "Hauptmenü",
+    "items": [
+        {
+            "id": "m_home",
+            "label": "Startseite",
+            "page": "home",
+            "url": "",
+            "target": "_self",
+            "status": "active",
+            "children": []
+        },
+        {
+            "id": "m_impressum",
+            "label": "Impressum",
+            "page": "impressum",
+            "url": "",
+            "target": "_self",
+            "status": "active",
+            "children": []
+        }
+    ]
+}

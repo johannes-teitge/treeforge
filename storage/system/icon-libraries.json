@@ -1,0 +1,30 @@
+{
+  "enabled": true,
+  "default_library": "bootstrap-icons",
+  "libraries": {
+    "bootstrap-icons": {
+      "enabled": true,
+      "label": "Bootstrap Icons",
+      "css": [
+        "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      ],
+      "examples": [
+        "bi:house",
+        "bi:envelope",
+        "bi:box-arrow-up-right"
+      ]
+    },
+    "fontawesome": {
+      "enabled": true,
+      "label": "Font Awesome Free",
+      "css": [
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      ],
+      "examples": [
+        "fa:house",
+        "far:user",
+        "fab:github"
+      ]
+    }
+  }
+}

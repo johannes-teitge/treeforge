@@ -498,5 +498,53 @@
     "patch-138-frontend-preview-admin-bar.php": {
         "executed_at": "2026-06-14T17:41:45+00:00",
         "status": "ok"
+    },
+    "patch-139-core-website-styling-polish.php": {
+        "executed_at": "2026-06-14T17:56:25+00:00",
+        "status": "ok"
+    },
+    "patch-140-fix-preview-bar-array-rendering.php": {
+        "executed_at": "2026-06-14T18:16:50+00:00",
+        "status": "ok"
+    },
+    "patch-141-core-navigation-menu-foundation.php": {
+        "executed_at": "2026-06-14T18:26:58+00:00",
+        "status": "ok"
+    },
+    "patch-142-force-twig-menu-renderer-repair.php": {
+        "executed_at": "2026-06-14T18:32:44+00:00",
+        "status": "ok"
+    },
+    "patch-144-chatgpt-export-zip-tool.php": {
+        "executed_at": "2026-06-14T18:47:55+00:00",
+        "status": "ok"
+    },
+    "patch-145-chatgpt-export-zip-fallback.php": {
+        "executed_at": "2026-06-14T18:50:56+00:00",
+        "status": "ok"
+    },
+    "patch-146-page-menu-node-foundation.php": {
+        "executed_at": "2026-06-14T19:14:20+00:00",
+        "status": "ok"
+    },
+    "patch-147-node-css-collector-foundation.php": {
+        "executed_at": "2026-06-14T19:51:40+00:00",
+        "status": "ok"
+    },
+    "patch-148-responsive-node-properties-foundation.php": {
+        "executed_at": "2026-06-14T20:49:47+00:00",
+        "status": "ok"
+    },
+    "patch-149-page-menu-node-variants-and-fields.php": {
+        "executed_at": "2026-06-14T20:59:43+00:00",
+        "status": "ok"
+    },
+    "patch-150-fix-pagemenu-show-title-rendering.php": {
+        "executed_at": "2026-06-14T21:08:47+00:00",
+        "status": "ok"
+    },
+    "patch-151-icon-library-foundation.php": {
+        "executed_at": "2026-06-14T21:39:12+00:00",
+        "status": "ok"
     }
 }

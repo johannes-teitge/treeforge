@@ -1,4 +1,4 @@
 {# Core Node Template: columns #}
-<div id="{{ node.dom_id }}" class="{{ node.class }}" style="--tf-columns: {{ node.columns|default(2) }}; --tf-column-gap: {{ node.gap|default('1rem') }};">
+<div id="{{ node.dom_id }}" class="{{ node.class }}">
   {{ node.children_html|default('')|raw }}
 </div>

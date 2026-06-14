@@ -112,6 +112,8 @@
     properties.design = properties.design && typeof properties.design === 'object' && !Array.isArray(properties.design) ? properties.design : {};
     properties.behavior = properties.behavior && typeof properties.behavior === 'object' && !Array.isArray(properties.behavior) ? properties.behavior : {};
     properties.advanced = properties.advanced && typeof properties.advanced === 'object' && !Array.isArray(properties.advanced) ? properties.advanced : {};
+    properties.visibility = properties.visibility && typeof properties.visibility === 'object' && !Array.isArray(properties.visibility) ? properties.visibility : {};
+    properties.responsive = properties.responsive && typeof properties.responsive === 'object' && !Array.isArray(properties.responsive) ? properties.responsive : {};
     return properties;
   }
 

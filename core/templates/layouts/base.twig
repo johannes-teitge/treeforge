@@ -1,10 +1,14 @@
+{# TF_CORE_LAYOUT_PATCH_142 #}
+{% set body_classes = ['tf-site', 'tf-template-core', page.body_class|default('')] %}
+{% if preview_bar.enabled|default(false) %}
+  {% set body_classes = body_classes|merge(['tf-has-preview-bar']) %}
+{% endif %}
 <!doctype html>
 <html lang="{{ page.lang|default('de') }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title|default('Seite') }} · {{ site.name|default('TreeForge') }}</title>
-
+  <title>{{ page.title|default('Seite') }} · {{ site.name|default('TreeForge CMS') }}</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/svg+xml" href="/assets/brand/treeforge-icon.svg">
 
@@ -13,66 +17,74 @@
   {% endfor %}
 
   {% if collected_css|default('') %}
-    <style id="tf-collected-css">
-{{ collected_css|raw }}
-    </style>
+    <style id="tf-collected-css">{{ collected_css|raw }}</style>
   {% endif %}
 </head>
-<body class="tf-site tf-template-core {{ page.body_class|default('') }}{% if preview_bar.enabled|default(false) %} tf-has-preview-bar{% endif %}">
-  <a class="tf-skip-link" href="#tf-main-content">Zum Inhalt springen</a>
-
+<body class="{{ body_classes|join(' ')|trim }}">
   {% if preview_bar.enabled|default(false) %}
-    <aside class="tf-preview-bar" aria-label="TreeForge Vorschauleiste">
-      <div class="tf-preview-bar-inner">
-        <div class="tf-preview-bar-main">
-          <strong>TreeForge Preview</strong>
-          <span>Workspace: <b>{{ preview_bar.workspace }}</b></span>
-          <span>Seite: <b>{{ preview_bar.page_id }}</b></span>
-          <span>Renderer: <b>{{ preview_bar.renderer }}</b></span>
-        </div>
-        <nav class="tf-preview-bar-actions" aria-label="Preview Aktionen">
-          <a href="{{ preview_bar.edit_url }}">Bearbeiten</a>
-          <a href="{{ preview_bar.pages_url }}">Seiten</a>
-          <a href="{{ preview_bar.strict_url }}">Twig Strict</a>
-          <a href="{{ preview_bar.legacy_url }}">Legacy</a>
-          <a href="{{ preview_bar.published_url }}">Published</a>
-        </nav>
-      </div>
-    </aside>
+    <div class="tf-preview-bar" role="status">
+      <strong>TreeForge Preview</strong>
+      <span>Workspace: {{ preview_bar.workspace|default('draft') }}</span>
+      <span>Seite: {{ preview_bar.page_id|default(page.id|default('home')) }}</span>
+      <span>Renderer: {{ preview_bar.renderer|default('twig') }}</span>
+      <a href="{{ preview_bar.edit_url|default('/admin/pages/') }}">Bearbeiten</a>
+      <a href="{{ preview_bar.pages_url|default('/admin/pages/') }}">Seiten</a>
+      <a href="{{ preview_bar.strict_url|default('#') }}">Twig Strict</a>
+      <a href="{{ preview_bar.legacy_url|default('#') }}">Legacy</a>
+      <a href="{{ preview_bar.published_url|default('/') }}">Published</a>
+    </div>
   {% endif %}
 
+  <a class="tf-skip-link" href="#tf-main-content">Zum Inhalt springen</a>
+
   <header class="tf-site-header" role="banner">
-    <div class="tf-container tf-header-inner">
-      <a class="tf-brand" href="/" aria-label="{{ site.name|default('TreeForge') }} Startseite">
-        <img src="/assets/brand/treeforge-icon.svg" alt="" class="tf-brand-icon" aria-hidden="true">
-        <span class="tf-brand-text">
-          <span class="tf-brand-name">{{ site.name|default('TreeForge') }}</span>
+    <div class="tf-container tf-site-header-inner">
+      <a class="tf-site-brand" href="/" aria-label="{{ site.name|default('TreeForge CMS') }} Startseite">
+        <img src="{{ site.icon|default('/assets/brand/treeforge-icon.svg') }}" alt="" class="tf-site-brand-icon" aria-hidden="true">
+        <span class="tf-site-brand-text">
+          <strong>{{ site.name|default('TreeForge CMS') }}</strong>
           {% if site.tagline|default('') %}
-            <span class="tf-brand-tagline">{{ site.tagline }}</span>
+            <small>{{ site.tagline }}</small>
           {% endif %}
         </span>
       </a>
 
-      {% if tf_has_area('header') %}
-        <div class="tf-header-area" data-area="header">
-          {{ tf_area('header')|raw }}
+      {% if tf_has_menu('main') %}
+        <div class="tf-site-nav">
+          {{ tf_menu('main')|raw }}
         </div>
       {% endif %}
     </div>
+
+    {% if tf_has_area('header') %}
+      <div class="tf-site-header-area" data-area="header">
+        <div class="tf-container">
+          {{ tf_area('header')|raw }}
+        </div>
+      </div>
+    {% endif %}
   </header>
 
   {% block before_main %}{% endblock %}
 
-  <main id="tf-main-content" class="tf-main" role="main">
+  <main id="tf-main-content" class="tf-site-main" role="main">
     {% block body %}{% endblock %}
   </main>
 
   <footer class="tf-site-footer" role="contentinfo">
-    <div class="tf-container tf-footer-inner" data-area="footer">
-      {% if tf_has_area('footer') %}
-        {{ tf_area('footer')|raw }}
-      {% else %}
-        <p>&copy; {{ "now"|date("Y") }} {{ site.name|default('TreeForge') }}</p>
+    <div class="tf-container tf-site-footer-inner">
+      <div class="tf-footer-area">
+        {% if tf_has_area('footer') %}
+          {{ tf_area('footer')|raw }}
+        {% else %}
+          <p>&copy; {{ "now"|date("Y") }} {{ site.name|default('TreeForge CMS') }}</p>
+        {% endif %}
+      </div>
+
+      {% if tf_has_menu('footer') %}
+        <div class="tf-footer-menu">
+          {{ tf_menu('footer')|raw }}
+        </div>
       {% endif %}
     </div>
   </footer>

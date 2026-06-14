@@ -5369,5 +5369,837 @@
                 "message": "Patch 138 Frontend Preview/Admin Bar fertig"
             }
         ]
+    },
+    "patch-139-core-website-styling-polish.php": {
+        "executed_at": "2026-06-14T17:56:25+00:00",
+        "status": "ok",
+        "duration_ms": 14,
+        "messages": [
+            {
+                "time": "2026-06-14T17:56:25+00:00",
+                "message": "Patch 139 Core Website Styling Polish gestartet"
+            },
+            {
+                "time": "2026-06-14T17:56:25+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/layouts/base.twig"
+            },
+            {
+                "time": "2026-06-14T17:56:25+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/layouts/base.twig"
+            },
+            {
+                "time": "2026-06-14T17:56:25+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/layouts/page.twig"
+            },
+            {
+                "time": "2026-06-14T17:56:25+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/layouts/page.twig"
+            },
+            {
+                "time": "2026-06-14T17:56:25+00:00",
+                "message": "Keine Änderung nötig: C:\\laragon_new\\www\\treeforge/core/templates/layouts/blank.twig"
+            },
+            {
+                "time": "2026-06-14T17:56:25+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/assets/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T17:56:25+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/assets/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T17:56:25+00:00",
+                "message": "Asset veröffentlicht: C:\\laragon_new\\www\\treeforge/public/assets/treeforge/core/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T17:56:25+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/139-core-website-styling-polish.md"
+            },
+            {
+                "time": "2026-06-14T17:56:25+00:00",
+                "message": "Patch 139 Core Website Styling Polish fertig"
+            }
+        ]
+    },
+    "patch-140-fix-preview-bar-array-rendering.php": {
+        "executed_at": "2026-06-14T18:16:50+00:00",
+        "status": "ok",
+        "duration_ms": 12,
+        "messages": [
+            {
+                "time": "2026-06-14T18:16:50+00:00",
+                "message": "Patch 140 Fix Preview Bar Array Rendering gestartet"
+            },
+            {
+                "time": "2026-06-14T18:16:50+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/layouts/base.twig"
+            },
+            {
+                "time": "2026-06-14T18:16:50+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/layouts/base.twig"
+            },
+            {
+                "time": "2026-06-14T18:16:50+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/assets/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T18:16:50+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/assets/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T18:16:50+00:00",
+                "message": "Asset veröffentlicht: C:\\laragon_new\\www\\treeforge/public/assets/treeforge/core/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T18:16:50+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/140-fix-preview-bar-array-rendering.md"
+            },
+            {
+                "time": "2026-06-14T18:16:50+00:00",
+                "message": "Patch 140 Fix Preview Bar Array Rendering fertig"
+            }
+        ]
+    },
+    "patch-141-core-navigation-menu-foundation.php": {
+        "executed_at": "2026-06-14T18:26:58+00:00",
+        "status": "ok",
+        "duration_ms": 355,
+        "messages": [
+            {
+                "time": "2026-06-14T18:26:57+00:00",
+                "message": "Patch 141 Core Navigation / Menu Foundation gestartet"
+            },
+            {
+                "time": "2026-06-14T18:26:57+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/Navigation/NavigationManager.php"
+            },
+            {
+                "time": "2026-06-14T18:26:57+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/storage/workspaces/draft/navigation/main.json"
+            },
+            {
+                "time": "2026-06-14T18:26:57+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/storage/workspaces/draft/navigation/footer.json"
+            },
+            {
+                "time": "2026-06-14T18:26:57+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/storage/workspaces/review/navigation/main.json"
+            },
+            {
+                "time": "2026-06-14T18:26:57+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/storage/workspaces/review/navigation/footer.json"
+            },
+            {
+                "time": "2026-06-14T18:26:57+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/storage/workspaces/published/navigation/main.json"
+            },
+            {
+                "time": "2026-06-14T18:26:57+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/storage/workspaces/published/navigation/footer.json"
+            },
+            {
+                "time": "2026-06-14T18:26:57+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T18:26:57+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T18:26:57+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/layouts/base.twig"
+            },
+            {
+                "time": "2026-06-14T18:26:57+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/layouts/base.twig"
+            },
+            {
+                "time": "2026-06-14T18:26:57+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/assets/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T18:26:57+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/assets/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T18:26:57+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/141-core-navigation-menu-foundation.md"
+            },
+            {
+                "time": "2026-06-14T18:26:58+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Core/Navigation/NavigationManager.php"
+            },
+            {
+                "time": "2026-06-14T18:26:58+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T18:26:58+00:00",
+                "message": "Patch 141 Core Navigation / Menu Foundation fertig"
+            }
+        ]
+    },
+    "patch-142-force-twig-menu-renderer-repair.php": {
+        "executed_at": "2026-06-14T18:32:44+00:00",
+        "status": "ok",
+        "duration_ms": 488,
+        "messages": [
+            {
+                "time": "2026-06-14T18:32:44+00:00",
+                "message": "Patch 142 Force Twig Menu Renderer Repair gestartet"
+            },
+            {
+                "time": "2026-06-14T18:32:44+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/Navigation/NavigationManager.php"
+            },
+            {
+                "time": "2026-06-14T18:32:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/Navigation/NavigationManager.php"
+            },
+            {
+                "time": "2026-06-14T18:32:44+00:00",
+                "message": "Navigation existiert bereits, übersprungen: C:\\laragon_new\\www\\treeforge/storage/workspaces/draft/navigation/main.json"
+            },
+            {
+                "time": "2026-06-14T18:32:44+00:00",
+                "message": "Navigation existiert bereits, übersprungen: C:\\laragon_new\\www\\treeforge/storage/workspaces/draft/navigation/footer.json"
+            },
+            {
+                "time": "2026-06-14T18:32:44+00:00",
+                "message": "Navigation existiert bereits, übersprungen: C:\\laragon_new\\www\\treeforge/storage/workspaces/review/navigation/main.json"
+            },
+            {
+                "time": "2026-06-14T18:32:44+00:00",
+                "message": "Navigation existiert bereits, übersprungen: C:\\laragon_new\\www\\treeforge/storage/workspaces/review/navigation/footer.json"
+            },
+            {
+                "time": "2026-06-14T18:32:44+00:00",
+                "message": "Navigation existiert bereits, übersprungen: C:\\laragon_new\\www\\treeforge/storage/workspaces/published/navigation/main.json"
+            },
+            {
+                "time": "2026-06-14T18:32:44+00:00",
+                "message": "Navigation existiert bereits, übersprungen: C:\\laragon_new\\www\\treeforge/storage/workspaces/published/navigation/footer.json"
+            },
+            {
+                "time": "2026-06-14T18:32:44+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T18:32:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T18:32:44+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/index.php"
+            },
+            {
+                "time": "2026-06-14T18:32:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/index.php"
+            },
+            {
+                "time": "2026-06-14T18:32:44+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/layouts/base.twig"
+            },
+            {
+                "time": "2026-06-14T18:32:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/layouts/base.twig"
+            },
+            {
+                "time": "2026-06-14T18:32:44+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/assets/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T18:32:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/assets/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T18:32:44+00:00",
+                "message": "Core Template Assets veröffentlicht."
+            },
+            {
+                "time": "2026-06-14T18:32:44+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/142-force-twig-menu-renderer-repair.md"
+            },
+            {
+                "time": "2026-06-14T18:32:44+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Core/Navigation/NavigationManager.php"
+            },
+            {
+                "time": "2026-06-14T18:32:44+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T18:32:44+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/public/index.php"
+            },
+            {
+                "time": "2026-06-14T18:32:44+00:00",
+                "message": "Patch 142 Force Twig Menu Renderer Repair fertig"
+            }
+        ]
+    },
+    "patch-144-chatgpt-export-zip-tool.php": {
+        "executed_at": "2026-06-14T18:47:55+00:00",
+        "status": "ok",
+        "duration_ms": 171,
+        "messages": [
+            {
+                "time": "2026-06-14T18:47:55+00:00",
+                "message": "Patch 144 ChatGPT Export ZIP Tool gestartet"
+            },
+            {
+                "time": "2026-06-14T18:47:55+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/tools/export-treeforge-for-chatgpt.php"
+            },
+            {
+                "time": "2026-06-14T18:47:55+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/144-chatgpt-export-zip-tool.md"
+            },
+            {
+                "time": "2026-06-14T18:47:55+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/.gitignore"
+            },
+            {
+                "time": "2026-06-14T18:47:55+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/.gitignore"
+            },
+            {
+                "time": "2026-06-14T18:47:55+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/tools/export-treeforge-for-chatgpt.php"
+            },
+            {
+                "time": "2026-06-14T18:47:55+00:00",
+                "message": "Patch 144 ChatGPT Export ZIP Tool fertig"
+            }
+        ]
+    },
+    "patch-145-chatgpt-export-zip-fallback.php": {
+        "executed_at": "2026-06-14T18:50:56+00:00",
+        "status": "ok",
+        "duration_ms": 177,
+        "messages": [
+            {
+                "time": "2026-06-14T18:50:56+00:00",
+                "message": "Patch 145 ChatGPT Export ZIP fallback gestartet"
+            },
+            {
+                "time": "2026-06-14T18:50:56+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/tools/export-treeforge-for-chatgpt.php"
+            },
+            {
+                "time": "2026-06-14T18:50:56+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/tools/export-treeforge-for-chatgpt.php"
+            },
+            {
+                "time": "2026-06-14T18:50:56+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/145-chatgpt-export-zip-fallback.md"
+            },
+            {
+                "time": "2026-06-14T18:50:56+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/tools/export-treeforge-for-chatgpt.php"
+            },
+            {
+                "time": "2026-06-14T18:50:56+00:00",
+                "message": "Patch 145 ChatGPT Export ZIP fallback fertig"
+            }
+        ]
+    },
+    "patch-146-page-menu-node-foundation.php": {
+        "executed_at": "2026-06-14T19:14:20+00:00",
+        "status": "ok",
+        "duration_ms": 1391,
+        "messages": [
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "Patch 146 PageMenuNode + MenuItemNode Foundation gestartet"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Nodes/PageMenuNode.php"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Nodes/MenuItemNode.php"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/bootstrap.php"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/bootstrap.php"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/NodeRegistry.php"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/NodeRegistry.php"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/NodeCreator.php"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/NodeCreator.php"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeTypeRegistry.php"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeTypeRegistry.php"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeMutationService.php"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeMutationService.php"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/nodes/pagemenu.twig"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/nodes/menuitem.twig"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/assets/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/assets/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "Core CSS nach public veröffentlicht: C:\\laragon_new\\www\\treeforge/public/assets/treeforge/core/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-property-editor.js"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-property-editor.js"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-node-types.js"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-node-types.js"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/146-page-menu-node-foundation.md"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Nodes/PageMenuNode.php"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Nodes/MenuItemNode.php"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Core/bootstrap.php"
+            },
+            {
+                "time": "2026-06-14T19:14:19+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Core/NodeRegistry.php"
+            },
+            {
+                "time": "2026-06-14T19:14:20+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Core/NodeCreator.php"
+            },
+            {
+                "time": "2026-06-14T19:14:20+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeTypeRegistry.php"
+            },
+            {
+                "time": "2026-06-14T19:14:20+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeMutationService.php"
+            },
+            {
+                "time": "2026-06-14T19:14:20+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T19:14:20+00:00",
+                "message": "Patch 146 PageMenuNode + MenuItemNode Foundation fertig"
+            }
+        ]
+    },
+    "patch-147-node-css-collector-foundation.php": {
+        "executed_at": "2026-06-14T19:51:40+00:00",
+        "status": "ok",
+        "duration_ms": 395,
+        "messages": [
+            {
+                "time": "2026-06-14T19:51:39+00:00",
+                "message": "Patch 147 Node CSS Collector Foundation gestartet"
+            },
+            {
+                "time": "2026-06-14T19:51:39+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T19:51:39+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T19:51:39+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/nodes/columns.twig"
+            },
+            {
+                "time": "2026-06-14T19:51:39+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/nodes/columns.twig"
+            },
+            {
+                "time": "2026-06-14T19:51:39+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/147-node-css-collector-foundation.md"
+            },
+            {
+                "time": "2026-06-14T19:51:40+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T19:51:40+00:00",
+                "message": "Patch 147 Node CSS Collector Foundation fertig"
+            }
+        ]
+    },
+    "patch-148-responsive-node-properties-foundation.php": {
+        "executed_at": "2026-06-14T20:49:47+00:00",
+        "status": "ok",
+        "duration_ms": 182,
+        "messages": [
+            {
+                "time": "2026-06-14T20:49:46+00:00",
+                "message": "Patch 148 Responsive Node Properties Foundation gestartet"
+            },
+            {
+                "time": "2026-06-14T20:49:46+00:00",
+                "message": "Keine Änderung nötig: C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T20:49:46+00:00",
+                "message": "Keine Änderung nötig: C:\\laragon_new\\www\\treeforge/core/templates/nodes/columns.twig"
+            },
+            {
+                "time": "2026-06-14T20:49:46+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-property-editor.js"
+            },
+            {
+                "time": "2026-06-14T20:49:46+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-property-editor.js"
+            },
+            {
+                "time": "2026-06-14T20:49:46+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-save-node-properties.js"
+            },
+            {
+                "time": "2026-06-14T20:49:46+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-save-node-properties.js"
+            },
+            {
+                "time": "2026-06-14T20:49:46+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-14T20:49:46+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/css/explorer-v2.css"
+            },
+            {
+                "time": "2026-06-14T20:49:46+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/148-responsive-node-properties-foundation.md"
+            },
+            {
+                "time": "2026-06-14T20:49:47+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T20:49:47+00:00",
+                "message": "Patch 148 Responsive Node Properties Foundation fertig"
+            }
+        ]
+    },
+    "patch-149-page-menu-node-variants-and-fields.php": {
+        "executed_at": "2026-06-14T20:59:43+00:00",
+        "status": "ok",
+        "duration_ms": 818,
+        "messages": [
+            {
+                "time": "2026-06-14T20:59:42+00:00",
+                "message": "Patch 149 PageMenuNode Varianten + MenuItem Felder gestartet"
+            },
+            {
+                "time": "2026-06-14T20:59:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Nodes/PageMenuNode.php"
+            },
+            {
+                "time": "2026-06-14T20:59:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Nodes/PageMenuNode.php"
+            },
+            {
+                "time": "2026-06-14T20:59:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Nodes/MenuItemNode.php"
+            },
+            {
+                "time": "2026-06-14T20:59:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Nodes/MenuItemNode.php"
+            },
+            {
+                "time": "2026-06-14T20:59:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeTypeRegistry.php"
+            },
+            {
+                "time": "2026-06-14T20:59:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeTypeRegistry.php"
+            },
+            {
+                "time": "2026-06-14T20:59:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/NodeCreator.php"
+            },
+            {
+                "time": "2026-06-14T20:59:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/NodeCreator.php"
+            },
+            {
+                "time": "2026-06-14T20:59:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeMutationService.php"
+            },
+            {
+                "time": "2026-06-14T20:59:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeMutationService.php"
+            },
+            {
+                "time": "2026-06-14T20:59:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T20:59:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T20:59:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/nodes/pagemenu.twig"
+            },
+            {
+                "time": "2026-06-14T20:59:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/nodes/pagemenu.twig"
+            },
+            {
+                "time": "2026-06-14T20:59:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/nodes/menuitem.twig"
+            },
+            {
+                "time": "2026-06-14T20:59:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/nodes/menuitem.twig"
+            },
+            {
+                "time": "2026-06-14T20:59:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/assets/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T20:59:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/assets/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T20:59:42+00:00",
+                "message": "Core CSS nach public veröffentlicht: C:\\laragon_new\\www\\treeforge/public/assets/treeforge/core/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T20:59:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-property-editor.js"
+            },
+            {
+                "time": "2026-06-14T20:59:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-property-editor.js"
+            },
+            {
+                "time": "2026-06-14T20:59:42+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-node-types.js"
+            },
+            {
+                "time": "2026-06-14T20:59:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-node-types.js"
+            },
+            {
+                "time": "2026-06-14T20:59:42+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/149-page-menu-node-variants-and-fields.md"
+            },
+            {
+                "time": "2026-06-14T20:59:43+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Nodes/PageMenuNode.php"
+            },
+            {
+                "time": "2026-06-14T20:59:43+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Nodes/MenuItemNode.php"
+            },
+            {
+                "time": "2026-06-14T20:59:43+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeTypeRegistry.php"
+            },
+            {
+                "time": "2026-06-14T20:59:43+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Modules/ExplorerV2/NodeMutationService.php"
+            },
+            {
+                "time": "2026-06-14T20:59:43+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T20:59:43+00:00",
+                "message": "Patch 149 PageMenuNode Varianten + MenuItem Felder fertig"
+            }
+        ]
+    },
+    "patch-150-fix-pagemenu-show-title-rendering.php": {
+        "executed_at": "2026-06-14T21:08:47+00:00",
+        "status": "ok",
+        "duration_ms": 153,
+        "messages": [
+            {
+                "time": "2026-06-14T21:08:46+00:00",
+                "message": "Patch 150 PageMenu show_title Rendering Fix gestartet"
+            },
+            {
+                "time": "2026-06-14T21:08:46+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/nodes/pagemenu.twig"
+            },
+            {
+                "time": "2026-06-14T21:08:46+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/nodes/pagemenu.twig"
+            },
+            {
+                "time": "2026-06-14T21:08:46+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/assets/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T21:08:46+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/assets/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T21:08:46+00:00",
+                "message": "Core CSS veröffentlicht: Array"
+            },
+            {
+                "time": "2026-06-14T21:08:46+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/150-fix-pagemenu-show-title-rendering.md"
+            },
+            {
+                "time": "2026-06-14T21:08:47+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T21:08:47+00:00",
+                "message": "Patch 150 PageMenu show_title Rendering Fix fertig"
+            }
+        ]
+    },
+    "patch-151-icon-library-foundation.php": {
+        "executed_at": "2026-06-14T21:39:12+00:00",
+        "status": "ok",
+        "duration_ms": 495,
+        "messages": [
+            {
+                "time": "2026-06-14T21:39:12+00:00",
+                "message": "Patch 151 Icon Library Foundation gestartet"
+            },
+            {
+                "time": "2026-06-14T21:39:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/storage/system/icon-libraries.json"
+            },
+            {
+                "time": "2026-06-14T21:39:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/Icons/IconRenderer.php"
+            },
+            {
+                "time": "2026-06-14T21:39:12+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T21:39:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T21:39:12+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/nodes/pagemenu.twig"
+            },
+            {
+                "time": "2026-06-14T21:39:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/nodes/pagemenu.twig"
+            },
+            {
+                "time": "2026-06-14T21:39:12+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/nodes/menuitem.twig"
+            },
+            {
+                "time": "2026-06-14T21:39:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/nodes/menuitem.twig"
+            },
+            {
+                "time": "2026-06-14T21:39:12+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/app/Core/Navigation/NavigationManager.php"
+            },
+            {
+                "time": "2026-06-14T21:39:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/app/Core/Navigation/NavigationManager.php"
+            },
+            {
+                "time": "2026-06-14T21:39:12+00:00",
+                "message": "Backup erstellt: C:\\laragon_new\\www\\treeforge/core/templates/assets/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T21:39:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/core/templates/assets/css/core-template.css"
+            },
+            {
+                "time": "2026-06-14T21:39:12+00:00",
+                "message": "Keine Änderung nötig: C:\\laragon_new\\www\\treeforge/public/assets/js/explorer-v2-property-editor.js"
+            },
+            {
+                "time": "2026-06-14T21:39:12+00:00",
+                "message": "Core CSS veröffentlicht: /assets/treeforge/core/css/core-template.css?v=e2b19fde14ef"
+            },
+            {
+                "time": "2026-06-14T21:39:12+00:00",
+                "message": "Datei geschrieben: C:\\laragon_new\\www\\treeforge/docs/treeforge/151-icon-library-foundation.md"
+            },
+            {
+                "time": "2026-06-14T21:39:12+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Core/Icons/IconRenderer.php"
+            },
+            {
+                "time": "2026-06-14T21:39:12+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Renderer/TwigPageRenderer.php"
+            },
+            {
+                "time": "2026-06-14T21:39:12+00:00",
+                "message": "No syntax errors detected in C:\\laragon_new\\www\\treeforge/app/Core/Navigation/NavigationManager.php"
+            },
+            {
+                "time": "2026-06-14T21:39:12+00:00",
+                "message": "Patch 151 Icon Library Foundation fertig"
+            }
+        ]
     }
 }

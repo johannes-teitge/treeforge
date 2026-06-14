@@ -49,7 +49,14 @@ if ($archiveVersion !== '') {
 $rendererMode = strtolower(trim((string)($_GET['renderer'] ?? getenv('TREEFORGE_RENDERER') ?: 'twig')));
 $twigAvailable = class_exists(TwigPageRenderer::class) && class_exists(\Twig\Environment::class);
 
-if ($rendererMode === 'legacy' || !$twigAvailable) {
+if ($rendererMode === 'legacy') {
+    $renderer = new HtmlRenderer();
+    echo $renderer->render($page, $config);
+    return;
+}
+
+if (!$twigAvailable) {
+    echo "<!-- TreeForge: Twig nicht verfügbar, Legacy-Fallback aktiv -->\n";
     $renderer = new HtmlRenderer();
     echo $renderer->render($page, $config);
     return;
@@ -58,12 +65,13 @@ if ($rendererMode === 'legacy' || !$twigAvailable) {
 try {
     $renderer = new TwigPageRenderer($root, $workspaceName);
     echo $renderer->render($page, $config);
+    return;
 } catch (\Throwable $e) {
     if ($rendererMode === 'twig-strict' || getenv('TREEFORGE_RENDERER_STRICT') === '1') {
         throw $e;
     }
 
-    echo "\n<!-- TreeForge Twig fallback: "
+    echo "<!-- TreeForge Twig fallback: "
         . htmlspecialchars($e->getMessage(), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8')
         . " -->\n";
 

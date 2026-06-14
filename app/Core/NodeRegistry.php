@@ -73,6 +73,23 @@ class NodeRegistry
         'codehighlighter' => 'codeblock',
         'codesnippet' => 'codeblock',
         'snippet' => 'codeblock',
+
+        'pagemenunode' => 'pagemenu',
+        'page_menu_node' => 'pagemenu',
+        'pagemenu' => 'pagemenu',
+        'page_menu' => 'pagemenu',
+        'linkmenunode' => 'pagemenu',
+        'link_menu_node' => 'pagemenu',
+        'linkmenu' => 'pagemenu',
+        'localmenu' => 'pagemenu',
+        'anchor_menu' => 'pagemenu',
+
+        'menuitemnode' => 'menuitem',
+        'menu_item_node' => 'menuitem',
+        'menuitem' => 'menuitem',
+        'menu_item' => 'menuitem',
+        'linkitem' => 'menuitem',
+        'link_item_node' => 'menuitem',
     ];
 
     /**

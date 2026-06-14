@@ -14,6 +14,8 @@ use TreeForge\Nodes\ColumnNode;
 use TreeForge\Nodes\CssNode;
 use TreeForge\Nodes\MarkdownNode;
 use TreeForge\Nodes\CodeBlockNode;
+use TreeForge\Nodes\PageMenuNode;
+use TreeForge\Nodes\MenuItemNode;
 
 NodeRegistry::register('text', TextNode::class);
 NodeRegistry::register('heading', HeadingNode::class);
@@ -52,3 +54,12 @@ NodeRegistry::register('JsNode', JavaScriptNode::class);
 NodeRegistry::register('ScriptNode', JavaScriptNode::class);
 NodeRegistry::register('unknown', UnknownNode::class);
 NodeRegistry::register('UnknownNode', UnknownNode::class);
+
+NodeRegistry::register('pagemenu', PageMenuNode::class);
+NodeRegistry::register('PageMenuNode', PageMenuNode::class);
+NodeRegistry::register('page_menu', PageMenuNode::class);
+NodeRegistry::register('linkmenu', PageMenuNode::class);
+NodeRegistry::register('LinkMenuNode', PageMenuNode::class);
+NodeRegistry::register('menuitem', MenuItemNode::class);
+NodeRegistry::register('MenuItemNode', MenuItemNode::class);
+NodeRegistry::register('menu_item', MenuItemNode::class);
